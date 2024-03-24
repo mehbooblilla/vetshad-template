@@ -1,0 +1,32 @@
+body {
+    font-family: "Poppins";
+  }
+  .contact-section {
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 6px 6px 6px 0px rgba(51, 54, 63, 0.27);
+    margin-top: -202px;
+  }
+  .contactus-submit-btn {
+    display: flex;
+    width: 658px;
+    width: 100%;
+    height: 45px;
+    padding: 5px 26px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    color: white;
+  }
+  
+  
+  @media screen and (max-width:1023px) {
+      .contact-section{
+          margin-top: -50px;
+      }
+  
+      /* .contactus-submit-btn{
+        width: 100%;
+      } */
+  }
