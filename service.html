@@ -24,8 +24,8 @@
 
 <body>
     <div
-        class="w-full h-full relative [background:linear-gradient(180deg,_#fff)] overflow-hidden flex flex-col items-start justify-start gap-[9px] tracking-[normal] text-left text-lg text-darkslategray-100 font-poppins mq1125:h-auto">
-        <div class=" h-auto  w-full mt-[-26px] relative z-50">
+        class="w-full  h-full relative [background:linear-gradient(180deg,_#fff)] overflow-hidden flex flex-col items-start justify-start gap-[9px] tracking-[normal] text-left text-lg  font-poppins mq1125:h-auto">
+        <div class="px-[25px] h-auto  w-full mt-[-26px] relative z-50">
             <div class="logo-bg lg:mt-[-290px] lg:ml-[-135px] mt-[-295px] ml-[-165px]"></div>
             <nav class="bg-transparent navbar-section lg:mt-[25px] mt-[30px]">
 
@@ -38,8 +38,11 @@
                     <div class="lg:flex hidden gap-[55px] ">
                         <ul class="flex gap-[38px] h-[46px] items-center">
                             <li><a href="/service.html"
-                                    class="text-[#3D4461] hover:text-gray-300 flex gap-[7px] items-center navbar-item"><span><svg xmlns="http://www.w3.org/2000/svg" width="11" height="8" viewBox="0 0 11 8" fill="none">
-                                        <path d="M10 1.5L5.5 6.5L1 1.5" stroke="#3D4461" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    class="text-[#3D4461] hover:text-gray-300 flex gap-[7px] items-center navbar-item"><span><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="11" height="8" viewBox="0 0 11 8"
+                                            fill="none">
+                                            <path d="M10 1.5L5.5 6.5L1 1.5" stroke="#3D4461" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
                                         </svg></span> Solutions</a></li>
                             <li><a href="/service.html"
                                     class="text-[#3D4461] hover:text-gray-300 flex items-center  navbar-item">Services</a>
@@ -76,31 +79,46 @@
             </nav>
 
         </div>
-        <section class="w-full">
-            <div class="w-full mt-[90px]">
-                <div
-                    class="w-[814px] flex flex-row items-start justify-center py-0 px-5 box-border max-w-full shrink-0 text-[100px] text-royalblue-200">
+        <Section class="w-full h-full px-[25px]">
+            <div class="w-full h-[328px]">
+                <div class="absolute top-[10px] w-full left-auto bottom-auto right-auto">
+                    <img class="h-[300px] max-w-[450px] left-[-100px] absolute object-cover" loading="lazy" alt=""
+                        src="./images/services/services-header.png" />
+
+                    <div
+                        class="absolute top-[107px] left-[830px] rounded-[50%] bg-[#FF58516B] [filter:blur(34.70000076293945px)] w-[228px] h-[425px] z-[1]">
+                    </div>
+                    <img class=" h-[35px]  max-h-full w-[35px] relative object-contain z-[-1] right-[-300px] left-auto bottom-auto top-[45px]"
+                        alt="" src="./images//services/uil_calender.svg" />
+
+                    <img class=" top-[60px] left-[340px]  h-[35px]   w-[35px] overflow-hidden relative object-cover z-[3]"
+                        loading="lazy" alt="" src="./images//services/noto_paw-print.svg" /> 
+                </div>
+            </div>
+            <div>
+                <div class=" items-start justify-center py-0 px-5 box-border max-w-full">
                     <h1
-                        class="m-0 h-[120px] w-[604px] relative text-[100px] tracking-[14px] text-[#2B80FF26] font-bold  inline-block shrink-0 max-w-full z-[3] mq450:text-11xl mq800:text-[50px]">
+                        class="m-0  absolute top-[350px] lg:text-[100px] text-[55px] tracking-[2px] text-[#2B80FF26] font-bold  inline-block shrink-0 max-w-full z-[3] mq450:text-11xl mq800:text-[50px]">
                         SERVICES
                     </h1>
                 </div>
-
-                <div class="flex">
+            </div>
+            <div>
+                <div class="flex relative mt-[5px]">
                     <div
                         class="ml-[-100px] h-[488px] w-[178px] flex absolute flex-col items-start justify-start pt-[63px] px-0 pb-0 box-border mq800:pt-[41px] mq800:box-border">
                         <div
                             class="self-stretch flex-1 relative rounded-[50%] bg-[#9EC5FF] [filter:blur(34.70000076293945px)] shrink-0 [debug_commit:f6aba90]">
                         </div>
                     </div>
-                    <div class="ml-[100px]">
+                    <div class="w-full">
                         <div>
                             <h1
-                                class="m-0 h-[161px] flex-1 relative text-[40px] leading-[56px] inline-block max-w-full font-inherit mq450:text-5xl mq450:leading-[34px] mq800:text-13xl mq800:leading-[45px]">
-                                <b class="text-royalblue-100">
-                                    <span class="text-[#3D4461] border-b-[#FF5851] border-b-4">Welcome to </span>
-                                    <span class="text-[#2B80FF]">Vetsched.Pet</span>
-                                </b>
+                                class="m-0  flex-1 relative text-[30px] leading-[40px] inline-block max-w-full font-inherit  mq450:leading-[34px] mq800:leading-[45px]">
+
+                                <span class="text-[#3D4461] font-bold border-b-[#FF5851] border-b-4">Welcome to </span>
+                                <span class="text-[#2B80FF] font-bold">Vetsched.Pet</span>
+
                                 <span class="font-semibold">, your all-inclusive destination for
                                 </span>
                                 <b class="text-[#FF5851]">fulfilling your pet care needs</b>
@@ -118,13 +136,20 @@
                             </h3>
                         </div>
                     </div>
-                    <div class="w-[717px] flex  items-start justify-start gap-[27px] shrink-0 [debug_commit:f6aba90]">
+
+                </div>
+            </div>
+        </Section>
+        <!-- <section class="w-full">
+            <div class="w-full h-full mt-[90px]">
+                <div class="flex flex-col h-full">
+                    <div class="flex  items-start justify-start  shrink-0 ">
 
 
-                        <div class="flex ">
+                        <div class="flex w-full h-full">
 
-                            <div class="absolute top-[80px] left-auto bottom-auto right-[205px]">
-                                <img class="" loading="lazy" alt="" src="./images/services/services-header.png" />
+                            <div class="absolute top-[35px] w-full left-auto bottom-auto right-auto">
+                                <img class="h-[300px] w-full left-[-100px] absolute object-cover" loading="lazy" alt="" src="./images/services/services-header.png" />
 
                                 <div
                                     class="absolute top-[107px] left-[830px] rounded-[50%] bg-[#FF58516B] [filter:blur(34.70000076293945px)] w-[228px] h-[425px] z-[1]">
@@ -136,22 +161,62 @@
                                     loading="lazy" alt="" src="./images//services/noto_paw-print.svg" />
                             </div>
                         </div>
-                       
-
-
-
+            
                     </div>
+                    <div
+                    class=" items-start justify-center py-0 px-5 box-border max-w-full">
+                    <h1
+                        class="m-0  absolute top-[350px] lg:text-[100px] text-[55px] tracking-[14px] text-[#2B80FF26] font-bold  inline-block shrink-0 max-w-full z-[3] mq450:text-11xl mq800:text-[50px]">
+                        SERVICES
+                    </h1>
                 </div>
+
+                <div class="flex relative top-[245px]">
+                    <div
+                        class="ml-[-100px] h-[488px] w-[178px] flex absolute flex-col items-start justify-start pt-[63px] px-0 pb-0 box-border mq800:pt-[41px] mq800:box-border">
+                        <div
+                            class="self-stretch flex-1 relative rounded-[50%] bg-[#9EC5FF] [filter:blur(34.70000076293945px)] shrink-0 [debug_commit:f6aba90]">
+                        </div>
+                    </div>
+                    <div class="ml-[23px]">
+                        <div>
+                            <h1
+                                class="m-0  flex-1 relative text-[30px] leading-[40px] inline-block max-w-full font-inherit  mq450:leading-[34px] mq800:leading-[45px]">
+                                
+                                    <span class="text-[#3D4461] font-bold border-b-[#FF5851] border-b-4">Welcome to </span>
+                                    <span class="text-[#2B80FF] font-bold">Vetsched.Pet</span>
+                                
+                                <span class="font-semibold">, your all-inclusive destination for
+                                </span>
+                                <b class="text-[#FF5851]">fulfilling your pet care needs</b>
+                                <span class="font-semibold">. </span>
+                            </h1>
+                        </div>
+                        <div>
+                            <h3
+                                class="m-0 w-[649px] relative text-[22px] leading-[41px] font-medium font-inherit text-[#33363F] inline-block max-w-full mq450:text-lg mq450:leading-[33px]">
+                                As devoted pet lovers ourselves, we understand the significance of
+                                securing reliable and professional services for our furry
+                                companions. Explore the wide range of offerings available through
+                                our platform, meticulously tailored to cater to every aspect of your
+                                pet's well-being:
+                            </h3>
+                        </div>
+                    </div>
+                   
+                </div>
+                </div>
+              
             </div>
-        </section>
+        </section> -->
 
 
         <section
-            class="self-stretch mt-[100px] flex flex-row items-start justify-start pt-0 pb-[126px] pr-[70px] pl-[72px] box-border max-w-full shrink-0 text-left text-21xl text-darkslategray-100 font-poppins mq800:pl-9 mq800:pr-[35px] mq800:pb-[82px] mq800:box-border">
+            class="px-[25px] self-stretch mt-[100px] flex flex-row items-start justify-start pt-0 pb-[126px]  box-border max-w-full shrink-0 text-left text-21xl text-darkslategray-100 font-poppins mq800:pl-9 mq800:pr-[35px] mq800:pb-[82px] mq800:box-border">
             <div
                 class="flex-1 flex lg:flex-row flex-col items-start justify-start gap-[89px] max-w-full mq450:gap-[89px_22px] mq800:gap-[89px_44px] mq1350:flex-wrap">
                 <div
-                    class="flex-1 flex flex-row items-start justify-start relative min-w-[437px] max-w-full mq800:min-w-full">
+                    class="flex-1 flex flex-row items-start justify-start relative lg:min-w-[437px] max-w-full mq800:min-w-full">
                     <div
                         class="h-[495px] w-[412px] absolute !m-[0] bottom-[-211px] left-[-212px] rounded-[50%] bg-[#9EC5FF] [filter:blur(34.70000076293945px)]">
                     </div>
@@ -159,7 +224,7 @@
                         loading="lazy" alt="" src="./images//services//portrait-woman-with-her-beautiful-dog.png" />
                 </div>
                 <div
-                    class="w-[536px] flex flex-col items-start justify-start pt-[50px] px-0 pb-0 box-border min-w-[536px] max-w-full mq450:pt-8 mq450:box-border mq800:min-w-full mq1350:flex-1">
+                    class="lg:w-[536px] w-full flex flex-col items-start justify-start pt-[50px] px-0 pb-0 box-border  max-w-full mq450:pt-8 mq450:box-border mq800:min-w-full mq1350:flex-1">
                     <div class="self-stretch flex flex-col items-start justify-start gap-[28px] max-w-full">
                         <div class="w-[392px] flex flex-col items-start justify-start gap-[14px] max-w-full">
                             <h1
@@ -194,11 +259,11 @@
             </div>
         </section>
         <section
-            class="self-stretch flex flex-row items-start justify-end pt-0 px-[70px] pb-[51px] box-border max-w-full shrink-0 text-left text-21xl text-darkslategray-100 font-poppins mq800:pb-[33px] mq800:box-border mq1350:pl-[35px] mq1350:pr-[35px] mq1350:box-border">
+            class="px-[25px] self-stretch flex flex-row items-start justify-end pt-0  pb-[51px] box-border max-w-full shrink-0 text-left text-21xl text-darkslategray-100 font-poppins mq800:pb-[33px] mq800:box-border mq1350:pl-[35px] mq1350:pr-[35px] mq1350:box-border">
             <div
                 class="w-[1244px] flex flex-col-reverse lg:flex-row items-start justify-start gap-[53px] max-w-full mq800:gap-[53px_26px] mq1125:flex-wrap">
                 <div
-                    class="w-[517px] flex flex-col items-start justify-start pt-[84px] px-0 pb-0 box-border min-w-[517px] max-w-full mq450:pt-[55px] mq450:box-border mq800:min-w-full mq1125:flex-1">
+                    class="w-[517px] flex flex-col items-start justify-start pt-[84px] px-0 pb-0 box-border  max-w-full mq450:pt-[55px] mq450:box-border mq800:min-w-full mq1125:flex-1">
                     <div class="self-stretch flex flex-col items-start justify-start gap-[12.5px] max-w-full">
                         <div class="w-[432px] flex flex-row items-start justify-start py-0 px-2 box-border max-w-full">
                             <h1
@@ -210,9 +275,9 @@
                         <div class="w-[215px] flex flex-row items-start justify-start py-0 px-1.5 box-border">
                             <div class="h-[5px] flex-1 relative rounded-lg bg-[#FF5851]"></div>
                         </div>
-                       
-                         
-                       
+
+
+
                         <h3
                             class="m-0 self-stretch relative text-[22px] leading-[36px] font-normal font-inherit text-[#3D4461CF] mq450:text-lg mq450:leading-[29px]">
                             Simplify pet travel logistics with our reliable pet
@@ -224,237 +289,245 @@
                         </h3>
                     </div>
                 </div>
-                <img class="h-[534px] flex-1 relative max-w-full overflow-hidden object-cover min-w-[438px] rounded-tl-[71px] rounded-br-[71px] z-[1] mq800:min-w-full"
+                <img class="h-[534px] flex-1 relative max-w-full overflow-hidden object-cover lg:min-w-[438px] rounded-tl-[71px] rounded-br-[71px] z-[1] mq800:min-w-full"
                     alt="" src="./images//services/girl-dog-car-medium-shot 1.png" />
-                    <div
+                <div
                     class="left-auto right-[-100px] top-[1850px]  rounded-[50%] bg-[#FFC8C6] absolute [filter:blur(50px)] w-[228px] h-[425px] z-[-1]">
                 </div>
             </div>
         </section>
         <section
-        class="self-stretch mt-[100px] flex flex-row items-start justify-start pt-0 pb-[126px] pr-[70px] pl-[72px] box-border max-w-full shrink-0 text-left text-21xl text-darkslategray-100 font-poppins mq800:pl-9 mq800:pr-[35px] mq800:pb-[82px] mq800:box-border">
-        <div
-            class="flex-1 flex lg:flex-row flex-col items-start justify-start gap-[89px] max-w-full mq450:gap-[89px_22px] mq800:gap-[89px_44px] mq1350:flex-wrap">
+            class="px-[25px] self-stretch mt-[100px] flex flex-row items-start justify-start pt-0 pb-[126px]  box-border max-w-full shrink-0 text-left text-21xl text-darkslategray-100 font-poppins mq800:pl-9 mq800:pr-[35px] mq800:pb-[82px] mq800:box-border">
             <div
-                class="flex-1 flex flex-row items-start justify-start relative min-w-[437px] max-w-full mq800:min-w-full">
+                class="flex-1 flex lg:flex-row flex-col items-start justify-start gap-[89px] max-w-full mq450:gap-[89px_22px] mq800:gap-[89px_44px] mq1350:flex-wrap">
                 <div
-                    class="h-[495px] w-[412px] absolute !m-[0] bottom-[-211px] left-[-212px] rounded-[50%] bg-[#9EC5FF] [filter:blur(34.70000076293945px)]">
-                </div>
-                <img class="h-[594px] flex-1 relative max-w-full overflow-hidden object-cover z-[1] rounded-tl-[71px] rounded-br-[71px]"
-                    loading="lazy" alt="" src="./images/services/veterinarian-check-ing-puppy-s-health (2) 1.png" />
-            </div>
-            <div
-                class="w-[536px] flex flex-col items-start justify-start pt-[50px] px-0 pb-0 box-border min-w-[536px] max-w-full mq450:pt-8 mq450:box-border mq800:min-w-full mq1350:flex-1">
-                <div class="self-stretch flex flex-col items-start justify-start gap-[28px] max-w-full">
-                    <div class="w-[392px] flex flex-col items-start justify-start gap-[14px] max-w-full">
-                        <h1
-                        class="m-0 relative text-[#3D4461] text-[40px] leading-[33px] font-semibold font-inherit inline-block max-w-full mq450:text-5xl mq450:leading-[20px] mq800:text-13xl mq800:leading-[26px]">
-                        Veterinarian Services
-                    </h1>
-                    <div class="w-[215px] flex flex-row items-start justify-start py-0 px-1.5 box-border">
-                        <div class="h-[5px] flex-1 relative rounded-lg bg-[#FF5851]"></div>
-                    </div>
-                        <div class="w-[205px] flex flex-row items-start justify-start py-0 px-px box-border">
-                            <div class="h-[5px] flex-1 relative rounded-lg bg-royalblue-100 z-[1]"></div>
-                        </div>
-                    </div>
+                    class="flex-1 flex flex-row items-start justify-start relative lg:min-w-[437px] max-w-full mq800:min-w-full">
                     <div
-                        class="self-stretch flex flex-row items-start justify-start py-0 pr-0 pl-1.5 box-border max-w-full text-[22px] text-[#3D4461]">
-                        <h3
-                        class="m-0 flex-1 relative text-[#3D4461CF] text-[22px]  leading-[36px] font-normal font-inherit inline-block max-w-full mq450:text-lg mq450:leading-[29px]">
-                        Access top-tier medical care for your beloved pet through our
-                        network of experienced veterinarians. From routine check-ups to
-                        specialized treatments, our preferred providers deliver
-                        compassionate and comprehensive services tailored to your pet's
-                        unique needs. With our platform, managing your pet's healthcare
-                        has never been more convenient.
-                    </h3>
+                        class="h-[495px] w-[412px] absolute !m-[0] bottom-[-211px] left-[-212px] rounded-[50%] bg-[#9EC5FF] [filter:blur(34.70000076293945px)]">
+                    </div>
+                    <img class="h-[594px] flex-1 relative max-w-full overflow-hidden object-cover z-[1] rounded-tl-[71px] rounded-br-[71px]"
+                        loading="lazy" alt="" src="./images/services/veterinarian-check-ing-puppy-s-health (2) 1.png" />
+                </div>
+                <div
+                    class="w-[536px] flex flex-col items-start justify-start pt-[50px] px-0 pb-0 box-border  max-w-full mq450:pt-8 mq450:box-border mq800:min-w-full mq1350:flex-1">
+                    <div class="self-stretch flex flex-col items-start justify-start gap-[28px] max-w-full">
+                        <div class="w-[392px] flex flex-col items-start justify-start gap-[14px] max-w-full">
+                            <h1
+                                class="m-0 relative text-[#3D4461] text-[40px] leading-[33px] font-semibold font-inherit inline-block max-w-full mq450:text-5xl mq450:leading-[20px] mq800:text-13xl mq800:leading-[26px]">
+                                Veterinarian Services
+                            </h1>
+                            <div class="w-[215px] flex flex-row items-start justify-start py-0 px-1.5 box-border">
+                                <div class="h-[5px] flex-1 relative rounded-lg bg-[#FF5851]"></div>
+                            </div>
+                            <div class="w-[205px] flex flex-row items-start justify-start py-0 px-px box-border">
+                                <div class="h-[5px] flex-1 relative rounded-lg bg-royalblue-100 z-[1]"></div>
+                            </div>
+                        </div>
                         <div
-                            class="left-auto right-[-100px]  rounded-[50%] bg-[#FF58516B] absolute [filter:blur(50px)] w-[228px] h-[425px] z-[1]">
+                            class="self-stretch flex flex-row items-start justify-start py-0 pr-0 pl-1.5 box-border max-w-full text-[22px] text-[#3D4461]">
+                            <h3
+                                class="m-0 flex-1 relative text-[#3D4461CF] text-[22px]  leading-[36px] font-normal font-inherit inline-block max-w-full mq450:text-lg mq450:leading-[29px]">
+                                Access top-tier medical care for your beloved pet through our
+                                network of experienced veterinarians. From routine check-ups to
+                                specialized treatments, our preferred providers deliver
+                                compassionate and comprehensive services tailored to your pet's
+                                unique needs. With our platform, managing your pet's healthcare
+                                has never been more convenient.
+                            </h3>
+                            <div
+                                class="left-auto right-[-100px]  rounded-[50%] bg-[#FF58516B] absolute [filter:blur(50px)] w-[228px] h-[425px] z-[1]">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section
-    class="self-stretch flex flex-row items-start justify-end pt-0 px-[70px] pb-[51px] box-border max-w-full shrink-0 text-left text-21xl text-darkslategray-100 font-poppins mq800:pb-[33px] mq800:box-border mq1350:pl-[35px] mq1350:pr-[35px] mq1350:box-border">
-    <div
-        class="w-[1244px] flex flex-col-reverse lg:flex-row items-start justify-start gap-[53px] max-w-full mq800:gap-[53px_26px] mq1125:flex-wrap">
-        <div
-            class="w-[517px] flex flex-col items-start justify-start pt-[84px] px-0 pb-0 box-border min-w-[517px] max-w-full mq450:pt-[55px] mq450:box-border mq800:min-w-full mq1125:flex-1">
-            <div class="self-stretch flex flex-col items-start justify-start gap-[12.5px] max-w-full">
-                <div class="w-[432px] flex flex-row items-start justify-start py-0 px-2 box-border max-w-full">
-                    <h1
-                    class="m-0 relative text-[40px] leading-[33px] font-semibold font-inherit mq450:text-5xl mq450:leading-[20px] mq800:text-13xl mq800:leading-[26px]">
-                    <span class="text-[#3D4461] ">Pet</span>
-                    <span class="text-[#FF5851]"> Grooming</span>
-                </h1>
-                </div>
-                <div class="w-[215px] flex flex-row items-start justify-start py-0 px-1.5 box-border">
-                    <div class="h-[5px] flex-1 relative rounded-lg bg-[#FF5851]"></div>
-                </div>
-               
-                 
-                <h3
-                class="m-0 self-stretch relative text-[#3D4461CF] text-[22px] leading-[36px] font-normal font-inherit  mq450:text-lg mq450:leading-[29px]">
-                <p class="m-0">
-                    Elevate your pet's grooming routine with our extensive network
-                    of skilled groomers. Our preferred providers specialize in a
-                    variety of grooming services, from refreshing baths to precise
-                    haircuts, ensuring your pet looks and feels their best. With
-                    convenient scheduling through our platform, pampering your pet
-                    has never been easier.
-                </p>
-            </h3>
-            </div>
-        </div>
-        <img class="h-[534px] flex-1 relative max-w-full overflow-hidden object-cover min-w-[438px] rounded-tl-[71px] rounded-br-[71px] z-[1] mq800:min-w-full"
-            alt="" src="./images/services/haircuting-process-small-dog-sits-table-dog-with-professional 1.png" />
+        </section>
+        <section
+            class=" px-[25px] self-stretch flex flex-row items-start justify-end pt-0  pb-[51px] box-border max-w-full shrink-0 text-left text-21xl text-darkslategray-100 font-poppins mq800:pb-[33px] mq800:box-border mq1350:pl-[35px] mq1350:pr-[35px] mq1350:box-border">
             <div
-            class="left-auto right-[-100px] top-[1850px]  rounded-[50%] bg-[#FFC8C6] absolute [filter:blur(50px)] w-[228px] h-[425px] z-[-1]">
-        </div>
-    </div>
-</section>
-<section
-class="self-stretch mt-[100px] flex flex-row items-start justify-start pt-0 pb-[126px] pr-[70px] pl-[72px] box-border max-w-full shrink-0 text-left text-21xl text-darkslategray-100 font-poppins mq800:pl-9 mq800:pr-[35px] mq800:pb-[82px] mq800:box-border">
-<div
-    class="flex-1 flex lg:flex-row flex-col items-start justify-start gap-[89px] max-w-full mq450:gap-[89px_22px] mq800:gap-[89px_44px] mq1350:flex-wrap">
-    <div
-        class="flex-1 flex flex-row items-start justify-start relative min-w-[437px] max-w-full mq800:min-w-full">
-        <div
-            class="h-[495px] w-[412px] absolute !m-[0] bottom-[-211px] left-[-212px] rounded-[50%] bg-[#9EC5FF] [filter:blur(34.70000076293945px)]">
-        </div>
-        <img class="h-[594px] flex-1 relative max-w-full overflow-hidden object-cover z-[1] rounded-tl-[71px] rounded-br-[71px]"
-            loading="lazy" alt="" src="./images//services//pet-boarding.png" />
-    </div>
-    <div
-        class="w-[536px] flex flex-col items-start justify-start pt-[50px] px-0 pb-0 box-border min-w-[536px] max-w-full mq450:pt-8 mq450:box-border mq800:min-w-full mq1350:flex-1">
-        <div class="self-stretch flex flex-col items-start justify-start gap-[28px] max-w-full">
-            <div class="w-[392px] flex flex-col items-start justify-start gap-[14px] max-w-full">
-                <h1
-                            class="m-0 flex-1 relative text-[40px] leading-[33px] font-semibold font-inherit inline-block max-w-full mq450:text-5xl mq450:leading-[20px] mq800:text-13xl mq800:leading-[26px]">
-                            <span class=" text-[#3D4461]">Pet</span>
-                            <span class="text-[#5398FF]"> Boarding</span>
-                        </h1>
-                        <div class="w-[217px] flex flex-row items-start justify-start py-0 px-[7px] box-border">
+                class="w-full flex flex-col-reverse lg:flex-row items-start justify-start gap-[53px] max-w-full mq800:gap-[53px_26px] mq1125:flex-wrap">
+                <div
+                    class="w-[517px] flex flex-col items-start justify-start pt-[84px] px-0 pb-0 box-border  max-w-full mq450:pt-[55px] mq450:box-border mq800:min-w-full mq1125:flex-1">
+                    <div class="self-stretch flex flex-col items-start justify-start gap-[12.5px] max-w-full">
+                        <div class="w-[432px] flex flex-row items-start justify-start py-0 px-2 box-border max-w-full">
+                            <h1
+                                class="m-0 relative text-[40px] leading-[33px] font-semibold font-inherit mq450:text-5xl mq450:leading-[20px] mq800:text-13xl mq800:leading-[26px]">
+                                <span class="text-[#3D4461] ">Pet</span>
+                                <span class="text-[#FF5851]"> Grooming</span>
+                            </h1>
+                        </div>
+                        <div class="w-[215px] flex flex-row items-start justify-start py-0 px-1.5 box-border">
                             <div class="h-[5px] flex-1 relative rounded-lg bg-[#FF5851]"></div>
                         </div>
-                <div class="w-[205px] flex flex-row items-start justify-start py-0 px-px box-border">
-                    <div class="h-[5px] flex-1 relative rounded-lg bg-royalblue-100 z-[1]"></div>
+
+
+                        <h3
+                            class="m-0 self-stretch relative text-[#3D4461CF] text-[22px] leading-[36px] font-normal font-inherit  mq450:text-lg mq450:leading-[29px]">
+                            <p class="m-0">
+                                Elevate your pet's grooming routine with our extensive network
+                                of skilled groomers. Our preferred providers specialize in a
+                                variety of grooming services, from refreshing baths to precise
+                                haircuts, ensuring your pet looks and feels their best. With
+                                convenient scheduling through our platform, pampering your pet
+                                has never been easier.
+                            </p>
+                        </h3>
+                    </div>
                 </div>
-            </div>
-            <div
-                class="self-stretch flex flex-row items-start justify-start py-0 pr-0 pl-1.5 box-border max-w-full text-[22px] text-[#3D4461]">
-                <h3
-                class="m-0 self-stretch h-[324px] relative  leading-[36px] font-normal font-inherit text-[#3D4461CF] text-[22px] inline-block z-[1] mq450:text-lg mq450:leading-[29px]">
-                <p class="m-0">
-                    When life takes you away, trust the care of your pet to our
-                    trusted network of boarding facilities. Our preferred providers
-                    offer spacious accommodations, personalized attention, and
-                    enriching activities, ensuring your pet feels comfortable and
-                    secure even in your absence. Rest assured, your pet's well-being
-                    is our top priority.
-                </p>
-            </h3>
+                <img class="h-[534px] flex-1 relative max-w-full overflow-hidden object-cover lg:min-w-[438px] rounded-tl-[71px] rounded-br-[71px] z-[1] mq800:min-w-full"
+                    alt=""
+                    src="./images/services/haircuting-process-small-dog-sits-table-dog-with-professional 1.png" />
                 <div
-                    class="left-auto right-[-100px]  rounded-[50%] bg-[#FF58516B] absolute [filter:blur(50px)] w-[228px] h-[425px] z-[1]">
+                    class="left-auto right-[-100px] top-[1850px]  rounded-[50%] bg-[#FFC8C6] absolute [filter:blur(50px)] w-[228px] h-[425px] z-[-1]">
                 </div>
             </div>
-        </div>
-    </div>
-</div>
-</section>
-<section
-class="self-stretch flex flex-row items-start justify-end pt-0 px-[70px] pb-[51px] box-border max-w-full shrink-0 text-left text-21xl text-darkslategray-100 font-poppins mq800:pb-[33px] mq800:box-border mq1350:pl-[35px] mq1350:pr-[35px] mq1350:box-border">
-<div
-    class="w-[1244px] flex flex-col-reverse lg:flex-row items-start justify-start gap-[53px] max-w-full mq800:gap-[53px_26px] mq1125:flex-wrap">
-    <div
-        class="w-[517px] flex flex-col items-start justify-start pt-[84px] px-0 pb-0 box-border min-w-[517px] max-w-full mq450:pt-[55px] mq450:box-border mq800:min-w-full mq1125:flex-1">
-        <div class="self-stretch flex flex-col items-start justify-start gap-[12.5px] max-w-full">
-            <div class="w-[432px] flex flex-row items-start justify-start py-0 px-2 box-border max-w-full">
-                <h1
-                class="m-0 relative text-[40px] leading-[33px] font-semibold font-inherit mq450:text-5xl mq450:leading-[20px] mq800:text-13xl mq800:leading-[26px]">
-                <span class="text-[#3D4461]">Pet</span>
-                <span class="text-[#FF5851]"> Resort</span>
-            </h1>
-            </div>
-            <div class="w-[215px] flex flex-row items-start justify-start py-0 px-1.5 box-border">
-                <div class="h-[5px] flex-1 relative rounded-lg bg-[#5398FF]"></div>
-            </div>
-           
-             
-            <h3
-            class="m-0 self-stretch relative text-[22px] leading-[36px] font-normal font-inherit text-[#3D4461CF] mq450:text-lg mq450:leading-[29px]">
-            Treat your furry friend to a luxurious retreat with our
-            network of premium pet resort facilities. Our preferred
-            providers offer indulgent amenities, spacious
-            accommodations, and personalized care, ensuring your pet
-            enjoys a vacation of their own. Booking a rejuvenating
-            getaway for your pet is effortless with our platform at your
-            fingertips.
-        </h3>
-        </div>
-    </div>
-    <img class="h-[534px] flex-1 relative max-w-full overflow-hidden object-cover min-w-[438px] rounded-tl-[71px] rounded-br-[71px] z-[1] mq800:min-w-full"
-        alt="" src="./images/services/pet-resort.png" />
-        <div
-        class="left-auto right-[-100px] top-[1850px]  rounded-[50%] bg-[#FFC8C6] absolute [filter:blur(50px)] w-[228px] h-[425px] z-[-1]">
-    </div>
-</div>
-</section>
-<section
-class="self-stretch mt-[100px] flex flex-row items-start justify-start pt-0 pb-[126px] pr-[70px] pl-[72px] box-border max-w-full shrink-0 text-left text-21xl text-darkslategray-100 font-poppins mq800:pl-9 mq800:pr-[35px] mq800:pb-[82px] mq800:box-border">
-<div
-class="flex-1 flex lg:flex-row flex-col items-start justify-start gap-[89px] max-w-full mq450:gap-[89px_22px] mq800:gap-[89px_44px] mq1350:flex-wrap">
-<div
-    class="flex-1 flex flex-row items-start justify-start relative min-w-[437px] max-w-full mq800:min-w-full">
-    <div
-        class="h-[495px] w-[412px] absolute !m-[0] bottom-[-211px] left-[-212px] rounded-[50%] bg-[#9EC5FF] [filter:blur(34.70000076293945px)]">
-    </div>
-    <img class="h-[594px] flex-1 relative max-w-full overflow-hidden object-cover z-[1] rounded-tl-[71px] rounded-br-[71px]"
-        loading="lazy" alt="" src="./images//services/pet-hospital.png" />
-</div>
-<div
-    class="w-[536px] flex flex-col items-start justify-start pt-[50px] px-0 pb-0 box-border min-w-[536px] max-w-full mq450:pt-8 mq450:box-border mq800:min-w-full mq1350:flex-1">
-    <div class="self-stretch flex flex-col items-start justify-start gap-[28px] max-w-full">
-        <div class="w-[392px] flex flex-col items-start justify-start gap-[14px] max-w-full">
-            <h1
-            class="m-0 relative text-[40px] text-[#3D4461] leading-[33px] font-semibold font-inherit mq450:text-5xl mq450:leading-[20px] mq800:text-13xl mq800:leading-[26px]">
-            Pet Hospital
-        </h1>
-        <div class="w-[203px] h-[5px] relative rounded-lg bg-[#FF5851]"></div>
-            <div class="w-[205px] flex flex-row items-start justify-start py-0 px-px box-border">
-                <div class="h-[5px] flex-1 relative rounded-lg bg-royalblue-100 z-[1]"></div>
-            </div>
-        </div>
-        <div
-            class="self-stretch flex flex-row items-start justify-start py-0 pr-0 pl-1.5 box-border max-w-full text-[22px] text-[#3D4461]">
-            <h3
-            class="m-0 self-stretch relative text-[#3D4461CF] text-[22px] leading-[36px] font-normal font-inherit  z-[1] mq450:text-lg mq450:leading-[29px]">
-            During times of illness or injury, rely on our network of
-            trusted pet hospitals for exemplary medical attention. Our
-            preferred providers boast state-of-the-art facilities and
-            compassionate veterinarians, dedicated to diagnosing and
-            treating your pet with utmost care and expertise. Rest
-            assured, your pet's health is in capable hands with our
-            platform.
-        </h3>
-            <div
-                class="left-auto right-[-100px]  rounded-[50%] bg-[#FF58516B] absolute [filter:blur(50px)] w-[228px] h-[425px] z-[1]">
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-</section>
- 
+        </section>
         <section
-            class="self-stretch flex flex-row items-start justify-end pt-0 px-[70px] pb-[212px] box-border max-w-full shrink-0 text-left text-21xl text-darkslategray-100 font-poppins mq800:pb-[138px] mq800:box-border mq1350:pl-[35px] mq1350:pr-[35px] mq1350:box-border">
+            class="px-[25px] self-stretch mt-[100px] flex flex-row items-start justify-start pt-0 pb-[126px]  box-border max-w-full shrink-0 text-left text-21xl text-darkslategray-100 font-poppins mq800:pl-9 mq800:pr-[35px] mq800:pb-[82px] mq800:box-border">
+            <div
+                class="flex-1 flex lg:flex-row flex-col items-start justify-start gap-[89px] max-w-full mq450:gap-[89px_22px] mq800:gap-[89px_44px] mq1350:flex-wrap">
+                <div
+                    class="flex-1 flex flex-row items-start justify-start relative lg:min-w-[437px] max-w-full mq800:min-w-full">
+                    <div
+                        class="h-[495px] w-[412px] absolute !m-[0] bottom-[-211px] left-[-212px] rounded-[50%] bg-[#9EC5FF] [filter:blur(34.70000076293945px)]">
+                    </div>
+                    <img class="h-[594px] flex-1 relative max-w-full overflow-hidden object-cover z-[1] rounded-tl-[71px] rounded-br-[71px]"
+                        loading="lazy" alt="" src="./images//services//pet-boarding.png" />
+                </div>
+                <div
+                    class="w-[536px] flex flex-col items-start justify-start pt-[50px] px-0 pb-0 box-border  max-w-full mq450:pt-8 mq450:box-border mq800:min-w-full mq1350:flex-1">
+                    <div class="self-stretch flex flex-col items-start justify-start gap-[28px] max-w-full">
+                        <!-- <div
+                        class="absolute flex lg:hidden h-full top-[0px] bottom-[0px] left-[-262px] rounded-[50%] bg-[#3D446170] [filter:blur(50px)] w-[412px]">
+                    </div> -->
+                        <div class="w-[392px] flex flex-col items-start justify-start gap-[14px] max-w-full">
+                            <h1
+                                class="m-0 flex-1 relative text-[40px] leading-[33px] font-semibold font-inherit inline-block max-w-full mq450:text-5xl mq450:leading-[20px] mq800:text-13xl mq800:leading-[26px]">
+                                <span class=" text-[#3D4461]">Pet</span>
+                                <span class="text-[#5398FF]"> Boarding</span>
+                            </h1>
+                            <div class="w-[217px] flex flex-row items-start justify-start py-0 px-[7px] box-border">
+                                <div class="h-[5px] flex-1 relative rounded-lg bg-[#FF5851]"></div>
+                            </div>
+                            <div class="w-[205px] flex flex-row items-start justify-start py-0 px-px box-border">
+                                <div class="h-[5px] flex-1 relative rounded-lg bg-royalblue-100 z-[1]"></div>
+                            </div>
+                        </div>
+                        <div
+                            class="self-stretch flex flex-row items-start justify-start py-0 pr-0 pl-1.5 box-border max-w-full text-[22px] text-[#3D4461]">
+                            <h3
+                                class="m-0 self-stretch h-[324px] relative  leading-[36px] font-normal font-inherit text-[#3D4461CF] text-[22px] inline-block z-[1] mq450:text-lg mq450:leading-[29px]">
+                                <p class="m-0">
+                                    When life takes you away, trust the care of your pet to our
+                                    trusted network of boarding facilities. Our preferred providers
+                                    offer spacious accommodations, personalized attention, and
+                                    enriching activities, ensuring your pet feels comfortable and
+                                    secure even in your absence. Rest assured, your pet's well-being
+                                    is our top priority.
+                                </p>
+                            </h3>
+                            <div
+                                class="left-auto hidden lg:flex right-[-100px]  rounded-[50%] bg-[#FF58516B] absolute [filter:blur(50px)] w-[228px] h-[425px] z-[1]">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section
+            class="px-[25px] self-stretch flex flex-row items-start justify-end pt-0  pb-[51px] box-border max-w-full shrink-0 text-left text-21xl text-darkslategray-100 font-poppins mq800:pb-[33px] mq800:box-border mq1350:pl-[35px] mq1350:pr-[35px] mq1350:box-border">
+            <div
+                class="w-[1244px] flex flex-col-reverse lg:flex-row items-start justify-start gap-[53px] max-w-full mq800:gap-[53px_26px] mq1125:flex-wrap">
+                <div
+                    class="w-[517px] flex flex-col items-start justify-start pt-[84px] px-0 pb-0 box-border  max-w-full mq450:pt-[55px] mq450:box-border mq800:min-w-full mq1125:flex-1">
+                    <div class="self-stretch flex flex-col items-start justify-start gap-[12.5px] max-w-full">
+                        <div class="w-[432px] flex flex-row items-start justify-start py-0 px-2 box-border max-w-full">
+                            <h1
+                                class="m-0 relative text-[40px] leading-[33px] font-semibold font-inherit mq450:text-5xl mq450:leading-[20px] mq800:text-13xl mq800:leading-[26px]">
+                                <span class="text-[#3D4461]">Pet</span>
+                                <span class="text-[#FF5851]"> Resort</span>
+                            </h1>
+                        </div>
+                        <div class="w-[215px] flex flex-row items-start justify-start py-0 px-1.5 box-border">
+                            <div class="h-[5px] flex-1 relative rounded-lg bg-[#5398FF]"></div>
+                        </div>
+                        
+
+
+                        <h3
+                            class="m-0 self-stretch relative text-[22px] leading-[36px] font-normal font-inherit text-[#3D4461CF] mq450:text-lg mq450:leading-[29px]">
+                            Treat your furry friend to a luxurious retreat with our
+                            network of premium pet resort facilities. Our preferred
+                            providers offer indulgent amenities, spacious
+                            accommodations, and personalized care, ensuring your pet
+                            enjoys a vacation of their own. Booking a rejuvenating
+                            getaway for your pet is effortless with our platform at your
+                            fingertips.
+                        </h3>
+                    </div>
+                </div>
+                <img class="h-[534px] flex-1 relative max-w-full overflow-hidden object-cover lg:min-w-[438px] rounded-tl-[71px] rounded-br-[71px] z-[1] mq800:min-w-full"
+                    alt="" src="./images/services/pet-resort.png" />
+                <div
+                    class="left-auto right-[-100px] top-[1850px]  rounded-[50%] bg-[#FFC8C6] absolute [filter:blur(50px)] w-[228px] h-[425px] z-[-1]">
+                </div>
+            </div>
+        </section>
+        <section
+            class="px-[25px] self-stretch mt-[100px] flex flex-row items-start justify-start pt-0 pb-[126px]  box-border max-w-full shrink-0 text-left text-21xl text-darkslategray-100 font-poppins mq800:pl-9 mq800:pr-[35px] mq800:pb-[82px] mq800:box-border">
+            <div
+                class="flex-1 flex lg:flex-row flex-col items-start justify-start gap-[89px] max-w-full mq450:gap-[89px_22px] mq800:gap-[89px_44px] mq1350:flex-wrap">
+                <div
+                    class="flex-1 flex flex-row items-start justify-start relative lg:min-w-[437px] max-w-full mq800:min-w-full">
+                    <div
+                        class="h-[495px] hidden lg:flex w-[412px] absolute !m-[0] bottom-[-211px] left-[-212px] rounded-[50%] bg-[#9EC5FF] [filter:blur(34.70000076293945px)]">
+                    </div>
+                    <div
+                    class="h-[495px] flex lg:hidden left-[-350px]  w-[412px] absolute !m-[0] bottom-[-211px] lg:left-[-212px] rounded-[50%] bg-[#3D446170] [filter:blur(34.70000076293945px)]">
+                </div>
+                    <img class="h-[594px] flex-1 relative max-w-full overflow-hidden object-cover z-[1] rounded-tl-[71px] rounded-br-[71px]"
+                        loading="lazy" alt="" src="./images//services/pet-hospital.png" />
+                </div>
+                <div
+                    class="w-[536px] flex flex-col items-start justify-start pt-[50px] px-0 pb-0 box-border  max-w-full mq450:pt-8 mq450:box-border mq800:min-w-full mq1350:flex-1">
+                    <div class="self-stretch flex flex-col items-start justify-start gap-[28px] max-w-full">
+                        <div class="w-[392px] flex flex-col items-start justify-start gap-[14px] max-w-full">
+                            <h1
+                                class="m-0 relative text-[40px] text-[#3D4461] leading-[33px] font-semibold font-inherit mq450:text-5xl mq450:leading-[20px] mq800:text-13xl mq800:leading-[26px]">
+                                Pet Hospital
+                            </h1>
+                            <div class="w-[203px] h-[5px] relative rounded-lg bg-[#FF5851]"></div>
+                            <div class="w-[205px] flex flex-row items-start justify-start py-0 px-px box-border">
+                                <div class="h-[5px] flex-1 relative rounded-lg bg-royalblue-100 z-[1]"></div>
+                            </div>
+                        </div>
+                        <div
+                            class="self-stretch flex flex-row items-start justify-start py-0 pr-0 pl-1.5 box-border max-w-full text-[22px] text-[#3D4461]">
+                            <h3
+                                class="m-0 self-stretch relative text-[#3D4461CF] text-[22px] leading-[36px] font-normal font-inherit  z-[1] mq450:text-lg mq450:leading-[29px]">
+                                During times of illness or injury, rely on our network of
+                                trusted pet hospitals for exemplary medical attention. Our
+                                preferred providers boast state-of-the-art facilities and
+                                compassionate veterinarians, dedicated to diagnosing and
+                                treating your pet with utmost care and expertise. Rest
+                                assured, your pet's health is in capable hands with our
+                                platform.
+                            </h3>
+                            <div
+                                class="hidden lg:flex left-auto right-[-100px]  rounded-[50%] bg-[#FF58516B] absolute [filter:blur(50px)] w-[228px] h-[425px] z-[1]">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section
+            class="px-[25px] self-stretch flex flex-row items-start justify-end pt-0  pb-[212px] box-border max-w-full shrink-0 text-left text-21xl text-darkslategray-100 font-poppins mq800:pb-[138px] mq800:box-border mq1350:pl-[35px] mq1350:pr-[35px] mq1350:box-border">
             <div
                 class="w-[1230px] flex flex-col-reverse lg:flex-row items-end justify-start gap-[46px] max-w-full mq800:gap-[46px_23px] mq1125:flex-wrap">
                 <div
-                    class="w-[510px] flex flex-col items-start justify-start min-w-[510px] min-h-[441px] max-w-full mq800:min-w-full mq1125:flex-1 mq1125:min-h-[auto]">
+                    class="w-[510px] flex flex-col items-start justify-start  min-h-[441px] max-w-full mq800:min-w-full mq1125:flex-1 mq1125:min-h-[auto]">
                     <div
                         class="self-stretch flex flex-col items-start justify-start gap-[42px] max-w-full mq800:gap-[21px_42px]">
                         <h1
@@ -462,6 +535,9 @@ class="flex-1 flex lg:flex-row flex-col items-start justify-start gap-[89px] max
                             <span class="text-[#3D4461]">Pet</span>
                             <span class="text-[#2B80FF]"> Cremation</span>
                         </h1>
+                        <div
+                        class="relative hidden lg:flex top-[-30px] rounded-lg bg-[#FF5851] w-[203px] h-[5px] z-[1]">
+                    </div>
                         <div
                             class="self-stretch flex flex-row items-start justify-start relative max-w-full text-3xl text-darkslategray-400">
                             <h3
@@ -477,17 +553,18 @@ class="flex-1 flex lg:flex-row flex-col items-start justify-start gap-[89px] max
                             </h3>
                             <div class="h-[673px] w-[343px] absolute !m-[0] bottom-[-205px] left-[-140px]">
                                 <div
-                                    class="absolute h-full top-[0px] bottom-[0px] left-[-262px] rounded-[50%] bg-[#9FC5FF] [filter:blur(50px)] w-[412px]">
+                                    class="absolute hidden lg:flex h-full top-[0px] bottom-[0px] left-[-262px] rounded-[50%] bg-[#9FC5FF] [filter:blur(50px)] w-[412px]">
                                 </div>
                                 <div
-                                    class="absolute top-[190px] left-[140px] rounded-lg bg-[#FF5851] w-[203px] h-[5px] z-[1]">
-                                </div>
+                                class="absolute lg:hidden flex h-full top-[0px] bottom-[0px] left-[-262px] rounded-[50%] bg-[#3D446170] [filter:blur(50px)] w-[412px]">
+                            </div>
+                              
                             </div>
                         </div>
                     </div>
                 </div>
                 <div
-                    class="flex-1 flex flex-row items-start justify-start relative min-w-[438px] max-w-full mq800:min-w-full">
+                    class="flex-1 flex flex-row items-start justify-start relative lg:min-w-[438px] max-w-full mq800:min-w-full">
                     <img class="h-[534px] flex-1 relative max-w-full overflow-hidden object-cover rounded-tl-[71px] rounded-br-[71px]"
                         alt="" src="./images/services/Pet-Crematorium.png" />
 
@@ -501,20 +578,23 @@ class="flex-1 flex lg:flex-row flex-col items-start justify-start gap-[89px] max
             class="w-[417px] h-[544px] absolute !m-[0] top-[891px] right-[-350px] rounded-[50%] bg-[#FF58516D] [filter:blur(50px)] z-[2]">
         </div>
         <section
-            class="w-[1372px] flex flex-row items-start justify-start pt-0 px-[70px] pb-[83px] box-border max-w-full shrink-0 text-left text-21xl text-darkslategray-100 font-poppins mq800:pb-[54px] mq800:box-border mq1350:pl-[35px] mq1350:pr-[35px] mq1350:box-border">
+            class="px-[25px] w-[1372px] flex flex-row items-start justify-start pt-0  pb-[83px] box-border max-w-full shrink-0 text-left text-21xl text-darkslategray-100 font-poppins mq800:pb-[54px] mq800:box-border mq1350:pl-[35px] mq1350:pr-[35px] mq1350:box-border">
             <div
                 class="flex-1 flex flex-col lg:flex-row items-start justify-start gap-[76px] max-w-full mq450:gap-[76px_19px] mq800:gap-[76px_38px] mq1125:flex-wrap">
                 <div
-                    class="flex-1 flex flex-row items-start justify-start relative min-w-[438px] max-w-full mq800:min-w-full">
+                    class="flex-1 flex flex-row items-start justify-start relative lg:min-w-[438px] max-w-full mq800:min-w-full">
                     <img class="h-[534px] flex-1 relative max-w-full overflow-hidden object-cover rounded-tl-[71px] rounded-br-[71px]"
                         alt="" src="./images/services/pet-adoption.png" />
 
                     <div
-                        class="h-[673px] w-[412px] absolute !m-[0] bottom-[-231px] left-[-378px] rounded-[50%] bg-[#9FC5FF] [filter:blur(50px)] z-[4]">
+                        class="h-[673px] lg:flex hidden w-[412px] absolute !m-[0] bottom-[-231px] left-[-378px] rounded-[50%] bg-[#9FC5FF] [filter:blur(50px)] z-[4]">
                     </div>
+                    <div
+                    class="h-[673px] flex lg:hidden w-[412px] absolute !m-[0] bottom-[-231px] left-[-378px] rounded-[50%] bg-[#3D446170] [filter:blur(50px)] z-[4]">
+                </div>
                 </div>
                 <div
-                    class="w-[482px] flex flex-col items-start justify-start pt-[61px] px-0 pb-0 box-border min-w-[482px] max-w-full mq450:pt-10 mq450:box-border mq800:min-w-full mq1125:flex-1">
+                    class="w-[482px] flex flex-col items-start justify-start pt-[61px] px-0 pb-0 box-border  max-w-full mq450:pt-10 mq450:box-border mq800:min-w-full mq1125:flex-1">
                     <div class="self-stretch flex flex-col items-start justify-start gap-[18.09999999999991px]">
                         <h1
                             class="m-0 relative text-[40px] leading-[33px] font-semibold font-inherit mq450:text-5xl mq450:leading-[20px] mq800:text-13xl mq800:leading-[26px]">
@@ -536,23 +616,27 @@ class="flex-1 flex lg:flex-row flex-col items-start justify-start gap-[89px] max
             </div>
         </section>
         <div
-            class="w-[334px] h-[507px] absolute !m-[0] right-[-196px] bottom-[3250px] rounded-[50%] bg-[#FFC8C6] [filter:blur(50px)] z-[4]">
+            class="w-[334px] h-[507px] absolute !m-[0] right-[-196px] bottom-[3250px] rounded-[50%] lg:bg-[#FFC8C6] [filter:blur(50px)] z-[4]">
         </div>
         <section
             class="self-stretch flex flex-col items-start justify-start pt-0 px-0 pb-40 box-border max-w-full shrink-0 text-left text-7xl text-darkslategray-100 font-poppins mq800:pb-[68px] mq800:box-border mq1350:pb-[104px] mq1350:box-border">
             <div
-                class="self-stretch bg-[#5398FF1A] flex flex-col-reverse lg:flex-row items-start justify-start pt-[74px] pb-[174px] pr-0 pl-[144px] box-border relative gap-[60px] max-w-full mq450:gap-[60px_15px] mq450:pt-[31px] mq450:pb-[73px] mq450:box-border mq800:gap-[60px_30px] mq800:pt-12 mq800:pb-[113px] mq800:box-border mq1125:flex-wrap mq1125:pl-5 mq1125:pr-5 mq1125:box-border">
+                class="self-stretch bg-[#5398FF1A] flex flex-col-reverse lg:flex-row items-start justify-start pt-[74px] pb-[174px] pr-0 px-[25px] box-border relative gap-[60px] max-w-full mq450:gap-[60px_15px] mq450:pt-[31px] mq450:pb-[73px] mq450:box-border mq800:gap-[60px_30px] mq800:pt-12 mq800:pb-[113px] mq800:box-border mq1125:flex-wrap mq1125:pl-5 mq1125:pr-5 mq1125:box-border">
                 <div
-                    class="w-[578px] flex flex-col items-start justify-start pt-[99px] px-0 pb-0 box-border min-w-[578px] max-w-full mq450:pt-16 mq450:box-border mq800:min-w-full mq1350:flex-1">
+                    class="w-[578px] flex flex-col items-start justify-start pt-[99px] px-0 pb-0 box-border max-w-full mq450:pt-16 mq450:box-border mq800:min-w-full mq1350:flex-1">
                     <div class="self-stretch relative mq450:text-[21px]">
                         <p class="m-0 grid">
-                            <span class="text-[30px] font-semibold text-[#5398FF]">At Vetsched.Pet </span>
-                            <span class="text-[26px]">we're committed to fostering a seamless and enriching experience for pet parents, </span>
-                            <span class="font-medium text-[26px]">connecting you with trusted services to nurture and cherish your beloved companions. With our platform as your ally, prioritize your pet's happiness and well-being effortlessly, ensuring a lifetime of cherished memories together</span>
+                            <span class="lg:text-[30px] text-[18px] font-semibold text-[#5398FF]">At Vetsched.Pet </span>
+                            <span class="lg:text-[26px] text-[18px]">we're committed to fostering a seamless and enriching experience
+                                for pet parents, </span>
+                            <span class="font-medium lg:text-[26px] text-[18px]">connecting you with trusted services to nurture and
+                                cherish your beloved companions. With our platform as your ally, prioritize your pet's
+                                happiness and well-being effortlessly, ensuring a lifetime of cherished memories
+                                together</span>
                         </p>
                     </div>
                 </div>
-                <img class="h-[532px] flex-1 relative rounded-[19px] max-w-full overflow-hidden object-cover min-w-[429px] mq800:min-w-full"
+                <img class="h-[532px] flex-1 relative rounded-[19px] max-w-full overflow-hidden object-cover lg:min-w-[429px] mq800:min-w-full"
                     loading="lazy" alt="" src="./images/services/parriot.png" />
 
                 <div class="h-full w-full absolute !m-[0] top-[0px] bottom-[0px] left-[-2px] bg-dodgerblue-500 z-[3]">
@@ -560,79 +644,79 @@ class="flex-1 flex lg:flex-row flex-col items-start justify-start gap-[89px] max
             </div>
             <div class="w-full lg:hidden">
                 <div
-                class=" w-full h-[528px] relative rounded-[19.63px] bg-[#003459] overflow-hidden shrink-0 max-w-full mt-[-8px] text-26xl text-tomato-100 mq800:h-auto mq800:min-h-[528]">
-                
-                <div class="absolute top-[-143.8px] left-[0px] w-full h-[1331.5px]">
-                    <div
-                        class="absolute top-[0.02px] left-[-82px] rounded-[97.18px] bg-[#5398FFDF] w-[800px] h-[700px] [transform:_rotate(44.71deg)] [transform-origin:0_0] z-[1]">
-                    </div>
-                    <img class="absolute top-[95px] left-[63px] w-[447px] h-[630px] object-contain z-[2]" loading="lazy"
-                        alt="" src="./images/services/doctor.png" />
+                    class=" w-full h-[528px] relative rounded-[19.63px] bg-[#003459] overflow-hidden shrink-0 max-w-full mt-[-8px] text-26xl text-tomato-100 mq800:h-auto mq800:min-h-[528]">
+
+                    <div class="absolute top-[-143.8px] left-[0px] w-full h-[1331.5px]">
                         <div
-                        class="w-[330px] h-[420px] absolute !m-[0] top-[480px] right-[-625px] bottom-[390.42px] rounded-[19px]  bg-[#FCEED5] [transform:_rotate(138.93deg)] [transform-origin:0_0]">
-                    </div>
-                </div>
-              
-            </div>
-            <div
-            class=" w-full flex flex-col items-start justify-start py-[20px]  pr-10 pl-10 box-border gap-[33px] max-w-full">
-            
-            <div class="self-stretch flex flex-col items-start justify-start gap-[16px] max-w-full shrink-0">
-                <div class="self-stretch flex flex-col items-start justify-start gap-[7px] max-w-full">
-                    <div class="self-stretch flex flex-row items-start justify-start py-0 pr-0 pl-px">
-                        <h1
-                            class="m-0 h-[53px] relative pl-6 text-[#FF5851] text-[28px] font-bold  inline-block z-[2]">
-                            Are You a Service Provider?
-                        </h1>
-                    </div>
-                    <h1
-                        class="m-0 relative text-[26px] pl-6 text-[#3D4461] font-medium font-inherit  inline-block max-w-full z-[2]">
-                        Join Our Network Today
-                    </h1>
-                </div>
-                <div
-                    class="self-stretch flex flex-row items-start justify-start py-0 pr-[43px] pl-6 box-border max-w-full text-justify text-lg">
-                    <div
-                        class="flex-1 relative tracking-[0.02em] capitalize font-medium inline-block max-w-full z-[1]">
-                        <ul class="m-0  text-[#FF5851] text-[18px] pl-6 tracking-[0.36px] list-disc ">
-                            <li class="mb-1">Expand your reach</li>
-                            <li class="mb-1">Streamlined Appointment Management</li>
-                            <li class="mb-1">Access to Pet Medical Reports</li>
-                            <li class="mb-1">Build Trust with Pet Parents.</li>
-                            <li class="mb-1">Network Opportunities</li>
-                            <li class="">
-                                Elevate your practive with VetSched.Pet-because every pet
-                                deserve exceptional care.
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="flex flex-row items-start justify-start py-0 px-[54px] box-border max-w-full">
-                <div
-                    class="flex flex-row items-start justify-start gap-[26px] max-w-full z-[1] mq800:flex-wrap">
-                    <button
-                        class="cursor-pointer py-[13px] px-[23px] bg-[transparent] rounded-lg border-[#3D4461] border-[1px]  flex flex-row items-center justify-center whitespace-nowrap  border-solid  hover:bg-slategray-200 hover:box-border hover:border-[1px] hover:border-solid hover:border-slategray-100">
-                        <div
-                            class="relative text-base leading-[20px] font-medium font-poppins text-[#3D4461] text-left  inline-block min-w-[89px]">
-                            Learn More
+                            class="absolute top-[0.02px] left-[-82px] rounded-[97.18px] bg-[#5398FFDF] w-[800px] h-[700px] [transform:_rotate(44.71deg)] [transform-origin:0_0] z-[1]">
                         </div>
-                    </button>
-                    <div class="flex flex-row items-center justify-start py-0 px-4">
-                        <button
-                            class="cursor-pointer [border:none] py-[13px] px-[35px] bg-[#3D4461]  rounded-lg flex flex-row items-center justify-center whitespace-nowrap hover:bg-slategray-100">
-                            <div
-                                class="relative text-base leading-[20px] font-medium font-poppins text-white text-left inline-block min-w-[58px]">
-                                Join Us
+                        <img class="absolute top-[95px] left-[63px] w-[447px] h-[630px] object-contain z-[2]"
+                            loading="lazy" alt="" src="./images/services/doctor.png" />
+                        <div
+                            class="w-[330px] h-[420px] absolute !m-[0] top-[480px] right-[-625px] bottom-[390.42px] rounded-[19px]  bg-[#FCEED5] [transform:_rotate(138.93deg)] [transform-origin:0_0]">
+                        </div>
+                    </div>
+
+                </div>
+                <div
+                    class=" w-full flex flex-col items-start justify-start py-[20px]  pr-10 pl-10 box-border gap-[33px] max-w-full">
+
+                    <div class="self-stretch flex flex-col items-start justify-start gap-[16px] max-w-full shrink-0">
+                        <div class="self-stretch flex flex-col items-start justify-start gap-[7px] max-w-full">
+                            <div class="self-stretch flex flex-row items-start justify-start py-0 pr-0 pl-px">
+                                <h1
+                                    class="m-0 h-[53px] relative pl-6 text-[#FF5851] text-[28px] font-bold  inline-block z-[2]">
+                                    Are You a Service Provider?
+                                </h1>
                             </div>
-                        </button>
+                            <h1
+                                class="m-0 relative text-[26px] pl-6 text-[#3D4461] font-medium font-inherit  inline-block max-w-full z-[2]">
+                                Join Our Network Today
+                            </h1>
+                        </div>
+                        <div
+                            class="self-stretch flex flex-row items-start justify-start py-0 pr-[43px] pl-6 box-border max-w-full text-justify text-lg">
+                            <div
+                                class="flex-1 relative tracking-[0.02em] capitalize font-medium inline-block max-w-full z-[1]">
+                                <ul class="m-0  text-[#FF5851] text-[18px] pl-6 tracking-[0.36px] list-disc ">
+                                    <li class="mb-1">Expand your reach</li>
+                                    <li class="mb-1">Streamlined Appointment Management</li>
+                                    <li class="mb-1">Access to Pet Medical Reports</li>
+                                    <li class="mb-1">Build Trust with Pet Parents.</li>
+                                    <li class="mb-1">Network Opportunities</li>
+                                    <li class="">
+                                        Elevate your practive with VetSched.Pet-because every pet
+                                        deserve exceptional care.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-row items-start justify-start py-0 px-[54px] box-border max-w-full">
+                        <div
+                            class="flex flex-row items-start justify-start gap-[26px] max-w-full z-[1] mq800:flex-wrap">
+                            <button
+                                class="cursor-pointer py-[13px] px-[23px] bg-[transparent] rounded-lg border-[#3D4461] border-[1px]  flex flex-row items-center justify-center whitespace-nowrap  border-solid  hover:bg-slategray-200 hover:box-border hover:border-[1px] hover:border-solid hover:border-slategray-100">
+                                <div
+                                    class="relative text-base leading-[20px] font-medium font-poppins text-[#3D4461] text-left  inline-block min-w-[89px]">
+                                    Learn More
+                                </div>
+                            </button>
+                            <div class="flex flex-row items-center justify-start py-0 px-4">
+                                <button
+                                    class="cursor-pointer [border:none] py-[13px] px-[35px] bg-[#3D4461]  rounded-lg flex flex-row items-center justify-center whitespace-nowrap hover:bg-slategray-100">
+                                    <div
+                                        class="relative text-base leading-[20px] font-medium font-poppins text-white text-left inline-block min-w-[58px]">
+                                        Join Us
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-            </div>
-        
-           <div
+
+            <div
                 class="self-stretch lg:flex hidden h-[528px] relative rounded-[19.63px] bg-[#003459] overflow-hidden shrink-0 max-w-full mt-[-8px] text-26xl text-tomato-100 mq800:h-auto mq800:min-h-[528]">
                 <div
                     class="absolute top-[-397.2px] left-[465px] w-[975px] flex flex-col items-start justify-start pt-[453.1999999999998px] pb-[408.7000000000007px] pr-20 pl-[261px] box-border gap-[33px] max-w-full">
@@ -696,13 +780,13 @@ class="flex-1 flex lg:flex-row flex-col items-start justify-start gap-[89px] max
                     <div
                         class="absolute top-[0.02px] left-[8.17px] rounded-[97.18px] bg-[#5398FFDF] w-[1052.3px] h-[831.8px] [transform:_rotate(44.71deg)] [transform-origin:0_0] z-[1]">
                     </div>
-                    <img class="absolute top-[120px] left-[63px] w-[447px] h-[628px] object-contain z-[2]" loading="lazy"
-                        alt="" src="./images/services/doctor.png" />
+                    <img class="absolute top-[120px] left-[63px] w-[447px] h-[628px] object-contain z-[2]"
+                        loading="lazy" alt="" src="./images/services/doctor.png" />
                 </div>
-            </div> 
+            </div>
         </section>
-        
-         <section
+
+        <section
             class="w-[1406px] flex flex-row items-start justify-center pt-0 px-[23px] lg:pb-[309px] box-border max-w-full shrink-0 text-left text-26xl text-darkslategray-100 font-poppins mq450:pb-[131px] mq450:box-border mq1125:pb-[201px] mq1125:box-border">
             <div
                 class="w-[1240px] flex flex-row flex-wrap items-end justify-start gap-[54px] max-w-full mq800:gap-[27px]">
@@ -722,7 +806,8 @@ class="flex-1 flex lg:flex-row flex-col items-start justify-start gap-[89px] max
                     class="flex-1 flex flex-col items-start justify-end pt-0 px-0 pb-[11px] box-border min-w-[387px] max-w-full mq800:min-w-full">
                     <div
                         class="self-stretch flex flex-col items-start justify-start gap-[57px] max-w-full mq800:gap-[28px_57px]">
-                        <div class="self-stretch flex flex-col items-start justify-start lg:gap-[25.5px] gap-[5.5px] max-w-full">
+                        <div
+                            class="self-stretch flex flex-col items-start justify-start lg:gap-[25.5px] gap-[5.5px] max-w-full">
                             <div
                                 class="flex flex-row items-start justify-start py-0 lg:px-[61px] px-[15px] box-border max-w-full mq800:pl-[30px] mq800:pr-[30px] mq800:box-border">
                                 <div class="flex flex-row items-start justify-start relative max-w-full">
@@ -740,7 +825,8 @@ class="flex-1 flex lg:flex-row flex-col items-start justify-start gap-[89px] max
                             </div>
                             <h3
                                 class="m-0 self-stretch relative text-3xl leading-[41px] font-medium font-inherit text-darkslategray-500 mq450:text-lg mq450:leading-[33px]">
-                                <ul class="m-0 font-inherit lg:text-[22px] text-[16px] pl-[29px] text-[#3D4461F5] list-disc">
+                                <ul
+                                    class="m-0 font-inherit lg:text-[22px] text-[16px] pl-[29px] text-[#3D4461F5] list-disc">
                                     <li class="mb-0">Simplifying Pet Care for Every Parent.</li>
                                     <li class="mb-0">Streamlined Appointment Management</li>
                                     <li class="mb-0">Centralized Medical Reports</li>
