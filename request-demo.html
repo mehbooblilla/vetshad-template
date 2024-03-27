@@ -1,661 +1,281 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="initial-scale=1, width=device-width" />
+<html lang="en">
 
-    <link rel="stylesheet" href="./css//global.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-    />
-  </head>
-  <body>
-    <div
-      class="w-full relative bg-white overflow-hidden tracking-[normal] text-left text-3xl text-gray-400 font-poppins mq750:gap-[68px] mq450:gap-[34px]"
-    >
-      <div
-        class="absolute top-[1731px] left-[964px] rounded-10xs w-[420px] h-[469px] flex items-center justify-center"
-      >
-        <img
-          class="w-full h-full max-w-full object-contain absolute left-[0px] top-[4px] [transform:scale(1.065)]"
-          alt=""
-          src="/public/rectangle-422.svg"
-        />
-      </div>
-      <img
-        class="absolute top-[0px] left-[1px] w-[1440px] h-[650px] object-cover"
-        alt=""
-        src="/public/mask-group@2x.png"
-      />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/css/contactUs.css">
+  <link rel="stylesheet" href="/css/global.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+</head>
 
-      <div
-        class="absolute top-[0px] left-[-3px] bg-darkslategray-400 box-border w-full h-full border-[1px] border-solid border-gray-100"
-      ></div>
-      <div class="w-full absolute top-[641px] left-[0px] h-[811px]"></div>
-      <div
-        class="absolute top-[calc(50%_-_985.5px)] left-[calc(50%_-_529px)] rounded-3xs bg-white shadow-[-1px_6px_6px_rgba(51,_54,_63,_0.41)] w-[1058px] h-[791px] max-w-full"
-      ></div>
-      <img
-        class="absolute top-[960px] left-[633px] w-[23px] h-[11px]"
-        alt=""
-        src="/public/loop-terminator.svg"
-      />
+<body style="font-family: Poppins;">
 
-      <div
-        class="absolute top-[590px] left-[246px] rounded-smi box-border w-[449px] h-[87px] max-w-full border-[1px] border-solid border-gray-200"
-      ></div>
-      <div
-        class="absolute top-[758px] left-[246px] rounded-smi box-border w-[449px] h-[87px] border-[1px] border-solid border-gray-200"
-      ></div>
-      <div
-        class="absolute top-[922px] left-[246px] rounded-smi box-border w-[449px] h-[87px] max-w-full border-[1px] border-solid border-gray-200"
-      ></div>
-      <div
-        class="absolute top-[921px] left-[733px] rounded-smi box-border w-[449px] h-[87px] border-[1px] border-solid border-gray-200"
-      ></div>
-      <div
-        class="absolute top-[590px] left-[740px] rounded-smi box-border w-[449px] h-[87px] max-w-full border-[1px] border-solid border-gray-200"
-      ></div>
-      <div
-        class="absolute top-[758px] left-[740px] rounded-smi box-border w-[449px] h-[87px] border-[1px] border-solid border-gray-200"
-      ></div>
-      <h3
-        class="m-0 w-full absolute top-[548px] left-[256px] text-inherit font-medium font-inherit inline-block h-8 mq450:text-lg"
-      >
-        First Name
-      </h3>
-      <input
-        class="w-full [border:none] [outline:none] font-medium font-poppins text-lg bg-[transparent] absolute top-[618px] left-[269px] text-gray-300 text-left inline-block h-8 p-0"
-        placeholder="Enter Your First Name"
-        type="text"
-      />
+  <header class="w-full lg:h-[848px] h-[400px] request-demo-header relative"
+    style="background: url(./images//contactus-header.png) #3D4461 50% / cover no-repeat; background-position: center; background-size: cover;">
+    <div class=" h-full w-full mt-[-26px] absolute z-50">
+      <div class="logo-bg lg:mt-[-290px] lg:ml-[-135px] mt-[-295px] ml-[-165px]"></div>
+      <nav class="bg-transparent navbar-section lg:mt-[25px] mt-[30px]">
 
-      <input
-        class="[border:none] [outline:none] font-medium font-poppins text-lg bg-[transparent] absolute top-[949px] left-[267px] text-gray-300 text-left inline-block h-8 p-0"
-        placeholder="Enter Your First Name"
-        type="text"
-      />
+        <div class="flex items-center justify-between ">
+          <div>
+            <a href="/"><img src="../images//logo.png" class="lg:w-[129px] w-[63px] lg:h-[96px] h-[39px]"></img></a>
 
-      <input
-        class="w-full [border:none] [outline:none] font-medium font-poppins text-lg bg-[transparent] absolute top-[618px] left-[756px] text-gray-300 text-left inline-block h-8 p-0"
-        placeholder="Enter Your Last Name"
-        type="text"
-      />
+          </div>
+          <div class="lg:flex hidden gap-[55px]">
+            <ul class="flex gap-[38px] h-[46px] items-center">
+              <li><a href="/" class="text-white hover:text-gray-300 flex gap-[7px] items-center navbar-item"><span><img
+                      src="./images//Vector.svg" alt=""></span> Solutions</a></li>
+              <li><a href="/about.html"
+                  class="text-white hover:text-gray-300 flex items-center  navbar-item">Services</a>
+              </li>
+              <li><a href="/about.html" class="text-white hover:text-gray-300 flex items-center navbar-item">About
+                  Us</a>
+              </li>
+              <li><a href="/about.html" class="text-white hover:text-gray-300 flex items-center navbar-item">FAQs</a>
+              </li>
+              <li><a href="/contact.html" class="text-white hover:text-gray-300 flex items-center navbar-item">Contact
+                  Us</a>
+              </li>
 
-      <h3
-        class="m-0 w-full absolute top-[549px] left-[750px] text-inherit font-medium font-inherit inline-block h-8 mq450:text-lg"
-      >
-        Last Name
-      </h3>
-      <div
-        class="absolute top-[721px] left-[256px] font-medium inline-block w-[158px] h-8 mq450:text-lg"
-      >
-        Email Address
-      </div>
-      <h3
-        class="m-0 w-full absolute top-[874px] left-[257px] text-inherit font-medium font-inherit inline-block mq450:text-lg"
-      >
-        Service
-      </h3>
-      <div
-        class="absolute top-[874px] left-[737px] font-medium inline-block w-[202px] h-8 mq450:text-lg"
-      >
-        Company Name
-      </div>
-      <div
-        class="absolute top-[721px] left-[751px] font-medium inline-block w-[174px] h-8 mq450:text-lg"
-      >
-        Phone Number
-      </div>
-      <button
-        class="cursor-pointer [border:none] py-[5px] px-5 bg-dodgerblue-100 w-full absolute top-[calc(50%_-_316.5px)] left-[calc(50%_-_466px)] rounded-3xs flex flex-row items-center justify-center box-border max-w-full hover:bg-dodgerblue-300"
-      >
-        <div
-          class="w-[150px] relative text-lg font-medium font-poppins text-white text-center inline-block"
-        >
-          Request a Demo
-        </div>
-      </button>
-      <div
-        class="absolute top-[42.6px] left-[-150px] rounded-[44px] bg-darkslategray-300 w-[517.8px] h-[336px] [transform:_rotate(-60.7deg)] [transform-origin:0_0]"
-      ></div>
-      <header
-        class="h-full absolute top-[25px] left-[calc(50%_-_677px)] w-[1338px] flex flex-row items-center justify-between gap-[20px] max-w-full text-left text-base text-white font-poppins"
-      >
-        <img
-          class="h-24 w-[129px] relative object-cover"
-          loading="lazy"
-          alt=""
-          src="/public/logo2-2@2x.png"
-        />
-
-        <div
-          class="w-[792px] flex flex-row items-center justify-start py-5 px-0 box-border gap-[55px] max-w-full mq450:gap-[55px_27px] mq1050:w-[278px]"
-        >
-          <nav
-            class="m-0 h-5 flex-1 flex flex-row items-start justify-between max-w-full gap-[20px] text-left text-base text-white font-poppins mq1050:hidden"
-          >
-            <div
-              class="self-stretch flex flex-row items-center justify-start gap-[7px]"
-            >
-              <img
-                class="h-[5px] w-[9px] relative"
-                loading="lazy"
-                alt=""
-                src="/public/vector.svg"
-              />
-
-              <div
-                class="relative leading-[20px] font-medium inline-block min-w-[74px]"
-              >
-                Solutions
-              </div>
+            </ul>
+            <div class="flex gap-[26px]">
+              <div><a class="nav-login-btn">Login</a></div>
+              <div><a class="nav-joinus-btn">Join Us</a></div>
             </div>
-            <div
-              class="relative leading-[20px] font-medium inline-block min-w-[68px]"
-            >
-              Services
-            </div>
-            <div
-              class="relative leading-[20px] font-medium inline-block min-w-[73px] whitespace-nowrap"
-            >
-              About Us
-            </div>
-            <div class="flex flex-row items-center justify-start">
-              <div
-                class="relative leading-[20px] font-medium inline-block min-w-[41px]"
-              >
-                FAQs
-              </div>
-            </div>
-            <div
-              class="relative leading-[20px] font-medium inline-block min-w-[90px] whitespace-nowrap"
-            >
-              Contact Us
-            </div>
-          </nav>
-          <div class="flex flex-row items-center justify-start gap-[26px]">
-            <button
-              class="cursor-pointer py-[13px] px-[23px] bg-[transparent] w-[91px] rounded-lg box-border flex flex-row items-center justify-center border-[1px] border-solid border-white hover:bg-gainsboro-200 hover:box-border hover:border-[1px] hover:border-solid hover:border-gainsboro-100"
-            >
-              <div
-                class="relative text-base leading-[20px] font-medium font-poppins text-white text-left inline-block min-w-[43px]"
-              >
-                Login
-              </div>
-            </button>
-            <div class="flex flex-row items-center justify-start">
-              <div
-                class="rounded-lg bg-dodgerblue-100 flex flex-row items-center justify-center py-[13px] px-6 whitespace-nowrap"
-              >
-                <div
-                  class="relative leading-[20px] font-medium inline-block min-w-[58px]"
-                >
-                  Join Us
-                </div>
-              </div>
-            </div>
+
+          </div>
+          <div class="inline-block cursor:pointer lg:hidden ">
+            <div class="w-[30px] h-[2px] m-1 bg-white "></div>
+            <div class="w-[30px] h-[2px] m-1 bg-white "></div>
+            <div class="w-[30px] h-[2px] m-1 bg-white "></div>
           </div>
         </div>
-      </header>
-      <h1
-        class="m-0 absolute top-[307px] left-[calc(50%_-_211px)] text-[50px] leading-[22px] font-semibold font-inherit text-white mq450:text-[30px] mq450:leading-[13px] mq1050:text-21xl mq1050:leading-[18px]"
-      >
-        REQUEST A DEMO
-      </h1>
-      <div
-        class="absolute top-[1092px] left-[246px] rounded-6xs bg-white box-border w-[33px] h-[33px] border-[1px] border-solid border-gray-500"
-      ></div>
-      <div
-        class="w-full absolute top-[1090px] left-[293px] text-base text-gray-600 inline-block h-[65px] min-w-[554px] max-w-full mq750:min-w-full"
-      >
-        I consent to recieve commnications about Vetsched.pet in accordance to
-        their Privacy Policy. I understand that i can opt out at any time
-      </div>
-      <div
-        class="absolute top-[1732px] left-[81px] rounded-10xs w-[420px] h-[469px] flex items-center justify-center"
-      >
-        <img
-          class="w-full h-full max-w-full object-contain absolute left-[0px] top-[4px] [transform:scale(1.065)]"
-          alt=""
-          src="/public/rectangle-374.svg"
-        />
-      </div>
-      <div
-        class="absolute top-[1732px] left-[520px] rounded-10xs w-[420px] h-[469px] flex items-center justify-center"
-      >
-        <img
-          class="w-full h-full max-w-full object-contain absolute left-[0px] top-[4px] [transform:scale(1.065)]"
-          alt=""
-          src="/public/rectangle-374.svg"
-        />
-      </div>
-      <div
-        class="absolute top-[1651px] left-[220px] rounded-[50%] bg-darkslategray-500 shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] w-full h-full"
-      ></div>
-      <div
-        class="absolute top-[1639px] left-[647px] rounded-[50%] bg-darkslategray-600 shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] w-full h-full"
-      ></div>
-      <div
-        class="absolute top-[1633px] left-[1095px] rounded-[50%] bg-darkslategray-600 shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] w-full h-full"
-      ></div>
-      <img
-        class="absolute top-[1756px] left-[810px] w-[85px] h-[85px] object-contain"
-        loading="lazy"
-        alt=""
-        src="/public/paws-29@2x.png"
-      />
 
-      <img
-        class="absolute top-[1430px] left-[489px] w-[98.6px] h-[98.6px] overflow-hidden object-contain"
-        loading="lazy"
-        alt=""
-        src="/public/notopawprints@2x.png"
-      />
-
-      <img
-        class="absolute top-[1693px] left-[262px] w-[86px] h-[86px]"
-        loading="lazy"
-        alt=""
-        src="/public/group-1156.svg"
-      />
-
-      <img
-        class="absolute h-[2.28%] w-[4.72%] top-[54.55%] right-[71.88%] bottom-[43.17%] left-[23.4%] max-w-full overflow-hidden max-h-full"
-        loading="lazy"
-        alt=""
-        src="/public/group.svg"
-      />
-
-      <img
-        class="absolute top-[1684px] left-[692px] w-[81px] h-[81px]"
-        loading="lazy"
-        alt=""
-        src="/public/group-1157.svg"
-      />
-
-      <img
-        class="absolute top-[1601px] left-[778px] w-[77px] h-[77px]"
-        loading="lazy"
-        alt=""
-        src="/public/vector-1.svg"
-      />
-
-      <div
-        class="absolute top-[1675px] left-[1129px] rounded-[1px] bg-white w-full h-full"
-      ></div>
-      <img
-        class="absolute top-[1741px] left-[1122px] rounded-sm w-[117px] h-[7px]"
-        loading="lazy"
-        alt=""
-        src="/public/rectangle-371.svg"
-      />
-
-      <div
-        class="absolute top-[1679px] left-[1133px] rounded-sm bg-darkslategray-100 w-[94px] h-2"
-      ></div>
-      <div
-        class="absolute top-[1692px] left-[1138px] bg-gainsboro-300 w-full h-full"
-      ></div>
-      <img
-        class="absolute top-[1698.5px] left-[1142px] w-[74px] h-px"
-        loading="lazy"
-        alt=""
-        src="/public/line-18.svg"
-      />
-
-      <img
-        class="absolute top-[1700.5px] left-[1142px] w-[74px] h-px"
-        loading="lazy"
-        alt=""
-        src="/public/line-18.svg"
-      />
-
-      <img
-        class="absolute top-[1702.5px] left-[1142px] w-[74px] h-px"
-        alt=""
-        src="/public/line-18.svg"
-      />
-
-      <img
-        class="absolute top-[1704.5px] left-[1142px] w-[74px] h-px"
-        alt=""
-        src="/public/line-18.svg"
-      />
-
-      <img
-        class="absolute top-[1706.5px] left-[1142px] w-[74px] h-px"
-        alt=""
-        src="/public/line-18.svg"
-      />
-
-      <img
-        class="absolute top-[1708.5px] left-[1142px] w-[74px] h-px"
-        alt=""
-        src="/public/line-18.svg"
-      />
-
-      <img
-        class="absolute top-[1710.5px] left-[1142px] w-[74px] h-px"
-        alt=""
-        src="/public/line-18.svg"
-      />
-
-      <img
-        class="absolute top-[1712.5px] left-[1142px] w-[74px] h-px"
-        alt=""
-        src="/public/line-18.svg"
-      />
-
-      <img
-        class="absolute top-[1714.5px] left-[1142px] w-[74px] h-px"
-        alt=""
-        src="/public/line-18.svg"
-      />
-
-      <img
-        class="absolute top-[1716.5px] left-[1142px] w-[74px] h-px"
-        alt=""
-        src="/public/line-18.svg"
-      />
-
-      <img
-        class="absolute top-[1718.5px] left-[1142px] w-[74px] h-px"
-        alt=""
-        src="/public/line-18.svg"
-      />
-
-      <img
-        class="absolute top-[1720.5px] left-[1142px] w-[74px] h-px"
-        alt=""
-        src="/public/line-18.svg"
-      />
-
-      <img
-        class="absolute top-[1722.5px] left-[1142px] w-[74px] h-px"
-        alt=""
-        src="/public/line-18.svg"
-      />
-
-      <img
-        class="absolute top-[1724.5px] left-[1142px] w-[74px] h-px"
-        alt=""
-        src="/public/line-31.svg"
-      />
-
-      <img
-        class="absolute top-[1612px] left-[1216px] rounded-6xs w-[84px] h-[84px]"
-        alt=""
-        src="/public/sound-decoder.svg"
-      />
-
-      <div
-        class="absolute top-[1641px] left-[1257px] box-border w-0.5 h-[30px] border-r-[2px] border-solid border-white"
-      ></div>
-      <div
-        class="absolute top-[1655px] left-[1244px] box-border w-7 h-0.5 border-t-[2px] border-solid border-white"
-      ></div>
-      <h3
-        class="m-0 absolute top-[1830px] left-[102px] text-inherit font-semibold font-inherit text-darkslategray-100 mq450:text-lg"
-      >
-        <p class="m-0">Streamlined Registration and Setup: </p>
-      </h3>
-      <h3
-        class="m-0 w-full absolute top-[1823px] left-[538px] text-inherit font-semibold font-inherit text-darkslategray-100 inline-block mq450:text-lg"
-      >
-        <p class="m-0">Effortless Appointment Management: </p>
-      </h3>
-      <h3
-        class="m-0 absolute top-[1823px] left-[978px] text-inherit font-semibold font-inherit text-darkslategray-100 inline-block w-[382px] h-[76px] max-w-full mq450:text-lg"
-      >
-        <p class="m-0">Seamless Client Communication and Feedback: </p>
-      </h3>
-      <div
-        class="w-full absolute top-[1911px] left-[103px] text-base text-gray-1000 inline-block h-[201px] max-w-full"
-      >
-        <p class="m-0">
-          • Create your clinic profile easily on Vetsched.pet, boosting your
-          online visibility.
-        </p>
-        <p class="m-0">
-          • Customize your profile with clinic details, services, and pricing.
-        </p>
-        <p class="m-0">
-          • Highlight your brand with logo upload and service descriptions for
-          pet owner attraction.
-        </p>
-        <p class="m-0">
-          • Manage appointment scheduling efficiently by setting availability
-          and working hours.
-        </p>
-      </div>
-      <div
-        class="w-full absolute top-[1911px] left-[542px] text-base text-gray-1000 inline-block h-[241px] max-w-full"
-      >
-        <p class="m-0">
-          • Simplify scheduling with intuitive online booking for both you and
-          clients.
-        </p>
-        <p class="m-0">
-          • Customize appointment slots to match your clinic's availability,
-          including breaks.
-        </p>
-        <p class="m-0">
-          • Minimize no-shows with automated reminders, confirmations, and
-          cancellation notifications.
-        </p>
-        <p class="m-0">
-          • Seamlessly integrate with your existing calendar and scheduling
-          systems for added convenience.
-        </p>
-      </div>
-      <div
-        class="w-full absolute top-[1911px] left-[985px] text-base text-gray-1000 inline-block h-[191px] max-w-full"
-      >
-        <p class="m-0">
-          • Improve communication with built-in messaging for quick interaction.
-        </p>
-        <p class="m-0">
-          • Respond to inquiries, provide updates, and send instructions
-          directly.
-        </p>
-        <p class="m-0">
-          • Boost engagement and loyalty with a feedback and review system.
-        </p>
-        <p class="m-0">
-          • Utilize feedback to enhance service quality and attract new clients.
-        </p>
-      </div>
-      <h1
-        class="m-0 absolute top-[1482px] left-[calc(50%_-_141px)] text-21xl leading-[60px] font-semibold font-inherit text-darkslategray-200 text-center mq450:text-[24px] mq450:leading-[36px] mq1050:text-[32px] mq1050:leading-[48px]"
-      >
-        How It Works?
-      </h1>
-      <img
-        class="absolute top-[1542px] left-[588px] w-[185px] h-[5px]"
-        loading="lazy"
-        alt=""
-        src="/public/line-40.svg"
-      />
-
-      <div
-        class="w-full absolute top-[2401px] left-[-4px] max-w-full shrink-0 text-base text-white mq750:gap-[29px] mq750:pb-5 mq750:box-border"
-      >
-        <div
-          class="absolute top-[162px] left-[592px] w-64 h-64 overflow-hidden"
-        ></div>
-        <div
-          class="w-full absolute top-[0px] left-[0px] bg-darkslategray-100 h-[581px]"
-        ></div>
-        <div
-          class="absolute top-[151px] left-[666px] flex flex-col items-start justify-start gap-[30px] text-lg font-roboto"
-        >
-          <b class="relative inline-block min-w-[77px]">Company</b>
-          <div
-            class="flex flex-col items-start justify-start gap-[12px] text-sm"
-          >
-            <div class="relative inline-block min-w-[59px]">Pet Lover</div>
-            <div class="relative inline-block min-w-[101px]">
-              Service Provider
-            </div>
-            <div class="relative inline-block min-w-[53px]">Services</div>
-            <div class="relative inline-block min-w-[58px]">About Us</div>
-            <div class="relative inline-block min-w-[33px]">FAQs</div>
-            <div class="relative inline-block min-w-[103px]">
-              Request a Demo
-            </div>
-            <div class="relative inline-block min-w-[69px]">Contact Us</div>
-            <div class="relative inline-block min-w-[87px]">Privacy Policy</div>
-            <div class="relative">Terms and Condition</div>
-          </div>
+      </nav>
+      <div>
+        <div class="flex  flex-col justify-center items-center h-full px-4">
+        
+          <h1 class="header-heading absolute top-[50%] lg:text-[50px] text-[32px] font-semibold lg:leading-[22px] leading-[40px]">
+            REQUEST A DEMO</h1>
         </div>
-        <div
-          class="absolute top-[543px] left-[0px] bg-gray-700 w-[1440px] h-[38px] max-w-full"
-        ></div>
-        <div
-          class="absolute top-[543px] left-[calc(50%_-_202px)] leading-[27px] whitespace-pre-wrap inline-block w-full h-full"
-        >
-          Copyrights 2024 VetSched.PET. All rights reserved
-        </div>
-        <img
-          class="absolute h-[2.58%] w-[0.84%] top-[57.66%] right-[88.72%] bottom-[39.76%] left-[10.44%] max-w-full overflow-hidden max-h-full"
-          loading="lazy"
-          alt=""
-          src="/public/group-1.svg"
-        />
-
-        <img
-          class="absolute top-[400.7px] left-[148px] w-[18px] h-[18px] overflow-hidden"
-          loading="lazy"
-          alt=""
-          src="/public/icoutlineemail.svg"
-        />
-
-        <div
-          class="w-full absolute top-[331px] left-[168.3px] leading-[22px] inline-block min-w-[269px] max-w-full"
-        >
-          <p class="m-0">
-            825 Watter’s Creek Blvd Building M,Suite 250 Allen, Texas 75013
-          </p>
-          <p class="m-0">&nbsp;</p>
-          <p class="m-0">
-             
-            <a
-              class="text-[inherit]"
-              href="mailto:info@vetsched.pet"
-              target="_blank"
-            >
-              <span class="[text-decoration:underline]">info@vetsched.pet</span>
-            </a>
-          </p>
-        </div>
-        <img
-          class="absolute top-[89px] left-[130px] w-[300px] h-[223px] object-cover"
-          loading="lazy"
-          alt=""
-          src="/public/logo2-1@2x.png"
-        />
-
-        <div class="absolute top-[459.4px] left-[167px] w-36 h-[26px]">
-          <div
-            class="absolute top-[3px] left-[0px] flex flex-row items-start justify-start gap-[23px]"
-          >
-            <img
-              class="h-[19px] w-2.5 relative"
-              loading="lazy"
-              alt=""
-              src="/public/social.svg"
-            />
-
-            <img
-              class="h-5 w-5 relative overflow-hidden shrink-0"
-              loading="lazy"
-              alt=""
-              src="/public/pajamastwitter.svg"
-            />
-          </div>
-          <img
-            class="absolute top-[0px] left-[120px] w-6 h-6 overflow-hidden"
-            loading="lazy"
-            alt=""
-            src="/public/rilinkedinfill.svg"
-          />
-
-          <img
-            class="absolute top-[2px] left-[74px] w-6 h-6 overflow-hidden"
-            loading="lazy"
-            alt=""
-            src="/public/mdiinstagram.svg"
-          />
-        </div>
-        <h2
-          class="m-0 w-full absolute top-[170px] left-[959px] text-[29px] leading-[32px] font-bold font-inherit inline-block mq450:text-[23px] mq450:leading-[26px]"
-        >
-          Subscribe to our Newsletter
-        </h2>
-        <div
-          class="absolute top-[261px] left-[952px] rounded-4xs bg-white w-[405px] h-[63px]"
-        ></div>
-        <button
-          class="cursor-pointer [border:none] py-[21px] px-5 bg-royalblue w-full absolute top-[341px] left-[952px] rounded-4xs flex flex-row items-center justify-center box-border hover:bg-dodgerblue-200"
-        >
-          <div
-            class="relative text-base leading-[20px] font-medium font-poppins text-white text-left inline-block min-w-[41px]"
-          >
-            Send
-          </div>
-        </button>
-        <div
-          class="absolute top-[281px] left-[973px] leading-[20px] font-medium text-gray-800"
-        >
-          Your Email Here
-        </div>
-        <img
-          class="absolute h-[1.72%] w-[0.69%] top-[95.01%] right-[57.01%] bottom-[3.27%] left-[42.29%] max-w-full overflow-hidden max-h-full"
-          loading="lazy"
-          alt=""
-          src="/public/vector-2.svg"
-        />
-      </div>
-      <div
-        class="absolute top-[2338px] left-[calc(50%_-_258px)] w-[517px] max-w-full text-base text-gray-900 mq750:gap-[17px] mq750:pl-6 mq750:box-border"
-      >
-        <div
-          class="absolute top-[0px] left-[calc(50%_-_258.5px)] rounded-[62px] bg-white shadow-[5px_1px_17.1px_rgba(0,_0,_0,_0.25)] w-[517px] h-[127px] max-w-full"
-        ></div>
-        <div class="absolute top-[41px] left-[245px]">24/7 Email Support</div>
-        <div class="absolute top-[50px] left-[113px] inline-block min-w-[40px]">
-          -OR-
-        </div>
-        <img
-          class="absolute top-[39px] left-[48px] w-[45px] h-10 object-cover"
-          loading="lazy"
-          alt=""
-          src="/public/img01-1@2x.png"
-        />
-
-        <img
-          class="absolute top-[41px] left-[431px] w-[47px] h-[42px] object-cover"
-          loading="lazy"
-          alt=""
-          src="/public/img021-2@2x.png"
-        />
-
-        <div class="absolute top-[33px] left-[188px] text-black">
-          <p class="m-0">&nbsp;</p>
-          <p class="m-0 text-3xl font-semibold text-tomato">
-            info@vetsched.pet
-          </p>
-        </div>
-        <div
-          class="h-full absolute top-[32.5px] left-[413.5px] box-border w-px border-r-[1px] border-solid border-gray-1000"
-        ></div>
       </div>
     </div>
-  </body>
+
+    <div class=" absolute top-0 left-0 bg-[#3D4461] w-full h-full opacity-65 z-0"></div>
+  </header>
+
+
+
+  <main class="lg:px-[90px] px-4">
+
+    <!-- contactus form -->
+    <div
+      class=" w-full  h-full rounded-10px contact-section flex flex-col lg:flex-row justify-between  relative z-[10000]">
+      <div class="  xl:w-full md:w-full">
+
+        <form action="#" method="POST" class=" w-full  py-[45px] px-[55px] ">
+          <div class="grid grid-cols-2 gap-8 ">
+            <!-- Name field -->
+            <div class="mb-[15px]  md:col-span-1 col-span-2">
+              <label for="name" class="text-[22px] font-medium">First Name</label>
+              <input type="text" id="name" name="name"
+                class=" w-full mt-[10px] lg:h-[87px] lg:px-[29px] px-[6px] lg:pb-[29px] lg:pt-[26px] py-3 flex-shrink-0 lg:rounded-[13px] rounded-[4px] border focus:outline-none border-gray-500">
+            </div>
+            <!-- Email field -->
+            <div class="mb-[15px]  md:col-span-1 col-span-2">
+              <label for="name" class="text-[22px] font-medium">Last Name</label>
+              <input type="text" id="email" name="email" 
+                class=" w-full mt-[10px] lg:h-[87px] lg:px-[29px] px-[6px] lg:pb-[29px] lg:pt-[26px] py-3 flex-shrink-0 lg:rounded-[13px] rounded-[4px] border focus:outline-none border-gray-500">
+            </div>
+            <div class="mb-[15px]  md:col-span-1 col-span-2">
+              <label for="name" class="text-[22px] font-medium">Email Address</label>
+              <input type="email" id="email" name="email" 
+                class=" w-full mt-[10px] lg:h-[87px] lg:px-[29px] px-[6px] lg:pb-[29px] lg:pt-[26px] py-3 flex-shrink-0 lg:rounded-[13px] rounded-[4px] border focus:outline-none border-gray-500">
+            </div>
+            <div class="mb-[15px]  md:col-span-1 col-span-2">
+              <label for="name" class="text-[22px] font-medium">Phone Number</label>
+              <input type="tel" id="email" name="email" 
+                class=" w-full mt-[10px] lg:h-[87px] lg:px-[29px] px-[6px] lg:pb-[29px] lg:pt-[26px] py-3 flex-shrink-0 lg:rounded-[13px] rounded-[4px] border focus:outline-none border-gray-500">
+            </div>
+            <div class="mb-[15px]  md:col-span-1 col-span-2">
+              <label for="name" class="text-[22px] font-medium">Service </label>
+              <select id="dropdown" name="dropdown" class=" w-full mt-[10px] lg:h-[87px] lg:px-[29px] px-[6px] lg:pb-[29px] lg:pt-[26px] py-3 flex-shrink-0 lg:rounded-[13px] rounded-[4px] border focus:outline-none border-gray-500">
+                <option value="option1"></option>
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+            </select>
+              <!-- <input type="dropdown" id="email" name="email"
+                class=" w-full mt-[10px] lg:h-[87px] lg:px-[29px] px-[6px] lg:pb-[29px] lg:pt-[26px] py-3 flex-shrink-0 lg:rounded-[13px] rounded-[4px] border focus:outline-none border-gray-500"> -->
+            </div>
+            <div class="mb-[15px]  md:col-span-1 col-span-2">
+              <label for="name" class="text-[22px] font-medium">Company Name</label>
+              <input type="text" id="email" name="email"
+                class=" w-full mt-[10px] lg:h-[87px] lg:px-[29px] px-[6px] lg:pb-[29px] lg:pt-[26px] py-3 flex-shrink-0 lg:rounded-[13px] rounded-[4px] border focus:outline-none border-gray-500">
+            </div>
+          </div>
+<div class="mt-[81px] flex">
+  <input type="checkbox" class="w-[33px] mr-[14px] h-[33px] rounded-[7px] border border-[#000000AD]">
+  <span class="mr-[20px]">I consent to recieve commnications about Vetsched.pet in accordance to their Privacy Policy. I understand that i can opt out at any time</span>
+</div>
+          <!-- Description field -->
+
+          <!-- Submit button -->
+          <div class="text-center mt-[18px]">
+            <button type="submit"
+              class="contactus-submit-btn rounded-[10px] w-full   bg-[#5398FF]">Request a Demo</button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="w-full  h-full bg-[#3D4461] mt-[179px] lg:block hidden">
+    <div
+      class="self-stretch flex flex-row items-start justify-center py-0 pr-5 pl-[23px] box-border max-w-full shrink-0 ">
+      <div
+        class="w-[517px] rounded-[62px] mt-[-43px] bg-white shadow-[5px_1px_17.1px_rgba(0,_0,_0,_0.25)] flex flex-row flex-wrap items-start justify-start pt-[33px] pb-[34px] pr-[39px] pl-12 box-border gap-[11px] shrink-0 [debug_commit:f6aba90] max-w-full z-[5] mq800:pl-6 mq800:box-border">
+        <div
+          class="h-[127px] w-[517px] relative rounded-43xl bg-white shadow-[5px_1px_17.1px_rgba(0,_0,_0,_0.25)] hidden max-w-full">
+        </div>
+        <div class="h-[46px] flex flex-col items-start justify-start pt-1.5 pb-0 pr-[9px] pl-0 box-border">
+          <img class="w-[45px] h-10 relative object-cover z-[1]" loading="lazy" alt="" src="./images/img-01 1.png" />
+        </div>
+        <div class="flex flex-col items-start justify-start pt-[17px] pb-0 pr-6 pl-0">
+          <div class="relative inline-block min-w-[40px] z-[1] text-[16px]">-OR-</div>
+        </div>
+        <div class="flex-1 flex flex-col items-start justify-start min-w-[140px] min-h-[60px] text-black">
+          <div class="relative z-[1]">
+            <p class="m-0">&nbsp;</p>
+            <p class="m-0 text-[22px] font-semibold text-[#FF5851]">
+              info@vetsched.pet
+            </p>
+          </div>
+          <div class="self-stretch flex flex-row items-start justify-end mt-[-52px] text-[#000000A1]">
+            <div class="relative z-[1]">24/7 Email Support</div>
+          </div>
+        </div>
+        <div class="h-[60px] flex flex-col items-start justify-start py-0 pr-[5px] pl-0 box-border">
+          <div class="w-px flex-1 relative box-border z-[1] border-r-[1px] border-solid border-gray-200">
+          </div>
+        </div>
+        <div class="h-[50px] flex flex-col items-start justify-start pt-2 px-0 pb-0 box-border">
+          <img class="w-[47px] h-[42px] relative object-cover z-[1]" loading="lazy" alt=""
+            src="./images/img-02-1 2.png" />
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-[89px] pb-[20px]  lg:ml-[130px] lg:mr-[83px] grid grid-cols-8 gap-6">
+      <div class="col-span-3">
+        <span><img class="w-[300px] h-[223px]" src="./images/logo-2 1.png" alt=""></span>
+        <div class="text-white px-[25px] mt-[19px] mb-[35px]">
+          <div class="flex  gap-[3px] items-baseline text-[16px] mb-[40px]">
+            <span><img src="./images/location_Icon.svg" alt=""></span>
+            <p>825 Watter’s Creek Blvd Building M,Suite 250 Allen, Texas 75013</p>
+          </div>
+          <div class="flex  gap-[3px] items-center text-[16px]">
+            <span><img src="./images/email_icon.svg" alt=""></span>
+            <p>info@vetsched.pet</p>
+          </div>
+        </div>
+        <div class="flex gap-[23px] ml-[45px]">
+          <span><img src="./images/facebook_icon.svg" alt=""></span>
+          <span><img src="./images/twitter_icon.svg" alt=""></span>
+          <span><img src="./images/instal_icon.svg" alt=""></span>
+          <span><img src="./images/linkedin_icon.svg" alt=""></span>
+        </div>
+      </div>
+      <div class="col-span-2 gap-[30px] flex flex-col justify-center">
+        <h1 class="text-[18px] font-bold text-white " style="font-family: Roboto;">Company</h1>
+        <div class="flex flex-col gap-[12px]">
+          <span style="font-size: 14px; font-family: Roboto; color: white;">Pet Lover</span>
+          <span style="font-size: 14px; font-family: Roboto; color: white;">Service Provider</span>
+          <span style="font-size: 14px; font-family: Roboto; color: white;">Services </span>
+          <span style="font-size: 14px; font-family: Roboto; color: white;">About Us</span>
+          <span style="font-size: 14px; font-family: Roboto; color: white;">FAQs</span>
+          <span style="font-size: 14px; font-family: Roboto; color: white;">Request a Demo</span>
+          <span style="font-size: 14px; font-family: Roboto; color: white;">Contact Us</span>
+          <span style="font-size: 14px; font-family: Roboto; color: white;">Privacy Policy</span>
+          <span style="font-size: 14px; font-family: Roboto; color: white;">Terms and Condition</span>
+        </div>
+      </div>
+      <div class="col-span-3 flex flex-col pt-[60px]">
+        <h1 class="text-[29px] font-bold leading-[32px] text-white w-[260px] mb-[27px]">Subscribe to our
+          Newsletter</h1>
+        <input type="text" class=" bg-white p-[20px] rounded-[9px] xl:w-[405px] w-full mb-[17px]"
+          placeholder="Your Email Here">
+        <button class="rounded-[9px] w-full xl:w-[405px] bg-[#2B80FF] text-white py-[21px]">Send</button>
+      </div>
+    </div>
+
+  </footer>
+
+  <footer class="lg:hidden block mt-20 bg-[#3D4461] w-full pt-[53px] pb-6 border-b border-white px-[11px]">
+    <div>
+      <img class="w-[102px] h-[66px]" src="./images/logo-2 1.png" alt="">
+    </div>
+    <div class="mt-3 text-white space-y-1">
+      <h1 class="text-[18px] leading-[16px] font-semibold mb-[6px]">Explore</h1>
+      <div class="gap-[8px] flex flex-col">
+        <p class="text-[14px] leading-[16px]"><a href="">Explore</a></p>
+        <p class="text-[14px] leading-[16px]"> <a href="">Services</a></p>
+      </div>
+
+    </div>
+    <div class="mt-3 text-white space-y-1">
+      <h1 class="text-[18px] leading-[16px] font-semibold mb-[12px]">Contact info</h1>
+      <div class="gap-[8px] flex flex-col">
+        <p class="text-[14px] leading-[16px]">info@vetsched.pet</p>
+        <p class="text-[14px] leading-[16px]">825 Watter's Creek Blvd </p>
+        <p class="text-[14px] leading-[16px]"> Building M,Suit 25 Allen,</p>
+        <p class="text-[14px] leading-[16px]">Texas 75013</p>
+      </div>
+
+    </div>
+    <div class="mt-5 text-white space-y-1">
+      <h1 class="text-[18px] leading-[16px] font-semibold mb-[14px]">Follow Us</h1>
+      <div class="flex gap-[23px] mt-4">
+        <span><img src="./images/facebook_icon.svg" alt=""></span>
+        <span><img src="./images/twitter_icon.svg" alt=""></span>
+        <span><img src="./images/instal_icon.svg" alt=""></span>
+        <span><img src="./images/linkedin_icon.svg" alt=""></span>
+      </div>
+    </div>
+  </footer>
+
+
+  <div class="bg-black w-full flex justify-center lg:py-[11px] lg:pr-0 pr-28 lg:px-2 pt-[10px] pl-[10px] pb-[14px]">
+    <p class="text-white lg:text-[16px] text-[18px] leading-6">Copyrights 2024 VetSched.PET. All rights reserved
+    </p>
+  </div>
+  </div>
+
+
+  <!-- <script>
+       
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch('/components/navbar.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('navbar-placeholder').innerHTML = data;
+                });
+        });
+    </script> -->
+</body>
+
 </html>
