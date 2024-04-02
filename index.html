@@ -19,6 +19,53 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <!-- Include jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Include Slick Slider JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <style>
+      /* Custom styles for slider */
+      .slider-container {
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.card {
+  flex: 0 0 calc(100% / 1); /* Display 4 cards at a time */
+  padding: 10px;
+  /* border: 1px solid #ccc; */
+  box-sizing: border-box;
+}
+.header-card {
+  flex: 0 0 calc(100% / 2);;
+  }
+@media (min-width: 768px) { /* Tablet */
+  .card {
+    flex: 0 0 calc(100% / 2); /* Display 2 cards at a time */
+  }
+  
+}
+
+@media (min-width: 1024px) { /* Desktop */
+  .card {
+    flex: 0 0 calc(100% / 4); /* Display 4 cards at a time */
+  }
+  .header-card {
+    flex: 0 0 calc(100% / 5);
+  }
+}
+.header-slider {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+
+    </style>
 </head>
 
 <body style="font-family: Poppins;">
@@ -98,9 +145,10 @@
     </header>
 
     <section class="w-full h-full  top-[-80px] relative px-[11px]">
-      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-        <div
-          class=" col-span-1 flex flex-col bg-[#5398FF] px-7 justify-between py-11 min-w-[190px]  min-h-[291px] rounded-[10px] border-l-[5px] border-[#2B80FF]"
+      <div class="slider-container px-4 h-[400px]">
+        <div class="header-slider gap-4 flex i">
+          <div
+          class="header-card  ard flex flex-col bg-[#5398FF] px-7 justify-between py-11 min-w-[190px]  min-h-[291px] rounded-[10px] border-l-[5px] border-[#2B80FF]"
           style="box-shadow: 5px 5px 9.6px 0px rgba(0, 0, 0, 0.25);">
           <div>
             <div>
@@ -116,7 +164,7 @@
           </div>
         </div>
         <div
-          class="col-span-1 flex flex-col bg-white px-7 justify-between py-11 min-w-[190px]  min-h-[291px] rounded-[10px] border-l-[5px] border-[#2B80FF]"
+          class=" header-card flex card flex-col bg-white px-7 justify-between py-11 min-w-[190px]  min-h-[291px] rounded-[10px] border-l-[5px] border-[#2B80FF]"
           style="box-shadow: 5px 5px 9.6px 0px rgba(0, 0, 0, 0.25);">
           <div>
             <div class="relative">
@@ -134,7 +182,7 @@
           </div>
         </div>
         <div
-          class="col-span-1 md:flex hidden flex-col bg-white pl-7 justify-between py-11 min-w-[190px]  min-h-[291px] rounded-[10px] border-l-[5px] border-[#2B80FF]"
+          class="card header-card flex  flex-col bg-white pl-7 justify-between py-11 min-w-[190px]  min-h-[291px] rounded-[10px] border-l-[5px] border-[#2B80FF]"
           style="box-shadow: 5px 5px 9.6px 0px rgba(0, 0, 0, 0.25);">
           <div>
             <div>
@@ -150,7 +198,7 @@
           </div>
         </div>
         <div
-          class="col-span-1 lg:flex hidden flex-col bg-white px-7 justify-between py-11 min-w-[190px]  min-h-[291px] rounded-[10px] border-l-[5px] border-[#2B80FF]"
+          class="card header-card flex flex-col bg-white px-7 justify-between py-11 min-w-[190px]  min-h-[291px] rounded-[10px] border-l-[5px] border-[#2B80FF]"
           style="box-shadow: 5px 5px 9.6px 0px rgba(0, 0, 0, 0.25);">
           <div>
             <div>
@@ -166,7 +214,7 @@
           </div>
         </div>
         <div
-          class="col-span-1 lg:flex hidden flex-col bg-white px-7 justify-between py-11 min-w-[190px]  min-h-[291px] rounded-[10px] border-l-[5px] border-[#2B80FF]"
+          class="flex flex-col header-card bg-white px-7 justify-between py-11 min-w-[190px]  min-h-[291px] rounded-[10px] border-l-[5px] border-[#2B80FF]"
           style="box-shadow: 5px 5px 9.6px 0px rgba(0, 0, 0, 0.25);">
           <div>
             <div>
@@ -181,11 +229,24 @@
             <button class="bg-[#3D4461] text-white rounded-md py-2 px-3 mt-2 text-[12px]">Contact Us</button>
           </div>
         </div>
+          <!-- Add more cards as needed -->
+      
+        </div>
+        <button class="header-prev lg:hidden w-[43px] h-[43px] bg-[#3FABF3] rounded-full flex justify-center items-center absolute left-auto right-[80px] bottom-[15px]">
+          <img src="./images/landingPage/review-section/prev-arrow.svg" alt="">
+        </button>
+        <button class="header-next lg:hidden w-[43px] h-[43px] bg-[#3FABF3] rounded-full flex justify-center items-center absolute  right-[20px] bottom-[15px]">
+          <img src="./images/landingPage/review-section/next-arrow.svg" alt="">
+        </button>
       </div>
+      
+    
+      
+     
     </section>
-    <section class="w-full h-full lg:py-[300px] pt-[300px] pb-[200px]">
+    <section class="w-full h-full flex flex-col items-center lg:py-[300px] pt-[300px] pb-[100px] px-7">
       <div class="w-full h-full  relative flex justify-center">
-        <div class="absolute top-[-280px]">
+        <div class="absolute top-[-280px] lg:top-[-350px]">
           <h1
             class="m-0  flex-1 relative text-[#363E62] lg:text-[45px] text-[34px] leading-[40px] font-semibold font-inherit inline-block max-w-full mq450:text-8xl mq450:leading-[36px] mq825:text-17xl mq825:leading-[48px]">
             Services We Offer
@@ -207,127 +268,128 @@
             src="./images/landingPage/service-section/6553726-removebg-preview 1.png" alt="">
         </div>
         <img class="top-[-200px] lg:flex hidden left-[400px] absolute" src="./images/landingPage/service-section/paws 28.png" alt="">
-        <div class="w-[170px] relative left-[-7px] h-[125px] lg:w-auto lg:h-auto">
+        <div class="w-[197px] relative top-[-100px] left-[-7px] h-[125px] lg:w-[372px] lg:h-[235px]">
           <img src="./images//landingPage/service-section/cute-animals-group-white-background-removebg-preview 1.png"
             alt="">
           <div class="lg:w-[350px] h-[17px] lg:flex hidden rounded-[350px] bg-[#2B80FFBA] [filter:blur(6.199999809265137px)]"></div>
         </div>
-        <div class="absolute lg:top-[-155px] top-[-130px] lg:w-auto w-[87px]">
-          <div class="relative  w-[65px]">
+        <div class="absolute lg:top-[-260px] top-[-190px] lg:w-auto ">
+          <div class="relative lg:w-[136px] lg:h-[122px] w-[50px] h-[50px] left-2">
             <img class="absolute" src="./images//landingPage/service-section/Ellipse 12.svg" alt="">
-            <img class="absolute top-[2px] left-10px" src="./images//landingPage/service-section/pet-transportation.svg"
+            <img class="absolute top-[2px] left-[5px] left-10px" src="./images//landingPage/service-section/pet-transportation.svg"
               alt="">
           </div>
-          <div class="flex relative lg:top-[130px] top-[65px] lg:text-[18px] text-[10px]">
+          <div class="flex relative lg:top-0px top-[0px] lg:left-auto left-[-10px] lg:text-[18px] text-[10px]">
             <img class="lg:mr-[5px] mr-[2px] lg:w-auto lg:h-auto w-[12px] h-[12px]" src="./images//landingPage/service-section/paws 10.png" alt="">
             <span>Pet Transportation</span>
           </div>
 
         </div>
-        <div class="absolute lg:top-[-125px] top-[-85px] xl:right-[31%] lg:right-[28%] right-[13%] lg:w-auto w-[87px] ">
-          <div class="relative  w-[65px]">
+        <div class="absolute lg:top-[-240px] top-[-135px] xl:right-[31%] lg:right-[28%] right-[13%] lg:w-auto w-[87px] ">
+          <div class="relative  lg:w-[136px] lg:h-[122px]  w-[50px] h-[50px] left-2">
             <img class="absolute" src="./images/landingPage/service-section/pet-hospital.svg" alt="">
 
           </div>
-          <div class="flex relative lg:top-[140px] top-[65px] lg:text-[18px] text-[10px]">
+          <div class="flex relative lg:top-2  lg:text-[18px] text-[10px]">
             <img class="lg:mr-[5px] mr-[2px] lg:w-auto lg:h-auto w-[12px] h-[12px]" src="./images//landingPage/service-section/paws 10.png" alt="">
             <span>Pet Hospital</span>
           </div>
 
         </div>
-        <div class="absolute lg:top-[50px] top-[22px] xl:right-[26%] lg:right-[20%] right-[10%] lg:w-auto w-[87px]">
-          <div class="relative  w-[65px]">
+        <div class="absolute lg:top-[-75px] top-[-60px] xl:right-[23%] lg:right-[20%] right-0 lg:w-auto w-[87px]">
+          <div class="relative lg:w-[136px] lg:h-[122px]  w-[50px] h-[50px] left-2">
             <img class="absolute" src="./images//landingPage/service-section/Ellipse 11.svg" alt="">
-            <img class="absolute top-[2px] left-10px" src="./images//landingPage/service-section/vateraniar.svg" alt="">
+            <img class="absolute top-[2px] lg:top-[12px] left-10px" src="./images//landingPage/service-section/vateraniar.svg" alt="">
           </div>
-          <div class="flex relative lg:top-[125px] top-[65px] lg:text-[18px] text-[10px]">
+          <div class="flex relative lg:top-0  lg:text-[18px] text-[10px]">
             <img class="lg:mr-[5px] mr-[2px] lg:w-auto lg:h-auto w-[12px] h-[12px]" src="./images//landingPage/service-section/paws 10.png" alt="">
             <span>Veterinarian</span>
           </div>
 
         </div>
-        <div class="absolute lg:top-[230px] top-[125px] xl:right-[26%] lg:right-[20%] right-[12%] lg:w-auto w-[87px]">
-          <div class="relative w-[65px]">
+        <div class="absolute lg:top-[120px] top-[20px] xl:right-[23%] lg:right-[20%] right-0 lg:w-auto w-[87px]">
+          <div class="relative lg:w-[136px] lg:h-[122px]  w-[50px] h-[50px] left-2">
             <img class="absolute" src="./images//landingPage/service-section/Ellipse 25.svg" alt="">
-            <img class="absolute top-[10px] left-[12px]" src="./images//landingPage/service-section/pet-training.svg"
+            <img class="absolute top-[5px] left-[5px] lg:top-[12px] lg:left-[10px]" src="./images//landingPage/service-section/pet-training.svg"
               alt="">
           </div>
-          <div class="flex relative lg:top-[125px] top-[69px] lg:text-[18px] text-[10px]">
+          <div class="flex relative lg:top-0 top-1 lg:text-[18px] text-[10px]">
             <img class="lg:mr-[5px] mr-[2px] lg:w-auto lg:h-auto w-[12px] h-[12px]" src="./images//landingPage/service-section/paws 10.png" alt="">
             <span>Pet Training</span>
           </div>
 
         </div>
-        <div class="absolute lg:top-[280px] top-[155px]  lg:right-[37%] right-[30%]  lg:w-auto w-[87px]">
-          <div class="relative  w-[65px]">
+        <div class="absolute lg:top-[190px] top-[60px]  lg:right-[37%] right-[17%]  lg:w-auto w-[87px]">
+          <div class="relative  lg:w-[136px] lg:h-[122px]  w-[50px] h-[50px] left-2">
             <img class="absolute" src="./images//landingPage/service-section/Ellipse 24.svg" alt="">
-            <img class="absolute top-[-10px] left-[-6px]" src="./images//landingPage/service-section/pet-adoption.svg"
+            <img class="absolute top-[2px] lg:top-[-6px] left-[-6px]" src="./images//landingPage/service-section/pet-adoption.svg"
               alt="">
           </div>
-          <div class="flex relative lg:top-[125px] top-[65px] lg:text-[18px] text-[10px]">
+          <div class="flex relative lg:top-2  lg:text-[18px] text-[10px]">
             <img class="lg:mr-[5px] mr-[2px] lg:w-auto lg:h-auto w-[12px] h-[12px]" src="./images//landingPage/service-section/paws 10.png" alt="">
             <span>Pet Adoption</span>
           </div>
 
         </div>
-        <div class="absolute lg:top-[270px] top-[145px] xl:left-[40%] lg:left-[32%] left-[30%] lg:w-auto w-[87px]">
-          <div class="relative  w-[65px]">
+        <div class="absolute lg:top-[190px] top-[60px] xl:left-[38%] lg:left-[32%] left-[38%] lg:w-auto w-[87px]">
+          <div class="relative lg:w-[136px] lg:h-[122px]  w-[50px] h-[50px] left-2">
             <img class="absolute" src="./images//landingPage/service-section/Ellipse 27.svg" alt="">
-            <img class="absolute top-[10px] left-[-4px]" src="./images//landingPage/service-section/pet-resort.svg"
+            <img class="absolute top-[4px] left-[-4px] lg:left-[-10px]" src="./images//landingPage/service-section/pet-resort.svg"
               alt="">
           </div>
-          <div class="flex relative lg:top-[125px] top-[69px] lg:text-[18px] text-[10px]">
+          <div class="flex relative lg:top-0  lg:text-[18px] text-[10px]">
             <img class="lg:mr-[5px] mr-[2px] lg:w-auto lg:h-auto w-[12px] h-[12px]" src="./images//landingPage/service-section/paws 10.png" alt="">
             <span>Pet Resort</span>
           </div>
 
         </div>
-        <div class="absolute lg:top-[50px] top-[10px] xl:left-[24%] lg:left-[16%] left-[9%] lg:w-auto w-[87px]">
-          <div class="relative  w-[65px]">
+        <div class="absolute lg:top-[-75px] top-[30px] xl:left-[22%] lg:left-[16%] left-[10%] lg:w-auto ">
+          <div class="relative lg:w-[136px] lg:h-[122px]  w-[50px] h-[50px] left-4">
             <img class="absolute" src="./images//landingPage/service-section/Ellipse 13.svg" alt="">
-            <img class="absolute top-[10px] left-[-12px]" src="./images//landingPage/service-section/pet-walking.svg"
+            <img class="absolute top-[5px] left-[-4px]" src="./images//landingPage/service-section/pet-walking.svg"
               alt="">
           </div>
-          <div class="flex relative lg:top-[125px] top-[69px] lg:left-[-45px] left-[-7px] lg:text-[18px] text-[10px]">
+          <div class="flex relative lg:top-0  lg:left-[-45px] left-[-15px] lg:text-[18px] text-[10px]">
             <img class="lg:mr-[5px] mr-[2px] lg:w-auto lg:h-auto w-[12px] h-[12px]" src="./images//landingPage/service-section/paws 10.png" alt="">
             <span>Pet Sitting/Walking</span>
           </div>
 
         </div>
-        <div class="absolute lg:top-[230px] top-[135px] xl:left-[24%] lg:left-[16%] left-[7%] lg:w-auto w-[87px]">
-          <div class="relative  w-[65px]">
+        <div class="absolute lg:top-[120px] top-[-60px] xl:left-[22%] lg:left-[16%] left-[4%] lg:w-auto ">
+          <div class="relative  lg:w-[136px] lg:h-[122px]  w-[50px] h-[50px] left-2">
             <img class="absolute" src="./images//landingPage/service-section/Ellipse 23.svg" alt="">
-            <img class="absolute top-[10px] left-[12px]" src="./images//landingPage/service-section/pet-cremation.svg"
+            <img class="absolute top-[5px] left-[-6px] lg:left-[12px]" src="./images//landingPage/service-section/pet-cremation.svg"
               alt="">
           </div>
-          <div class="flex relative lg:top-[125px] top-[69px] lg:text-[18px] text-[10px]">
+          <div class="flex relative lg:top-0  lg:text-[18px] text-[10px] left-[-18px]">
             <img class="lg:mr-[5px] mr-[2px] lg:w-auto lg:h-auto w-[12px] h-[12px]" src="./images//landingPage/service-section/paws 10.png" alt="">
             <span>Pet Cremation</span>
           </div>
 
         </div>
-      
-        <div class="absolute lg:top-[-125px] top-[-80px] xl:left-[26%] lg:left-[23%] left-[17%] lg:w-auto w-[87px]">
-          <div class="relative  w-[65px]">
+        <div class="absolute lg:top-[-240px] top-[-140px] xl:left-[27%] lg:left-[23%] left-[10%] lg:w-auto w-[87px]">
+          <div class="relative lg:w-[136px] lg:h-[122px]  w-[50px] h-[50px]">
             <img class="absolute" src="./images/landingPage/service-section/Ellipse-grooming.svg" alt="">
-            <img class="absolute top-[5px] left-[-12px]" src="./images//landingPage/service-section/pet-grooming.svg"
+            <img class="absolute top-[2px] left-[-2px]" src="./images//landingPage/service-section/pet-grooming.svg"
               alt="">
           </div>
-          <div class="flex relative lgLtop-[125px] top-[65px] left-[-20px] lg:text-[18px] text-[10px]">
+          <div class="flex relative lg:top-0 left-[-20px] lg:text-[18px] text-[10px]">
             <img class="lg:mr-[5px] mr-[2px] lg:w-auto lg:h-auto w-[12px] h-[12px]" src="./images//landingPage/service-section/paws 10.png" alt="">
             <span>Pet Grooming</span>
           </div>
 
         </div>
-        <div class="absolute lg:top-[-300px] top-[-250px] right-0">
+        <div class="absolute lg:top-[-300px] top-[-225px] right-0">
           <img
           class=" lg:w-auto lg:h-auto w-[136px] h-[146px]"
             src="./images/landingPage/service-section/pet-accessories-still-life-concept-with-chew-ball-removebg-preview 1.png"
             alt="">
         </div>
+      
       </div>
+      <button class="bg-[#5398FF] py-[13px] lg:top-[140px] relative px-[24px] rounded-lg text-white my-3">Explore All Service</button>
     </section>
-    <section class="w-full h-full lg:px-[110px] px-[16px]">
+    <section class="w-full h-full lg:px-[100px] px-[16px]">
       <div class="self-stretch flex lg:flex-row flex-col-reverse items-start justify-start max-w-full text-[40px] gap-5">
         <div class="w-full h-full">
           <h1
@@ -335,9 +397,9 @@
             Bring Care To Your Pet,With
             <span class="text-[#FF5851]">Just A Few Clicks</span>
           </h1>
-          <div class="h-2.5 flex flex-row items-start justify-start pt-0 px-[3px] pb-[5px] box-border">
+          <!-- <div class="h-2.5 flex flex-row items-start justify-start pt-0 px-[3px] pb-[5px] box-border">
             <img class="h-[5px] w-[203px] relative" loading="lazy" alt="" src="/public/line-37.svg" />
-          </div>
+          </div> -->
           <div
             class="w-full flex flex-row items-start justify-start pt-0 px-px pb-1 box-border max-w-full text-[20px] text-darkslategray-700">
             <div
@@ -378,11 +440,13 @@
         </div>
         <div class="relative w-full h-full">
           <div
-              class=" top-[33px] left-[22px] rounded-[27px] lg:w-[635px] lg:h-[714px] w-[430px] h-[500px] z-[3] border-[3px] border-dashed border-[#3D4461CC]">
+              class="rounded-[27px] flex items-center lg:h-[714px] lg:w-[635px] w-[390px] h-[269px] z-[3] border-[rgba(61,_68,_97,_0.80)] border-[3px] border-dashed">
               <div
-                class="absolute top-[16px] left-[14px] rounded-[18px] lg:w-[616px] lg:h-[661px] w-[400px] h-[460px] z-[1] flex items-center justify-center">
-                <img class="w-full h-full z-[1] object-contain absolute left-[-2px] top-[5px] [transform:scale(1.099)]"
+                class=" lg:pt-4 lg:pr-[5px] lg:pb-[37px] lg:pl-[14px] pt-3 pr-[4px] pb-3 pl-[9px] lg:rounded-[18px] rounded-[7px] lg:h-[661px] lg:w-[616px] w-[377px]  h-[245px] shodow-[-2px_5px_30.6px_0px_#5398FF] z-[1] flex items-center justify-center">
+                <img class="w-full hidden lg:flex h-full z-[1] object-fill [transform:scale(1.099)]"
                   alt="" src="./images/landingPage/high-angle-woman-with-laptop-home.png" />
+                  <img class="w-full flex lg:hidden h-full z-[1] object-cover  [transform:scale(1.099)]"
+                  alt="" src="./images/landingPage/high-angle-woman-with-laptop-home (1).png" />
               </div>
               <div
                 class="absolute top-[0px] left-[0px] rounded-[27px] box-border w-full h-full hidden border-[3px] border-dashed border-[#3D4461CC]">
@@ -881,7 +945,7 @@
       </div>
     </section>
     <!-- =============REVIEWS SECTION=================== -->
-    <section class="w-full md:h-[774px] py-4 lg:py-0 bg-[#3D4461D6]">
+    <section class="w-full md:h-[820px] py-4 lg:py-0 bg-[#3D4461D6]">
       <div class="relative">
 
         <h1 class="text-white text-[42px] font-semibold flex justify-center py-3">
@@ -913,70 +977,86 @@
           src="./images//landingPage/review-section/paws 10.png" alt="">
         <img class="absolute lg:flex hidden top-[20px] right-[50px]"
           src="./images//landingPage/review-section/paws 26.png" alt="">
-        <!--   <img src="./images//landingPage/review-section/paws 6.png" alt=""> -->
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 px-8 items-end">
-          <div class="col-span-1 min-w-[240px] lg:h-[637px] h-full rounded-[10px] bg-white py-[17px] px-3">
-            <div>
-              <img class="w-full "
-                src="./images/landingPage/review-section/international-couple-blue-background-with-dog 1.png" alt="">
+  
+        <div class="slider-container px-4 ">
+          <div class="slider gap-3  flex items-end">
+          
+              <div class="card min-w-[240px] lg:h-[637px] h-full rounded-[10px] bg-white py-[17px] px-3">
+                <div>
+                  <img class="w-full object-cover"
+                    src="./images/landingPage/review-section/international-couple-blue-background-with-dog 1.png" alt="">
+                </div>
+                <div class="mt-[27px]">
+                  <h1 class="text-[18px] font-bold text-[#33363F]">Marc</h1>
+                  <span><img src="./images/landingPage/review-section/Group 37068.svg" alt=""></span>
+                </div>
+                <div class="mt-[17px]">
+                  <p class="text-[15px] text-[#3D4461]">"Effortless grooming booking! Found a skilled groomer easily on the
+                    platform, and the communication was
+                    seamless. Highly recommend this platform for pet care needs!”</p>
+                </div>
+              </div>
+           
+           
+              <div
+              class="card min-w-[240px] lg:h-[552px] h-full rounded-[10px] bg-white py-5 px-[20px]">
+              <div>
+                <img class="w-full object-cover" src="./images/landingPage/review-section/cheerful-woman-funny-dog-park.png" alt="">
+              </div>
+              <div class="mt-[27px]">
+                <h1 class="text-[18px] font-bold text-[#33363F]">Christa</h1>
+                <span><img src="./images/landingPage/review-section/Group 37068.svg" alt=""></span>
+              </div>
+              <div class="mt-[17px]">
+                <p class="text-[15px] text-[#3D4461]">"Reliable pet sitting service! Booked through the platform and
+                  received regular updates on my pet's well-being. Will definitely use this platform again for future pet
+                  sitting needs.”</p>
+              </div>
             </div>
-            <div class="mt-[27px]">
-              <h1 class="text-[18px] font-bold text-[#33363F]">Marc</h1>
-              <span><img src="./images/landingPage/review-section/Group 37068.svg" alt=""></span>
-            </div>
-            <div class="mt-[17px]">
-              <p class="text-[15px] text-[#3D4461]">"Effortless grooming booking! Found a skilled groomer easily on the
-                platform, and the communication was
-                seamless. Highly recommend this platform for pet care needs!”</p>
-            </div>
+           
+          
+              <div class="card min-w-[240px] lg:h-[637px] rounded-[10px] bg-white py-[30px] px-[20px]">
+                <div>
+                  <img class="w-full object-cover" src="./images/landingPage/review-section/Rectangle 8.png" alt="">
+                </div>
+                <div class="mt-[27px]">
+                  <h1 class="text-[18px] font-bold text-[#33363F]">Leonard</h1>
+                  <span><img src="./images/landingPage/review-section/Group 37068.svg" alt=""></span>
+                </div>
+                <div class="mt-[17px]">
+                  <p class="text-[15px] text-[#3D4461]">"Top-notch veterinary care found on the platform! Connected with a
+                    knowledgeable and compassionate vet easily. This platform is a reliable source for quality pet care
+                    services.”</p>
+                </div>
+              </div>
+       
+           
+              <div class="card   min-w-[240px] lg:h-[552px] rounded-[10px] bg-white py-[15px] pl-6 pr-2">
+                <div>
+                  <img class="w-full object-cover"
+                    src="./images/landingPage/review-section/young-stylish-hipster-man-walking-playing-with-dog-tropical-beach 1.png"
+                    alt="">
+                </div>
+                <div class="mt-[27px]">
+                  <h1 class="text-[18px] font-bold text-[#33363F]">Samantha</h1>
+                  <span><img src="./images/landingPage/review-section/Group 37068.svg" alt=""></span>
+                </div>
+                <div class="mt-[17px]">
+                  <p class="text-[15px] text-[#3D4461]">"Exceptional pet boarding facility discovered through the platform!
+                    My pet was well-cared for in a clean and secure environment. Will definitely utilize this platform for
+                    future boarding needs.”-</p>
+                </div>
+              </div>
+           
+        
+            <!-- Add more cards as needed -->
           </div>
-          <div
-            class="col-span-1 md:block hidden min-w-[240px] lg:h-[552px] h-full rounded-[10px] bg-white py-5 px-[20px]">
-            <div>
-              <img class="w-full " src="./images/landingPage/review-section/cheerful-woman-funny-dog-park.png" alt="">
-            </div>
-            <div class="mt-[27px]">
-              <h1 class="text-[18px] font-bold text-[#33363F]">Christa</h1>
-              <span><img src="./images/landingPage/review-section/Group 37068.svg" alt=""></span>
-            </div>
-            <div class="mt-[17px]">
-              <p class="text-[15px] text-[#3D4461]">"Reliable pet sitting service! Booked through the platform and
-                received regular updates on my pet's well-being. Will definitely use this platform again for future pet
-                sitting needs.”</p>
-            </div>
-          </div>
-          <div class="col-span-1 lg:block hidden min-w-[240px] h-[637px] rounded-[10px] bg-white py-[30px] px-[20px]">
-            <div>
-              <img class="w-full " src="./images/landingPage/review-section/Rectangle 8.png" alt="">
-            </div>
-            <div class="mt-[27px]">
-              <h1 class="text-[18px] font-bold text-[#33363F]">Leonard</h1>
-              <span><img src="./images/landingPage/review-section/Group 37068.svg" alt=""></span>
-            </div>
-            <div class="mt-[17px]">
-              <p class="text-[15px] text-[#3D4461]">"Top-notch veterinary care found on the platform! Connected with a
-                knowledgeable and compassionate vet easily. This platform is a reliable source for quality pet care
-                services.”</p>
-            </div>
-          </div>
-          <div class="col-span-1 lg:block hidden min-w-[240px] h-[552px] rounded-[10px] bg-white py-[15px] pl-6 pr-2">
-            <div>
-              <img class="w-full"
-                src="./images/landingPage/review-section/young-stylish-hipster-man-walking-playing-with-dog-tropical-beach 1.png"
-                alt="">
-            </div>
-            <div class="mt-[27px]">
-              <h1 class="text-[18px] font-bold text-[#33363F]">Samantha</h1>
-              <span><img src="./images/landingPage/review-section/Group 37068.svg" alt=""></span>
-            </div>
-            <div class="mt-[17px]">
-              <p class="text-[15px] text-[#3D4461]">"Exceptional pet boarding facility discovered through the platform!
-                My pet was well-cared for in a clean and secure environment. Will definitely utilize this platform for
-                future boarding needs.”-</p>
-            </div>
-          </div>
-
+          <button class="prev w-[43px] h-[43px] bg-[#3FABF3] rounded-full flex justify-center items-center absolute top-[50%] left-0">
+            <img src="./images/landingPage/review-section/prev-arrow.svg" alt="">
+          </button>
+          <button class="next w-[43px] h-[43px] bg-[#3FABF3] rounded-full flex justify-center items-center absolute top-[50%] right-0">
+            <img src="./images/landingPage/review-section/next-arrow.svg" alt="">
+          </button>
         </div>
       </div>
     </section>
@@ -1106,6 +1186,92 @@
 
 
   </div>
+  <script>
+document.addEventListener('DOMContentLoaded', function() {
+  const slider = document.querySelector('.slider');
+  const prevButton = document.querySelector('.prev');
+  const nextButton = document.querySelector('.next');
+  const gap = 12; // Gap between cards
+  let cardsPerPage = getCardsPerPage();
+  let slideIndex = 0;
+
+  nextButton.addEventListener('click', function() {
+    const cardWidth = slider.children[0].offsetWidth + gap;
+    if (slideIndex < slider.children.length - cardsPerPage) {
+      slideIndex++;
+      const slidePosition = -slideIndex * cardWidth;
+      slider.style.transform = `translateX(${slidePosition}px)`;
+    }
+  });
+
+  prevButton.addEventListener('click', function() {
+    const cardWidth = slider.children[0].offsetWidth + gap;
+    if (slideIndex > 0) {
+      slideIndex--;
+      const slidePosition = -slideIndex * cardWidth;
+      slider.style.transform = `translateX(${slidePosition}px)`;
+    }
+  });
+
+  function getCardsPerPage() {
+    if (window.innerWidth >= 1024) { // Laptop
+      return 4;
+    } else if (window.innerWidth >= 768) { // Tablet
+      return 2;
+    } else { // Mobile
+      return 1;
+    }
+  }
+
+  window.addEventListener('resize', function() {
+    cardsPerPage = getCardsPerPage();
+    slideIndex = 0;
+    slider.style.transform = `translateX(0)`;
+  });
+  
+});
+document.addEventListener('DOMContentLoaded', function() {
+  const slider = document.querySelector('.header-slider');
+  const prevButton = document.querySelector('.header-prev');
+  const nextButton = document.querySelector('.header-next');
+  const gap = 12; // Gap between cards
+  let cardsPerPage = getCardsPerPageHeader();
+  let slideIndex = 0;
+
+  nextButton.addEventListener('click', function() {
+    const cardWidth = slider.children[0].offsetWidth + gap;
+    if (slideIndex < slider.children.length - cardsPerPage) {
+      slideIndex++;
+      const slidePosition = -slideIndex * (cardWidth + gap);
+      slider.style.transform = `translateX(${slidePosition}px)`;
+    }
+  });
+
+  prevButton.addEventListener('click', function() {
+    const cardWidth =  slider.children[0].offsetWidth + gap;
+    if (slideIndex > 0) {
+      slideIndex--;
+      const slidePosition = -slideIndex * (cardWidth + gap);
+      slider.style.transform = `translateX(${slidePosition}px)`;
+    }
+  });
+
+  function getCardsPerPageHeader() {
+    if (window.innerWidth >= 1024) { // Laptop and larger screens
+      return 5;
+    } else { // Tablet and smaller screens
+      return 2;
+    }
+  }
+
+  window.addEventListener('resize', function() {
+    cardsPerPage = getCardsPerPageHeader();
+    slideIndex = 0;
+    slider.style.transform = `translateX(0)`;
+  });
+});
+
+  </script>
 </body>
 
 </html>
