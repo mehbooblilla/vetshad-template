@@ -84,7 +84,7 @@
 </head>
 
 <body style="font-family: Poppins;">
-  <div class="relative">
+  <div class="relative overflow-hidden">
     <header class="w-full lg:h-[848px] h-[500px] request-demo-header relative"
       style="background: url(./images/landingPage/young-happy-man-using-mobile-phone-having-fun-with-his-dog-living-room.png)  33% / cover no-repeat; background-position: center; background-size: cover; backdrop-filter: blur(1px);">
       <div class=" h-full w-full mt-[-26px] absolute z-50">
@@ -161,7 +161,7 @@
 
     <section class="w-full h-full  top-[-80px] relative px-[11px]">
       <div class="slider-container  h-[400px]">
-        <div class="header-slider gap-3 flex ">
+        <div class="header-slider lg:gap-3 gap-[9px] xl:gap-[20px] flex ">
           <div
             class="header-card  ard flex flex-col bg-[#5398FF] px-7 justify-between py-11 min-w-[190px]  min-h-[291px] rounded-[10px] border-l-[5px] border-[#2B80FF]"
             style="box-shadow: 5px 5px 9.6px 0px rgba(0, 0, 0, 0.25);">
@@ -732,230 +732,300 @@
             </svg>
           </div>
         </div>
-        <div
-          class="self-stretch flex flex-col items-start justify-start pt-0 px-0 pb-[38px] box-border max-w-full text-3xl">
-          <div class="self-stretch flex flex-row items-start justify-start py-0 pr-0 pl-1 box-border max-w-full">
-            <div class="flex-1 flex flex-col items-start justify-start py-0 pr-0 pl-2 box-border relative max-w-full">
-              <div class="self-stretch flex flex-row items-start justify-start relative max-w-full">
-                <img class="h-[94.8px] w-[94.8px] absolute !m-[0] bottom-[148.2px] left-[-40px] object-contain"
-                  loading="lazy" alt="" src="./images/landingPage/paws 30.png" />
+        <div class="relative w-full">
+          <img class="h-[94.8px] w-[94.8px] absolute !m-[0] object-contain"
+          loading="lazy" alt="" src="./images/landingPage/paws 30.png" />
 
-                <img class="h-[70px] w-[73px] absolute !m-[0] top-[72px] right-[-33px] overflow-hidden shrink-0"
-                  loading="lazy" alt="" src="./images/landingPage/ph_bone.svg" />
-
-                <div
-                  class="h-[600px] flex-1 relative inline-block max-w-full lg:text-[22px] text-[12px] z-[1] mq450:text-lg">
-                  <p class="m-0 text-[#3D4461] font question" onclick="toggleAnswer(1)">
-                    Q: How do I find a reliable pet service provider on your
-                    platform?
-                  </p>
-                  <p class="m-0 lg:flex hidden">&nbsp;</p>
-                  <p class="m-0 text-[#FF5851] answer" id="answer1">
-                    <i class="font-light">A: Simply browse through our list of vetted service
-                      providers, read reviews, and choose the one that best
-                      fits your needs.</i>
-                    <span
-                      class="w-full h-px absolute !m-[0] lg:top-[145px] top-[175px] box-border left-0 z-[2] border-t-[1px] border-solid border-[#FF5851]">
-                    </span>
-                  </p>
-                  <p class="m-0">
-                    <span>
-                      <span>&nbsp;</span>
-                    </span>
-                  </p>
-                  <p class="m-0 question" onclick="toggleAnswer(2)">
-                    <span>
-                      <span>Q: Can I book appointments directly through the
-                        platform?</span>
-                    </span>
-                  </p>
-                  <p class="m-0">
-                    <span>
-                      <span>&nbsp;</span>
-                    </span>
-                  </p>
-                  <p class="m-0 text-[#FF5851] answer" id="answer2">
-                    <i class="font-light">A: Yes, our platform allows you to book appointments with service providers
-                      directly and conveniently.</i>
-                    <span
-                      class="w-full h-px absolute !m-[0] lg:top-[250px] top-[245px] left-0 box-border z-[2] border-t-[1px] border-solid border-[#FF5851]">
-                    </span>
-                  </p>
-                  <p class="m-0">
-                    <span>
-                      <span>&nbsp;</span>
-                    </span>
-                  </p>
-                  <p class="m-0 question" onclick="toggleAnswer(3)">
-                    <span>
-                      <span>Q: What types of services are offered on your
-                        platform?</span>
-                    </span>
-                  </p>
-                  <p class="m-0">
-                    <span>
-                      <span>&nbsp;</span>
-                    </span>
-                  </p>
-                  <p class="m-0 text-[#FF5851] answer" id="answer3">
-                    <i class="font-light">A: Our platform offers a wide range of pet services including grooming,
-                      walking, sitting, boarding, training, and veterinary care.</i>
-                    <span
-                      class="w-full h-px lg:block hidden absolute !m-[0]  left-0 lg:bottom-[245px] bottom-[150px]  box-border z-[2] border-t-[1px] border-solid border-[#FF5851]">
-                    </span>
-                  </p>
-                  <p class="m-0 lg:block hidden">
-                    <span>
-                      <span>&nbsp;</span>
-                    </span>
-                  </p>
-                  <p class="m-0 question" onclick="toggleAnswer(4)">
-                    <span>
-                      <span>Q: How do I communicate with service providers?</span>
-                    </span>
-                  </p>
-                  <p class="m-0 lg:block hidden">
-                    <span>
-                      <span>&nbsp;</span>
-                    </span>
-                  </p>
-                  <p class="m-0 text-[#FF5851] answer" id="answer4">
-                    <i class="font-light">A: You can easily communicate with service providers through our built-in
-                      messaging system.</i>
-                    <span
-                      class="w-full h-px absolute lg:block hidden !m-[0] lg:bottom-[135px] bottom-[45px] left-[0px] box-border z-[2] border-t-[1px] border-solid border-[#FF5851]">
-                    </span>
-                  </p>
-                  <p class="m-0 lg:block hidden">
-                    <span>
-                      <span>&nbsp;</span>
-                    </span>
-                  </p>
-                  <p class="m-0 question" onclick="toggleAnswer(5)">
-                    <span>
-                      <span>Q: Is it safe to leave my pet with a service provider
-                        I found on your platform?</span>
-                    </span>
-                  </p>
-                  <p class="m-0 text-black">
-                    <span>
-                      <span>&nbsp;</span>
-                    </span>
-                  </p>
-                  <p class="m-0 text-[#FF5851] answer" id="answer5">
-                    <i class="font-light">A: Yes, all service providers on our platform undergo a vetting process to
-                      ensure they meet our standards of quality and professionalism.</i>
-                    <span
-                      class="w-full h-px absolute !m-[0] lg:top-[575px] left-0 top-[175px]  box-border z-[2] border-t-[1px] border-solid border-[#FF5851]">
-                    </span>
-                  </p>
-                  <!-- <p class="m-0">
-                    <span>
-                      <span>&nbsp;</span>
-                    </span>
-                  </p> -->
-
-                </div>
-              </div>
-              <!-- <div
-                class="w-full h-px absolute !m-[0] lg:top-[145px] top-[175px] left-[12px] box-border z-[2] border-t-[1px] border-solid border-[#FF5851]">
-              </div>
+        <img class="h-[70px] w-[73px] absolute !m-[0] top-[72px] right-[-33px] overflow-hidden shrink-0"
+          loading="lazy" alt="" src="./images/landingPage/ph_bone.svg" />
+          <div>
+            <div class="lg:text-[22px] text-[#3D4461] lg:py-8 py-5 text-[12px]">
+              <p class="m-0 text-[#3D4461] font question" onclick="toggleAnswer(1)">
+                Q: How do I find a reliable pet service provider on your
+                platform?
+              </p>
+              <p class="m-0 lg:flex hidden">&nbsp;</p>
+              <p class="m-0 text-[#FF5851] answer" id="answer1">
+                <i class="font-light">A: Simply browse through our list of vetted service
+                  providers, read reviews, and choose the one that best
+                  fits your needs.</i>
+                
+              </p>
               <div
-                class="w-full h-px absolute !m-[0] lg:top-[240px] top-[245px] left-[8px] box-border z-[2] border-t-[1px] border-solid border-[#FF5851]">
-              </div>
-              <div
-                class="w-full h-px lg:block hidden absolute !m-[0] lg:bottom-[163px] bottom-[150px] left-[4px] box-border z-[2] border-t-[1px] border-solid border-[#FF5851]">
-              </div>
-              <div
-                class="w-full h-px absolute lg:block hidden !m-[0] lg:bottom-[61px] bottom-[45px] left-[0px] box-border z-[2] border-t-[1px] border-solid border-[#FF5851]">
-              </div> -->
+                  class="w-full h-px absolute !m-[0]  box-border left-0 z-[2] border-t-[1px] border-solid border-[#FF5851]">
+                </d>
             </div>
           </div>
-          <div class="self-stretch h-[506px] relative max-w-full mt-[-20px]">
-            <!-- <div
-              class="absolute lg:top-[60px] lg:block hidden top-[82px] left-[0px] box-border w-full h-px border-t-[1px] border-solid border-[#FF5851]">
-            </div> -->
+          <div class="lg:text-[22px] text-[#3D4461]  lg:py-8 py-5 text-[12px]">
+            <p class="m-0 text-[#3D4461] font question" onclick="toggleAnswer(2)">
+              Q: Can I book appointments directly through the platform?
+            </p>
+            <p class="m-0 lg:flex hidden">&nbsp;</p>
+            <p class="m-0 text-[#FF5851] answer" id="answer2">
+              <i class="font-light">A: Yes, our platform allows you to book appointments with service providers directly and conveniently.</i>
+              
+            </p>
             <div
-              class="absolute top-[0px]  left-[3px] w-full flex flex-row items-start justify-start max-w-full h-full">
-              <!-- <div
-                class="h-px w-full absolute lg:block hidden !m-[0] top-[178px] left-[-8px] box-border border-t-[1px] border-solid border-[#FF5851]">
-              </div> -->
-              <div
-                class="h-full flex-1 lg:text-[22px] text-[12px] relative inline-block max-w-full z-[2] mq450:text-lg">
-                <!-- <p class="m-0">&nbsp;</p>
-                <p class="m-0  ">&nbsp;</p>
-                <p class="m-0 ">&nbsp;</p> -->
-                <p class="m-0 question" onclick="toggleAnswer(6)">
-                  Q: What if I need to cancel or reschedule an appointment?
-                </p>
-                <p class="m-0">&nbsp;</p>
-                <p class="m-0 text-[#FF5851] answer" id="answer6">
-                  <i class="font-light">A: You can easily manage your appointments through our platform, including
-                    canceling or rescheduling when needed.</i>
-                  <span
-                    class="h-px w-full absolute lg:block hidden !m-[0] top-[178px] left-[-8px] box-border border-t-[1px] border-solid border-[#FF5851]">
-                  </span>
-                </p>
-                <p class="m-0 ">&nbsp;</p>
-                <p class="m-0 question" onclick="toggleAnswer(7)">
-                  Q: Are there any additional fees for using your platform?
-                </p>
-                <p class="m-0">&nbsp;</p>
-                <p class="m-0 text-[#FF5851] answer" id="answer7">
-                  <i class="font-light">A: Our platform is free for pet owners to use. You only pay for the services
-                    provided by the service providers.</i>
-                  <span
-                    class="w-full h-px absolute !m-[0] lg:top-[250px] left-0 top-[175px]  box-border z-[2] border-t-[1px] border-solid border-[#FF5851]">
-                  </span>
-                </p>
-                <p class="m-0 lg:block hidden">&nbsp;</p>
-                <p class="m-0 question" onclick="toggleAnswer(8)">
-                  Q: How do I sign up as a service provider on your platform?
-                </p>
-                <p class="m-0">&nbsp;</p>
-                <p class="m-0 text-[#FF5851] answer" id="answer8">
-                  <i class="font-light">A: Simply fill out our registration form and submit the required documents for
-                    verification.</i>
-                  <span
-                    class="h-px w-full  sticky block !m-[0] bottom-[230px] left-[-8px] box-border z-[3] border-t-[1px] border-solid border-[#FF5851]">
-                  </span>
-                </p>
-                <p class="m-0 lg:block hidden">&nbsp;</p>
-                <p class="m-0 question" onclick="toggleAnswer(9)">
-                  Q: What types of services can I offer on your platform?
-                </p>
-                <p class="m-0">&nbsp;</p>
-                <p class="m-0 text-[#FF5851] answer" id="answer9">
-                  <i class="font-light">A: You can offer a variety of pet services including grooming, walking, sitting,
-                    boarding, training, and veterinary care.</i>
-                  <span
-                    class="h-px w-full sticky block !m-[0] bottom-[127px] left-[-8px] box-border z-[3] border-t-[1px] border-solid border-[#FF5851]">
-                  </span>
-                </p>
-                <p class="m-0 lg:block hidden">&nbsp;</p>
-                <p class="m-0 question" onclick="toggleAnswer(10)">
-                  Q: How do I set my availability and working hours?
-                </p>
-                <p class="m-0 text-[#FF5851] answer" id="answer10">
-                  <i class="font-light">A: You can easily manage your availability and working hours through your
-                    profile settings.</i>
-                  <span
-                    class="h-px w-full block sticky !m-[0] bottom-[23px] left-[-8px] box-border z-[3] border-t-[1px] border-solid border-[#FF5851]">
-                  </span>
-                </p>
-              </div>
-              <!-- <div
-                class="h-px w-full absolute lg:block hidden !m-[0] bottom-[230px] left-[-8px] box-border z-[3] border-t-[1px] border-solid border-[#FF5851]">
-              </div>
-              <div
-                class="h-px w-full absolute lg:block hidden !m-[0] bottom-[127px] left-[-8px] box-border z-[3] border-t-[1px] border-solid border-[#FF5851]">
-              </div>
-              <div
-                class="h-px w-full absolute lg:block hidden !m-[0] bottom-[23px] left-[-8px] box-border z-[3] border-t-[1px] border-solid border-[#FF5851]">
-              </div> -->
-            </div>
+                class="w-full h-px absolute !m-[0]  box-border left-0 z-[2] border-t-[1px] border-solid border-[#FF5851]">
+              </d>
           </div>
         </div>
+        <div class="lg:text-[22px] text-[#3D4461]  lg:py-8 py-5 text-[12px]">
+          <p class="m-0 text-[#3D4461] font question" onclick="toggleAnswer(3)">
+            Q: What types of services are offered on your platform?
+          </p>
+          <p class="m-0 lg:flex hidden">&nbsp;</p>
+          <p class="m-0 text-[#FF5851] answer" id="answer3">
+            <i class="font-light">A: Our platform offers a wide range of pet services including grooming, walking, sitting, boarding, training, and veterinary care.</i>
+            
+          </p>
+          <div
+              class="w-full h-px absolute !m-[0]  box-border left-0 z-[2] border-t-[1px] border-solid border-[#FF5851]">
+            </d>
+        </div>
+      </div>
+      <div class="lg:text-[22px] text-[#3D4461]  lg:py-8 py-5 text-[12px]">
+        <p class="m-0 text-[#3D4461] font question" onclick="toggleAnswer(4)">
+          Q: How do I communicate with service providers?
+        </p>
+        <p class="m-0 lg:flex hidden">&nbsp;</p>
+        <p class="m-0 text-[#FF5851] answer" id="answer4">
+          <i class="font-light">A: You can easily communicate with service providers through our built-in messaging system.</i>
+          
+        </p>
+        <div
+            class="w-full h-px absolute !m-[0]  box-border left-0 z-[2] border-t-[1px] border-solid border-[#FF5851]">
+          </d>
+      </div>
+    </div>
+    <div class="lg:text-[22px] text-[#3D4461]  lg:py-8 py-5 text-[12px]">
+      <p class="m-0 text-[#3D4461] font question" onclick="toggleAnswer(5)">
+        Is it safe to leave my pet with a service provider I found on your platform?
+      </p>
+      <p class="m-0 lg:flex hidden">&nbsp;</p>
+      <p class="m-0 text-[#FF5851] answer" id="answer5">
+        <i class="font-light">A: Yes, all service providers on our platform undergo a vetting process to ensure they meet our standards of quality and professionalism.</i>
+        
+      </p>
+      <div
+          class="w-full h-px absolute !m-[0]  box-border left-0 z-[2] border-t-[1px] border-solid border-[#FF5851]">
+        </d>
+    </div>
+  </div>
+  <div class="lg:text-[22px] text-[#3D4461]  lg:py-8 py-5 text-[12px]">
+    <p class="m-0 text-[#3D4461] font question" onclick="toggleAnswer(6)">
+      Q: Can I leave reviews and feedback for service providers?
+    </p>
+    <p class="m-0 lg:flex hidden">&nbsp;</p>
+    <p class="m-0 text-[#FF5851] answer" id="answer6">
+      <i class="font-light">A: Absolutely! Your feedback helps us maintain high-quality standards and helps other pet owners make informed decisions.</i>
+      
+    </p>
+    <div
+        class="w-full h-px absolute !m-[0]  box-border left-0 z-[2] border-t-[1px] border-solid border-[#FF5851]">
+      </d>
+  </div>
+</div>
+<div class="lg:text-[22px] text-[#3D4461] lg:py-8 py-5 text-[12px]">
+  <p class="m-0 text-[#3D4461] font question" onclick="toggleAnswer(7)">
+    Q: What if I need to cancel or reschedule an appointment?
+  </p>
+  <p class="m-0 lg:flex hidden">&nbsp;</p>
+  <p class="m-0 text-[#FF5851] answer" id="answer7">
+    <i class="font-light">A: You can easily manage your appointments through our platform, including canceling or rescheduling when needed.</i>
+    
+  </p>
+  <div
+      class="w-full h-px absolute !m-[0]  box-border left-0 z-[2] border-t-[1px] border-solid border-[#FF5851]">
+    </d>
+</div>
+</div>
+<div class="lg:text-[22px] text-[#3D4461]  lg:py-8 py-5 text-[12px]">
+  <p class="m-0 text-[#3D4461] font question" onclick="toggleAnswer(8)">
+    Q: Are there any additional fees for using your platform?
+  </p>
+  <p class="m-0 lg:flex hidden">&nbsp;</p>
+  <p class="m-0 text-[#FF5851] answer" id="answer8">
+    <i class="font-light">A: Our platform is free for pet owners to use. You only pay for the services provided by the service providers.</i>
+    
+  </p>
+  <div
+      class="w-full h-px absolute !m-[0]  box-border left-0 z-[2] border-t-[1px] border-solid border-[#FF5851]">
+    </d>
+</div>
+</div>
+<div class="lg:text-[22px] text-[#3D4461]  lg:py-8 py-5  text-[12px]">
+  <p class="m-0 text-[#3D4461] font question" onclick="toggleAnswer(9)">
+    Q: How do I sign up as a service provider on your platform?
+  </p>
+  <p class="m-0 lg:flex hidden">&nbsp;</p>
+  <p class="m-0 text-[#FF5851] answer" id="answer9">
+    <i class="font-light">A: Simply fill out our registration form and submit the required documents for verification.</i>
+    
+  </p>
+  <div
+      class="w-full h-px absolute !m-[0]  box-border left-0 z-[2] border-t-[1px] border-solid border-[#FF5851]">
+    </d>
+</div>
+</div>
+<div class="lg:text-[22px] text-[#3D4461]  lg:py-8 py-5 text-[12px]">
+  <p class="m-0 text-[#3D4461] font question" onclick="toggleAnswer(10)">
+    Q: What types of services can I offer on your platform?
+  </p>
+  <p class="m-0 lg:flex hidden">&nbsp;</p>
+  <p class="m-0 text-[#FF5851] answer" id="answer10">
+    <i class="font-light">A: You can offer a variety of pet services including grooming, walking, sitting, boarding, training, and veterinary care.</i>
+    
+  </p>
+  <div
+      class="w-full h-px absolute !m-[0]  box-border left-0 z-[2] border-t-[1px] border-solid border-[#FF5851]">
+    </d>
+</div>
+</div>
+<div class="lg:text-[22px] text-[#3D4461]  lg:py-8 py-5 text-[12px]">
+  <p class="m-0 text-[#3D4461] font question" onclick="toggleAnswer(11)">
+    Q: How do I set my availability and working hours?
+  </p>
+  <p class="m-0 lg:flex hidden">&nbsp;</p>
+  <p class="m-0 text-[#FF5851] answer" id="answer11">
+    <i class="font-light">A: You can easily manage your availability and working hours through your profile settings.</i>
+    
+  </p>
+  <div
+      class="w-full h-px absolute !m-[0]  box-border left-0 z-[2] border-t-[1px] border-solid border-[#FF5851]">
+    </d>
+</div>
+</div>
+<div class="lg:text-[22px] text-[#3D4461]  lg:py-8 py-5 text-[12px]">
+  <p class="m-0 text-[#3D4461] font question" onclick="toggleAnswer(12)">
+    Q: Can I communicate directly with pet owners through the platform?
+  </p>
+  <p class="m-0 lg:flex hidden">&nbsp;</p>
+  <p class="m-0 text-[#FF5851] answer" id="answer12">
+    <i class="font-light">A: Yes, our platform provides a messaging feature for easy communication with pet owners.</i>
+    
+  </p>
+  <div
+      class="w-full h-px absolute !m-[0]  box-border left-0 z-[2] border-t-[1px] border-solid border-[#FF5851]">
+    </d>
+</div>
+</div>
+<div class="lg:text-[22px] text-[#3D4461]  lg:py-8 py-5 text-[12px]">
+  <p class="m-0 text-[#3D4461] font question" onclick="toggleAnswer(13)">
+    Q: How do I handle appointment bookings and cancellations?
+  </p>
+  <p class="m-0 lg:flex hidden">&nbsp;</p>
+  <p class="m-0 text-[#FF5851] answer" id="answer13">
+    <i class="font-light">A: You can manage appointment bookings and cancellations through our platform's scheduling system.</i>
+    
+  </p>
+  <div
+      class="w-full h-px absolute !m-[0]  box-border left-0 z-[2] border-t-[1px] border-solid border-[#FF5851]">
+    </d>
+</div>
+</div>
+<div class="lg:text-[22px] text-[#3D4461]  lg:py-8 py-5 text-[12px]">
+  <p class="m-0 text-[#3D4461] font question" onclick="toggleAnswer(14)">
+    Q: Do I need to provide proof of insurance or certification?
+  </p>
+  <p class="m-0 lg:flex hidden">&nbsp;</p>
+  <p class="m-0 text-[#FF5851] answer" id="answer14">
+    <i class="font-light">A: Yes, we require all service providers to provide proof of insurance and any relevant certifications.</i>
+    
+  </p>
+  <div
+      class="w-full h-px absolute !m-[0]  box-border left-0 z-[2] border-t-[1px] border-solid border-[#FF5851]">
+    </d>
+</div>
+</div>
+<div class="lg:text-[22px] text-[#3D4461]  lg:py-8 py-5 text-[12px]">
+  <p class="m-0 text-[#3D4461] font question" onclick="toggleAnswer(15)">
+    Q: How do I receive payments for services rendered?
+  </p>
+  <p class="m-0 lg:flex hidden">&nbsp;</p>
+  <p class="m-0 text-[#FF5851] answer" id="answer15">
+    <i class="font-light">A: Payments are processed through our platform, and you'll receive your earnings via your preferred payment method.</i>
+    
+  </p>
+  <div
+      class="w-full h-px absolute !m-[0]  box-border left-0 z-[2] border-t-[1px] border-solid border-[#FF5851]">
+    </d>
+</div>
+</div>
+<div class="lg:text-[22px] text-[#3D4461]  lg:py-8 py-5 text-[12px]">
+  <p class="m-0 text-[#3D4461] font question" onclick="toggleAnswer(16)">
+    Q: How do I respond to client reviews and feedback?
+  </p>
+  <p class="m-0 lg:flex hidden">&nbsp;</p>
+  <p class="m-0 text-[#FF5851] answer" id="answer16">
+    <i class="font-light">A: You can view and respond to client reviews and feedback directly through your profile dashboard.</i>
+    
+  </p>
+  <div
+      class="w-full h-px absolute !m-[0]  box-border left-0 z-[2] border-t-[1px] border-solid border-[#FF5851]">
+    </d>
+</div>
+</div>
+<div class="lg:text-[22px] text-[#3D4461]  lg:py-8 py-5 text-[12px]">
+  <p class="m-0 text-[#3D4461] font question" onclick="toggleAnswer(17)">
+    Q: Is there a limit to the number of clients I can serve through your platform?
+  </p>
+  <p class="m-0 lg:flex hidden">&nbsp;</p>
+  <p class="m-0 text-[#FF5851] answer" id="answer17">
+    <i class="font-light">A: No, there's no limit. You can serve as many clients as your schedule allows.</i>
+    
+  </p>
+  <div
+      class="w-full h-px absolute !m-[0]  box-border left-0 z-[2] border-t-[1px] border-solid border-[#FF5851]">
+    </d>
+</div>
+</div>
+<div class="lg:text-[22px] text-[#3D4461]  lg:py-8 py-5 text-[12px]">
+  <p class="m-0 text-[#3D4461] font question" onclick="toggleAnswer(18)">
+    Q: Is my personal information secure on your platform?
+  </p>
+  <p class="m-0 lg:flex hidden">&nbsp;</p>
+  <p class="m-0 text-[#FF5851] answer" id="answer18">
+    <i class="font-light">A: Yes, we take privacy and security seriously and use industry-standard measures to protect your information.</i>
+    
+  </p>
+  <div
+      class="w-full h-px absolute !m-[0]  box-border left-0 z-[2] border-t-[1px] border-solid border-[#FF5851]">
+    </d>
+</div>
+</div>
+<div class="lg:text-[22px] text-[#3D4461]  lg:py-8 py-5 text-[12px]">
+  <p class="m-0 text-[#3D4461] font question" onclick="toggleAnswer(19)">
+    Q: How do I reset my password if I forget it?
+  </p>
+  <p class="m-0 lg:flex hidden">&nbsp;</p>
+  <p class="m-0 text-[#FF5851] answer" id="answer19">
+    <i class="font-light">A: You can easily reset your password through the "Forgot Password" link on the login page.</i>
+    
+  </p>
+  <div
+      class="w-full h-px absolute !m-[0]  box-border left-0 z-[2] border-t-[1px] border-solid border-[#FF5851]">
+    </d>
+</div>
+</div>
+<div class="lg:text-[22px] text-[#3D4461]  lg:py-8 py-5 text-[12px]">
+  <p class="m-0 text-[#3D4461] font question" onclick="toggleAnswer(20)">
+    Q: What if I encounter technical issues while using the platform?
+  </p>
+  <p class="m-0 lg:flex hidden">&nbsp;</p>
+  <p class="m-0 text-[#FF5851] answer" id="answer20">
+    <i class="font-light">A: You can reach out to our support team for assistance, and we'll be happy to help resolve any issues.</i>
+    
+  </p>
+  <div
+      class="w-full h-px absolute !m-[0]  box-border left-0 z-[2] border-t-[1px] border-solid border-[#FF5851]">
+    </d>
+</div>
+</div>
+
+          </div>
+        </div>
+     
         <div
           class="self-stretch flex flex-row items-start justify-center py-0 pr-5 lg:pl-[31px] box-border max-w-full text-17xl">
           <div
@@ -1222,7 +1292,7 @@
   </div>
 
 
-  </div>
+
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       const slider = document.querySelector('.slider');
@@ -1271,7 +1341,7 @@
       const slider = document.querySelector('.header-slider');
       const prevButton = document.querySelector('.header-prev');
       const nextButton = document.querySelector('.header-next');
-      const gap = 12; // Gap between cards
+      const gap = 9; // Gap between cards
       let cardsPerPage = getCardsPerPageHeader();
       let slideIndex = 0;
 
