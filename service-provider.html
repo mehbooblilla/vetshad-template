@@ -19,6 +19,62 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
+        <style>
+            /* Custom styles for slider */
+            .slider-container {
+              overflow: hidden;
+            }
+        
+            .slider {
+              display: flex;
+              transition: transform 0.5s ease;
+            }
+        
+            .answer {
+              display: none;
+            }
+        
+            .card {
+              flex: 0 0 calc(100% / 1);
+              /* Display 4 cards at a time */
+              padding: 10px;
+              /* border: 1px solid #ccc; */
+              box-sizing: border-box;
+            }
+        
+            .header-card {
+              flex: 0 0 calc(100% / 2);
+              ;
+            }
+        
+            @media (min-width: 768px) {
+        
+              /* Tablet */
+              .card {
+                flex: 0 0 calc((100% -  12px) / 2);
+                /* Display 2 cards at a time */
+              }
+        
+            }
+        
+            @media (min-width: 1024px) {
+        
+              /* Desktop */
+              .card {
+                flex: 0 0 calc((100% - 3 * 12px) / 4);
+                /* Display 4 cards at a time */
+              }
+        
+              .header-card {
+                flex: 0 0 calc(100% / 5);
+              }
+            }
+        
+            .header-slider {
+              display: flex;
+              transition: transform 0.3s ease-in-out;
+            }
+          </style>
 </head>
 
 
@@ -634,476 +690,540 @@
             </div>
         </section>
         <section
-        class="w-full flex flex-row items-start justify-end py-0 px-14 box-border mt-[100px] max-w-full text-center text-21xl text-darkslategray-200 font-poppins lg:pl-7 lg:pr-7 lg:box-border">
-        <div class="flex-1 flex flex-col items-start justify-start gap-[54px] max-w-full mq750:gap-[27px_54px]">
-          <div class="w-full flex flex-row items-start justify-center py-0 px-5 box-border max-w-full">
-            <div class="flex flex-col items-start justify-start">
-              <div class="flex flex-row items-start justify-start relative">
-                <img
-                  class="h-[98.6px] w-[98.6px] absolute !m-[0] top-[-52px] left-[-90px] overflow-hidden shrink-0 object-contain z-[3]"
-                  loading="lazy" alt="" src="./images//services/noto_paw-print.svg">
-  
-                <h1
-                  class="m-0 w-[283px] relative text-[#363E62] leading-[60px] text-[40px] font-semibold  inline-block z-[4] mq450:text-5xl mq450:leading-[36px] mq1050:text-13xl mq1050:leading-[48px]">
-                  How It Works?
+            class="w-full flex flex-row items-start justify-end py-0 px-14 box-border mt-[100px] max-w-full text-center text-21xl text-darkslategray-200 font-poppins lg:pl-7 lg:pr-7 lg:box-border">
+            <div class="flex-1 flex flex-col items-start justify-start gap-[54px] max-w-full mq750:gap-[27px_54px]">
+                <div class="w-full flex flex-row items-start justify-center py-0 px-5 box-border max-w-full">
+                    <div class="flex flex-col items-start justify-start">
+                        <div class="flex flex-row items-start justify-start relative">
+                            <img class="h-[98.6px] w-[98.6px] absolute !m-[0] top-[-52px] left-[-90px] overflow-hidden shrink-0 object-contain z-[3]"
+                                loading="lazy" alt="" src="./images//services/noto_paw-print.svg">
+
+                            <h1
+                                class="m-0 w-[283px] relative text-[#363E62] leading-[60px] text-[40px] font-semibold  inline-block z-[4] mq450:text-5xl mq450:leading-[36px] mq1050:text-13xl mq1050:leading-[48px]">
+                                How It Works?
+                            </h1>
+                        </div>
+
+                        <div class="h-[5px] flex-1 relative rounded-lg bg-[#FF5851]"></div>
+
+                    </div>
+                </div>
+                <div
+                    class="self-stretch flex flex-row flex-wrap items-end justify-center gap-[19px] max-w-full text-left text-3xl text-darkslategray-100">
+                    <div class="h-[576px] flex-1 relative min-w-[315px] max-w-full">
+                        <div class="absolute top-[0px] left-[139px] w-[185px] h-[196px]">
+                            <div class="absolute top-[26px] left-[0px] w-[170px] h-[170px]">
+                                <div
+                                    class="absolute top-[0px] left-[0px] rounded-[50%] bg-[#3D4461] shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] w-full h-full z-[1]">
+                                </div>
+                                <img class="absolute top-[42px] left-[42px] w-[86px] h-[86px] z-[2]" loading="lazy"
+                                    alt="" src="./images/requestDemo/Group 1156 (1).svg" />
+                            </div>
+                            <img class="absolute top-[0px] left-[117px] w-[68px] h-[68px] z-[3]" loading="lazy" alt=""
+                                src="./images/requestDemo/Group.svg" />
+                        </div>
+                        <div
+                            class="absolute top-[107px] left-[0px] rounded-10xs bg-[#5398FF49] shadow-[0px_4px_13.7px_rgba(83,_152,_255,_0.62)] box-border w-full flex flex-col items-start justify-start pt-[98px] pb-[89px] pr-[15px] pl-[21px] gap-[16px] max-w-full border-[0px] border-solid border-dodgerblue-400">
+                            <img class="w-[420px] h-[469px] relative rounded-10xs hidden max-w-full" alt=""
+                                src="./images/requestDemo/Group.svg" />
+
+                            <h3 class="m-0 relative text-inherit font-semibold font-inherit z-[1] mq450:text-lg">
+                                <p class="m-0">Streamlined Registration and Setup: </p>
+                            </h3>
+                            <div
+                                class="self-stretch flex flex-row items-start justify-start py-0 pr-0 pl-px box-border max-w-full text-base text-gray-800">
+                                <div class="h-[201px] flex-1 relative inline-block max-w-full z-[1]">
+                                    <p class="m-0">
+                                        • Create your clinic profile easily on Vetsched.pet,
+                                        boosting your online visibility.
+                                    </p>
+                                    <p class="m-0">
+                                        • Customize your profile with clinic details, services,
+                                        and pricing.
+                                    </p>
+                                    <p class="m-0">
+                                        • Highlight your brand with logo upload and service
+                                        descriptions for pet owner attraction.
+                                    </p>
+                                    <p class="m-0">
+                                        • Manage appointment scheduling efficiently by setting
+                                        availability and working hours.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="h-[600px] flex-1 relative min-w-[319px] max-w-full">
+                        <div class="absolute top-[0px] left-[127px] w-52 h-52">
+                            <div class="absolute top-[38px] left-[0px] w-[170px] h-[170px]">
+                                <div
+                                    class="absolute top-[0px] left-[0px] rounded-[50%] bg-[#3D4461] shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] w-full h-full z-[1]">
+                                </div>
+                                <img class="absolute top-[45px] left-[45px] w-[81px] h-[81px] z-[2]" loading="lazy"
+                                    alt="" src="./images/requestDemo/Group 1157 (1).svg" />
+                            </div>
+                            <img class="absolute top-[0px] left-[131px] w-[68px] h-[68px] z-[2]" loading="lazy" alt=""
+                                src="./images/requestDemo/Vector.svg" />
+                        </div>
+                        <div
+                            class="absolute top-[131px] left-[0px] rounded-10xs bg-[#5398FF49] shadow-[0px_4px_13.7px_rgba(83,_152,_255,_0.62)] box-border w-full flex flex-col items-start justify-start pt-[91px] px-[18px] pb-[49px] gap-[22px] max-w-full border-[0px] border-solid border-dodgerblue-400">
+                            <img class="w-[420px] h-[469px] relative rounded-10xs hidden max-w-full" alt=""
+                                src="./images//requestDemo/paws 29.png" />
+
+                            <div class="w-72 flex flex-row items-start justify-start relative">
+                                <img class="h-[85px] w-[85px] absolute !m-[0] top-[-67px] right-[-69px] object-contain z-[2]"
+                                    loading="lazy" alt="" src="./images//requestDemo/paws 29.png" />
+
+                                <h3
+                                    class="m-0 flex-1 relative text-inherit font-semibold font-inherit z-[3] mq450:text-lg">
+                                    <p class="m-0">Effortless Appointment Management: </p>
+                                </h3>
+                            </div>
+                            <div
+                                class="self-stretch flex flex-row items-start justify-start py-0 px-1 box-border max-w-full text-base text-gray-800">
+                                <div class="h-[241px] flex-1 relative inline-block max-w-full z-[1]">
+                                    <p class="m-0">
+                                        • Simplify scheduling with intuitive online booking for
+                                        both you and clients.
+                                    </p>
+                                    <p class="m-0">
+                                        • Customize appointment slots to match your clinic's
+                                        availability, including breaks.
+                                    </p>
+                                    <p class="m-0">
+                                        • Minimize no-shows with automated reminders,
+                                        confirmations, and cancellation notifications.
+                                    </p>
+                                    <p class="m-0">
+                                        • Seamlessly integrate with your existing calendar and
+                                        scheduling systems for added convenience.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class=" flex-1 flex flex-col items-start justify-end pt-0 px-0 pb-px box-border min-w-[315px] max-w-full">
+                        <div
+                            class="self-stretch flex flex-col items-end justify-start gap-[35px] max-w-full mq450:gap-[17px_35px]">
+                            <div class="w-[252px] flex flex-row items-start justify-center py-0 px-5 box-border">
+                                <button
+                                    class="cursor-pointer [border:none] p-0 bg-[transparent] h-[84px] w-[84px] relative">
+                                    <img class="absolute top-[0px] left-[0px] rounded-6xs w-[84px] h-[84px] z-[4]"
+                                        alt="" src="/public/sound-decoder.svg" />
+
+                                    <div
+                                        class="absolute top-[30px] left-[42px] box-border w-0.5 h-[30px] z-[5] border-r-[2px] border-solid border-white">
+                                    </div>
+                                    <div
+                                        class="absolute top-[44px] left-[29px] box-border w-7 h-0.5 z-[6] border-t-[2px] border-solid border-white">
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="self-stretch flex flex-row items-start justify-start relative max-w-full">
+                                <div
+                                    class="w-[170px] !m-[0] absolute top-[-98px] right-[119px] flex flex-row items-start justify-start">
+                                    <div class="h-[170px] flex-1 relative">
+                                        <div
+                                            class="absolute top-[0px] left-[0px] rounded-[50%] bg-darkslategray-900 shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] w-full h-full z-[1]">
+                                        </div>
+                                        <div
+                                            class="absolute top-[42px] left-[34px] rounded-12xs bg-white w-[105px] h-[68px] z-[2]">
+                                            <div
+                                                class="absolute top-[0px] left-[0px] rounded-12xs bg-white w-full h-full hidden">
+                                            </div>
+                                            <div
+                                                class="absolute top-[4px] left-[4px] rounded-sm bg-[#3D4461] w-[94px] h-2 z-[3]">
+                                            </div>
+                                            <div class="absolute top-[17px] left-[9px] bg-[#D9D9D984]  h-[38px] z-[3]">
+                                                <div
+                                                    class="absolute top-[0px] left-[0px] bg-[#D9D9D984] w-full h-full hidden">
+                                                </div>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="76" height="1"
+                                                    viewBox="0 0 76 1" fill="none">
+                                                    <path d="M1 0.50061H75" stroke="#FF5851" stroke-opacity="0.46"
+                                                        stroke-linecap="round" />
+                                                </svg>
+
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="76" height="1"
+                                                    viewBox="0 0 76 1" fill="none">
+                                                    <path d="M1 0.50061H75" stroke="#FF5851" stroke-opacity="0.46"
+                                                        stroke-linecap="round" />
+                                                </svg>
+
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="76" height="1"
+                                                    viewBox="0 0 76 1" fill="none">
+                                                    <path d="M1 0.50061H75" stroke="#FF5851" stroke-opacity="0.46"
+                                                        stroke-linecap="round" />
+                                                </svg>
+
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="76" height="1"
+                                                    viewBox="0 0 76 1" fill="none">
+                                                    <path d="M1 0.50061H75" stroke="#FF5851" stroke-opacity="0.46"
+                                                        stroke-linecap="round" />
+                                                </svg>
+
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="76" height="1"
+                                                    viewBox="0 0 76 1" fill="none">
+                                                    <path d="M1 0.50061H75" stroke="#FF5851" stroke-opacity="0.46"
+                                                        stroke-linecap="round" />
+                                                </svg>
+
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="76" height="1"
+                                                    viewBox="0 0 76 1" fill="none">
+                                                    <path d="M1 0.50061H75" stroke="#FF5851" stroke-opacity="0.46"
+                                                        stroke-linecap="round" />
+                                                </svg>
+
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="76" height="1"
+                                                    viewBox="0 0 76 1" fill="none">
+                                                    <path d="M1 0.50061H75" stroke="#FF5851" stroke-opacity="0.46"
+                                                        stroke-linecap="round" />
+                                                </svg>
+
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="76" height="1"
+                                                    viewBox="0 0 76 1" fill="none">
+                                                    <path d="M1 0.50061H75" stroke="#FF5851" stroke-opacity="0.46"
+                                                        stroke-linecap="round" />
+                                                </svg>
+
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="76" height="1"
+                                                    viewBox="0 0 76 1" fill="none">
+                                                    <path d="M1 0.50061H75" stroke="#FF5851" stroke-opacity="0.46"
+                                                        stroke-linecap="round" />
+                                                </svg>
+
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="76" height="1"
+                                                    viewBox="0 0 76 1" fill="none">
+                                                    <path d="M1 0.50061H75" stroke="#FF5851" stroke-opacity="0.46"
+                                                        stroke-linecap="round" />
+                                                </svg>
+
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="76" height="1"
+                                                    viewBox="0 0 76 1" fill="none">
+                                                    <path d="M1 0.50061H75" stroke="#FF5851" stroke-opacity="0.46"
+                                                        stroke-linecap="round" />
+                                                </svg>
+
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="76" height="1"
+                                                    viewBox="0 0 76 1" fill="none">
+                                                    <path d="M1 0.50061H75" stroke="#FF5851" stroke-opacity="0.46"
+                                                        stroke-linecap="round" />
+                                                </svg>
+
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="76" height="1"
+                                                    viewBox="0 0 76 1" fill="none">
+                                                    <path d="M1 0.50061H75" stroke="#FF5851" stroke-opacity="0.46"
+                                                        stroke-linecap="round" />
+                                                </svg>
+
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="76" height="1"
+                                                    viewBox="0 0 76 1" fill="none">
+                                                    <path d="M1 0.50061H75" stroke="#FF5851" stroke-opacity="0.46"
+                                                        stroke-linecap="round" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="124" height="15"
+                                            viewBox="0 0 124 15" fill="none">
+                                            <g filter="url(#filter0_d_797_408)">
+                                                <path
+                                                    d="M4.63389 10.9658C3.89942 9.63288 4.86367 8.00061 6.38557 8.00061H117.135C118.525 8.00061 119.492 9.38483 119.012 10.6902L117.91 13.6902C117.621 14.4774 116.871 15.0006 116.033 15.0006H8.03863C7.30981 15.0006 6.63868 14.6041 6.28695 13.9658L4.63389 10.9658Z"
+                                                    fill="white" />
+                                            </g>
+                                            <defs>
+                                                <filter id="filter0_d_797_408" x="0.382812" y="0.000610352"
+                                                    width="122.754" height="15" filterUnits="userSpaceOnUse"
+                                                    color-interpolation-filters="sRGB">
+                                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                    <feColorMatrix in="SourceAlpha" type="matrix"
+                                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                                        result="hardAlpha" />
+                                                    <feOffset dy="-4" />
+                                                    <feGaussianBlur stdDeviation="2" />
+                                                    <feComposite in2="hardAlpha" operator="out" />
+                                                    <feColorMatrix type="matrix"
+                                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                                                    <feBlend mode="normal" in2="BackgroundImageFix"
+                                                        result="effect1_dropShadow_797_408" />
+                                                    <feBlend mode="normal" in="SourceGraphic"
+                                                        in2="effect1_dropShadow_797_408" result="shape" />
+                                                </filter>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex-1 rounded-10xs bg-dodgerblue-500 shadow-[0px_4px_13.7px_rgba(83,_152,_255,_0.62)] box-border flex flex-col items-start justify-start pt-[92px] px-3.5 pb-[98px] gap-[12px] max-w-full border-[0px] border-solid border-dodgerblue-400 mq750:pt-[60px] mq750:pb-16 mq750:box-border">
+                                    <img class="w-[420px] h-[469px] relative rounded-10xs hidden max-w-full" alt=""
+                                        src="/public/rectangle-422.svg" />
+
+                                    <h3
+                                        class="m-0 w-[382px] h-[76px] relative text-inherit font-semibold font-inherit inline-block shrink-0 max-w-full z-[1] mq450:text-lg">
+                                        <p class="m-0">
+                                            Seamless Client Communication and Feedback: 
+                                        </p>
+                                    </h3>
+                                    <div
+                                        class="w-[378px] flex flex-row items-start justify-start py-0 px-[7px] box-border max-w-full text-base text-gray-800">
+                                        <div class="h-[191px] flex-1 relative inline-block max-w-full z-[1]">
+                                            <p class="m-0">
+                                                • Improve communication with built-in messaging for
+                                                quick interaction.
+                                            </p>
+                                            <p class="m-0">
+                                                • Respond to inquiries, provide updates, and send
+                                                instructions directly.
+                                            </p>
+                                            <p class="m-0">
+                                                • Boost engagement and loyalty with a feedback and
+                                                review system.
+                                            </p>
+                                            <p class="m-0">
+                                                • Utilize feedback to enhance service quality and
+                                                attract new clients.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section
+            class="w-full py-[150px] flex flex-row items-start justify-center  px-[23px] lg:px-[100px] lg:pb-[309px] box-border max-w-full shrink-0 text-left text-26xl text-darkslategray-100 font-poppins mq450:pb-[131px] mq450:box-border mq1125:pb-[201px] mq1125:box-border">
+            <div class=" flex flex-row flex-wrap items-end justify-start gap-[54px] max-w-full mq800:gap-[27px]">
+                <div class="lg:h-[620px] h-[235px] flex-1 relative min-w-[384px]  max-w-full mq450:min-w-full">
+                    <div
+                        class="absolute h-full  top-[0px] bottom-[0px] left-[0px] rounded-[10px] w-[493px] flex items-center justify-center">
+                        <img class="lg:h-[556px] max-h-full lg:w-[526px] w-[234px] h-[222px] lg:object-contain object-cover absolute left-[4px] top-[4px] [transform:scale(1.078)]"
+                            alt="" src="./images/serviceProvider/medicine-pet-care-people_Vetsched.png" />
+                    </div>
+                    <div
+                        class="absolute top-[90px] left-[200px] lg:top-auto lg:bottom-0 lg:left-auto lg:right-0 rounded-[5px] w-[147px] h-[181px] lg:w-[234px] lg:h-[286px]  z-[1] flex items-center justify-center">
+                        <img class="lg:w-full lg:h-full z-[1] object-contain absolute w-full h-full left-[0px] top-[4px] [transform:scale(1.256)]"
+                            loading="lazy" alt="" src="./images/serviceProvider/girl-with-dog_Vetsched.png" />
+                    </div>
+                </div>
+                <div
+                    class="flex-1 flex flex-col items-start justify-end pt-0 px-0 pb-[11px] box-border min-w-[387px] max-w-full mq800:min-w-full">
+                    <div
+                        class="self-stretch flex flex-col items-start justify-start gap-[57px] max-w-full mq800:gap-[28px_57px]">
+                        <div
+                            class="self-stretch flex flex-col relative items-start justify-start lg:gap-[25.5px] gap-[5.5px] max-w-full">
+                            <div
+                                class="flex flex-row items-start justify-start py-0 lg:px-[61px] px-[15px] box-border max-w-full mq800:pl-[30px] mq800:pr-[30px] mq800:box-border">
+
+                                <div class="flex flex-row items-start justify-start relative max-w-full">
+                                    <h1
+                                        class="m-0 relative lg:text-[45px] text-[32px] text-[#3D4461] leading-[36px] font-semibold font-inherit mq450:text-8xl mq450:leading-[22px] mq800:text-17xl mq800:leading-[29px]">
+                                        Why Vetsched.Pet
+                                    </h1>
+                                    <img class="lg:h-[75.4px] lg:w-[70.1px] h-[50.3px] w-[40.5px] absolute !m-[0] top-[-46px] lg:left-[-65px] object-contain z-[1]"
+                                        loading="lazy" alt="" src="./images/services/9 2.png" />
+                                </div>
+
+                            </div>
+                            <div
+                                class="w-[333px] flex flex-row items-start justify-start py-0 px-[65px] box-border max-w-full ">
+                                <div class="h-[5px] flex-1 relative rounded-lg bg-[#FF5851]"></div>
+                            </div>
+                            <h3
+                                class="m-0 self-stretch relative text-3xl leading-[41px] font-medium font-inherit text-darkslategray-500 mq450:text-lg mq450:leading-[33px]">
+                                <div
+                                    class="h-[249px] flex lg:hidden w-[178px] absolute !m-[0] bottom-auto top-[-90px] left-[-137px] rounded-[50%] bg-[#3D446170] [filter:blur(34.7px)]">
+                                </div>
+                                <ul
+                                    class="m-0 font-inherit lg:text-[22px] text-[18px] pl-[29px] font-medium leading-[35px] text-[#3D4461F5] list-disc">
+                                    <li class="mb-0"> Effortlessly streamline appointment management with Vetsched.Pet's
+                                        online booking.</li>
+                                    <li class="mb-0"> Customize appointment slots for efficient scheduling based on your
+                                        service availability.</li>
+                                    <li class="mb-0"> Reduce no-shows with automated reminders and confirmations from
+                                        Vetsched.Pet.</li>
+                                    <li class="mb-0">Enhance client satisfaction with seamless communication via
+                                        built-in messaging.</li>
+                                    <li class="mb-0"> Effectively showcase your business brand and services with
+                                        customizable profiles on Vetsched.Pet.</li>
+                                    <li class="mb-0"> Boost online visibility and attract new clients with
+                                        Vetsched.Pet's user-friendly platform.</li>
+                                    <li class="mb-0">
+                                        Gather insights and improve services using Vetsched.Pet's feedback and review
+                                        system.
+                                    </li>
+                                </ul>
+                            </h3>
+                            <div
+                                class="h-[199px] flex lg:hidden w-[84px] absolute !m-[0] top-[20px] right-[-41px] rounded-[50%] bg-[#FF58516B] [filter:blur(34.7px)] z-[2]">
+                            </div>
+                            <img class="absolute block lg:hidden top-[130.9px] right-[65.2px] object-contain"
+                                src="./images/services/paws 34.png" alt="">
+                        </div>
+                        <div class="flex flex-row items-start justify-start py-0 px-5 box-border max-w-full">
+                            <div
+                                class="w-[311px] flex flex-row items-center justify-start py-0 px-0 box-border gap-[26px]">
+                                <button
+                                    class="cursor-pointer py-[13px] px-[23px] bg-[transparent] rounded-lg flex flex-row items-center justify-center whitespace-nowrap border-[1px] border-solid border-[#FF5851] hover:bg-tomato-500 hover:box-border hover:border-[1px] hover:border-solid hover:border-tomato-200">
+                                    <div
+                                        class="relative text-base leading-[20px] font-medium font-poppins text-darkslategray-100 text-left inline-block min-w-[89px]">
+                                        Learn More
+                                    </div>
+                                </button>
+                                <div class="flex flex-row items-center justify-start py-0 px-4">
+                                    <button
+                                        class="cursor-pointer [border:none] py-[13px] px-[35px] bg-[#5398FF] rounded-lg flex flex-row items-center justify-center whitespace-nowrap hover:bg-dodgerblue-300">
+                                        <div
+                                            class="relative text-base leading-[20px] font-medium font-poppins text-white text-left inline-block min-w-[62px]">
+                                            Sign Up
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- =============REVIEWS SECTION=================== -->
+        <section class="w-full md:h-[820px] py-4 lg:py-0 bg-[#3D4461D6]">
+            <div class="relative">
+
+                <h1 class="text-white text-[42px] font-semibold flex justify-center py-3">
+                    Our Reviews
                 </h1>
-              </div>
-             
-              <div class="h-[5px] flex-1 relative rounded-lg bg-[#FF5851]"></div>
-          
-            </div>
-          </div>
-          <div
-            class="self-stretch flex flex-row flex-wrap items-end justify-center gap-[19px] max-w-full text-left text-3xl text-darkslategray-100">
-            <div class="h-[576px] flex-1 relative min-w-[315px] max-w-full">
-              <div class="absolute top-[0px] left-[139px] w-[185px] h-[196px]">
-                <div class="absolute top-[26px] left-[0px] w-[170px] h-[170px]">
-                  <div
-                    class="absolute top-[0px] left-[0px] rounded-[50%] bg-[#3D4461] shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] w-full h-full z-[1]">
-                  </div>
-                  <img class="absolute top-[42px] left-[42px] w-[86px] h-[86px] z-[2]" loading="lazy" alt=""
-                    src="./images/requestDemo/Group 1156 (1).svg" />
-                </div>
-                <img class="absolute top-[0px] left-[117px] w-[68px] h-[68px] z-[3]" loading="lazy" alt=""
-                  src="./images/requestDemo/Group.svg" />
-              </div>
-              <div
-                class="absolute top-[107px] left-[0px] rounded-10xs bg-[#5398FF49] shadow-[0px_4px_13.7px_rgba(83,_152,_255,_0.62)] box-border w-full flex flex-col items-start justify-start pt-[98px] pb-[89px] pr-[15px] pl-[21px] gap-[16px] max-w-full border-[0px] border-solid border-dodgerblue-400">
-                <img class="w-[420px] h-[469px] relative rounded-10xs hidden max-w-full" alt=""
-                  src="./images/requestDemo/Group.svg" />
-  
-                <h3 class="m-0 relative text-inherit font-semibold font-inherit z-[1] mq450:text-lg">
-                  <p class="m-0">Streamlined Registration and Setup: </p>
-                </h3>
-                <div
-                  class="self-stretch flex flex-row items-start justify-start py-0 pr-0 pl-px box-border max-w-full text-base text-gray-800">
-                  <div class="h-[201px] flex-1 relative inline-block max-w-full z-[1]">
-                    <p class="m-0">
-                      • Create your clinic profile easily on Vetsched.pet,
-                      boosting your online visibility.
-                    </p>
-                    <p class="m-0">
-                      • Customize your profile with clinic details, services,
-                      and pricing.
-                    </p>
-                    <p class="m-0">
-                      • Highlight your brand with logo upload and service
-                      descriptions for pet owner attraction.
-                    </p>
-                    <p class="m-0">
-                      • Manage appointment scheduling efficiently by setting
-                      availability and working hours.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="h-[600px] flex-1 relative min-w-[319px] max-w-full">
-              <div class="absolute top-[0px] left-[127px] w-52 h-52">
-                <div class="absolute top-[38px] left-[0px] w-[170px] h-[170px]">
-                  <div
-                    class="absolute top-[0px] left-[0px] rounded-[50%] bg-[#3D4461] shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] w-full h-full z-[1]">
-                  </div>
-                  <img class="absolute top-[45px] left-[45px] w-[81px] h-[81px] z-[2]" loading="lazy" alt=""
-                    src="./images/requestDemo/Group 1157 (1).svg" />
-                </div>
-                <img class="absolute top-[0px] left-[131px] w-[68px] h-[68px] z-[2]" loading="lazy" alt=""
-                  src="./images/requestDemo/Vector.svg" />
-              </div>
-              <div
-                class="absolute top-[131px] left-[0px] rounded-10xs bg-[#5398FF49] shadow-[0px_4px_13.7px_rgba(83,_152,_255,_0.62)] box-border w-full flex flex-col items-start justify-start pt-[91px] px-[18px] pb-[49px] gap-[22px] max-w-full border-[0px] border-solid border-dodgerblue-400">
-                <img class="w-[420px] h-[469px] relative rounded-10xs hidden max-w-full" alt=""
-                  src="./images//requestDemo/paws 29.png" />
-  
-                <div class="w-72 flex flex-row items-start justify-start relative">
-                  <img class="h-[85px] w-[85px] absolute !m-[0] top-[-67px] right-[-69px] object-contain z-[2]"
-                    loading="lazy" alt="" src="./images//requestDemo/paws 29.png" />
-  
-                  <h3 class="m-0 flex-1 relative text-inherit font-semibold font-inherit z-[3] mq450:text-lg">
-                    <p class="m-0">Effortless Appointment Management: </p>
-                  </h3>
-                </div>
-                <div
-                  class="self-stretch flex flex-row items-start justify-start py-0 px-1 box-border max-w-full text-base text-gray-800">
-                  <div class="h-[241px] flex-1 relative inline-block max-w-full z-[1]">
-                    <p class="m-0">
-                      • Simplify scheduling with intuitive online booking for
-                      both you and clients.
-                    </p>
-                    <p class="m-0">
-                      • Customize appointment slots to match your clinic's
-                      availability, including breaks.
-                    </p>
-                    <p class="m-0">
-                      • Minimize no-shows with automated reminders,
-                      confirmations, and cancellation notifications.
-                    </p>
-                    <p class="m-0">
-                      • Seamlessly integrate with your existing calendar and
-                      scheduling systems for added convenience.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class=" flex-1 flex flex-col items-start justify-end pt-0 px-0 pb-px box-border min-w-[315px] max-w-full">
-              <div class="self-stretch flex flex-col items-end justify-start gap-[35px] max-w-full mq450:gap-[17px_35px]">
-                <div class="w-[252px] flex flex-row items-start justify-center py-0 px-5 box-border">
-                  <button class="cursor-pointer [border:none] p-0 bg-[transparent] h-[84px] w-[84px] relative">
-                    <img class="absolute top-[0px] left-[0px] rounded-6xs w-[84px] h-[84px] z-[4]" alt=""
-                      src="/public/sound-decoder.svg" />
-  
-                    <div
-                      class="absolute top-[30px] left-[42px] box-border w-0.5 h-[30px] z-[5] border-r-[2px] border-solid border-white">
-                    </div>
-                    <div
-                      class="absolute top-[44px] left-[29px] box-border w-7 h-0.5 z-[6] border-t-[2px] border-solid border-white">
-                    </div>
-                  </button>
-                </div>
-                <div class="self-stretch flex flex-row items-start justify-start relative max-w-full">
-                  <div
-                    class="w-[170px] !m-[0] absolute top-[-98px] right-[119px] flex flex-row items-start justify-start">
-                    <div class="h-[170px] flex-1 relative">
-                      <div
-                        class="absolute top-[0px] left-[0px] rounded-[50%] bg-darkslategray-900 shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] w-full h-full z-[1]">
-                      </div>
-                      <div class="absolute top-[42px] left-[34px] rounded-12xs bg-white w-[105px] h-[68px] z-[2]">
-                        <div class="absolute top-[0px] left-[0px] rounded-12xs bg-white w-full h-full hidden"></div>
-                        <div class="absolute top-[4px] left-[4px] rounded-sm bg-[#3D4461] w-[94px] h-2 z-[3]">
+
+
+                <img class="absolute lg:flex hidden top-[60px] left-[65px]"
+                    src="./images//landingPage/review-section/paws 24.png" alt="">
+                <img class="absolute lg:flex hidden top-[25px] left-[125px]"
+                    src="./images//landingPage/review-section/paws 22.png" alt="">
+                <img class="absolute lg:flex hidden top-[0px] left-[400px]"
+                    src="./images//landingPage/review-section/paws 28.png" alt="">
+                <img class="absolute lg:flex hidden top-[50px] left-[220px]"
+                    src="./images//landingPage/review-section/paws 6.png" alt="">
+                <img class="absolute lg:flex hidden top-[70px] left-[420px]"
+                    src="./images//landingPage/review-section/paws 7.png" alt="">
+                <img class="absolute lg:flex hidden top-[50px] left-[520px]"
+                    src="./images//landingPage/review-section/paws 23.png" alt="">
+                <img class="absolute lg:flex hidden top-[50px] left-[800px]"
+                    src="./images//landingPage/review-section/paws 12.png" alt="">
+                <img class="absolute lg:flex hidden top-[-16px] left-[1000px]"
+                    src="./images//landingPage/review-section/paws 25.png" alt="">
+                <img class="absolute lg:flex hidden top-[25px] left-[1100px]"
+                    src="./images//landingPage/review-section/paws 8.png" alt="">
+                <img class="absolute lg:flex hidden top-[70px] right-[150px]"
+                    src="./images//landingPage/review-section/paws 11.png" alt="">
+                <img class="absolute lg:flex hidden top-[25px] right-[120px]"
+                    src="./images//landingPage/review-section/paws 10.png" alt="">
+                <img class="absolute lg:flex hidden top-[20px] right-[50px]"
+                    src="./images//landingPage/review-section/paws 26.png" alt="">
+
+                <div class="slider-container px-4 mt-[25px]">
+                    <div class="slider gap-3 items-end">
+
+                        <div class="card min-w-[240px] lg:h-[637px] h-full rounded-[10px] bg-white py-[17px] px-3">
+                            <div>
+                                <img class="w-full object-cover" src="./images/serviceProvider/reveiw_section1.png"
+                                    alt="">
+                            </div>
+                            <div class="mt-[27px]">
+                                <span class="text-[#2B80FF] text-[15px] bg-[#5398FF19] p-1 rounded--7px">Pet
+                                    Hospital</span>
+                                <h1 class="text-[18px] font-bold text-[#33363F]">Lance-Director of Partnership and
+                                    Outreach
+                                </h1>
+                                <span><img src="./images/landingPage/review-section/Group 37068.svg" alt=""></span>
+                            </div>
+                            <div class="mt-[17px]">
+                                <p class="text-[15px] text-[#3D4461]">"The platform's streamlined appointment system has
+                                    optimized our patient care, while positive client feedback has solidified our
+                                    reputation."</p>
+                            </div>
                         </div>
-                        <div class="absolute top-[17px] left-[9px] bg-[#D9D9D984]  h-[38px] z-[3]">
-                          <div class="absolute top-[0px] left-[0px] bg-[#D9D9D984] w-full h-full hidden"></div>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="76" height="1" viewBox="0 0 76 1" fill="none">
-                            <path d="M1 0.50061H75" stroke="#FF5851" stroke-opacity="0.46" stroke-linecap="round"/>
-                          </svg>
-  
-                          <svg xmlns="http://www.w3.org/2000/svg" width="76" height="1" viewBox="0 0 76 1" fill="none">
-                            <path d="M1 0.50061H75" stroke="#FF5851" stroke-opacity="0.46" stroke-linecap="round"/>
-                          </svg>
-  
-                          <svg xmlns="http://www.w3.org/2000/svg" width="76" height="1" viewBox="0 0 76 1" fill="none">
-                            <path d="M1 0.50061H75" stroke="#FF5851" stroke-opacity="0.46" stroke-linecap="round"/>
-                          </svg>
-  
-                          <svg xmlns="http://www.w3.org/2000/svg" width="76" height="1" viewBox="0 0 76 1" fill="none">
-                            <path d="M1 0.50061H75" stroke="#FF5851" stroke-opacity="0.46" stroke-linecap="round"/>
-                          </svg>
-  
-                          <svg xmlns="http://www.w3.org/2000/svg" width="76" height="1" viewBox="0 0 76 1" fill="none">
-                            <path d="M1 0.50061H75" stroke="#FF5851" stroke-opacity="0.46" stroke-linecap="round"/>
-                          </svg>
-  
-                          <svg xmlns="http://www.w3.org/2000/svg" width="76" height="1" viewBox="0 0 76 1" fill="none">
-                            <path d="M1 0.50061H75" stroke="#FF5851" stroke-opacity="0.46" stroke-linecap="round"/>
-                          </svg>
-  
-                          <svg xmlns="http://www.w3.org/2000/svg" width="76" height="1" viewBox="0 0 76 1" fill="none">
-                            <path d="M1 0.50061H75" stroke="#FF5851" stroke-opacity="0.46" stroke-linecap="round"/>
-                          </svg>
-  
-                          <svg xmlns="http://www.w3.org/2000/svg" width="76" height="1" viewBox="0 0 76 1" fill="none">
-                            <path d="M1 0.50061H75" stroke="#FF5851" stroke-opacity="0.46" stroke-linecap="round"/>
-                          </svg>
-  
-                          <svg xmlns="http://www.w3.org/2000/svg" width="76" height="1" viewBox="0 0 76 1" fill="none">
-                            <path d="M1 0.50061H75" stroke="#FF5851" stroke-opacity="0.46" stroke-linecap="round"/>
-                          </svg>
-  
-                          <svg xmlns="http://www.w3.org/2000/svg" width="76" height="1" viewBox="0 0 76 1" fill="none">
-                            <path d="M1 0.50061H75" stroke="#FF5851" stroke-opacity="0.46" stroke-linecap="round"/>
-                          </svg>
-  
-                          <svg xmlns="http://www.w3.org/2000/svg" width="76" height="1" viewBox="0 0 76 1" fill="none">
-                            <path d="M1 0.50061H75" stroke="#FF5851" stroke-opacity="0.46" stroke-linecap="round"/>
-                          </svg>
-  
-                          <svg xmlns="http://www.w3.org/2000/svg" width="76" height="1" viewBox="0 0 76 1" fill="none">
-                            <path d="M1 0.50061H75" stroke="#FF5851" stroke-opacity="0.46" stroke-linecap="round"/>
-                          </svg>
-  
-                          <svg xmlns="http://www.w3.org/2000/svg" width="76" height="1" viewBox="0 0 76 1" fill="none">
-                            <path d="M1 0.50061H75" stroke="#FF5851" stroke-opacity="0.46" stroke-linecap="round"/>
-                          </svg>
-  
-                          <svg xmlns="http://www.w3.org/2000/svg" width="76" height="1" viewBox="0 0 76 1" fill="none">
-                            <path d="M1 0.50061H75" stroke="#FF5851" stroke-opacity="0.46" stroke-linecap="round"/>
-                          </svg>
+
+
+                        <div class="card min-w-[240px] lg:h-[552px] h-full rounded-[10px] bg-white py-5 px-[20px]">
+                            <div>
+                                <img class="w-full object-cover" src="./images/serviceProvider/review_section2.png"
+                                    alt="">
+                            </div>
+                            <div class="mt-[27px]">
+                                <span class="text-[#2B80FF] text-[15px] bg-[#5398FF19] p-1 rounded--7px">Pet
+                                    Resort</span>
+                                <h1 class="text-[18px] font-bold text-[#33363F]">Jamie- Owner Pet Resort
+                                </h1>
+                                <span><img src="./images/landingPage/review-section/Group 37068.svg" alt=""></span>
+                            </div>
+                            <div class="mt-[17px]">
+                                <p class="text-[15px] text-[#3D4461]">"With the platform, we showcase our luxury
+                                    accommodations and ensure seamless booking and communication, establishing us as the
+                                    top pet relaxation destination."</p>
+                            </div>
                         </div>
-                      </div>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="124" height="15" viewBox="0 0 124 15" fill="none">
-                        <g filter="url(#filter0_d_797_408)">
-                          <path d="M4.63389 10.9658C3.89942 9.63288 4.86367 8.00061 6.38557 8.00061H117.135C118.525 8.00061 119.492 9.38483 119.012 10.6902L117.91 13.6902C117.621 14.4774 116.871 15.0006 116.033 15.0006H8.03863C7.30981 15.0006 6.63868 14.6041 6.28695 13.9658L4.63389 10.9658Z" fill="white"/>
-                        </g>
-                        <defs>
-                          <filter id="filter0_d_797_408" x="0.382812" y="0.000610352" width="122.754" height="15" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                            <feOffset dy="-4"/>
-                            <feGaussianBlur stdDeviation="2"/>
-                            <feComposite in2="hardAlpha" operator="out"/>
-                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_797_408"/>
-                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_797_408" result="shape"/>
-                          </filter>
-                        </defs>
-                      </svg>
+
+
+                        <div class="card min-w-[240px] lg:h-[637px] rounded-[10px] bg-white py-[30px] px-[20px]">
+                            <div>
+                                <img class="w-full object-cover" src="./images/serviceProvider/review_section3.png"
+                                    alt="">
+                            </div>
+                            <div class="mt-[27px]">
+                                <span class="text-[#2B80FF] text-[15px] bg-[#5398FF19] p-1 rounded--7px">Pet
+                                    Transportation</span>
+                                <h1 class="text-[18px] font-bold text-[#33363F]">Patricia-Owner Pet Transportation</h1>
+                                <span><img src="./images/landingPage/review-section/Group 37068.svg" alt=""></span>
+                            </div>
+                            <div class="mt-[17px]">
+                                <p class="text-[15px] text-[#3D4461]">"Utilizing the platform's efficient scheduling and
+                                    tracking, we provide safe pet travel. Positive reviews affirm our commitment to
+                                    excellence."</p>
+                            </div>
+                        </div>
+
+
+                        <div class="card   min-w-[240px] lg:h-[599px] rounded-[10px] bg-white py-[15px] pl-6 pr-2">
+                            <div>
+                                <img class="w-full object-cover" src="./images/serviceProvider/review_section4.png"
+                                    alt="">
+                            </div>
+                            <div class="mt-[27px]">
+                                <span class="text-[#2B80FF] text-[15px] bg-[#5398FF19] p-1 rounded--7px">Pet
+                                    Grooming</span>
+                                <h1 class="text-[18px] font-bold text-[#33363F]">Adrian- Owner Pet Grooming.
+                                </h1>
+                                <span><img src="./images/landingPage/review-section/Group 37068.svg" alt=""></span>
+                            </div>
+                            <div class="mt-[17px]">
+                                <p class="text-[15px] text-[#3D4461]">"The platform's intuitive booking system has
+                                    expanded my client base and allowed me to showcase my grooming skills effectively.
+                                    Increased bookings and positive reviews have strengthened my brand's reputation."
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <!-- Add more cards as needed -->
                     </div>
-                  </div>
-                  <div
-                    class="flex-1 rounded-10xs bg-dodgerblue-500 shadow-[0px_4px_13.7px_rgba(83,_152,_255,_0.62)] box-border flex flex-col items-start justify-start pt-[92px] px-3.5 pb-[98px] gap-[12px] max-w-full border-[0px] border-solid border-dodgerblue-400 mq750:pt-[60px] mq750:pb-16 mq750:box-border">
-                    <img class="w-[420px] h-[469px] relative rounded-10xs hidden max-w-full" alt=""
-                      src="/public/rectangle-422.svg" />
-  
-                    <h3
-                      class="m-0 w-[382px] h-[76px] relative text-inherit font-semibold font-inherit inline-block shrink-0 max-w-full z-[1] mq450:text-lg">
-                      <p class="m-0">
-                        Seamless Client Communication and Feedback: 
-                      </p>
-                    </h3>
-                    <div
-                      class="w-[378px] flex flex-row items-start justify-start py-0 px-[7px] box-border max-w-full text-base text-gray-800">
-                      <div class="h-[191px] flex-1 relative inline-block max-w-full z-[1]">
-                        <p class="m-0">
-                          • Improve communication with built-in messaging for
-                          quick interaction.
-                        </p>
-                        <p class="m-0">
-                          • Respond to inquiries, provide updates, and send
-                          instructions directly.
-                        </p>
-                        <p class="m-0">
-                          • Boost engagement and loyalty with a feedback and
-                          review system.
-                        </p>
-                        <p class="m-0">
-                          • Utilize feedback to enhance service quality and
-                          attract new clients.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
+                    <button
+                        class="prev w-[43px] h-[43px] bg-[#3FABF3] rounded-full flex justify-center items-center absolute top-[50%] left-0">
+                        <img src="./images/landingPage/review-section/prev-arrow.svg" alt="">
+                    </button>
+                    <button
+                        class="next w-[43px] h-[43px] bg-[#3FABF3] rounded-full flex justify-center items-center absolute top-[50%] right-0">
+                        <img src="./images/landingPage/review-section/next-arrow.svg" alt="">
+                    </button>
                 </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </section>
-      <section
-      class="w-full py-[150px] flex flex-row items-start justify-center  px-[23px] lg:px-[100px] lg:pb-[309px] box-border max-w-full shrink-0 text-left text-26xl text-darkslategray-100 font-poppins mq450:pb-[131px] mq450:box-border mq1125:pb-[201px] mq1125:box-border">
-      <div
-          class=" flex flex-row flex-wrap items-end justify-start gap-[54px] max-w-full mq800:gap-[27px]">
-          <div class="lg:h-[620px] h-[235px] flex-1 relative min-w-[384px]  max-w-full mq450:min-w-full">
-              <div
-                  class="absolute h-full  top-[0px] bottom-[0px] left-[0px] rounded-[10px] w-[493px] flex items-center justify-center">
-                  <img class="lg:h-[556px] max-h-full lg:w-[526px] w-[234px] h-[222px] lg:object-contain object-cover absolute left-[4px] top-[4px] [transform:scale(1.078)]"
-                      alt="" src="./images/serviceProvider/medicine-pet-care-people_Vetsched.png" />
-              </div>
-              <div
-                  class="absolute top-[90px] left-[200px] lg:top-auto lg:bottom-0 lg:left-auto lg:right-0 rounded-[5px] w-[147px] h-[181px] lg:w-[234px] lg:h-[286px]  z-[1] flex items-center justify-center">
-                  <img class="lg:w-full lg:h-full z-[1] object-contain absolute w-full h-full left-[0px] top-[4px] [transform:scale(1.256)]"
-                      loading="lazy" alt="" src="./images/serviceProvider/girl-with-dog_Vetsched.png" />
-              </div>
-          </div>
-          <div
-              class="flex-1 flex flex-col items-start justify-end pt-0 px-0 pb-[11px] box-border min-w-[387px] max-w-full mq800:min-w-full">
-              <div
-                  class="self-stretch flex flex-col items-start justify-start gap-[57px] max-w-full mq800:gap-[28px_57px]">
-                  <div
-                      class="self-stretch flex flex-col relative items-start justify-start lg:gap-[25.5px] gap-[5.5px] max-w-full">
-                      <div
-                          class="flex flex-row items-start justify-start py-0 lg:px-[61px] px-[15px] box-border max-w-full mq800:pl-[30px] mq800:pr-[30px] mq800:box-border">
-                           
-                          <div class="flex flex-row items-start justify-start relative max-w-full">
-                              <h1
-                                  class="m-0 relative lg:text-[45px] text-[32px] text-[#3D4461] leading-[36px] font-semibold font-inherit mq450:text-8xl mq450:leading-[22px] mq800:text-17xl mq800:leading-[29px]">
-                                  Why Vetsched.Pet
-                              </h1>
-                              <img class="lg:h-[75.4px] lg:w-[70.1px] h-[50.3px] w-[40.5px] absolute !m-[0] top-[-46px] lg:left-[-65px] object-contain z-[1]"
-                                  loading="lazy" alt="" src="./images/services/9 2.png" />
-                          </div>
-                         
-                      </div>
-                      <div
-                          class="w-[333px] flex flex-row items-start justify-start py-0 px-[65px] box-border max-w-full ">
-                          <div class="h-[5px] flex-1 relative rounded-lg bg-[#FF5851]"></div>
-                      </div>
-                      <h3
-                          class="m-0 self-stretch relative text-3xl leading-[41px] font-medium font-inherit text-darkslategray-500 mq450:text-lg mq450:leading-[33px]">
-                          <div
-                          class="h-[249px] flex lg:hidden w-[178px] absolute !m-[0] bottom-auto top-[-90px] left-[-137px] rounded-[50%] bg-[#3D446170] [filter:blur(34.7px)]"
-                        ></div> 
-                          <ul
-                              class="m-0 font-inherit lg:text-[22px] text-[18px] pl-[29px] font-medium leading-[35px] text-[#3D4461F5] list-disc">
-                              <li class="mb-0">	Effortlessly streamline appointment management with Vetsched.Pet's online booking.</li>
-                              <li class="mb-0">	Customize appointment slots for efficient scheduling based on your service availability.</li>
-                              <li class="mb-0">	Reduce no-shows with automated reminders and confirmations from Vetsched.Pet.</li>
-                              <li class="mb-0">Enhance client satisfaction with seamless communication via built-in messaging.</li>
-                              <li class="mb-0">		Effectively showcase your business brand and services with customizable profiles on Vetsched.Pet.</li>
-                              <li class="mb-0">	Boost online visibility and attract new clients with Vetsched.Pet's user-friendly platform.</li>
-                              <li class="mb-0">
-                                Gather insights and improve services using Vetsched.Pet's feedback and review system.
-                              </li>
-                          </ul>
-                      </h3>
-                      <div
-                      class="h-[199px] flex lg:hidden w-[84px] absolute !m-[0] top-[20px] right-[-41px] rounded-[50%] bg-[#FF58516B] [filter:blur(34.7px)] z-[2]"
-                    ></div>
-                      <img class="absolute block lg:hidden top-[130.9px] right-[65.2px] object-contain" src="./images/services/paws 34.png" alt="">
-                  </div>
-                  <div class="flex flex-row items-start justify-start py-0 px-5 box-border max-w-full">
-                      <div
-                          class="w-[311px] flex flex-row items-center justify-start py-0 px-0 box-border gap-[26px]">
-                          <button
-                              class="cursor-pointer py-[13px] px-[23px] bg-[transparent] rounded-lg flex flex-row items-center justify-center whitespace-nowrap border-[1px] border-solid border-[#FF5851] hover:bg-tomato-500 hover:box-border hover:border-[1px] hover:border-solid hover:border-tomato-200">
-                              <div
-                                  class="relative text-base leading-[20px] font-medium font-poppins text-darkslategray-100 text-left inline-block min-w-[89px]">
-                                  Learn More
-                              </div>
-                          </button>
-                          <div class="flex flex-row items-center justify-start py-0 px-4">
-                              <button
-                                  class="cursor-pointer [border:none] py-[13px] px-[35px] bg-[#5398FF] rounded-lg flex flex-row items-center justify-center whitespace-nowrap hover:bg-dodgerblue-300">
-                                  <div
-                                      class="relative text-base leading-[20px] font-medium font-poppins text-white text-left inline-block min-w-[62px]">
-                                      Sign Up
-                                  </div>
-                              </button>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </section>
-   <!-- =============REVIEWS SECTION=================== -->
-   <section class="w-full md:h-[820px] py-4 lg:py-0 bg-[#3D4461D6]">
-    <div class="relative">
-
-      <h1 class="text-white text-[42px] font-semibold flex justify-center py-3">
-        Our Reviews
-      </h1>
-
-
-      <img class="absolute lg:flex hidden top-[60px] left-[65px]"
-        src="./images//landingPage/review-section/paws 24.png" alt="">
-      <img class="absolute lg:flex hidden top-[25px] left-[125px]"
-        src="./images//landingPage/review-section/paws 22.png" alt="">
-      <img class="absolute lg:flex hidden top-[0px] left-[400px]"
-        src="./images//landingPage/review-section/paws 28.png" alt="">
-      <img class="absolute lg:flex hidden top-[50px] left-[220px]"
-        src="./images//landingPage/review-section/paws 6.png" alt="">
-      <img class="absolute lg:flex hidden top-[70px] left-[420px]"
-        src="./images//landingPage/review-section/paws 7.png" alt="">
-      <img class="absolute lg:flex hidden top-[50px] left-[520px]"
-        src="./images//landingPage/review-section/paws 23.png" alt="">
-      <img class="absolute lg:flex hidden top-[50px] left-[800px]"
-        src="./images//landingPage/review-section/paws 12.png" alt="">
-      <img class="absolute lg:flex hidden top-[-16px] left-[1000px]"
-        src="./images//landingPage/review-section/paws 25.png" alt="">
-      <img class="absolute lg:flex hidden top-[25px] left-[1100px]"
-        src="./images//landingPage/review-section/paws 8.png" alt="">
-      <img class="absolute lg:flex hidden top-[70px] right-[150px]"
-        src="./images//landingPage/review-section/paws 11.png" alt="">
-      <img class="absolute lg:flex hidden top-[25px] right-[120px]"
-        src="./images//landingPage/review-section/paws 10.png" alt="">
-      <img class="absolute lg:flex hidden top-[20px] right-[50px]"
-        src="./images//landingPage/review-section/paws 26.png" alt="">
-
-      <div class="slider-container px-4 ">
-        <div class="slider gap-3  flex items-end">
-
-          <div class="card min-w-[240px] lg:h-[637px] h-full rounded-[10px] bg-white py-[17px] px-3">
-            <div>
-              <img class="w-full object-cover"
-                src="./images/serviceProvider/reveiw_section1.png" alt="">
-            </div>
-            <div class="mt-[27px]">
-              <h1 class="text-[18px] font-bold text-[#33363F]">Marc</h1>
-              <span><img src="./images/landingPage/review-section/Group 37068.svg" alt=""></span>
-            </div>
-            <div class="mt-[17px]">
-              <p class="text-[15px] text-[#3D4461]">"Effortless grooming booking! Found a skilled groomer easily on
-                the
-                platform, and the communication was
-                seamless. Highly recommend this platform for pet care needs!”</p>
-            </div>
-          </div>
-
-
-          <div class="card min-w-[240px] lg:h-[552px] h-full rounded-[10px] bg-white py-5 px-[20px]">
-            <div>
-              <img class="w-full object-cover"
-                src="./images/serviceProvider/review_section2.png" alt="">
-            </div>
-            <div class="mt-[27px]">
-              <h1 class="text-[18px] font-bold text-[#33363F]">Christa</h1>
-              <span><img src="./images/landingPage/review-section/Group 37068.svg" alt=""></span>
-            </div>
-            <div class="mt-[17px]">
-              <p class="text-[15px] text-[#3D4461]">"Reliable pet sitting service! Booked through the platform and
-                received regular updates on my pet's well-being. Will definitely use this platform again for future
-                pet
-                sitting needs.”</p>
-            </div>
-          </div>
-
-
-          <div class="card min-w-[240px] lg:h-[637px] rounded-[10px] bg-white py-[30px] px-[20px]">
-            <div>
-              <img class="w-full object-cover" src="./images/serviceProvider/review_section3.png" alt="">
-            </div>
-            <div class="mt-[27px]">
-              <h1 class="text-[18px] font-bold text-[#33363F]">Leonard</h1>
-              <span><img src="./images/landingPage/review-section/Group 37068.svg" alt=""></span>
-            </div>
-            <div class="mt-[17px]">
-              <p class="text-[15px] text-[#3D4461]">"Top-notch veterinary care found on the platform! Connected with a
-                knowledgeable and compassionate vet easily. This platform is a reliable source for quality pet care
-                services.”</p>
-            </div>
-          </div>
-
-
-          <div class="card   min-w-[240px] lg:h-[552px] rounded-[10px] bg-white py-[15px] pl-6 pr-2">
-            <div>
-              <img class="w-full object-cover"
-                src="./images/serviceProvider/review_section4.png"
-                alt="">
-            </div>
-            <div class="mt-[27px]">
-              <h1 class="text-[18px] font-bold text-[#33363F]">Samantha</h1>
-              <span><img src="./images/landingPage/review-section/Group 37068.svg" alt=""></span>
-            </div>
-            <div class="mt-[17px]">
-              <p class="text-[15px] text-[#3D4461]">"Exceptional pet boarding facility discovered through the
-                platform!
-                My pet was well-cared for in a clean and secure environment. Will definitely utilize this platform for
-                future boarding needs.”-</p>
-            </div>
-          </div>
-
-
-          <!-- Add more cards as needed -->
-        </div>
-        <button
-          class="prev w-[43px] h-[43px] bg-[#3FABF3] rounded-full flex justify-center items-center absolute top-[50%] left-0">
-          <img src="./images/landingPage/review-section/prev-arrow.svg" alt="">
-        </button>
-        <button
-          class="next w-[43px] h-[43px] bg-[#3FABF3] rounded-full flex justify-center items-center absolute top-[50%] right-0">
-          <img src="./images/landingPage/review-section/next-arrow.svg" alt="">
-        </button>
-      </div>
-    </div>
-  </section>
+        </section>
         <div
             class="w-[178px] h-[425px] absolute !m-[0] top-[236px] left-[-89px] rounded-[50%] bg-darkslategray-600 [filter:blur(69.4px)] z-[5]">
         </div>
         <div
             class="w-[412px] h-[522px] absolute !m-[0] bottom-[2477px] left-[-336px] rounded-[50%] bg-lightskyblue [filter:blur(100px)] z-[1]">
         </div>
-    
+
         <footer class="w-full  h-full bg-[#3D4461] mt-[179px] lg:block hidden">
             <div
                 class="self-stretch flex flex-row items-start justify-center py-0 pr-5 pl-[23px] box-border max-w-full shrink-0 ">
@@ -1227,6 +1347,52 @@
         </div>
     </div>
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const slider = document.querySelector('.slider');
+          const prevButton = document.querySelector('.prev');
+          const nextButton = document.querySelector('.next');
+          const gap = 12; // Gap between cards
+          let cardsPerPage = getCardsPerPage();
+          let slideIndex = 0;
+   
+          nextButton.addEventListener('click', function () {
+            const cardWidth = slider.children[0].offsetWidth + gap;
+            if (slideIndex < slider.children.length - cardsPerPage) {
+              slideIndex++;
+              const slidePosition = -slideIndex * cardWidth;
+              slider.style.transform = `translateX(${slidePosition}px)`;
+            }
+          });
+    
+          prevButton.addEventListener('click', function () {
+            const cardWidth = slider.children[0].offsetWidth + gap;
+            if (slideIndex > 0) {
+              slideIndex--;
+              const slidePosition = -slideIndex * cardWidth;
+              slider.style.transform = `translateX(${slidePosition}px)`;
+            }
+          });
+    
+          function getCardsPerPage() {
+            if (window.innerWidth >= 1024) { // Laptop
+              return 4;
+            } else if (window.innerWidth >= 768) { // Tablet
+              return 2;
+            } else { // Mobile
+              return 1;
+            }
+          }
+    
+          window.addEventListener('resize', function () {
+            cardsPerPage = getCardsPerPage();
+            slideIndex = 0;
+            slider.style.transform = `translateX(0)`;
+          });
+    
+        });
+      
+      </script>
 </body>
 
 </html>

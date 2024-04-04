@@ -49,7 +49,7 @@
     }
 
     .header-card {
-      flex: 0 0 calc(100% / 2);
+      flex: 0 0 calc((100% -  12px) / 2);
       ;
     }
 
@@ -57,7 +57,7 @@
 
       /* Tablet */
       .card {
-        flex: 0 0 calc(100% / 2);
+        flex: 0 0 calc((100% - 12px) / 2);
         /* Display 2 cards at a time */
       }
 
@@ -67,12 +67,12 @@
 
       /* Desktop */
       .card {
-        flex: 0 0 calc(100% / 4);
+        flex: 0 0 calc((100% - 3 * 12px) / 4);
         /* Display 4 cards at a time */
       }
 
       .header-card {
-        flex: 0 0 calc(100% / 5);
+        flex: 0 0 calc((100% - 4 * 12px) / 5);
       }
     }
 
@@ -161,7 +161,7 @@
 
     <section class="w-full h-full  top-[-80px] relative px-[11px]">
       <div class="slider-container  h-[400px]">
-        <div class="header-slider lg:gap-3 gap-[9px] xl:gap-[20px] flex ">
+        <div class="header-slider gap-3   flex ">
           <div
             class="header-card  ard flex flex-col bg-[#5398FF] px-7 justify-between py-11 min-w-[190px]  min-h-[291px] rounded-[10px] border-l-[5px] border-[#2B80FF]"
             style="box-shadow: 5px 5px 9.6px 0px rgba(0, 0, 0, 0.25);">
@@ -1360,7 +1360,7 @@
       const slider = document.querySelector('.header-slider');
       const prevButton = document.querySelector('.header-prev');
       const nextButton = document.querySelector('.header-next');
-      const gap = 9; // Gap between cards
+      const gap = 3; // Gap between cards
       let cardsPerPage = getCardsPerPageHeader();
       let slideIndex = 0;
 
