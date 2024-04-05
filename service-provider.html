@@ -19,62 +19,62 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
-        <style>
-            /* Custom styles for slider */
-            .slider-container {
-              overflow: hidden;
-            }
-        
-            .slider {
-              display: flex;
-              transition: transform 0.5s ease;
-            }
-        
-            .answer {
-              display: none;
-            }
-        
+    <style>
+        /* Custom styles for slider */
+        .slider-container {
+            overflow: hidden;
+        }
+
+        .slider {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .answer {
+            display: none;
+        }
+
+        .card {
+            flex: 0 0 calc(100% / 1);
+            /* Display 4 cards at a time */
+            padding: 10px;
+            /* border: 1px solid #ccc; */
+            box-sizing: border-box;
+        }
+
+        .header-card {
+            flex: 0 0 calc(100% / 2);
+            ;
+        }
+
+        @media (min-width: 768px) {
+
+            /* Tablet */
             .card {
-              flex: 0 0 calc(100% / 1);
-              /* Display 4 cards at a time */
-              padding: 10px;
-              /* border: 1px solid #ccc; */
-              box-sizing: border-box;
-            }
-        
-            .header-card {
-              flex: 0 0 calc(100% / 2);
-              ;
-            }
-        
-            @media (min-width: 768px) {
-        
-              /* Tablet */
-              .card {
-                flex: 0 0 calc((100% -  12px) / 2);
+                flex: 0 0 calc((100% - 12px) / 2);
                 /* Display 2 cards at a time */
-              }
-        
             }
-        
-            @media (min-width: 1024px) {
-        
-              /* Desktop */
-              .card {
+
+        }
+
+        @media (min-width: 1024px) {
+
+            /* Desktop */
+            .card {
                 flex: 0 0 calc((100% - 3 * 12px) / 4);
                 /* Display 4 cards at a time */
-              }
-        
-              .header-card {
+            }
+
+            .header-card {
                 flex: 0 0 calc(100% / 5);
-              }
             }
-        
-            .header-slider {
-              display: flex;
-              transition: transform 0.3s ease-in-out;
-            }
-          </style>
+        }
+
+        .header-slider {
+            display: flex;
+            transition: transform 0.3s ease-in-out;
+        }
+    </style>
 </head>
 
 
@@ -183,9 +183,13 @@
                             </div>
                         </div>
                     </div>
+                    <div
+                    class="absolute top-[15px] right-[-350px] rounded-[50%] bg-[#FF58516B] [filter:blur(34px)] w-[417px] h-[544px]"
+                  ></div>
                 </div>
                 <div>
-                    <div class="lg:h-[576px] h-[310px] lg:w-[736.1px] w-full lg:absolute relative !m-[0] right-[75px] bottom-auto">
+                    <div
+                        class="lg:h-[576px] h-[310px] lg:w-[736.1px] w-full lg:absolute relative !m-[0] right-[75px] bottom-auto">
                         <img class="absolute lg:top-[104px] lg:left-[110px] top-[80px] left-[120px] lg:w-[162.5px] lg:h-[132.6px] w-[88px] h-[44px] object-contain"
                             loading="lazy" alt="" src="./images/serviceProvider/2 1.png" />
 
@@ -198,8 +202,8 @@
                         <img class="absolute lg:top-[47px] top-[25px] lg:left-[629px] lg:right-auto left-auto right-[-40px] lg:w-[107.1px] lg:h-[107.1px]  w-[60px] h-[60px] overflow-hidden object-contain z-[3]"
                             alt="" src="./images/serviceProvider/uil_calender (1).svg" />
 
-                        <img class="absolute top-[0px] lg:left-auto lg:right-[20px] right-0 lg:w-[64.7px] lg:h-[64.7px] w-[30px] h-[30px] object-contain z-[4]" alt=""
-                            src="./images/serviceProvider/Vector.svg" />
+                        <img class="absolute top-[0px] lg:left-auto lg:right-[20px] right-0 lg:w-[64.7px] lg:h-[64.7px] w-[30px] h-[30px] object-contain z-[4]"
+                            alt="" src="./images/serviceProvider/Vector.svg" />
 
                         <img class="absolute lg:top-[285.3px] lg:left-[280px]  top-[140.3px] left-[240px] lg:w-[421.8px] lg:h-[290.7px] w-[156px] h-[246px] object-contain z-[3]"
                             alt="" src="./images/serviceProvider/pngwing 2.png" />
@@ -211,8 +215,10 @@
                             class="absolute top-[0px] left-[130px]  lg:w-[452px] lg:h-[452px]  w-[321px] h-[306px] bg-[#5398FF66] rounded-full bg-no-repeat [filter:blur(73.3px)] bg-[top] z-[7]">
 
                         </div>
-                        <div class="absolute top-[0px] lg:left-[199px] left-[70px]  lg:w-[452px] lg:h-[452px] w-[274px] h-[263px]   bg-[top] z-[7]">
-                            <img class="absolute top-[0px] lg:left-[0px] left-[50px]  lg:w-[452px] lg:h-[452px] w-[274px] h-[263px] object-cover " alt=""
+                        <div
+                            class="absolute top-[0px] lg:left-[199px] left-[70px]  lg:w-[452px] lg:h-[452px] w-[274px] h-[263px]   bg-[top] z-[7]">
+                            <img class="absolute top-[0px] lg:left-[0px] left-[50px]  lg:w-[452px] lg:h-[452px] w-[274px] h-[263px] object-cover "
+                                alt=""
                                 src="./images/serviceProvider/cute-pet-collage-isolated-removebg-preview 1.png" />
 
                             <img class="absolute lg:top-[125px] lg:left-[221px] top-[100px] left-[190px] lg:w-[84.2px] lg:h-[90.7px] w-[38px] h-[43px] object-contain z-[8]"
@@ -227,7 +233,8 @@
         <section class="w-full h-full lg:px-[100px] px-[25px] mt-[150px]">
             <div class="flex lg:flex-row flex-col">
                 <div class="lg:w-[50%] w-full relative h-fit lg:min-w-[600px] lg:max-w-[800px]">
-                    <img class="w-full h-[280px]  lg:h-[587px]" src="./images/serviceProvider/Rectangle 419_section2.png" alt="">
+                    <img class="w-full h-[280px]  lg:h-[587px]"
+                        src="./images/serviceProvider/Rectangle 419_section2.png" alt="">
                     <img class="w-[223px] h-[300px] lg:w-[342px] lg:h-[607px] absolute top-[-50px] lg:right-0 right-[-44px]"
                         src="./images/serviceProvider/Group 37067_section2.svg" alt="">
                     <img class="w-[154px] h-[283px] lg:w-[256px] lg:h-[440px] absolute lg:top-[35px] top-[-40px] lg:left-[45px] left-[15px]"
@@ -243,8 +250,10 @@
                     </div>
                     <div class="absolute left-[30px] top-[50px] block lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" width="36" height="54" viewBox="0 0 36 54" fill="none">
-                            <path d="M3.46301 13.2659L0.00834196 27.8252L10.1477 30.8931L13.8487 38.2615L11.2237 49.3239L24.0508 53.2051L27.4832 38.7397L17.427 35.6969L13.726 28.3286L15.5752 20.5351L22.0429 16.2434L32.0991 19.2862L35.5315 4.82088L22.7045 0.939682L20.0795 12.0022L13.5673 16.3233L3.46301 13.2659ZM17.705 40.8725L22.0694 42.1931L20.8914 47.1577L16.527 45.8371L17.705 40.8725ZM25.7896 6.96469L30.0814 8.26329L28.9329 13.1032L24.6412 11.8046L25.7896 6.96469Z" fill="#2B80FF" fill-opacity="0.65"/>
-                          </svg>
+                            <path
+                                d="M3.46301 13.2659L0.00834196 27.8252L10.1477 30.8931L13.8487 38.2615L11.2237 49.3239L24.0508 53.2051L27.4832 38.7397L17.427 35.6969L13.726 28.3286L15.5752 20.5351L22.0429 16.2434L32.0991 19.2862L35.5315 4.82088L22.7045 0.939682L20.0795 12.0022L13.5673 16.3233L3.46301 13.2659ZM17.705 40.8725L22.0694 42.1931L20.8914 47.1577L16.527 45.8371L17.705 40.8725ZM25.7896 6.96469L30.0814 8.26329L28.9329 13.1032L24.6412 11.8046L25.7896 6.96469Z"
+                                fill="#2B80FF" fill-opacity="0.65" />
+                        </svg>
                     </div>
                 </div>
                 <div class="lg:w-[50%] w-full">
@@ -262,17 +271,18 @@
                                     <span class="text-[#FF5851] font-bold">Collect Feedback.</span>
                                 </p>
                                 <span class="lg:hidden block">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="189" height="4" viewBox="0 0 189 4" fill="none">
-                                        <path d="M2 2H187" stroke="#5398FF" stroke-width="3" stroke-linecap="round"/>
-                                      </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="189" height="4" viewBox="0 0 189 4"
+                                        fill="none">
+                                        <path d="M2 2H187" stroke="#5398FF" stroke-width="3" stroke-linecap="round" />
+                                    </svg>
                                 </span>
                                 <span class="lg:block hidden">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="209" height="6" viewBox="0 0 209 6"
-                                    fill="none">
-                                    <path d="M3 3H206" stroke="#FF5851" stroke-width="5" stroke-linecap="round" />
-                                </svg>
+                                        fill="none">
+                                        <path d="M3 3H206" stroke="#FF5851" stroke-width="5" stroke-linecap="round" />
+                                    </svg>
                                 </span>
-                              
+
                             </h1>
                             <!-- <div
                     class="absolute top-[46px]  rounded-lg bg-[#5398FF] w-[198px] h-2 z-[6]">
@@ -280,7 +290,8 @@
                         </div>
                         <div class="h-[276px] flex-1 relative max-w-full">
 
-                            <ul class="m-0   lg:text-[18px] text-[12px] leading-normal text-left pl-6 tracking-[0.36px] list-disc ">
+                            <ul
+                                class="m-0   lg:text-[18px] text-[12px] leading-normal text-left pl-6 tracking-[0.36px] list-disc ">
                                 <li class="mb-1">Utilize platform-specific features to expand your client base</li>
                                 <li class="mb-1">Enhance your brand visibility through optimized platform profiles</li>
                                 <li class="mb-1">Encourage client engagement and interaction within the platform</li>
@@ -305,7 +316,7 @@
                         <h1 class="relative lg:text-[45px] text-[30px] inline-block lg:leading-[50px] leading-[37px] ">
                             <p class="m-0 ">
                                 <span class="font-poppins text-[#3D4461] font-semibold">Effortless</span>
-                                
+
                                 <span class="font-bold text-[#2B80FF]">
                                     Appointment Scheduling
                                 </span>
@@ -318,7 +329,8 @@
                         </h1>
                     </div>
                     <div class="mt-4">
-                        <ul class="m-0   lg:text-[22px] text-[12px] leading-normal text-left pl-6 tracking-[0.36px] list-disc ">
+                        <ul
+                            class="m-0   lg:text-[22px] text-[12px] leading-normal text-left pl-6 tracking-[0.36px] list-disc ">
                             <li class="mb-1">Utilize platform-specific features to expand your client base</li>
                             <li class="mb-1">Enhance your brand visibility through optimized platform profiles</li>
                             <li class="mb-1">Encourage client engagement and interaction within the platform</li>
@@ -347,11 +359,11 @@
                         <img class="absolute lg:top-[-60px] top-[-20px] left-auto lg:right-[60px] right-[90px] w-[40px] h-[40px] lg:w-[85.3px] lg:h-[85.3px] object-contain z-[4]"
                             alt="" src="./images/serviceProvider/carbon_reminder_section3.svg" />
 
-                        <img class="absolute top-[-25px] lg:left-[185px] left-[30px] w-[116px] h-[45px] lg:w-[210px] lg:h-[90px] object-contain z-[3]" alt=""
-                            src="./images/serviceProvider/Group 1186_section3.png" />
+                        <img class="absolute top-[-25px] lg:left-[185px] left-[30px] w-[116px] h-[45px] lg:w-[210px] lg:h-[90px] object-contain z-[3]"
+                            alt="" src="./images/serviceProvider/Group 1186_section3.png" />
 
-                        <img class="absolute lg:top-[75px] top-[25px] lg:left-[150px] left-[15px] w-[120px] h-[43px] lg:w-[230px] lg:h-[105px] object-contain z-[4]" alt=""
-                            src="./images/serviceProvider/Group 1222_section3.png" />
+                        <img class="absolute lg:top-[75px] top-[25px] lg:left-[150px] left-[15px] w-[120px] h-[43px] lg:w-[230px] lg:h-[105px] object-contain z-[4]"
+                            alt="" src="./images/serviceProvider/Group 1222_section3.png" />
 
 
 
@@ -364,10 +376,10 @@
 
             <div class="flex lg:flex-row flex-col w-full items-center min-h-[780px] max-h-auto bg-[#5389FF1A]">
                 <div class="lg:w-[50%] w-full relative">
-                    <img class="hidden lg:block md:h-[780px] h-[268px] w-full relative" src="./images/serviceProvider/section4.png"
-                        alt="">
-                        <img class="block lg:hidden md:h-[780px] h-[268px] w-full relative" src="./images/serviceProvider/doctor-section4.png"
-                        alt="">
+                    <img class="hidden lg:block md:h-[780px] h-[268px] w-full relative"
+                        src="./images/serviceProvider/section4.png" alt="">
+                    <img class="block lg:hidden md:h-[780px] h-[268px] w-full relative"
+                        src="./images/serviceProvider/doctor-section4.png" alt="">
                     <img class="w-[215px] h-[154px] lg:w-[451px] lg:h-[323px] lg:top-2.5 top-[-30px] right-[-30px] absolute"
                         src="./images/serviceProvider/Service Provider-Recive_section4.png" alt="">
                 </div>
@@ -397,7 +409,8 @@
                         </div>
                         <div class="h-[276px] flex-1 relative max-w-full">
 
-                            <ul class="m-0   lg:text-[22px] text-[15px] lg:leading-normal leading-[28px] text-left pl-6 tracking-[0.36px] list-disc ">
+                            <ul
+                                class="m-0   lg:text-[22px] text-[15px] lg:leading-normal leading-[28px] text-left pl-6 tracking-[0.36px] list-disc ">
                                 <li class="mb-1">Utilize platform-specific features to expand your client base</li>
                                 <li class="mb-1">Enhance your brand visibility through optimized platform profiles</li>
                                 <li class="mb-1">Encourage client engagement and interaction within the platform</li>
@@ -415,7 +428,7 @@
                 </div>
             </div>
         </section>
-<!-- ========================FEATURE SECTION=================== -->
+        <!-- ========================FEATURE SECTION=================== -->
         <section
             class="w-full flex flex-row items-start justify-start py-0 pr-5 pl-0 box-border relative max-w-full text-left text-5xl text-tomato-100 font-poppins">
             <div
@@ -430,17 +443,18 @@
                     </h1>
                 </div>
                 <div
-                    class="self-stretch  w-full flex flex-row items-start justify-end pt-0 px-0 pb-[99px] box-border max-w-full mq800:pb-16 mq800:box-border">
+                    class="self-stretch  w-full flex flex-row items-start justify-end pt-0 px-0  box-border max-w-full mq800:pb-16 mq800:box-border">
                     <div
-                        class="self-stretch w-full justify-center overflow-x-auto shrink-0 grid grid-cols-4  items-star py-0 pr-0 pl-5 box-border gap-[8.3px] max-w-full">
+                        class="self-stretch w-full justify-center overflow-x-auto shrink-0 grid lg:grid-cols-4 grid-cols-2  items-star py-0 pr-0 pl-5 box-border gap-3 max-w-full">
                         <div
-                            class="self-stretch lg:col-span-1 col-span-2 max-w-[322px] min-w-[185px] shrink-0 bg-[#5398FF] rounded-tr-[25px] rounded-bl-[25px] flex flex-col items-start justify-start pt-[33px] pb-[85px] pr-[7px] pl-[11px] box-border relative gap-[26px] text-white mq800:pt-[21px] mq800:pb-[55px] mq800:box-border">
+                            class="self-stretch lg:h-[475px] h-[300px] col-span-1 max-w-[322px] min-w-[185px] shrink-0 bg-[#5398FF] rounded-tr-[25px] rounded-bl-[25px] flex flex-col items-start justify-start pt-[33px] pb-[85px] pr-[7px] pl-[11px] box-border relative lg:gap-[26px] text-white mq800:pt-[21px] mq800:pb-[55px] mq800:box-border">
                             <!-- <div
                                 class="w-full h-full absolute !m-[0] top-[0px] right-[0px] bottom-[0px] left-[0px] rounded-tl-none rounded-tr-6xl rounded-br-none rounded-bl-6xl bg-dodgerblue-800 [filter:blur(1.4px)] box-border border-l-[3px] border-solid border-dodgerblue-100">
                             </div> -->
-                            <div class="self-stretch flex-1 flex flex-col items-start justify-start gap-[6px]">
+                            <div class="self-stretch  flex flex-col items-start justify-start gap-[6px]">
                                 <div class="flex-1 flex flex-row items-start justify-start py-0 px-[3px]">
-                                    <img class="h-[82px] w-[82px] lg:h-[118px] lg:w-[118px] relative object-cover z-[1]" loading="lazy" alt=""
+                                    <img class="h-[82px] w-[82px] lg:h-[118px] lg:w-[118px] relative object-cover z-[1]"
+                                        loading="lazy" alt=""
                                         src="./images/serviceProvider/appointment _feature1.png" />
                                 </div>
                                 <h3
@@ -450,8 +464,9 @@
                                     </p>
                                 </h3>
                             </div>
-                            <div class=" flex flex-row items-start justify-start py-0 px-1.5 box-border lg:text-lg text-[11px] leading-normal">
-                                <div class=" flex-1 relative inline-block z-[1] text-[18px]">
+                            <div
+                                class=" flex flex-row items-start justify-start py-0 px-1.5 box-border  leading-normal">
+                                <div class=" relative inline-block z-[1] lg:text-lg text-[11px]">
                                     <p class="[margin-block-start:0] [margin-block-end:21px]">
                                         Effortlessly schedule, customize, and manage appointments
                                         through a user-friendly interface, streamlining your
@@ -461,12 +476,12 @@
                             </div>
                         </div>
                         <div
-                            class="self-stretch lg:col-span-1 col-span-2 rounded-tr-[25px] border-l-[3px] border-[#5398FF] rounded-bl-[25px] max-w-[322px] min-w-[185px] shrink-0 flex flex-col items-start justify-start pt-[21px] pb-[37px] pr-0 pl-[17px] box-border relative gap-[33px] mq800:pt-5 mq800:pb-6 mq800:box-border">
-                          
+                            class="self-stretch col-span-1 lg:h-[475px] h-[300px] rounded-tr-[25px] border-l-[3px] border-[#5398FF] rounded-bl-[25px] max-w-[322px] min-w-[185px] shrink-0 flex flex-col items-start justify-start pt-[33px] pb-[37px] pr-0 pl-[17px] box-border relative lg:gap-[26px] mq800:pt-5 mq800:pb-6 mq800:box-border">
+
                             <div class="self-stretch  flex flex-col items-start justify-start gap-[11px]">
                                 <div class=" items-start justify-start py-0 px-[13px]">
-                                    <img class="lg:h-[125px] lg:w-[125px] h-[82px] w-[82px] relative object-cover z-[1]" loading="lazy" alt=""
-                                        src="./images/serviceProvider/networking_feature2.png" />
+                                    <img class="lg:h-[125px] lg:w-[125px] h-[82px] w-[82px] relative object-cover z-[1]"
+                                        loading="lazy" alt="" src="./images/serviceProvider/networking_feature2.png" />
                                 </div>
                                 <h3
                                     class="m-0 self-stretch h-[68px] relative lg:text-[24px] text-[16px] text-[#FF5851] font-semibold font-inherit inline-block shrink-0 z-[1] mq450:text-lgi">
@@ -487,14 +502,14 @@
                             </div>
                         </div>
                         <div
-                            class="self-stretch lg:col-span-1 col-span-2 rounded-tr-[25px] rounded-bl-[25px] border-l-[3px] border-[#5398FF] max-w-[322px] min-w-[185px] shrink-0 flex flex-col items-start justify-start pt-[33px] pb-[37px] pr-2.5 pl-[22px] box-border relative gap-[40px] mq800:pt-[21px] mq800:pb-6 mq800:box-border">
+                            class="self-stretch lg:h-[475px] h-[300px] col-span-1  rounded-tr-[25px] rounded-bl-[25px] border-l-[3px] border-[#5398FF] max-w-[322px] min-w-[185px] shrink-0 flex flex-col items-start justify-start pt-[33px] pb-[37px] pr-2.5 pl-[22px] box-border relative lg:gap-[26px] mq800:pt-[21px] mq800:pb-6 mq800:box-border">
                             <!-- <div
                                 class="w-full h-full absolute !m-[0] top-[0px] right-[0px] bottom-[0px] left-[0px] rounded-tl-none rounded-tr-6xl rounded-br-none rounded-bl-6xl [filter:blur(1.4px)] box-border border-l-[3px] border-solid border-[#5398FF]">
                             </div> -->
                             <div class="self-stretch flex-1 flex flex-row items-start justify-start py-0 pr-0 pl-1">
                                 <div class="self-stretch flex-1 flex flex-col items-start justify-start gap-[6px]">
-                                    <img class="lg:w-[118px] lg:h-[118px] h-[82px] w-[82px] relative object-cover z-[1]" loading="lazy" alt=""
-                                        src="./images/serviceProvider/pet _feature3.png" />
+                                    <img class="lg:w-[118px] lg:h-[118px] h-[82px] w-[82px] relative object-cover z-[1]"
+                                        loading="lazy" alt="" src="./images/serviceProvider/pet _feature3.png" />
 
                                     <h3
                                         class="m-0 self-stretch  relative text-[#FF5851] lg:text-[24px] text-[16px] font-semibold font-inherit inline-block shrink-0 z-[1] mq450:text-lgi">
@@ -504,7 +519,8 @@
                                     </h3>
                                 </div>
                             </div>
-                            <div class="relative lg:text-lg text-[11px] leading-normal text-darkslategray-100  inline-block shrink-0 z-[1]">
+                            <div
+                                class="relative lg:text-lg text-[11px] leading-normal text-darkslategray-100  inline-block shrink-0 z-[1]">
                                 <p class="[margin-block-start:0] [margin-block-end:21px]">
                                     Showcase your brand effectively with customizable profiles,
                                     including logo upload, service descriptions, and pricing
@@ -514,15 +530,15 @@
                             </div>
                         </div>
                         <div
-                            class="self-stretch lg:col-span-1 col-span-2 rounded-tr-[25px] rounded-bl-[25px] border-l-[3px] border-[#5398FF] max-w-[322px] min-w-[185px] shrink-0 flex flex-col items-start justify-start pt-[15px] pb-[37px] pr-2 pl-[17px] box-border relative gap-[17px] mq800:pt-5 mq800:pb-6 mq800:box-border">
+                            class="self-stretch col-span-1 lg:h-[475px] h-[300px] rounded-tr-[25px] rounded-bl-[25px] border-l-[3px] border-[#5398FF] max-w-[322px] min-w-[185px] shrink-0 flex flex-col items-start justify-start pt-[15px] pb-[37px] pr-2 pl-[17px] box-border relative lg:gap-[26px] mq800:pt-5 mq800:pb-6 mq800:box-border">
                             <!-- <div
                                 class="w-full h-full absolute !m-[0] top-[0px] right-[0px] bottom-[0px] left-[0px] rounded-tl-none rounded-tr-6xl rounded-br-none rounded-bl-6xl [filter:blur(1.4px)] box-border z-[1] border-l-[3px] border-solid border-[#5398FF]">
                             </div> -->
                             <div class="self-stretch flex-1 flex flex-col items-start justify-start gap-[12px]">
                                 <div
                                     class="flex-1 flex flex-col items-start justify-start py-0 px-[11px] lg:text-[24px] text-[16px] relative text-[#FF5851]">
-                                    <img class="lg:h-[130px] lg:w-[130px] h-[82px] w-[82px] relative object-cover z-[2]" loading="lazy" alt=""
-                                        src="./images/serviceProvider/promotion_feature4.png" />
+                                    <img class="lg:h-[130px] lg:w-[130px] h-[82px] w-[82px] relative object-cover z-[2]"
+                                        loading="lazy" alt="" src="./images/serviceProvider/promotion_feature4.png" />
                                     <p class="[margin-block-start:0] [margin-block-end:21px]">
                                         Feedback and Review System: 
                                     </p>
@@ -547,7 +563,7 @@
 
         </section>
 
-        <section class="mt-[140px] mb-[120px] w-full">
+        <section class="lg:mt-[140px] mt-[40px] mb-[100px] w-full">
             <div class="w-full lg:hidden">
                 <div
                     class=" w-full h-[250px] relative rounded-[19.63px] bg-[#003459] overflow-hidden shrink-0 max-w-full mt-[-8px] text-26xl text-tomato-100 mq800:h-auto mq800:min-h-[528]">
@@ -558,7 +574,7 @@
                             fill="none">
                             <path d="M245 250L50.5634 0H-6L-1.45473 250H245Z" fill="#488BE9" />
                         </svg>
-                        <img class="absolute top-[-5px] left-[20%] w-[196px] h-[281px] object-contain z-[2]"
+                        <img class="absolute top-[-5px] left-[15%] w-[394px] h-[279px] object-contain z-[2]"
                             loading="lazy" alt=""
                             src="./images/serviceProvider/amazing-woman-with-long-wavy-hair-kissing-french-section5.png" />
                         <div
@@ -574,7 +590,7 @@
                         <div class="self-stretch flex flex-col items-start justify-start gap-[10px] max-w-full">
                             <div class="self-stretch flex flex-row items-start justify-start py-0 pr-0 pl-px">
                                 <h1 class="m-0  relative  text-[#FF5851] text-[28px] font-bold  inline-block z-[2]">
-                                    Are You a Service Provider?
+                                    Are You a Pet Parent?
                                 </h1>
                             </div>
                             <h1
@@ -587,16 +603,21 @@
                             <div
                                 class="flex-1 relative tracking-[0.02em] capitalize font-medium inline-block max-w-full z-[1]">
 
-                                <ul class="m-0  text-[#FF5851] text-[18px] text-left pl-6 tracking-[0.36px] list-disc ">
-                                    <li class="mb-1">Expand your reach</li>
-                                    <li class="mb-1">Streamlined Appointment Management</li>
-                                    <li class="mb-1">Access to Pet Medical Reports</li>
-                                    <li class="mb-1">Build Trust with Pet Parents.</li>
-                                    <li class="mb-1">Network Opportunities</li>
-                                    <li class="">
-                                        Elevate your practive with VetSched.Pet-because every pet
-                                        deserve exceptional care.
+                                <ul
+                                    class="m-0  text-[#FF5851] text-[12px]  pl-6 tracking-[0.24px] leading-normal list-disc">
+                                    <li class="mb-1"> Effortlessly book appointments with trusted service providers.
                                     </li>
+                                    <li class="mb-1">Connect with pet care professionals for reliable services.</li>
+                                    <li class="mb-1">Customize your profile to find the perfect match for your pet's
+                                        needs.</li>
+                                    <li class="mb-1"> Access seamless communication tools for easy interaction with
+                                        service providers.</li>
+                                    <li class="mb-1"> Share feedback and reviews to help improve pet care services.</li>
+                                    <li class="mb-1">
+                                        Explore a wide range of pet care options, from grooming to boarding.
+                                    </li>
+                                    <li class="mb-1"> Enjoy peace of mind knowing your pet is in good hands.</li>
+                                    <li> Join our platform today to elevate your pet parenting experience!</li>
                                 </ul>
 
                             </div>
@@ -651,7 +672,7 @@
                             class="self-stretch flex flex-row items-start justify-start py-0 pr-[43px] pl-9 box-border max-w-full text-justify text-lg">
                             <div
                                 class="flex-1 relative tracking-[0.02em] capitalize font-medium inline-block max-w-full z-[1]">
-                                <ul class="m-0  text-[#FF5851] text-[18px] pl-6 tracking-[0.36px] list-disc">
+                                <ul class="m-0  text-[#FF5851] text-[18px]  pl-6 tracking-[0.36px] list-disc">
                                     <li class="mb-1"> Effortlessly book appointments with trusted service providers.
                                     </li>
                                     <li class="mb-1">Connect with pet care professionals for reliable services.</li>
@@ -701,50 +722,56 @@
                 </div>
             </div>
         </section>
+        <!-- ================HOW IT WORK =========================== -->
         <section
             class="w-full flex flex-row items-start justify-end py-0 px-14 box-border mt-[100px] max-w-full text-center text-21xl text-darkslategray-200 font-poppins lg:pl-7 lg:pr-7 lg:box-border">
             <div class="flex-1 flex flex-col items-start justify-start gap-[54px] max-w-full mq750:gap-[27px_54px]">
                 <div class="w-full flex flex-row items-start justify-center py-0 px-5 box-border max-w-full">
                     <div class="flex flex-col items-start justify-start">
                         <div class="flex flex-row items-start justify-start relative">
-                            <img class="h-[98.6px] w-[98.6px] absolute !m-[0] top-[-52px] left-[-90px] overflow-hidden shrink-0 object-contain z-[3]"
+                            <img class="h-[98.6px] w-[98.6px] absolute !m-[0] top-[-52px] lg:left-[-90px] left-[-30px] overflow-hidden shrink-0 object-contain z-[3]"
                                 loading="lazy" alt="" src="./images//services/noto_paw-print.svg">
 
                             <h1
-                                class="m-0 w-[283px] relative text-[#363E62] leading-[60px] text-[40px] font-semibold  inline-block z-[4] mq450:text-5xl mq450:leading-[36px] mq1050:text-13xl mq1050:leading-[48px]">
+                                class="m-0 w-[283px] relative text-[#363E62] leading-[60px] lg:text-[40px] text-[30px]  font-semibold  inline-block z-[4] mq450:text-5xl mq450:leading-[36px] mq1050:text-13xl mq1050:leading-[48px]">
                                 How It Works?
                             </h1>
+                           
                         </div>
+                        <div class="flex relative lg:left-0 left-[25px]">
 
-                        <div class="h-[5px] flex-1 relative rounded-lg bg-[#FF5851]"></div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="200" height="4" viewBox="0 0 167 4" fill="none">
+                            <path d="M2 2H165" stroke="#FF5851" stroke-width="3" stroke-linecap="round"/>
+                          </svg>
+                        </div>
 
                     </div>
                 </div>
                 <div
                     class="self-stretch flex flex-row flex-wrap items-end justify-center gap-[19px] max-w-full text-left text-3xl text-darkslategray-100">
-                    <div class="h-[576px] flex-1 relative min-w-[315px] max-w-full">
-                        <div class="absolute top-[0px] left-[139px] w-[185px] h-[196px]">
-                            <div class="absolute top-[26px] left-[0px] w-[170px] h-[170px]">
+                    <div class="lg:h-[576px] h-[540px] flex-1 flex justify-center relative min-w-[315px] w-[420px] max-w-full">
+                        <div class="absolute lg:top-[0px] top-[15px]  lg:w-[185px] lg:h-[196px] w-[93px] h-[93px]">
+                            <div class="absolute top-[26px] left-[0px] w-[93px] h-[93px] lg:w-[170px] lg:h-[170px]">
                                 <div
-                                    class="absolute top-[0px] left-[0px] rounded-[50%] bg-[#3D4461] shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] w-full h-full z-[1]">
+                                    class="relative top-[0px] left-[0px] rounded-[50%] bg-[#3D4461] shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] w-[full] h-full z-[1]">
                                 </div>
-                                <img class="absolute top-[42px] left-[42px] w-[86px] h-[86px] z-[2]" loading="lazy"
+                                <img class="absolute top-[25px] left-[25px] lg:top-[42px] lg:left-[42px] w-[48px] h-[48px] lg:w-[86px] lg:h-[86px] z-[2]" loading="lazy"
                                     alt="" src="./images/requestDemo/Group 1156 (1).svg" />
                             </div>
-                            <img class="absolute top-[0px] left-[117px] w-[68px] h-[68px] z-[3]" loading="lazy" alt=""
+                            <img class="absolute lg:top-[0px] top-[10px] lg:left-[117px] left-[60px] w-[34px] h-[34px] lg:w-[68px] lg:h-[68px] z-[3]" loading="lazy" alt=""
                                 src="./images/requestDemo/Group.svg" />
                         </div>
                         <div
-                            class="absolute top-[107px] left-[0px] rounded-10xs bg-[#5398FF49] shadow-[0px_4px_13.7px_rgba(83,_152,_255,_0.62)] box-border w-full flex flex-col items-start justify-start pt-[98px] pb-[89px] pr-[15px] pl-[21px] gap-[16px] max-w-full border-[0px] border-solid border-dodgerblue-400">
+                            class="absolute top-[107px] left-[0px] h-[460px] rounded-10xs bg-[#5398FF17] shadow-[0px_4px_13.7px_rgba(83,_152,_255,_0.62)] box-border w-full flex flex-col items-start justify-start lg:pt-[98px] lg:pb-[89px] py-[40px] pr-[15px] pl-[21px] gap-[16px] max-w-full border-[0px] border-solid border-dodgerblue-400">
                             <img class="w-[420px] h-[469px] relative rounded-10xs hidden max-w-full" alt=""
                                 src="./images/requestDemo/Group.svg" />
 
-                            <h3 class="m-0 relative text-inherit font-semibold font-inherit z-[1] mq450:text-lg">
+                            <h3 class="m-0 relative text-[22px] text-[#3D4461 leading-normal] font-semibold font-inherit z-[1] mq450:text-lg">
                                 <p class="m-0">Streamlined Registration and Setup: </p>
                             </h3>
                             <div
                                 class="self-stretch flex flex-row items-start justify-start py-0 pr-0 pl-px box-border max-w-full text-base text-gray-800">
-                                <div class="h-[201px] flex-1 relative inline-block max-w-full z-[1]">
+                                <div class="h-[201px]text-[16px] text-[#00000087]  leading-normal relative inline-block max-w-full z-[1]">
                                     <p class="m-0">
                                         • Create your clinic profile easily on Vetsched.pet,
                                         boosting your online visibility.
@@ -765,242 +792,87 @@
                             </div>
                         </div>
                     </div>
-                    <div class="h-[600px] flex-1 relative min-w-[319px] max-w-full">
-                        <div class="absolute top-[0px] left-[127px] w-52 h-52">
-                            <div class="absolute top-[38px] left-[0px] w-[170px] h-[170px]">
+                    <div class="lg:h-[576px] h-[540px] flex-1 flex justify-center relative min-w-[315px] w-[420px] max-w-full">
+                        <div class="absolute lg:top-[0px] top-[15px]  lg:w-[185px] lg:h-[196px] w-[93px] h-[93px]">
+                            <div class="relative top-[26px] left-[0px] w-[93px] h-[93px] lg:w-[170px] lg:h-[170px]">
                                 <div
                                     class="absolute top-[0px] left-[0px] rounded-[50%] bg-[#3D4461] shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] w-full h-full z-[1]">
                                 </div>
-                                <img class="absolute top-[45px] left-[45px] w-[81px] h-[81px] z-[2]" loading="lazy"
+                                <img class="absolute top-[25px] left-[25px] lg:top-[42px] lg:left-[42px]  w-[48px] h-[48px] lg:w-[86px] lg:h-[86px] z-[2]" loading="lazy"
                                     alt="" src="./images/requestDemo/Group 1157 (1).svg" />
                             </div>
-                            <img class="absolute top-[0px] left-[131px] w-[68px] h-[68px] z-[2]" loading="lazy" alt=""
-                                src="./images/requestDemo/Vector.svg" />
+                            <img class="absolute lg:top-[0px] top-[10px] lg:left-[117px] left-[60px] w-[34px] h-[34px] lg:w-[68px] lg:h-[68px] z-[3]" loading="lazy" alt=""
+                            src="./images/requestDemo/Vector.svg" />
                         </div>
                         <div
-                            class="absolute top-[131px] left-[0px] rounded-10xs bg-[#5398FF49] shadow-[0px_4px_13.7px_rgba(83,_152,_255,_0.62)] box-border w-full flex flex-col items-start justify-start pt-[91px] px-[18px] pb-[49px] gap-[22px] max-w-full border-[0px] border-solid border-dodgerblue-400">
+                            class="absolute top-[107px] left-[0px] h-[460px]  rounded-10xs bg-[#5398FF17] shadow-[0px_4px_13.7px_rgba(83,_152,_255,_0.62)] box-border w-full flex flex-col items-start justify-start lg:pt-[98px] lg:pb-[89px] py-[40px] pr-[15px] pl-[21px] gap-[16px] max-w-full border-[0px] border-solid border-dodgerblue-400">
                             <img class="w-[420px] h-[469px] relative rounded-10xs hidden max-w-full" alt=""
-                                src="./images//requestDemo/paws 29.png" />
+                                src="./images/requestDemo/Group.svg" />
 
-                            <div class="w-72 flex flex-row items-start justify-start relative">
-                                <img class="h-[85px] w-[85px] absolute !m-[0] top-[-67px] right-[-69px] object-contain z-[2]"
-                                    loading="lazy" alt="" src="./images//requestDemo/paws 29.png" />
-
-                                <h3
-                                    class="m-0 flex-1 relative text-inherit font-semibold font-inherit z-[3] mq450:text-lg">
-                                    <p class="m-0">Effortless Appointment Management: </p>
+                                <h3 class="m-0 relative text-[22px] text-[#3D4461 leading-normal] font-semibold font-inherit z-[1] mq450:text-lg">
+                                    <p class="m-0">Effortless Appointment Management: 
+                                     </p>
                                 </h3>
-                            </div>
                             <div
-                                class="self-stretch flex flex-row items-start justify-start py-0 px-1 box-border max-w-full text-base text-gray-800">
-                                <div class="h-[241px] flex-1 relative inline-block max-w-full z-[1]">
+                                class="self-stretch flex flex-row items-start justify-start py-0 pr-0 pl-px box-border max-w-full text-base text-gray-800">
+                                <div class="h-[201px]  text-[16px] text-[#00000087]  leading-normal  relative inline-block max-w-full z-[1]">
                                     <p class="m-0">
-                                        • Simplify scheduling with intuitive online booking for
-                                        both you and clients.
+                                        • 	Simplify scheduling with intuitive online booking for both you and clients.
                                     </p>
                                     <p class="m-0">
-                                        • Customize appointment slots to match your clinic's
-                                        availability, including breaks.
+                                        • 	Customize appointment slots to match your clinic's availability, including breaks.
                                     </p>
                                     <p class="m-0">
-                                        • Minimize no-shows with automated reminders,
-                                        confirmations, and cancellation notifications.
+                                        • 	Minimize no-shows with automated reminders, confirmations, and cancellation notifications.
                                     </p>
                                     <p class="m-0">
-                                        • Seamlessly integrate with your existing calendar and
-                                        scheduling systems for added convenience.
+                                        •Seamless calendar and scheduling system for added convenience.
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div
-                        class=" flex-1 flex flex-col items-start justify-end pt-0 px-0 pb-px box-border min-w-[315px] max-w-full">
+                    <div class="lg:h-[576px] h-[540px] flex-1 flex justify-center relative min-w-[315px] w-[420px] max-w-full">
+                        <div class="absolute lg:top-[0px] top-[15px]  lg:w-[185px] lg:h-[196px] w-[93px] h-[93px]">
+                            <div class="absolute top-[26px] left-[0px] w-[93px] h-[93px] lg:w-[170px] lg:h-[170px]">
+                                <div
+                                    class="absolute top-[0px] left-[0px] rounded-[50%] bg-[#3D4461] shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] w-full h-full z-[1]">
+                                </div>
+                                <img class="absolute lg:top-[42px] top-[25px] lg:left-[26px] left-[15px] w-[63px] h-[39px] lg:w-[115px] lg:h-[70px] z-[2]" loading="lazy"
+                                    alt="" src="./images/requestDemo/svgviewer-png-output.png" />
+                            </div>
+                            <img class="absolute top-[15px] left-[60px] lg:top-[10px] lg:left-[120px]  w-[34px] h-[34px] lg:w-[68px] lg:h-[68px] z-[3]" loading="lazy" alt=""
+                                src="./images/requestDemo/plus_img.png" />
+                        </div>
                         <div
-                            class="self-stretch flex flex-col items-end justify-start gap-[35px] max-w-full mq450:gap-[17px_35px]">
-                            <div class="w-[252px] flex flex-row items-start justify-center py-0 px-5 box-border">
-                                <button
-                                    class="cursor-pointer [border:none] p-0 bg-[transparent] h-[84px] w-[84px] relative">
-                                    <img class="absolute top-[0px] left-[0px] rounded-6xs w-[84px] h-[84px] z-[4]"
-                                        alt="" src="/public/sound-decoder.svg" />
+                            class="absolute top-[107px] left-[0px] h-[460px]  rounded-10xs bg-[#5398FF17] shadow-[0px_4px_13.7px_rgba(83,_152,_255,_0.62)] box-border w-full flex flex-col items-start justify-start lg:pt-[98px] lg:pb-[89px] py-[40px] pr-[15px] pl-[21px] gap-[16px] max-w-full border-[0px] border-solid border-dodgerblue-400">
+                            <img class="w-[420px] h-[469px] relative rounded-10xs hidden max-w-full" alt=""
+                                src="./images/requestDemo/Group.svg" />
 
-                                    <div
-                                        class="absolute top-[30px] left-[42px] box-border w-0.5 h-[30px] z-[5] border-r-[2px] border-solid border-white">
-                                    </div>
-                                    <div
-                                        class="absolute top-[44px] left-[29px] box-border w-7 h-0.5 z-[6] border-t-[2px] border-solid border-white">
-                                    </div>
-                                </button>
-                            </div>
-                            <div class="self-stretch flex flex-row items-start justify-start relative max-w-full">
-                                <div
-                                    class="w-[170px] !m-[0] absolute top-[-98px] right-[119px] flex flex-row items-start justify-start">
-                                    <div class="h-[170px] flex-1 relative">
-                                        <div
-                                            class="absolute top-[0px] left-[0px] rounded-[50%] bg-darkslategray-900 shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] w-full h-full z-[1]">
-                                        </div>
-                                        <div
-                                            class="absolute top-[42px] left-[34px] rounded-12xs bg-white w-[105px] h-[68px] z-[2]">
-                                            <div
-                                                class="absolute top-[0px] left-[0px] rounded-12xs bg-white w-full h-full hidden">
-                                            </div>
-                                            <div
-                                                class="absolute top-[4px] left-[4px] rounded-sm bg-[#3D4461] w-[94px] h-2 z-[3]">
-                                            </div>
-                                            <div class="absolute top-[17px] left-[9px] bg-[#D9D9D984]  h-[38px] z-[3]">
-                                                <div
-                                                    class="absolute top-[0px] left-[0px] bg-[#D9D9D984] w-full h-full hidden">
-                                                </div>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="76" height="1"
-                                                    viewBox="0 0 76 1" fill="none">
-                                                    <path d="M1 0.50061H75" stroke="#FF5851" stroke-opacity="0.46"
-                                                        stroke-linecap="round" />
-                                                </svg>
-
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="76" height="1"
-                                                    viewBox="0 0 76 1" fill="none">
-                                                    <path d="M1 0.50061H75" stroke="#FF5851" stroke-opacity="0.46"
-                                                        stroke-linecap="round" />
-                                                </svg>
-
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="76" height="1"
-                                                    viewBox="0 0 76 1" fill="none">
-                                                    <path d="M1 0.50061H75" stroke="#FF5851" stroke-opacity="0.46"
-                                                        stroke-linecap="round" />
-                                                </svg>
-
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="76" height="1"
-                                                    viewBox="0 0 76 1" fill="none">
-                                                    <path d="M1 0.50061H75" stroke="#FF5851" stroke-opacity="0.46"
-                                                        stroke-linecap="round" />
-                                                </svg>
-
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="76" height="1"
-                                                    viewBox="0 0 76 1" fill="none">
-                                                    <path d="M1 0.50061H75" stroke="#FF5851" stroke-opacity="0.46"
-                                                        stroke-linecap="round" />
-                                                </svg>
-
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="76" height="1"
-                                                    viewBox="0 0 76 1" fill="none">
-                                                    <path d="M1 0.50061H75" stroke="#FF5851" stroke-opacity="0.46"
-                                                        stroke-linecap="round" />
-                                                </svg>
-
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="76" height="1"
-                                                    viewBox="0 0 76 1" fill="none">
-                                                    <path d="M1 0.50061H75" stroke="#FF5851" stroke-opacity="0.46"
-                                                        stroke-linecap="round" />
-                                                </svg>
-
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="76" height="1"
-                                                    viewBox="0 0 76 1" fill="none">
-                                                    <path d="M1 0.50061H75" stroke="#FF5851" stroke-opacity="0.46"
-                                                        stroke-linecap="round" />
-                                                </svg>
-
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="76" height="1"
-                                                    viewBox="0 0 76 1" fill="none">
-                                                    <path d="M1 0.50061H75" stroke="#FF5851" stroke-opacity="0.46"
-                                                        stroke-linecap="round" />
-                                                </svg>
-
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="76" height="1"
-                                                    viewBox="0 0 76 1" fill="none">
-                                                    <path d="M1 0.50061H75" stroke="#FF5851" stroke-opacity="0.46"
-                                                        stroke-linecap="round" />
-                                                </svg>
-
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="76" height="1"
-                                                    viewBox="0 0 76 1" fill="none">
-                                                    <path d="M1 0.50061H75" stroke="#FF5851" stroke-opacity="0.46"
-                                                        stroke-linecap="round" />
-                                                </svg>
-
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="76" height="1"
-                                                    viewBox="0 0 76 1" fill="none">
-                                                    <path d="M1 0.50061H75" stroke="#FF5851" stroke-opacity="0.46"
-                                                        stroke-linecap="round" />
-                                                </svg>
-
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="76" height="1"
-                                                    viewBox="0 0 76 1" fill="none">
-                                                    <path d="M1 0.50061H75" stroke="#FF5851" stroke-opacity="0.46"
-                                                        stroke-linecap="round" />
-                                                </svg>
-
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="76" height="1"
-                                                    viewBox="0 0 76 1" fill="none">
-                                                    <path d="M1 0.50061H75" stroke="#FF5851" stroke-opacity="0.46"
-                                                        stroke-linecap="round" />
-                                                </svg>
-                                            </div>
-                                        </div>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="124" height="15"
-                                            viewBox="0 0 124 15" fill="none">
-                                            <g filter="url(#filter0_d_797_408)">
-                                                <path
-                                                    d="M4.63389 10.9658C3.89942 9.63288 4.86367 8.00061 6.38557 8.00061H117.135C118.525 8.00061 119.492 9.38483 119.012 10.6902L117.91 13.6902C117.621 14.4774 116.871 15.0006 116.033 15.0006H8.03863C7.30981 15.0006 6.63868 14.6041 6.28695 13.9658L4.63389 10.9658Z"
-                                                    fill="white" />
-                                            </g>
-                                            <defs>
-                                                <filter id="filter0_d_797_408" x="0.382812" y="0.000610352"
-                                                    width="122.754" height="15" filterUnits="userSpaceOnUse"
-                                                    color-interpolation-filters="sRGB">
-                                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                                                    <feColorMatrix in="SourceAlpha" type="matrix"
-                                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                                                        result="hardAlpha" />
-                                                    <feOffset dy="-4" />
-                                                    <feGaussianBlur stdDeviation="2" />
-                                                    <feComposite in2="hardAlpha" operator="out" />
-                                                    <feColorMatrix type="matrix"
-                                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
-                                                    <feBlend mode="normal" in2="BackgroundImageFix"
-                                                        result="effect1_dropShadow_797_408" />
-                                                    <feBlend mode="normal" in="SourceGraphic"
-                                                        in2="effect1_dropShadow_797_408" result="shape" />
-                                                </filter>
-                                            </defs>
-                                        </svg>
-                                    </div>
-                                </div>
-                                <div
-                                    class="flex-1 rounded-10xs bg-dodgerblue-500 shadow-[0px_4px_13.7px_rgba(83,_152,_255,_0.62)] box-border flex flex-col items-start justify-start pt-[92px] px-3.5 pb-[98px] gap-[12px] max-w-full border-[0px] border-solid border-dodgerblue-400 mq750:pt-[60px] mq750:pb-16 mq750:box-border">
-                                    <img class="w-[420px] h-[469px] relative rounded-10xs hidden max-w-full" alt=""
-                                        src="/public/rectangle-422.svg" />
-
-                                    <h3
-                                        class="m-0 w-[382px] h-[76px] relative text-inherit font-semibold font-inherit inline-block shrink-0 max-w-full z-[1] mq450:text-lg">
-                                        <p class="m-0">
-                                            Seamless Client Communication and Feedback: 
-                                        </p>
-                                    </h3>
-                                    <div
-                                        class="w-[378px] flex flex-row items-start justify-start py-0 px-[7px] box-border max-w-full text-base text-gray-800">
-                                        <div class="h-[191px] flex-1 relative inline-block max-w-full z-[1]">
-                                            <p class="m-0">
-                                                • Improve communication with built-in messaging for
-                                                quick interaction.
-                                            </p>
-                                            <p class="m-0">
-                                                • Respond to inquiries, provide updates, and send
-                                                instructions directly.
-                                            </p>
-                                            <p class="m-0">
-                                                • Boost engagement and loyalty with a feedback and
-                                                review system.
-                                            </p>
-                                            <p class="m-0">
-                                                • Utilize feedback to enhance service quality and
-                                                attract new clients.
-                                            </p>
-                                        </div>
-                                    </div>
+                                <h3 class="m-0 relative text-[22px] text-[#3D4461 leading-normal] font-semibold font-inherit z-[1] mq450:text-lg">
+                                    <p class="m-0">Seamless Client Communication and Feedback: 
+                                     </p>
+                                </h3>
+                            <div
+                                class="self-stretch flex flex-row items-start justify-start py-0 pr-0 pl-px box-border max-w-full text-base text-gray-800">
+                                <div class="h-[201px]  text-[16px] text-[#00000087]  leading-normal relative inline-block max-w-full z-[1]">
+                                    <p class="m-0">
+                                        •	Improve communication with built-in messaging for quick interaction.
+                                    </p>
+                                    <p class="m-0">
+                                        •	Respond to inquiries, provide updates, and send instructions directly.
+                                    </p>
+                                    <p class="m-0">
+                                        •	Boost engagement and loyalty with a feedback and review system.
+                                    </p>
+                                    <p class="m-0">
+                                        •	Utilize feedback to enhance service quality and attract new clients.
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
@@ -1361,50 +1233,50 @@
     </div>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-          const slider = document.querySelector('.slider');
-          const prevButton = document.querySelector('.prev');
-          const nextButton = document.querySelector('.next');
-          const gap = 12; // Gap between cards
-          let cardsPerPage = getCardsPerPage();
-          let slideIndex = 0;
-   
-          nextButton.addEventListener('click', function () {
-            const cardWidth = slider.children[0].offsetWidth + gap;
-            if (slideIndex < slider.children.length - cardsPerPage) {
-              slideIndex++;
-              const slidePosition = -slideIndex * cardWidth;
-              slider.style.transform = `translateX(${slidePosition}px)`;
+            const slider = document.querySelector('.slider');
+            const prevButton = document.querySelector('.prev');
+            const nextButton = document.querySelector('.next');
+            const gap = 12; // Gap between cards
+            let cardsPerPage = getCardsPerPage();
+            let slideIndex = 0;
+
+            nextButton.addEventListener('click', function () {
+                const cardWidth = slider.children[0].offsetWidth + gap;
+                if (slideIndex < slider.children.length - cardsPerPage) {
+                    slideIndex++;
+                    const slidePosition = -slideIndex * cardWidth;
+                    slider.style.transform = `translateX(${slidePosition}px)`;
+                }
+            });
+
+            prevButton.addEventListener('click', function () {
+                const cardWidth = slider.children[0].offsetWidth + gap;
+                if (slideIndex > 0) {
+                    slideIndex--;
+                    const slidePosition = -slideIndex * cardWidth;
+                    slider.style.transform = `translateX(${slidePosition}px)`;
+                }
+            });
+
+            function getCardsPerPage() {
+                if (window.innerWidth >= 1024) { // Laptop
+                    return 4;
+                } else if (window.innerWidth >= 768) { // Tablet
+                    return 2;
+                } else { // Mobile
+                    return 1;
+                }
             }
-          });
-    
-          prevButton.addEventListener('click', function () {
-            const cardWidth = slider.children[0].offsetWidth + gap;
-            if (slideIndex > 0) {
-              slideIndex--;
-              const slidePosition = -slideIndex * cardWidth;
-              slider.style.transform = `translateX(${slidePosition}px)`;
-            }
-          });
-    
-          function getCardsPerPage() {
-            if (window.innerWidth >= 1024) { // Laptop
-              return 4;
-            } else if (window.innerWidth >= 768) { // Tablet
-              return 2;
-            } else { // Mobile
-              return 1;
-            }
-          }
-    
-          window.addEventListener('resize', function () {
-            cardsPerPage = getCardsPerPage();
-            slideIndex = 0;
-            slider.style.transform = `translateX(0)`;
-          });
-    
+
+            window.addEventListener('resize', function () {
+                cardsPerPage = getCardsPerPage();
+                slideIndex = 0;
+                slider.style.transform = `translateX(0)`;
+            });
+
         });
-      
-      </script>
+
+    </script>
 </body>
 
 </html>
