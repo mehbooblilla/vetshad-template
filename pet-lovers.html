@@ -1,0 +1,1331 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="/css/contactUs.css"> -->
+    <link rel="stylesheet" href="/css/global.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        /* Custom styles for slider */
+        .slider-container {
+            overflow: hidden;
+        }
+
+        .slider {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .answer {
+            display: none;
+        }
+
+        .card {
+            flex: 0 0 calc(100% / 1);
+            /* Display 4 cards at a time */
+            padding: 10px;
+            /* border: 1px solid #ccc; */
+            box-sizing: border-box;
+        }
+
+        .header-card {
+            flex: 0 0 calc(100% / 2);
+            ;
+        }
+
+        @media (min-width: 768px) {
+
+            /* Tablet */
+            .card {
+                flex: 0 0 calc((100% - 12px) / 2);
+                /* Display 2 cards at a time */
+            }
+
+        }
+
+        @media (min-width: 1024px) {
+
+            /* Desktop */
+            .card {
+                flex: 0 0 calc((100% - 3 * 12px) / 4);
+                /* Display 4 cards at a time */
+            }
+
+            .header-card {
+                flex: 0 0 calc(100% / 5);
+            }
+        }
+
+        .header-slider {
+            display: flex;
+            transition: transform 0.3s ease-in-out;
+        }
+    </style>
+</head>
+
+
+<body style="font-family: Poppins;">
+    <div
+        class="w-full  h-full relative [background:linear-gradient(180deg,_#fff)] overflow-hidden flex flex-col items-start justify-start gap-[9px] tracking-[normal] text-left text-lg  font-poppins mq1125:h-auto">
+        <div class="px-[25px] h-auto  w-full mt-[-26px] relative z-50">
+            <div class="logo-bg lg:mt-[-290px] lg:ml-[-135px] mt-[-295px] ml-[-165px]"></div>
+            <nav class="bg-transparent navbar-section lg:mt-[25px] mt-[30px]">
+
+                <div class="flex items-center justify-between ">
+                    <div>
+                        <a href="/"><img src="../images/logo.png"
+                                class="lg:w-[129px] w-[63px] lg:h-[96px] h-[39px]"></img></a>
+
+                    </div>
+                    <div class="lg:flex hidden gap-[55px] ">
+                        <ul class="flex gap-[38px] h-[46px] items-center">
+                            <li><a href="/service.html"
+                                    class="text-[#3D4461] hover:text-gray-300 flex gap-[7px] items-center navbar-item"><span><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="11" height="8" viewBox="0 0 11 8"
+                                            fill="none">
+                                            <path d="M10 1.5L5.5 6.5L1 1.5" stroke="#3D4461" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg></span> Solutions</a></li>
+                            <li><a href="/service.html"
+                                    class="text-[#3D4461] hover:text-gray-300 flex items-center  navbar-item">Services</a>
+                            </li>
+                            <li><a href="/service.html"
+                                    class="text-[#3D4461] hover:text-gray-300 flex items-center navbar-item">About
+                                    Us</a>
+                            </li>
+                            <li><a href="/about.html"
+                                    class="text-[#3D4461] hover:text-gray-300 flex items-center navbar-item">FAQs</a>
+                            </li>
+                            <li><a href="/contact-us.html"
+                                    class="text-[#3D4461] hover:text-gray-300 flex items-center navbar-item">Contact
+                                    Us</a>
+                            </li>
+
+                        </ul>
+                        <div class="flex gap-[26px]">
+
+                            <div><a
+                                    class="text-[#3D4461] px-[24px] py-[13px] flex justify-start items-center gap=[31px] rounded-[8px]  border-[1px] border-[#3D4461]">Login</a>
+                            </div>
+                            <div><a class="nav-joinus-btn">Join Us</a></div>
+                        </div>
+
+                    </div>
+                    <div class="inline-block cursor:pointer lg:hidden ">
+                        <div class="w-[30px] h-[2px] m-1 bg-[#3D4461] "></div>
+                        <div class="w-[30px] h-[2px] m-1 bg-[#3D4461] "></div>
+                        <div class="w-[30px] h-[2px] m-1 bg-[#3D4461] "></div>
+                    </div>
+                </div>
+
+            </nav>
+
+        </div>
+
+        <section class="w-full h-full lg:px-[100px] px-[25px]">
+            <div class="flex lg:flex-row flex-col-reverse">
+                <div>
+                    <div class="lg:flex hidden">
+                        <h1
+                            class="m-0 h-[120px] flex-1 relative text-[120px] text-[#2B80FF15] tracking-[5px] font-bold leading-normal font-inherit inline-block max-w-full z-[6] mq800:text-[50px] mq450:text-[30px]">
+                            PET LOVERS
+                        </h1>
+                    </div>
+                    <div>
+                        <h1
+                            class="m-0  lg:hidden  flex-1 relative text-[#2B80FF15] text-[32px]  tracking-[2px] font-bold font-inherit inline-block max-w-full z-[6] mq800:text-[50px] mq450:text-[30px]">
+                            PET LOVERS
+                        </h1>
+                        <div
+                            class="lg:w-[691px] flex flex-row items-start justify-start pt-5 px-[7px] pb-[25px] box-border max-w-full text-3xl text-darkslategray-100">
+                            <div class="h-[276px] flex-1 relative max-w-full">
+                                <h3
+                                    class="m-0 absolute lg:top-[112px] top-[150px] left-[0px] text-[22px]  font-medium inline-block lg:w-[584px] h-[164px] z-[4] mq450:text-lg">
+                                    <!-- <p class="m-0">&nbsp;</p> -->
+                                    <p class="m-0">
+                                        Our tailored platform helps with easy appointment scheduling
+                                        while building rapport, connecting with pet parents that
+                                        receive timely reminders reducing the overall no show/or
+                                        cancellation
+                                    </p>
+                                </h3>
+                                <div
+                                    class="absolute top-[0px] left-[0px] w-full flex flex-row items-start justify-start max-w-full text-26xl text-royalblue-100">
+                                    <div class="h-full flex-1 relative max-w-full">
+                                        <h1
+                                            class="m-0 absolute top-[0px] left-[0px] lg:text-[55px] text-[32px] inline-block w-full h-full z-[3] leading-normal font-bold mq800:text-17xl mq450:text-8xl">
+                                            <p class="m-0 ">
+                                                <b class="font-poppins text-[#3D4461] font-bold">Unified</b>
+                                                <b class="font-poppins text-[#FF5851] font-bold">Pet Care</b>
+
+                                                <b class="font-poppins text-[#3D4461] font-bold">Hub</b>
+                                            </p>
+                                        </h1>
+                                        <div class="absolute top-[65px]  rounded-lg bg-[#5398FF] w-[198px] h-2 z-[6]">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="absolute top-[15px] right-[-350px] rounded-[50%] bg-[#FF58516B] [filter:blur(34px)] w-[417px] h-[544px]">
+                    </div>
+                    <div
+                        class="w-[412px] h-[522px] absolute !m-[0] top-[250px]  left-[-360px] lg:top-[50px]  lg:left-[-336px] rounded-[50%] bg-[#3D446170] [filter:blur(100px)] z-[1]">
+                    </div>
+                </div>
+                <div>
+                    <div
+                        class="lg:h-[576px] h-[310px] lg:w-[736.1px] w-full lg:absolute relative !m-[0] right-[0px] bottom-auto">
+                        <img class="absolute lg:top-[270px] lg:right-[120px] top-[80px] left-auto lg:w-[75.5px] lg:h-[75.6px] w-[88px] h-[44px] object-contain"
+                            loading="lazy" alt="" src="./images/pet-lovers/clarity_notification-solid.svg" />
+
+                        <div
+                            class="absolute top-[17px] left-[160px] rounded-[50%] bg-dodgerblue-400 [filter:blur(147px)] box-border w-[530px] h-[527px] z-[1] border-[0px] border-solid border-black">
+                        </div>
+                        <img class="absolute lg:top-auto lg:left-auto bottom-[150px] lg:right-[150px] top-[260px] left-[110px] lg:w-[107.4px] lg:h-[95.4px] w-[64px] h-[63px] overflow-hidden object-contain z-[20] [transform:_rotate(3.31deg)]"
+                            loading="lazy" alt="" src="./images/pet-lovers/8 26.png" />
+
+                        <img class="absolute lg:top-[115px] top-[25px] lg:left-[530px] lg:right-auto left-auto right-[-40px] lg:w-[107.1px] lg:h-[107.1px]  w-[60px] h-[60px] overflow-hidden object-contain z-[3]"
+                            alt="" src="./images/serviceProvider/uil_calender (1).svg" />
+
+                        <img class="absolute top-[70px] lg:left-auto lg:right-[130px] right-0 lg:w-[64.7px] lg:h-[64.7px] w-[30px] h-[30px] object-contain z-[4]"
+                            alt="" src="./images/serviceProvider/Vector.svg" />
+
+                        <img class="absolute lg:top-[285.3px] lg:left-[280px]  top-[140.3px] left-[240px] lg:w-[268.8px] lg:h-[231.7px] w-[156px] h-[246px] object-contain z-[3]"
+                            alt="" src="./images/pet-lovers/pngwing 1 (2).png" />
+
+                        <img class="absolute lg:top-[140px] lg:left-[110px]  top-[80px] right-[-35px] lg:w-[280.7px] lg:h-[279.5px] w-[125px] h-[127px] object-contain z-[4]"
+                            alt="" src="./images//pet-lovers/Untitled-1 1.png" />
+
+                        <div
+                            class="absolute top-[90px] left-[180px]  lg:w-[452px] lg:h-[452px]  w-[321px] h-[306px] bg-[#3F8CFF42] rounded-full bg-no-repeat [filter:blur(73.3px)] bg-[top] z-[7]">
+
+                        </div>
+                        <div
+                            class="absolute top-[70px] lg:left-[175px] left-[70px]  lg:w-[452px] lg:h-[452px] w-[274px] h-[263px]   bg-[top] z-[7]">
+                            <img class="absolute top-[0px] lg:left-[0px] left-[50px]  lg:w-[452px] lg:h-[452px] w-[274px] h-[263px] object-cover "
+                                alt=""
+                                src="./images/pet-lovers/grey-fluffy-domestic-cat-with-long-hair-showing-its-affection-brown-dog-with-long-hair-removebg-preview 1.png" />
+
+                            <img class="absolute lg:top-[125px] lg:left-[221px] top-[100px] left-[190px] lg:w-[84.2px] lg:h-[90.7px] w-[38px] h-[43px] object-contain z-[8]"
+                                alt="" src="./images/serviceProvider/9 2 (1).png" />
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="w-full  xl:pl-[100px] lg:pl-[50px] lg:pr-[25px] px-[25px] mt-[150px] h-[700px]">
+            <div class="relative flex lg:flex-row flex-col gap-[42px]">
+                <div class="lg:w-[50%] w-full relative h-full lg:min-w-[600px] lg:max-w-[800px]">
+                    <div class="absolute w-full">
+                        <img class="w-full left-[80px] top-[-20px] h-[280px]  lg:h-[671px] lg:w-[271.5px] z-20 absolute"
+                            src="./images/pet-lovers/Frame 1526.png" alt="">
+                        <img class="w-[223px] h-[300px] lg:w-[470px] lg:h-[550px] absolute top-[80px] lg:right-0 right-[-44px] [filter:drop-shadow(8px_6px_24.6px_#5398FF)]"
+                            src="./images/pet-lovers/smiley-woman-dog-with-tablet-medium-shot.png" alt="">
+                        <img class="w-[154px] h-[283px] lg:w-[353px] lg:h-[135px] absolute lg:top-[15px] top-[-40px] lg:left-auto lg:right-[-55px] left-[15px]"
+                            src="./images/pet-lovers/Group 37060.png" alt="">
+                    </div>
+
+                    <!-- <img class="w-[161px] h-[155px] lg:w-[268px] lg:h-[258px] absolute top-auto bottom-[-15px] left-[10px]"
+                        src="./images/serviceProvider/pngwing 1 (1).png" alt=""> -->
+
+                </div>
+                <div class="lg:w-[50%] w-full h-full">
+                    <div
+                        class=" flex flex-col items-start justify-start pt-0 px-[7px] pb-[25px] box-border max-w-full gap-4 text-darkslategray-100">
+                        <div class="h-full flex-1 relative max-w-full pl-[25px]">
+                            <h1
+                                class="m-0  top-[0px] left-[0px] lg:text-[40px] text-[32px] inline-block w-full h-full z-[3] lg:leading-normal leading-[40px]  font-bold mq800:text-17xl mq450:text-8xl">
+                                <p class="m-0 ">
+                                    <span class="text-[#FF5851] font-semibold">Find</span>
+                                    <span class="font-poppins text-[#2B80FF]  font-semibold">, </span>
+                                    <span class="text-[#FF5851] font-semibold">Collect </span>
+                                    <span class="font-poppins text-[#2B80FF]  font-semibold">And</span>
+                                    <span class="text-[#FF5851] font-semibold">Communicate</span>
+                                    <span class="font-poppins text-[#2B80FF]  font-semibold">From Our List Of </span>
+                                    <span class=" text-[#3D4461] font-bold">
+                                        Great Service Providers
+                                    </span>
+                                </p>
+                                <span class="lg:hidden block">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="189" height="4" viewBox="0 0 189 4"
+                                        fill="none">
+                                        <path d="M2 2H187" stroke="#5398FF" stroke-width="3" stroke-linecap="round" />
+                                    </svg>
+                                </span>
+                                <span class="lg:block hidden">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="209" height="6" viewBox="0 0 209 6"
+                                        fill="none">
+                                        <path d="M3 3H206" stroke="#FF5851" stroke-width="5" stroke-linecap="round" />
+                                    </svg>
+                                </span>
+
+                            </h1>
+
+                        </div>
+                        <div class="h-[276px] flex-1 relative max-w-full">
+
+                            <ul class="m-0 lg:text-[22px] text-[12px] leading-normal text-left pl-6  list-disc ">
+                                <li class="mb-1">Utilize VetSched.pet's interactive communication tools to stay
+                                    connected with your pet's caregivers effortlessly.</li>
+                                <li class="mb-1">Seamlessly engage in texting, talking, or video chatting to ensure
+                                    constant communication for your pet's welfare.</li>
+                                <li class="mb-1">Tap into VetSched.pet's extensive network of pet-related service
+                                    providers.</li>
+                                <li class="mb-1">Prompt clients to leave feedback and reviews directly on the platform
+                                </li>
+                                <li class="mb-1">Find reputable professionals including veterinarians, groomers, and
+                                    trainers all conveniently accessible within our platform.</li>
+
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="absolute top-[15px] right-[-350px] rounded-[50%] bg-[#FF58516B] [filter:blur(50px)] w-[317px] h-[444px]">
+                </div>
+                <div
+                    class="w-[312px] h-[422px] absolute !m-[0] top-[150px]  left-[-300px] rounded-[50%] lg:bg-[#5398FF8F] bg-[#3D446170] [filter:blur(50px)] z-[1]">
+                </div>
+            </div>
+        </section>
+        <section class="w-full  xl:pl-[120px] lg:pl-[50px] lg:pr-[25px] px-[25px] lg:mt-[150px] mt-[50px] h-[700px]">
+            <div class="relative flex lg:flex-row flex-col-reverse">
+                <div class="lg:w-[50%] w-full max-w-[536px]">
+                    <div class="">
+                        <h1 class="relative lg:text-[40px] text-[30px] inline-block lg:leading-[50px] leading-[37px] ">
+                            <p class="m-0 ">
+                                <span class="font-poppins text-[#FF5851] font-semibold">Pet Care
+                                </span>
+
+                                <span class="font-bold text-[#2B80FF]">
+                                    Booking Simplified
+                                </span>
+
+                            </p>
+                            <div class="absolute  rounded-lg lg:bg-[#3D4461] bg-[#FF5851] w-[198px] h-[5px] z-[6]">
+                            </div>
+                        </h1>
+                    </div>
+                    <div class="mt-4">
+                        <ul
+                            class="m-0   lg:text-[22px] text-[12px] leading-normal font-normal text-left pl-6  list-disc ">
+                            <li class="mb-1">Explore the seamless appointment scheduling capabilities of VetSched.pet.
+                            </li>
+                            <li class="mb-1">Utilize our intuitive interface to locate available slots effortlessly.
+                            </li>
+                            <li class="mb-1">Book vet appointments quickly and easily through our platform.</li>
+                            <li class="mb-1">Receive timely reminders to stay informed about upcoming appointments.</li>
+                            <li class="mb-1">Experience the convenience of managing your pet's healthcare needs with
+                                just a few simple clicks.</li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="lg:w-[50%] w-full">
+                    <div class="lg:h-[576px] h-[300px] lg:w-[736.1px]  relative !m-[0] lg:right-0 bottom-auto">
+                        <img class="absolute top-0 right-0 w-full h-[300px] lg:w-[597px] lg:h-[617px] overflow-hidden object-contain z-[3] "
+                            loading="lazy" alt="" src="./images/pet-lovers/Mask group (1).png" />
+                        <img class="absolute lg:top-auto top-[45px] lg:bottom-[-165px] z-10  lg:left-[20px] left-[-20px] w-[204px] h-[257px] lg:w-[355px] lg:h-[503px] object-contain"
+                            loading="lazy" alt="" src="./images/pet-lovers/Group 37062.png" />
+
+
+                        <img class="absolute top-[100px] lg:left-[30px] left-[30px] w-[116px] h-[45px] lg:w-[273px] lg:h-[70px] object-contain z-[3]"
+                            alt="" src="./images/pet-lovers/Group 37063.png" />
+
+                        <img class="absolute lg:top-[180px] top-[25px] lg:left-[-15px] left-[15px] w-[120px] h-[43px] lg:w-[264px] lg:h-[67px] object-contain z-[4]"
+                            alt="" src="./images/pet-lovers/Group 37063.png" />
+
+
+
+                    </div>
+                </div>
+                <div
+                    class="absolute lg:top-[15px] top-[-200px] right-[-350px] rounded-[50%] bg-[#FF58516B] [filter:blur(50px)] w-[317px] h-[444px]">
+                </div>
+                <div
+                    class="w-[312px] h-[422px] absolute !m-[0] lg:top-[250px] top-[70px]  left-[-300px] rounded-[50%] lg:bg-[#5398FF8F] bg-[#3D446170] [filter:blur(50px)] z-[1]">
+                </div>
+            </div>
+        </section>
+        <section class="w-full h-[full]  lg:mt-[150px] px-[25px] lg:px-[0px] mt-[50px]  ">
+
+            <div class="relative flex lg:flex-row flex-col w-full items-center min-h-[780px] max-h-auto bg-[#5389FF1A]">
+                <div class="lg:w-[50%] w-full relative">
+                    <img class="hidden lg:block md:h-[780px] h-[268px] w-full relative"
+                        src="./images/pet-lovers/medium-shot-woman-working-couch.png" alt="">
+                    <img class="block lg:hidden md:h-[780px] h-[268px] w-full relative"
+                        src="./images/pet-lovers/medium-shot-woman-working-couch (1).png" alt="">
+                    <img class="w-[215px] h-[154px] lg:w-[336px] lg:h-[337px] lg:top-2.5 top-[-30px] right-[-20px] absolute"
+                        src="./images/pet-lovers/Group 37064.png" alt="">
+                </div>
+                <div class="lg:w-[50%] w-full flex justify-center lg:px-[57px]">
+                    <div
+                        class="flex flex-col items-start justify-start pt-0 px-[7px] pb-[25px] box-border max-w-full text-3xl text-darkslategray-100">
+                        <div class="">
+                            <h1
+                                class="m-0  top-[0px] left-[0px] lg:text-[28px] leading-[38px]  inline-block w-full  z-[3] lg:leading-normal  font-bold mq800:text-17xl mq450:text-8xl">
+                                <p class="m-0 ">
+                                    <span class="font-poppins text-[#3D4461] font-bold">Centralized Client Management:
+                                    </span>
+                                    <span class=" text-[#FF5851] font-semibold">
+                                        Seamlessly Communicate
+                                    </span>
+                                    <span class="font-poppins font-bold text-[#3D4461]">and Maintain</span>
+                                    <span class="text-[#2B80FF] font-semibold">Detailed Pet Profiles</span>
+                                </p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="209" height="6" viewBox="0 0 209 6"
+                                    fill="none">
+                                    <path d="M3 3H206" stroke="#FF5851" stroke-width="5" stroke-linecap="round" />
+                                </svg>
+                            </h1>
+                            <!-- <div
+                    class="absolute top-[46px]  rounded-lg bg-[#5398FF] w-[198px] h-2 z-[6]">
+                </div> -->
+                        </div>
+                        <div class="h-[276px] flex-1 relative max-w-full">
+
+                            <ul
+                                class="m-0   lg:text-[22px] text-[15px] lg:leading-normal leading-[28px] text-left pl-6 tracking-[0.36px] list-disc ">
+                                <li class="mb-1">Utilize platform-specific features to expand your client base</li>
+                                <li class="mb-1">Enhance your brand visibility through optimized platform profiles</li>
+                                <li class="mb-1">Encourage client engagement and interaction within the platform</li>
+                                <li class="mb-1">Prompt clients to leave feedback and reviews directly on the platform
+                                </li>
+                                <li class="mb-1">Leverage platform analytics to gain insights into client behavior and
+                                    preferences</li>
+                                <li class="">
+                                    Continuously refine your brand presence and offerings based on platform performance
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="absolute top-[100px] lg:right-[-250px] right-[-320px] rounded-[50%] bg-[#FF58516B] [filter:blur(50px)] w-[317px] h-[444px]">
+                </div>
+
+            </div>
+        </section>
+        <!-- ========================FEATURE SECTION=================== -->
+        <section
+            class="w-full flex flex-row items-start justify-start py-0 pr-5 pl-0 box-border relative max-w-full text-left text-5xl text-tomato-100 font-poppins">
+            <div
+                class="h-[673px] w-[412px] absolute !m-[0] bottom-[-200px] left-[-354px] rounded-[50%] bg-lightskyblue [filter:blur(100px)]">
+            </div>
+            <div class="relative w-full h-full lg:px-[25px]">
+                <div
+                    class="w-full flex flex-row items-start justify-center px-5 py-[70px] box-border max-w-full shrink-0 text-[#5398FF]">
+                    <h1
+                        class="m-0 relative text-inherit capitalize font-semibold font-inherit mq800:text-13xl mq450:text-5xl">
+                        Features
+                    </h1>
+                </div>
+                <div
+                    class="self-stretch  w-full flex flex-row items-start justify-end pt-0 px-0  box-border max-w-full mq800:pb-16 mq800:box-border">
+                    <div
+                        class="self-stretch w-full justify-center overflow-x-auto shrink-0 grid lg:grid-cols-4 grid-cols-2  items-star py-0 pr-0 pl-5 box-border gap-3 max-w-full">
+                        <div
+                            class="self-stretch lg:h-[475px] h-[300px] col-span-1 max-w-[322px] min-w-[185px] shrink-0 bg-[#5398FF] rounded-tr-[25px] rounded-bl-[25px] flex flex-col items-start justify-start pt-[25px] pb-[85px]  box-border relative lg:gap-[26px] text-white mq800:pt-[21px] mq800:pb-[55px] mq800:box-border">
+                            <!-- <div
+                                class="w-full h-full absolute !m-[0] top-[0px] right-[0px] bottom-[0px] left-[0px] rounded-tl-none rounded-tr-6xl rounded-br-none rounded-bl-6xl bg-dodgerblue-800 [filter:blur(1.4px)] box-border border-l-[3px] border-solid border-dodgerblue-100">
+                            </div> -->
+                            <div class="flex flex-row items-start justify-start py-0 w-full h-[115px]  px-[25px]">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 71 71"
+                                        fill="none">
+                                        <g clip-path="url(#clip0_573_864)">
+                                            <path
+                                                d="M62.1255 42.8345L61.4809 42.5715C59.6478 41.8136 57.9253 40.8119 56.36 39.5936C54.4924 37.8101 52.9997 35.6716 51.9697 33.3035L49.4708 26.142C48.1478 22.3196 45.4745 19.1118 41.9532 17.1215C38.4319 15.1311 34.3049 14.4951 30.3477 15.333L29.6952 13.4629C29.5161 12.9496 29.1404 12.5285 28.6508 12.2922C28.1612 12.0559 27.5978 12.0238 27.0845 12.2029C26.5713 12.382 26.1501 12.7576 25.9138 13.2472C25.6775 13.7368 25.6454 14.3002 25.8245 14.8135L26.4872 16.7126C22.9139 18.5415 20.1245 21.6035 18.6356 25.3313C17.1467 29.0591 17.0592 33.2001 18.3893 36.9875L20.8882 44.149C21.5551 46.6438 21.717 49.2467 21.3643 51.8049C20.9128 53.7226 20.207 55.5713 19.2657 57.302L18.9246 57.9089L20.3511 61.9971L63.552 46.9226L62.1255 42.8345Z"
+                                                fill="#3D4461" />
+                                            <path
+                                                d="M38.6699 57.3125C39.1177 58.1871 39.8668 58.8701 40.7789 59.2354C41.691 59.6007 42.7045 59.6236 43.6322 59.2999C44.5599 58.9762 45.3391 58.3277 45.8259 57.4743C46.3128 56.6208 46.4744 55.6201 46.2808 54.6568L38.6699 57.3125Z"
+                                                fill="#3D4461" />
+                                            <circle cx="40.8478" cy="16.3382" r="6.46836" fill="#FF5851" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_573_864">
+                                                <rect width="55.2751" height="55.2751" fill="white"
+                                                    transform="translate(0.273438 18.6719) rotate(-19.2358)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg></span>
+                                <span class="absolute top-[65px]"><svg xmlns="http://www.w3.org/2000/svg" width="80"
+                                        height="80" viewBox="0 0 104 104" fill="none">
+                                        <path
+                                            d="M51.9999 57.1993C55.4477 57.1993 58.7543 55.8297 61.1923 53.3917C63.6303 50.9537 64.9999 47.6471 64.9999 44.1993C64.9999 40.7515 63.6303 37.4449 61.1923 35.0069C58.7543 32.569 55.4477 31.1993 51.9999 31.1993C48.5521 31.1993 45.2455 32.569 42.8075 35.0069C40.3695 37.4449 38.9999 40.7515 38.9999 44.1993C38.9999 47.6471 40.3695 50.9537 42.8075 53.3917C45.2455 55.8297 48.5521 57.1993 51.9999 57.1993ZM51.9999 51.9993C49.9312 51.9993 47.9473 51.1775 46.4845 49.7147C45.0217 48.252 44.1999 46.268 44.1999 44.1993C44.1999 42.1306 45.0217 40.1467 46.4845 38.6839C47.9473 37.2211 49.9312 36.3993 51.9999 36.3993C54.0686 36.3993 56.0526 37.2211 57.5153 38.6839C58.9781 40.1467 59.7999 42.1306 59.7999 44.1993C59.7999 46.268 58.9781 48.252 57.5153 49.7147C56.0526 51.1775 54.0686 51.9993 51.9999 51.9993ZM10.3999 28.5993C10.3999 26.5306 11.2217 24.5467 12.6845 23.0839C14.1473 21.6211 16.1312 20.7993 18.1999 20.7993H85.7999C87.8686 20.7993 89.8525 21.6211 91.3153 23.0839C92.7781 24.5467 93.5999 26.5306 93.5999 28.5993V42.5613C91.9593 41.8599 90.1825 41.5347 88.3999 41.6097V28.5993C88.3999 27.9098 88.126 27.2484 87.6384 26.7608C87.1508 26.2732 86.4895 25.9993 85.7999 25.9993H18.1999C17.5103 25.9993 16.849 26.2732 16.3614 26.7608C15.8738 27.2484 15.5999 27.9098 15.5999 28.5993V75.3993C15.5999 76.0889 15.8738 76.7502 16.3614 77.2378C16.849 77.7254 17.5103 77.9993 18.1999 77.9993H31.1999V70.1993C31.1999 68.1306 32.0217 66.1467 33.4845 64.6839C34.9473 63.2211 36.9312 62.3993 38.9999 62.3993H64.9999C67.0686 62.3993 69.0526 63.2211 70.5153 64.6839C71.9781 66.1467 72.7999 68.1306 72.7999 70.1993V71.3433C71.06 71.0476 69.274 71.1852 67.5999 71.7437V70.1993C67.5999 69.5098 67.326 68.8484 66.8384 68.3608C66.3508 67.8732 65.6895 67.5993 64.9999 67.5993H38.9999C38.3103 67.5993 37.649 67.8732 37.1614 68.3608C36.6738 68.8484 36.3999 69.5098 36.3999 70.1993V77.9993H60.0963C58.7339 79.5437 57.8603 81.3377 57.4599 83.1993H18.1999C16.1312 83.1993 14.1473 82.3775 12.6845 80.9147C11.2217 79.452 10.3999 77.468 10.3999 75.3993V28.5993ZM81.0367 55.0257L82.5083 51.1257C83.8499 47.5845 88.0307 45.8373 91.5563 47.3401L93.5739 48.2033C96.0335 49.2537 98.0667 51.1569 98.4983 53.7153C100.875 67.8853 88.5767 88.0405 74.4223 93.1833C71.8639 94.1089 69.1027 93.3913 66.9083 91.9041L65.1091 90.6821C64.3704 90.1846 63.7485 89.5327 63.2862 88.7714C62.8239 88.0102 62.5323 87.1577 62.4314 86.2728C62.3306 85.3879 62.4229 84.4917 62.7021 83.646C62.9812 82.8002 63.4405 82.0251 64.0483 81.3741L66.8823 78.2177C67.5467 77.4828 68.3958 76.9394 69.3414 76.644C70.2871 76.3486 71.2946 76.3121 72.2591 76.5381L78.6291 78.0461C83.6783 74.8897 86.3875 70.4541 86.7515 64.7341L82.1859 60.2673C81.5023 59.602 81.029 58.7507 80.8247 57.819C80.6204 56.8872 80.6941 55.916 81.0367 55.0257Z"
+                                            fill="#3D4461" />
+                                    </svg></span>
+                                <span class="absolute top-[35px] left-[95px]"><svg xmlns="http://www.w3.org/2000/svg"
+                                        width="61" height="61" viewBox="0 0 61 61" fill="none">
+                                        <g clip-path="url(#clip0_568_855)">
+                                            <path
+                                                d="M30.5 0C46.7931 0 61 13.4505 61 28.975C61 44.2372 47.1133 56.2481 30.5 56.2481C26.9467 56.25 23.4156 55.6879 20.0385 54.5828C18.6233 55.9553 18.1383 56.4219 15.1341 59.3194C12.9686 60.9542 10.9312 61.5093 9.11035 60.4785C7.27425 59.4415 6.7222 57.4223 7.09735 54.7627L8.31735 47.6898C3.0195 42.7061 0 36.1181 0 28.975C0 13.4505 14.2038 0 30.5 0ZM30.5 4.27C16.5127 4.27 4.27 15.86 4.27 28.975C4.27 35.2122 7.0516 40.9554 11.956 45.2315L12.017 45.2833L12.9228 46.0702L12.7185 47.2598L12.2976 49.7119L12.1847 50.3647L11.3155 55.4215C11.2642 55.762 11.2337 56.1052 11.224 56.4494V56.7392C11.224 56.7544 11.221 56.7605 11.2179 56.7635C11.2393 56.733 11.654 56.6019 12.3647 56.0834L18.9832 49.6601L20.2459 50.1359C23.5259 51.3598 26.9991 51.9848 30.5 51.9811C44.8838 51.9811 56.73 41.7332 56.73 28.975C56.73 15.8631 44.4873 4.27 30.5 4.27ZM15.9424 23.8297C16.5568 23.8072 17.1695 23.9088 17.7438 24.1285C18.318 24.3481 18.8422 24.6813 19.2848 25.1081C19.7274 25.5348 20.0795 26.0464 20.32 26.6123C20.5604 27.1782 20.6844 27.7867 20.6844 28.4016C20.6844 29.0165 20.5604 29.625 20.32 30.1909C20.0795 30.7568 19.7274 31.2684 19.2848 31.6951C18.8422 32.1219 18.318 32.4551 17.7438 32.6747C17.1695 32.8944 16.5568 32.996 15.9424 32.9735C14.7587 32.9303 13.6379 32.4297 12.8158 31.577C11.9937 30.7243 11.5344 29.586 11.5344 28.4016C11.5344 27.2172 11.9937 26.0789 12.8158 25.2262C13.6379 24.3735 14.7587 23.8729 15.9424 23.8297ZM31.1863 23.8297C31.8007 23.8072 32.4134 23.9088 32.9877 24.1285C33.5619 24.3481 34.0861 24.6813 34.5287 25.1081C34.9713 25.5348 35.3234 26.0464 35.5639 26.6123C35.8043 27.1782 35.9283 27.7867 35.9283 28.4016C35.9283 29.0165 35.8043 29.625 35.5639 30.1909C35.3234 30.7568 34.9713 31.2684 34.5287 31.6951C34.0861 32.1219 33.5619 32.4551 32.9877 32.6747C32.4134 32.8944 31.8007 32.996 31.1863 32.9735C30.0026 32.9303 28.8818 32.4297 28.0597 31.577C27.2376 30.7243 26.7783 29.586 26.7783 28.4016C26.7783 27.2172 27.2376 26.0789 28.0597 25.2262C28.8818 24.3735 30.0026 23.8729 31.1863 23.8297ZM46.4271 23.8297C47.0415 23.8072 47.6542 23.9088 48.2285 24.1285C48.8028 24.3481 49.3269 24.6813 49.7695 25.1081C50.2122 25.5348 50.5642 26.0464 50.8047 26.6123C51.0452 27.1782 51.1691 27.7867 51.1691 28.4016C51.1691 29.0165 51.0452 29.625 50.8047 30.1909C50.5642 30.7568 50.2122 31.2684 49.7695 31.6951C49.3269 32.1219 48.8028 32.4551 48.2285 32.6747C47.6542 32.8944 47.0415 32.996 46.4271 32.9735C45.2434 32.9303 44.1227 32.4297 43.3006 31.577C42.4785 30.7243 42.0191 29.586 42.0191 28.4016C42.0191 27.2172 42.4785 26.0789 43.3006 25.2262C44.1227 24.3735 45.2434 23.8729 46.4271 23.8297Z"
+                                                fill="#3D4461" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_568_855">
+                                                <rect width="61" height="61" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg></span>
+
+                            </div>
+                            <div class="self-stretch  flex flex-col items-start justify-start gap-[6px] px-[25px]">
+
+                                <h3
+                                    class="m-0 self-stretch  relative lg:text-[24px] text-[16px]  leading-normal  font-semibold font-inherit inline-block shrink-0 z-[1] mq450:text-lgi">
+                                    <p class="[margin-block-start:0] [margin-block-end:21px]">
+                                        Communication and Connectivity
+                                    </p>
+                                </h3>
+                            </div>
+                            <div
+                                class=" flex flex-row items-start justify-start py-0  box-border  leading-normal px-[35px]">
+                                <div class=" relative inline-block z-[1] lg:text-lg text-[11px] ">
+                                    <ul class="list-disc">
+                                        <li>Chat and Text</li>
+                                        <li>Video Calls</li>
+                                        <li>Notification and Reminders</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="self-stretch col-span-1 lg:h-[475px] h-[300px] rounded-tr-[25px] border-l-[3px] border-[#5398FF] rounded-bl-[25px] max-w-[322px] min-w-[185px] shrink-0 flex flex-col items-start justify-start pt-[33px] pb-[37px] pr-0 pl-[25px] box-border relative lg:gap-[26px] mq800:pt-5 mq800:pb-6 mq800:box-border">
+
+                            <div class="self-stretch  flex flex-col items-start justify-start gap-[11px]">
+                                <div class=" items-start justify-start py-0 px-[13px]">
+                                    <img class="lg:h-[125px] lg:w-[125px] h-[82px] w-[82px] relative object-cover z-[1]"
+                                        loading="lazy" alt="" src="./images/pet-lovers/recruitment 1.png" />
+                                </div>
+                                <h3
+                                    class="m-0 self-stretch h-[68px] relative lg:text-[24px] leading-normal  text-[16px] text-[#FF5851] font-semibold font-inherit inline-block shrink-0 z-[1] mq450:text-lgi">
+                                    <p class="[margin-block-start:0] [margin-block-end:21px]">
+                                        Provider Discovery and Selection
+                                    </p>
+                                </h3>
+                            </div>
+                            <div
+                                class=" flex flex-row items-start justify-start py-0 px-[5px] box-border text-lg text-[#3D4461]">
+                                <div class="flex-1 relative inline-block z-[1] lg:text-lg text-[11px] leading-normal px-[25px]">
+                                    <ul class="list-disc">
+                                        <li>List of Providers</li>
+                                        <li>Proximity Search</li>
+                                        <li>Nearby Search</li>
+                                        <li>Ratings and Feeback</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="self-stretch lg:h-[475px] h-[300px] col-span-1  rounded-tr-[25px] rounded-bl-[25px] border-l-[3px] border-[#5398FF] max-w-[322px] min-w-[185px] shrink-0 flex flex-col items-start justify-start pt-[33px] pb-[37px] pr-2.5 pl-[25px] box-border relative lg:gap-[26px] mq800:pt-[21px] mq800:pb-6 mq800:box-border">
+                            <!-- <div
+                                class="w-full h-full absolute !m-[0] top-[0px] right-[0px] bottom-[0px] left-[0px] rounded-tl-none rounded-tr-6xl rounded-br-none rounded-bl-6xl [filter:blur(1.4px)] box-border border-l-[3px] border-solid border-[#5398FF]">
+                            </div> -->
+                            <div class="self-stretch  flex flex-row items-start justify-start py-0 pr-0 pl-1">
+                                <div class="self-stretch flex-1 flex flex-col items-start justify-start gap-[6px]">
+                                    <img class="lg:w-[118px] lg:h-[118px] h-[82px] w-[82px] relative object-cover z-[1]"
+                                        loading="lazy" alt="" src="./images/pet-lovers/appointment (1) 1.png" />
+
+                                    <h3
+                                        class="m-0 self-stretch  relative text-[#FF5851] lg:text-[24px] text-[16px] leading-normal font-semibold font-inherit inline-block shrink-0 z-[1] mq450:text-lgi">
+                                        <p class="[margin-block-start:0] [margin-block-end:21px]">
+                                            Appointment Management
+                                        </p>
+                                    </h3>
+                                </div>
+                            </div>
+                            <div
+                                class="relative lg:text-lg text-[11px] leading-normal text-darkslategray-100  inline-block shrink-0 z-[1] px-[25px]">
+                                <ul class="list-disc">
+                                    <li>Bookings</li>
+                                    <li>Connect with Providers</li>
+                                    <li>Appointments and Cancellation</li>
+                                  
+                                </ul>
+                            </div>
+                        </div>
+                        <div
+                            class="self-stretch col-span-1 lg:h-[475px] h-[300px] rounded-tr-[25px] rounded-bl-[25px] border-l-[3px] border-[#5398FF] max-w-[322px] min-w-[185px] shrink-0 flex flex-col items-start justify-start pt-[15px] pb-[37px] pr-2 pl-[25px] box-border relative lg:gap-[26px] mq800:pt-5 mq800:pb-6 mq800:box-border">
+                            <!-- <div
+                                class="w-full h-full absolute !m-[0] top-[0px] right-[0px] bottom-[0px] left-[0px] rounded-tl-none rounded-tr-6xl rounded-br-none rounded-bl-6xl [filter:blur(1.4px)] box-border z-[1] border-l-[3px] border-solid border-[#5398FF]">
+                            </div> -->
+                            <div class="self-stretch  flex flex-col items-start justify-start gap-[12px]">
+                                <div
+                                    class=" flex flex-col items-start justify-start py-0 px-[11px] lg:text-[24px] text-[16px] gap-[6px] relative text-[#FF5851]">
+                                    <img class="lg:h-[130px] lg:w-[130px] h-[82px] w-[82px] relative object-cover z-[2]"
+                                        loading="lazy" alt="" src="./images/serviceProvider/promotion_feature4.png" />
+                                    <p class="[margin-block-start:0] leading-normal text-[#FF5851] font-semibold [margin-block-end:21px]">
+                                        Pet Profile Management
+                                    </p>
+                                </div>
+                                <h3
+                                    class="m-0 self-stretch text-[24px] relative text-[#FF5851] font-semibold font-inherit inline-block shrink-0 z-[2] mq450:text-lgi">
+
+                                </h3>
+                            </div>
+                            <div
+                                class="flex flex-row items-start px-[25px] justify-start py-0  box-border lg:text-lg text-[11px] leading-normal text-darkslategray-100">
+                                <ul class="list-disc ">
+                                    <li>Pet’s Profile</li>
+                                    <li>Multiple Pets</li>
+                                    <li>Pet’s History,Data,Records</li>
+                                    <li>Share Pet’s Profile</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="absolute lg:top-[100px] top-[250px] lg:right-[-250px] right-[-320px] rounded-[50%] bg-[#FF58516B] [filter:blur(50px)] w-[317px] h-[444px]">
+                </div>
+                <div
+                    class="w-[312px] h-[422px] absolute !m-[0] top-[250px]  left-[-300px] rounded-[50%] lg:bg-[#5398FF8F] bg-[#3D446170] [filter:blur(50px)] z-[1]">
+                </div>
+            </div>
+
+        </section>
+
+        <section class="lg:mt-[140px] mt-[40px] mb-[100px] w-full">
+            <div class="w-full lg:hidden">
+                <div
+                    class=" w-full h-[250px] relative rounded-[19.63px] bg-[#003459] overflow-hidden shrink-0 max-w-full mt-[-8px] text-26xl text-tomato-100 mq800:h-auto mq800:min-h-[528]">
+
+                    <div class="absolute  left-[0px] w-full h-full ">
+                        <!-- <div
+                            class="absolute top-[0.02px] left-[-82px] rounded-[97.18px] bg-[#5398FFDF] w-[800px] h-[700px] [transform:_rotate(44.71deg)] [transform-origin:0_0] z-[1]">
+                        </div> -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="245" height="250" viewBox="0 0 245 250" fill="none">
+                            <path d="M245 250L50.5634 0H-6L-1.45473 250H245Z" fill="#488BE9"/>
+                          </svg>
+                        <img class="absolute top-[-5px] left-[20%] w-[196px] h-[281px] object-contain z-[2]"
+                            loading="lazy" alt="" src="./images/services/doctor.png" />
+                        <div
+                            class="w-[200px] h-[185px] relative !m-[0] top-[-250px] left-full right-[auto] bottom-auto rounded-[19px]  bg-[#FCEED5] [transform:_rotate(44.93deg)] [transform-origin:0_0]">
+                        </div>
+                    </div>
+
+                </div>
+                <div
+                    class=" w-full flex flex-col items-start justify-start py-[20px]  pr-4 pl-10 box-border gap-[33px] max-w-full">
+
+                    <div class="self-stretch flex flex-col items-start justify-start gap-[16px] max-w-full shrink-0">
+                        <div class="self-stretch flex flex-col items-start justify-start gap-[10px] max-w-full">
+                            <div class="self-stretch flex flex-row items-start justify-start py-0 pr-0 pl-px">
+                                <h1
+                                    class="m-0  relative  text-[#FF5851] text-[28px] font-bold  inline-block z-[2]">
+                                    Are You a Service Provider?
+                                </h1>
+                            </div>
+                            <h1
+                                class="m-0 relative text-[26px]  text-[#3D4461] font-medium font-inherit  inline-block max-w-full z-[2]">
+                                Join Our Network Today
+                            </h1>
+                        </div>
+                        <div
+                            class="self-stretch flex flex-row items-start justify-start py-0   box-border max-w-full text-justify text-lg">
+                            <div
+                                class="flex-1 relative tracking-[0.02em] capitalize font-medium inline-block max-w-full z-[1]">
+                                <div
+                                class="h-[249px] flex lg:hidden w-[178px] absolute !m-[0] bottom-auto top-[-90px] left-[-137px] rounded-[50%] bg-[#3D446170] [filter:blur(34.7px)]"
+                              ></div> 
+                                <ul class="m-0  text-[#FF5851] text-[18px] text-left pl-6 tracking-[0.36px] list-disc ">
+                                    <li class="mb-1">Expand your reach</li>
+                                    <li class="mb-1">Streamlined Appointment Management</li>
+                                    <li class="mb-1">Access to Pet Medical Reports</li>
+                                    <li class="mb-1">Build Trust with Pet Parents.</li>
+                                    <li class="mb-1">Network Opportunities</li>
+                                    <li class="">
+                                        Elevate your practive with VetSched.Pet-because every pet
+                                        deserve exceptional care.
+                                    </li>
+                                </ul>
+                                <div
+                                class="h-[199px] flex lg:hidden w-[84px] absolute !m-[0] top-[20px] right-[-41px] rounded-[50%] bg-[#FF58516B] [filter:blur(34.7px)] z-[2]"
+                              ></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-row items-start justify-start py-0  box-border max-w-full">
+                        <div
+                            class="flex flex-row items-start justify-start gap-[26px] max-w-full z-[1] mq800:flex-wrap">
+                            <button
+                                class="cursor-pointer py-[13px] px-[23px] bg-[transparent] rounded-lg border-[#3D4461] border-[1px]  flex flex-row items-center justify-center whitespace-nowrap  border-solid  hover:bg-slategray-200 hover:box-border hover:border-[1px] hover:border-solid hover:border-slategray-100">
+                                <div
+                                    class="relative text-base leading-[20px] font-medium font-poppins text-[#3D4461] text-left  inline-block min-w-[89px]">
+                                    Learn More
+                                </div>
+                            </button>
+                            <div class="flex flex-row items-center justify-start py-0 px-4">
+                                <button
+                                    class="cursor-pointer [border:none] py-[13px] px-[35px] bg-[#3D4461]  rounded-lg flex flex-row items-center justify-center whitespace-nowrap hover:bg-slategray-100">
+                                    <div
+                                        class="relative text-base leading-[20px] font-medium font-poppins text-white text-left inline-block min-w-[58px]">
+                                        Join Us
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="self-stretch lg:flex hidden h-[528px] relative rounded-[19.63px] bg-[#003459] overflow-hidden shrink-0 max-w-full mt-[-8px] text-26xl text-tomato-100 mq800:h-auto mq800:min-h-[528]">
+                <div
+                    class="absolute top-[-397.2px] left-[465px] w-[975px] flex flex-col items-start justify-start pt-[453.1999999999998px] pb-[408.7000000000007px] pr-20 pl-[261px] box-border gap-[33px] max-w-full">
+                    <div
+                        class="w-[920.6px] h-[calc(100%_-_390.4px)] absolute !m-[0] top-[-0.02px] right-[-573.82px] bottom-[390.42px] rounded-[97.18px] bg-[#FCEED5] [transform:_rotate(44.93deg)] [transform-origin:0_0]">
+                    </div>
+                    <div class="self-stretch flex flex-col items-start justify-start gap-[16px] max-w-full shrink-0">
+                        <div class="self-stretch flex flex-col items-start justify-start gap-[7px] max-w-full">
+                            <div class="self-stretch flex flex-row items-start justify-start py-0 pr-0 pl-px">
+                                <h1
+                                    class="m-0 h-[53px] relative text-[#FF5851] text-[45px] font-bold  inline-block z-[2] mq450:text-8xl mq800:text-17xl">
+                                    Are You a Service Provider?
+                                </h1>
+                            </div>
+                            <h1
+                                class="m-0 relative text-[36px] text-[#3D4461] font-medium font-inherit  inline-block max-w-full z-[2] mq450:text-3xl mq800:text-10xl">
+                                Join Our Network Today
+                            </h1>
+                        </div>
+                        <div
+                            class="self-stretch flex flex-row items-start justify-start py-0 pr-[43px] pl-9 box-border max-w-full text-justify text-lg">
+                            <div
+                                class="flex-1 relative tracking-[0.02em] capitalize font-medium inline-block max-w-full z-[1]">
+                                <ul class="m-0  text-[#FF5851] text-[18px] pl-6 tracking-[0.36px] list-disc">
+                                    <li class="mb-1">Expand your reach</li>
+                                    <li class="mb-1">Streamlined Appointment Management</li>
+                                    <li class="mb-1">Access to Pet Medical Reports</li>
+                                    <li class="mb-1">Build Trust with Pet Parents.</li>
+                                    <li class="mb-1">Network Opportunities</li>
+                                    <li>
+                                        Elevate your practive with VetSched.Pet-because every pet
+                                        deserve exceptional care.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-row items-start justify-start py-0 px-[54px] box-border max-w-full">
+                        <div
+                            class="flex flex-row items-start justify-start gap-[26px] max-w-full z-[1] mq800:flex-wrap">
+                            <button
+                                class="cursor-pointer py-[13px] px-[23px] bg-[transparent] rounded-lg border-[#3D4461] border-[1px]  flex flex-row items-center justify-center whitespace-nowrap  border-solid  hover:bg-slategray-200 hover:box-border hover:border-[1px] hover:border-solid hover:border-slategray-100">
+                                <div
+                                    class="relative text-base leading-[20px] font-medium font-poppins text-[#3D4461] text-left  inline-block min-w-[89px]">
+                                    Learn More
+                                </div>
+                            </button>
+                            <div class="flex flex-row items-center justify-start py-0 px-4">
+                                <button
+                                    class="cursor-pointer [border:none] py-[13px] px-[35px] bg-[#3D4461]  rounded-lg flex flex-row items-center justify-center whitespace-nowrap hover:bg-slategray-100">
+                                    <div
+                                        class="relative text-base leading-[20px] font-medium font-poppins text-white text-left inline-block min-w-[58px]">
+                                        Join Us
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="absolute top-[-143.8px] left-[0px] w-[756px] h-[1331.5px]">
+                    <div
+                        class="absolute top-[0.02px] left-[8.17px] rounded-[97.18px] bg-[#5398FFDF] w-[1052.3px] h-[831.8px] [transform:_rotate(44.71deg)] [transform-origin:0_0] z-[1]">
+                    </div>
+                    <img class="absolute top-[120px] left-[63px] w-[447px] h-[628px] object-contain z-[2]"
+                        loading="lazy" alt="" src="./images/services/doctor.png" />
+                </div>
+            </div>
+        </section>
+        <!-- ================HOW IT WORK =========================== -->
+        <section
+            class="w-full flex flex-row items-start justify-end py-0 px-14 box-border mt-[100px] max-w-full text-center text-21xl text-darkslategray-200 font-poppins lg:pl-7 lg:pr-7 lg:box-border">
+            <div
+                class="relative flex-1 flex flex-col items-start justify-start gap-[54px] max-w-full mq750:gap-[27px_54px]">
+                <div class="w-full flex flex-row items-start justify-center py-0 px-5 box-border max-w-full">
+                    <div class="flex flex-col items-start justify-start">
+                        <div class="flex flex-row items-start justify-start relative">
+                            <img class="h-[98.6px] w-[98.6px] absolute !m-[0] top-[-52px] lg:left-[-90px] left-[-30px] overflow-hidden shrink-0 object-contain z-[3]"
+                                loading="lazy" alt="" src="./images//services/noto_paw-print.svg">
+
+                            <h1
+                                class="m-0 w-[283px] relative text-[#363E62] leading-[60px] lg:text-[40px] text-[30px]  font-semibold  inline-block z-[4] mq450:text-5xl mq450:leading-[36px] mq1050:text-13xl mq1050:leading-[48px]">
+                                How It Works?
+                            </h1>
+
+                        </div>
+                        <div class="flex relative lg:left-0 left-[25px]">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="200" height="4" viewBox="0 0 167 4"
+                                fill="none">
+                                <path d="M2 2H165" stroke="#FF5851" stroke-width="3" stroke-linecap="round" />
+                            </svg>
+                        </div>
+
+                    </div>
+                </div>
+                <div
+                    class="self-stretch flex flex-row flex-wrap items-end justify-center gap-[19px] max-w-full text-left text-3xl text-darkslategray-100">
+                    <div
+                        class="lg:h-[576px] h-[540px] flex-1 flex justify-center relative min-w-[315px] w-[420px] max-w-full">
+                        <div class="absolute lg:top-[0px] top-[15px] left-[60px]  lg:w-[185px] lg:h-[196px] w-[93px] h-[93px]">
+                            <div class="absolute top-[26px] left-[0px] w-[93px] h-[93px] lg:w-[170px] lg:h-[170px]">
+                                <div
+                                    class="relative top-[0px] left-[0px] rounded-[50%] bg-[#3D4461] shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] w-[full] h-full z-[1]">
+                                </div>
+                                <img class="absolute top-[25px] left-[25px] lg:top-[42px] lg:left-[42px] w-[48px] h-[48px] lg:w-[86px] lg:h-[86px] z-[2]"
+                                    loading="lazy" alt="" src="./images/requestDemo/Group 1156 (1).svg" />
+                            </div>
+                            <img class="absolute lg:top-[0px] top-[10px] lg:left-[117px] left-[60px] w-[34px] h-[34px] lg:w-[68px] lg:h-[68px] z-[3]"
+                                loading="lazy" alt="" src="./images/requestDemo/Group.svg" />
+                        </div>
+                        <div
+                            class="absolute top-[107px] left-[0px] h-[315px] rounded-10xs bg-[#5398FF17] shadow-[0px_4px_13.7px_rgba(83,_152,_255,_0.62)] box-border flex flex-col items-start justify-start lg:pt-[98px] lg:pb-[89px] py-[40px] w-[283px] px-[32px] gap-[16px] max-w-full border-[0px] border-solid border-dodgerblue-400">
+                            <img class="w-[420px] h-[469px] relative rounded-10xs hidden max-w-full" alt=""
+                                src="./images/requestDemo/Group.svg" />
+
+                            <h3
+                                class="m-0 relative text-[22px] text-center leading-normal text-[#3D4461 leading-normal] font-semibold font-inherit z-[1] mq450:text-lg">
+                                <p class="m-0">
+                                    <span class="font-medium text-[#3D4461]">Search Best </span>
+                                    <span class="font-bold text-[#FF5851]">Online Provider</span>
+                                </p>
+                            </h3>
+                            <div
+                                class="self-stretch flex flex-row items-start justify-start py-0 pr-0 pl-px box-border max-w-full text-base text-gray-800">
+                                <div
+                                    class="h-[201px] text-[16px] text-center text-[#00000087]  leading-normal relative inline-block max-w-full z-[1]">
+                                    <p class="m-0">
+                                        Search and choose the best online provider for your pet.
+                                    </p>
+                                 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="lg:h-[576px] h-[540px] flex-1 flex justify-center relative min-w-[315px] w-[420px] max-w-full">
+                        <div class="absolute lg:top-[0px] top-[15px] left-[60px]  lg:w-[185px] lg:h-[196px] w-[93px] h-[93px]">
+                            <div class="relative top-[26px] left-[0px] w-[93px] h-[93px] lg:w-[170px] lg:h-[170px]">
+                                <div
+                                    class="absolute top-[0px] left-[0px] rounded-[50%] bg-[#3D4461] shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] w-full h-full z-[1]">
+                                </div>
+                                <img class="absolute top-[25px] left-[25px] lg:top-[42px] lg:left-[42px]  w-[48px] h-[48px] lg:w-[86px] lg:h-[86px] z-[2]"
+                                    loading="lazy" alt="" src="./images/requestDemo/Group 1157 (1).svg" />
+                            </div>
+                            <img class="absolute lg:top-[0px] top-[10px] lg:left-[117px] left-[60px] w-[34px] h-[34px] lg:w-[68px] lg:h-[68px] z-[3]"
+                                loading="lazy" alt="" src="./images/requestDemo/Vector.svg" />
+                        </div>
+                        <div
+                            class="absolute top-[107px] left-[0px] h-[315px]  rounded-10xs bg-[#5398FF17] shadow-[0px_4px_13.7px_rgba(83,_152,_255,_0.62)] box-border flex flex-col items-start justify-start lg:pt-[98px] lg:pb-[89px] py-[40px] w-[283px] px-[32px] gap-[16px] max-w-full border-[0px] border-solid border-dodgerblue-400">
+                            <img class="w-[420px] h-[469px] relative rounded-10xs hidden max-w-full" alt=""
+                                src="./images/requestDemo/Group.svg" />
+
+                            <h3
+                                class="m-0 relative text-[22px] text-center leading-normal text-[#3D4461 leading-normal] font-semibold font-inherit z-[1] mq450:text-lg">
+                                <p class="m-0">
+                                    <span class="font-medium text-[#3D4461]">Connect and Chat </span>
+                                    <span class="font-bold text-[#FF5851]">with Provider</span>
+                                     </p>
+                            </h3>
+                            <div
+                                class="self-stretch flex flex-row items-start justify-start py-0 pr-0 pl-px box-border max-w-full text-base text-gray-800">
+                                <div
+                                    class="h-[201px] text-center  text-[16px] text-[#00000087]  leading-normal  relative inline-block max-w-full z-[1]">
+                                    <p class="m-0">
+                                        Connect and chat with provider
+                                    </p>
+                                  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                    class="lg:h-[576px] h-[540px] flex-1 flex justify-center relative min-w-[315px] w-[420px] max-w-full">
+                    <div class="absolute lg:top-[0px] top-[15px] left-[60px]  lg:w-[185px] lg:h-[196px] w-[93px] h-[93px]">
+                        <div class="absolute top-[26px] left-[0px] w-[93px] h-[93px] lg:w-[170px] lg:h-[170px]">
+                            <div
+                                class="absolute top-[0px] left-[0px] rounded-[50%] bg-[#3D4461] shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] w-full h-full z-[1]">
+                            </div>
+                            <img class="absolute lg:top-[42px] top-[25px] lg:left-[26px] left-[15px] w-[63px] h-[39px] lg:w-[115px] lg:h-[70px] z-[2]"
+                                loading="lazy" alt="" src="./images/pet-lovers/svgviewer-png-output (1).png" />
+                        </div>
+                        <img class="absolute top-[15px] left-[60px] lg:top-[10px] lg:left-[120px]  w-[34px] h-[34px] lg:w-[68px] lg:h-[68px] z-[3]"
+                            loading="lazy" alt="" src="./images/pet-lovers/svgviewer-png-output (2).png" />
+                    </div>
+                    <div
+                        class="absolute top-[107px] left-[0px] h-[315px]  rounded-10xs bg-[#5398FF17] shadow-[0px_4px_13.7px_rgba(83,_152,_255,_0.62)] box-border flex flex-col items-start justify-start lg:pt-[98px] lg:pb-[89px] py-[40px] w-[283px] px-[32px] gap-[16px] max-w-full border-[0px] border-solid border-dodgerblue-400">
+                        <img class="w-[420px] h-[469px] relative rounded-10xs hidden max-w-full" alt=""
+                            src="./images/requestDemo/Group.svg" />
+
+                        <h3
+                            class="m-0 relative text-center text-[22px] text-[#3D4461 leading-normal] font-semibold font-inherit z-[1] mq450:text-lg">
+                            <p class="m-0">
+                                <span class="font-medium text-[#3D4461]">Get instant </span>
+                                <span class="font-bold text-[#FF5851]">Appointment</span>
+                                 </p>
+                        </h3>
+                        <div
+                            class="self-stretch flex flex-row items-start justify-start py-0 pr-0 pl-px box-border max-w-full text-base text-gray-800">
+                            <div
+                                class="h-[201px] text-center text-[16px] text-[#00000087]  leading-normal relative inline-block max-w-full z-[1]">
+                                <p class="m-0">
+                                    Get an instant appointment on our site
+                                </p>
+                             
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <div
+                        class="lg:h-[576px] h-[540px] flex-1 flex justify-center relative min-w-[315px] w-[420px] max-w-full">
+                        <div class="absolute lg:top-[0px] top-[15px] left-[60px] lg:w-[185px] lg:h-[196px] w-[93px] h-[93px]">
+                            <div class="absolute top-[26px] left-[0px] w-[93px] h-[93px] lg:w-[170px] lg:h-[170px]">
+                                <div
+                                    class="absolute top-[0px] left-[0px] rounded-[50%] bg-[#3D4461] shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] w-full h-full z-[1]">
+                                </div>
+                                <img class="absolute lg:top-[42px] top-[25px] lg:left-[26px] left-[15px] w-[63px] h-[39px] lg:w-[115px] lg:h-[70px] z-[2]"
+                                    loading="lazy" alt="" src="./images/requestDemo/svgviewer-png-output.png" />
+                            </div>
+                            <img class="absolute top-[15px] left-[60px] lg:top-[10px] lg:left-[120px]  w-[34px] h-[34px] lg:w-[68px] lg:h-[68px] z-[3]"
+                                loading="lazy" alt="" src="./images/requestDemo/plus_img.png" />
+                        </div>
+                        <div
+                            class="absolute top-[107px] left-[0px] h-[315px]  rounded-10xs bg-[#5398FF17] shadow-[0px_4px_13.7px_rgba(83,_152,_255,_0.62)] box-border w-[283px] px-[32px] flex flex-col items-start justify-start lg:pt-[98px] lg:pb-[89px] py-[40px]  gap-[16px] max-w-full border-[0px] border-solid border-dodgerblue-400">
+                            <img class="w-[420px] h-[469px] relative rounded-10xs hidden max-w-full" alt=""
+                                src="./images/requestDemo/Group.svg" />
+
+                            <h3
+                                class="m-0 relative text-[22px] text-center leading-normal text-[#3D4461 leading-normal] font-semibold font-inherit z-[1] mq450:text-lg">
+                                <p class="m-0">
+                                    <span class="font-medium text-[#3D4461]">Leave Your  </span>
+                                    <span class="font-bold text-[#FF5851]">Feedback</span>
+                                     </p>
+                            </h3>
+                            <div
+                                class="self-stretch flex flex-row items-start justify-start py-0 pr-0 pl-px box-border max-w-full text-base text-gray-800">
+                                <div
+                                    class="h-[201px]  text-center text-[16px] text-[#00000087]  leading-normal relative inline-block max-w-full z-[1]">
+                                    <p class="m-0">
+                                        Leave your experience with professional to help others
+                                    </p>
+                                  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div
+                    class="absolute top-[0px] right-[-350px] rounded-[50%] bg-[#FF58516B] [filter:blur(50px)] w-[317px] h-[444px]">
+                </div>
+                <div
+                    class="w-[312px] h-[422px] absolute !m-[0] top-[250px]  left-[-340px] rounded-[50%] lg:bg-[#5398FF8F] bg-[#3D446170] [filter:blur(50px)] z-[1]">
+                </div>
+            </div>
+        </section>
+        <section
+            class="w-[1406px] flex flex-row items-start justify-center pt-0 px-[23px] lg:pb-[309px] box-border max-w-full shrink-0 text-left text-26xl text-darkslategray-100 font-poppins mq450:pb-[131px] mq450:box-border mq1125:pb-[201px] mq1125:box-border">
+            <div
+                class="w-[1240px] flex flex-row flex-wrap items-end justify-start gap-[54px] max-w-full mq800:gap-[27px]">
+                <div class="lg:h-[620px] h-[235px] flex-1 relative min-w-[384px]  max-w-full mq450:min-w-full">
+                    <div
+                        class="absolute h-full  top-[0px] bottom-[0px] left-[0px] rounded-[10px] w-[493px] flex items-center justify-center">
+                        <img class="lg:h-full max-h-full lg:w-full w-[234px] h-[222px] lg:object-contain object-cover absolute left-[4px] top-[4px] [transform:scale(1.078)]"
+                            alt="" src="./images/services/medium-shot-woman-kissing-cat.png" />
+                    </div>
+                    <div
+                        class="absolute top-[90px] left-[200px] lg:top-auto lg:bottom-0 lg:left-auto lg:right-0 rounded-[5px] w-[147px] h-[181px] lg:w-[234px] lg:h-[286px]  z-[1] flex items-center justify-center">
+                        <img class="lg:w-full lg:h-full z-[1] object-contain absolute w-full h-full left-[0px] top-[4px] [transform:scale(1.256)]"
+                            loading="lazy" alt="" src="./images/services/high-angle-woman-caring-rabbit.png" />
+                    </div>
+                </div>
+                <div
+                    class="flex-1 flex flex-col items-start justify-end pt-0 px-0 pb-[11px] box-border min-w-[387px] max-w-full mq800:min-w-full">
+                    <div
+                        class="self-stretch flex flex-col items-start justify-start gap-[57px] max-w-full mq800:gap-[28px_57px]">
+                        <div
+                            class="self-stretch flex flex-col relative items-start justify-start lg:gap-[25.5px] gap-[5.5px] max-w-full">
+                            <div
+                                class="flex flex-row items-start justify-start py-0 lg:px-[61px] px-[15px] box-border max-w-full mq800:pl-[30px] mq800:pr-[30px] mq800:box-border">
+                                 
+                                <div class="flex flex-row items-start justify-start relative max-w-full">
+                                    <h1
+                                        class="m-0 relative lg:text-[45px] text-[32px] text-[#3D4461] leading-[36px] font-semibold font-inherit mq450:text-8xl mq450:leading-[22px] mq800:text-17xl mq800:leading-[29px]">
+                                        Why Vetsched.Pet
+                                    </h1>
+                                    <img class="lg:h-[75.4px] lg:w-[70.1px] h-[50.3px] w-[40.5px] absolute !m-[0] top-[-46px] lg:left-[-65px] object-contain z-[1]"
+                                        loading="lazy" alt="" src="./images/services/9 2.png" />
+                                </div>
+                               
+                            </div>
+                            <div
+                                class="w-[333px] flex flex-row items-start justify-start py-0 px-[65px] box-border max-w-full ">
+                                <div class="h-[5px] flex-1 relative rounded-lg bg-[#FF5851]"></div>
+                            </div>
+                            <h3
+                                class="m-0 self-stretch relative text-3xl leading-[41px] font-medium font-inherit text-darkslategray-500 mq450:text-lg mq450:leading-[33px]">
+                                <div
+                                class="h-[249px] flex lg:hidden w-[178px] absolute !m-[0] bottom-auto top-[-90px] left-[-137px] rounded-[50%] bg-[#3D446170] [filter:blur(34.7px)]"
+                              ></div> 
+                                <ul
+                                    class="m-0 font-inherit lg:text-[22px] text-[16px] pl-[29px] text-[#3D4461F5] list-disc">
+                                    <li class="mb-0">Simplifying Pet Care for Every Parent.</li>
+                                    <li class="mb-0">Streamlined Appointment Management</li>
+                                    <li class="mb-0">Centralized Medical Reports</li>
+                                    <li class="mb-0">Personalized Pet Profiles</li>
+                                    <li class="mb-0">Educational Resources</li>
+                                    <li class="mb-0">Connect with Trusted Provider Network.</li>
+                                    <li class="mb-0">
+                                        Elevate your Pet Care Experience with Vetsched.Pet-
+                                        because your pet’s well-being is our top priority
+                                    </li>
+                                </ul>
+                            </h3>
+                            <div
+                            class="h-[199px] flex lg:hidden w-[84px] absolute !m-[0] top-[20px] right-[-41px] rounded-[50%] bg-[#FF58516B] [filter:blur(34.7px)] z-[2]"
+                          ></div>
+                            <img class="absolute block lg:hidden top-[130.9px] right-[65.2px] object-contain" src="./images/services/paws 34.png" alt="">
+                        </div>
+                        <div class="flex flex-row items-start justify-start py-0 px-5 box-border max-w-full">
+                            <div
+                                class="w-[311px] flex flex-row items-center justify-start py-0 px-0 box-border gap-[26px]">
+                                <button
+                                    class="cursor-pointer py-[13px] px-[23px] bg-[transparent] rounded-lg flex flex-row items-center justify-center whitespace-nowrap border-[1px] border-solid border-[#FF5851] hover:bg-tomato-500 hover:box-border hover:border-[1px] hover:border-solid hover:border-tomato-200">
+                                    <div
+                                        class="relative text-base leading-[20px] font-medium font-poppins text-darkslategray-100 text-left inline-block min-w-[89px]">
+                                        Learn More
+                                    </div>
+                                </button>
+                                <div class="flex flex-row items-center justify-start py-0 px-4">
+                                    <button
+                                        class="cursor-pointer [border:none] py-[13px] px-[35px] bg-[#5398FF] rounded-lg flex flex-row items-center justify-center whitespace-nowrap hover:bg-dodgerblue-300">
+                                        <div
+                                            class="relative text-base leading-[20px] font-medium font-poppins text-white text-left inline-block min-w-[62px]">
+                                            Sign Up
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- =============REVIEWS SECTION=================== -->
+    <section class="w-full h-[820px] py-4 lg:py-0 bg-[#383E56]">
+        <div class="relative">
+  
+          <h1 class="text-white text-[42px] font-semibold flex justify-center py-3">
+            Our Reviews
+          </h1>
+  
+  
+          <img class="absolute lg:flex hidden top-[60px] left-[65px]"
+            src="./images//landingPage/review-section/paws 24.png" alt="">
+          <img class="absolute lg:flex hidden top-[25px] left-[125px]"
+            src="./images//landingPage/review-section/paws 22.png" alt="">
+          <img class="absolute lg:flex hidden top-[0px] left-[400px]"
+            src="./images//landingPage/review-section/paws 28.png" alt="">
+          <img class="absolute lg:flex hidden top-[50px] left-[220px]"
+            src="./images//landingPage/review-section/paws 6.png" alt="">
+          <img class="absolute lg:flex hidden top-[70px] left-[420px]"
+            src="./images//landingPage/review-section/paws 7.png" alt="">
+          <img class="absolute lg:flex hidden top-[50px] left-[520px]"
+            src="./images//landingPage/review-section/paws 23.png" alt="">
+          <img class="absolute lg:flex hidden top-[50px] left-[800px]"
+            src="./images//landingPage/review-section/paws 12.png" alt="">
+          <img class="absolute lg:flex hidden top-[-16px] left-[1000px]"
+            src="./images//landingPage/review-section/paws 25.png" alt="">
+          <img class="absolute lg:flex hidden top-[25px] left-[1100px]"
+            src="./images//landingPage/review-section/paws 8.png" alt="">
+          <img class="absolute lg:flex hidden top-[70px] right-[150px]"
+            src="./images//landingPage/review-section/paws 11.png" alt="">
+          <img class="absolute lg:flex hidden top-[25px] right-[120px]"
+            src="./images//landingPage/review-section/paws 10.png" alt="">
+          <img class="absolute lg:flex hidden top-[20px] right-[50px]"
+            src="./images//landingPage/review-section/paws 26.png" alt="">
+  
+          <div class="slider-container px-4 ">
+            <div class="slider gap-3  flex items-end">
+  
+              <div class="card min-w-[240px] lg:h-[637px] h-full rounded-[10px] bg-white py-[17px] px-3">
+                <div>
+                  <img class="w-full object-cover md:max-h-[300px] max-h-[480px]"
+                    src="./images/landingPage/review-section/international-couple-blue-background-with-dog 1.png" alt="">
+                </div>
+                <div class="mt-[27px]">
+                  <h1 class="text-[18px] font-bold text-[#33363F]">Marc</h1>
+                  <span><img src="./images/landingPage/review-section/Group 37068.svg" alt=""></span>
+                </div>
+                <div class="mt-[17px]">
+                  <p class="text-[15px] text-[#3D4461]">"Effortless grooming booking! Found a skilled groomer easily on
+                    the
+                    platform, and the communication was
+                    seamless. Highly recommend this platform for pet care needs!”</p>
+                </div>
+              </div>
+  
+  
+              <div class="card min-w-[240px] lg:h-[552px] h-full rounded-[10px] bg-white py-5 px-[20px]">
+                <div>
+                  <img class="w-full object-cover md:max-h-[300px] max-h-[480px]"
+                    src="./images/landingPage/review-section/cheerful-woman-funny-dog-park.png" alt="">
+                </div>
+                <div class="mt-[27px]">
+                  <h1 class="text-[18px] font-bold text-[#33363F]">Christa</h1>
+                  <span><img src="./images/landingPage/review-section/Group 37068.svg" alt=""></span>
+                </div>
+                <div class="mt-[17px]">
+                  <p class="text-[15px] text-[#3D4461]">"Reliable pet sitting service! Booked through the platform and
+                    received regular updates on my pet's well-being. Will definitely use this platform again for future
+                    pet
+                    sitting needs.”</p>
+                </div>
+              </div>
+  
+  
+              <div class="card min-w-[240px] lg:h-[637px] rounded-[10px] bg-white py-[30px] px-[20px]">
+                <div>
+                  <img class="w-full object-cover md:max-h-[300px] max-h-[480px]" src="./images/landingPage/review-section/Rectangle 8.png" alt="">
+                </div>
+                <div class="mt-[27px]">
+                  <h1 class="text-[18px] font-bold text-[#33363F]">Leonard</h1>
+                  <span><img src="./images/landingPage/review-section/Group 37068.svg" alt=""></span>
+                </div>
+                <div class="mt-[17px]">
+                  <p class="text-[15px] text-[#3D4461]">"Top-notch veterinary care found on the platform! Connected with a
+                    knowledgeable and compassionate vet easily. This platform is a reliable source for quality pet care
+                    services.”</p>
+                </div>
+              </div>
+  
+  
+              <div class="card   min-w-[240px] lg:h-[552px] rounded-[10px] bg-white py-[15px] pl-6 pr-2">
+                <div>
+                  <img class="w-full object-cover md:max-h-[300px] max-h-[480px]"
+                    src="./images/landingPage/review-section/young-stylish-hipster-man-walking-playing-with-dog-tropical-beach 1.png"
+                    alt="">
+                </div>
+                <div class="mt-[27px]">
+                  <h1 class="text-[18px] font-bold text-[#33363F]">Samantha</h1>
+                  <span><img src="./images/landingPage/review-section/Group 37068.svg" alt=""></span>
+                </div>
+                <div class="mt-[17px]">
+                  <p class="text-[15px] text-[#3D4461]">"Exceptional pet boarding facility discovered through the
+                    platform!
+                    My pet was well-cared for in a clean and secure environment. Will definitely utilize this platform for
+                    future boarding needs.”-</p>
+                </div>
+              </div>
+  
+  
+              <!-- Add more cards as needed -->
+            </div>
+            <button
+              class="prev w-[43px] h-[43px] bg-[#3FABF3] rounded-full flex justify-center items-center absolute top-[50%] left-0">
+              <img src="./images/landingPage/review-section/prev-arrow.svg" alt="">
+            </button>
+            <button
+              class="next w-[43px] h-[43px] bg-[#3FABF3] rounded-full flex justify-center items-center absolute top-[50%] right-0">
+              <img src="./images/landingPage/review-section/next-arrow.svg" alt="">
+            </button>
+          </div>
+        </div>
+      </section>
+
+
+        <footer class="w-full  h-full bg-[#3D4461] mt-[179px] lg:block hidden">
+            <div
+                class="self-stretch flex flex-row items-start justify-center py-0 pr-5 pl-[23px] box-border max-w-full shrink-0 ">
+                <div
+                    class="w-[517px] rounded-[62px] mt-[-43px] bg-white shadow-[5px_1px_17.1px_rgba(0,_0,_0,_0.25)] flex flex-row flex-wrap items-start justify-start pt-[33px] pb-[34px] pr-[39px] pl-12 box-border gap-[11px] shrink-0 [debug_commit:f6aba90] max-w-full z-[5] mq800:pl-6 mq800:box-border">
+                    <div
+                        class="h-[127px] w-[517px] relative rounded-43xl bg-white shadow-[5px_1px_17.1px_rgba(0,_0,_0,_0.25)] hidden max-w-full">
+                    </div>
+                    <div class="h-[46px] flex flex-col items-start justify-start pt-1.5 pb-0 pr-[9px] pl-0 box-border">
+                        <img class="w-[45px] h-10 relative object-cover z-[1]" loading="lazy" alt=""
+                            src="./images/img-01 1.png" />
+                    </div>
+                    <div class="flex flex-col items-start justify-start pt-[17px] pb-0 pr-6 pl-0">
+                        <div class="relative inline-block min-w-[40px] z-[1] text-[16px]">-OR-</div>
+                    </div>
+                    <div class="flex-1 flex flex-col items-start justify-start min-w-[140px] min-h-[60px] text-black">
+                        <div class="relative z-[1]">
+                            <p class="m-0">&nbsp;</p>
+                            <p class="m-0 text-[22px] font-semibold text-[#FF5851]">
+                                info@vetsched.pet
+                            </p>
+                        </div>
+                        <div class="self-stretch flex flex-row items-start justify-end mt-[-52px] text-[#000000A1]">
+                            <div class="relative z-[1]">24/7 Email Support</div>
+                        </div>
+                    </div>
+                    <div class="h-[60px] flex flex-col items-start justify-start py-0 pr-[5px] pl-0 box-border">
+                        <div class="w-px flex-1 relative box-border z-[1] border-r-[1px] border-solid border-gray-200">
+                        </div>
+                    </div>
+                    <div class="h-[50px] flex flex-col items-start justify-start pt-2 px-0 pb-0 box-border">
+                        <img class="w-[47px] h-[42px] relative object-cover z-[1]" loading="lazy" alt=""
+                            src="./images/img-02-1 2.png" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-[89px] pb-[20px]  lg:ml-[130px] lg:mr-[83px] grid grid-cols-8 gap-6">
+                <div class="col-span-3">
+                    <span><img class="w-[300px] h-[223px]" src="./images/logo-2 1.png" alt=""></span>
+                    <div class="text-white px-[25px] mt-[19px] mb-[35px]">
+                        <div class="flex  gap-[3px] items-baseline text-[16px] mb-[40px]">
+                            <span><img src="./images/location_Icon.svg" alt=""></span>
+                            <p>825 Watter’s Creek Blvd Building M,Suite 250 Allen, Texas 75013</p>
+                        </div>
+                        <div class="flex  gap-[3px] items-center text-[16px]">
+                            <span><img src="./images/email_icon.svg" alt=""></span>
+                            <p>info@vetsched.pet</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-[23px] ml-[45px]">
+                        <span><img src="./images/facebook_icon.svg" alt=""></span>
+                        <span><img src="./images/twitter_icon.svg" alt=""></span>
+                        <span><img src="./images/instal_icon.svg" alt=""></span>
+                        <span><img src="./images/linkedin_icon.svg" alt=""></span>
+                    </div>
+                </div>
+                <div class="col-span-2 gap-[30px] flex flex-col justify-center">
+                    <h1 class="text-[18px] font-bold text-white " style="font-family: Roboto;">Company</h1>
+                    <div class="flex flex-col gap-[12px]">
+                        <span style="font-size: 14px; font-family: Roboto; color: white;">Pet Lover</span>
+                        <span style="font-size: 14px; font-family: Roboto; color: white;">Service Provider</span>
+                        <span style="font-size: 14px; font-family: Roboto; color: white;">Services </span>
+                        <span style="font-size: 14px; font-family: Roboto; color: white;">About Us</span>
+                        <span style="font-size: 14px; font-family: Roboto; color: white;">FAQs</span>
+                        <span style="font-size: 14px; font-family: Roboto; color: white;">Request a Demo</span>
+                        <span style="font-size: 14px; font-family: Roboto; color: white;">Contact Us</span>
+                        <span style="font-size: 14px; font-family: Roboto; color: white;">Privacy Policy</span>
+                        <span style="font-size: 14px; font-family: Roboto; color: white;">Terms and Condition</span>
+                    </div>
+                </div>
+                <div class="col-span-3 flex flex-col pt-[60px]">
+                    <h1 class="text-[29px] font-bold leading-[32px] text-white w-[260px] mb-[27px]">Subscribe to our
+                        Newsletter</h1>
+                    <input type="text" class=" bg-white p-[20px] rounded-[9px] xl:w-[405px] w-full mb-[17px]"
+                        placeholder="Your Email Here">
+                    <button class="rounded-[9px] w-full xl:w-[405px] bg-[#2B80FF] text-white py-[21px]">Send</button>
+                </div>
+            </div>
+
+        </footer>
+
+        <footer class="lg:hidden block mt-20 bg-[#3D4461] w-full pt-[53px] pb-6 border-b border-white px-[11px]">
+            <div>
+                <img class="w-[102px] h-[66px]" src="./images/logo-2 1.png" alt="">
+            </div>
+            <div class="mt-3 text-white space-y-1">
+                <h1 class="text-[18px] leading-[16px] font-semibold mb-[6px]">Explore</h1>
+                <div class="gap-[8px] flex flex-col">
+                    <p class="text-[14px] leading-[16px]"><a href="">Explore</a></p>
+                    <p class="text-[14px] leading-[16px]"> <a href="">Services</a></p>
+                </div>
+
+            </div>
+            <div class="mt-3 text-white space-y-1">
+                <h1 class="text-[18px] leading-[16px] font-semibold mb-[12px]">Contact info</h1>
+                <div class="gap-[8px] flex flex-col">
+                    <p class="text-[14px] leading-[16px]">info@vetsched.pet</p>
+                    <p class="text-[14px] leading-[16px]">825 Watter's Creek Blvd </p>
+                    <p class="text-[14px] leading-[16px]"> Building M,Suit 25 Allen,</p>
+                    <p class="text-[14px] leading-[16px]">Texas 75013</p>
+                </div>
+
+            </div>
+            <div class="mt-5 text-white space-y-1">
+                <h1 class="text-[18px] leading-[16px] font-semibold mb-[14px]">Follow Us</h1>
+                <div class="flex gap-[23px] mt-4">
+                    <span><img src="./images/facebook_icon.svg" alt=""></span>
+                    <span><img src="./images/twitter_icon.svg" alt=""></span>
+                    <span><img src="./images/instal_icon.svg" alt=""></span>
+                    <span><img src="./images/linkedin_icon.svg" alt=""></span>
+                </div>
+            </div>
+        </footer>
+
+
+        <div
+            class="bg-black w-full flex justify-center lg:py-[11px] lg:pr-0 pr-28 lg:px-2 pt-[10px] pl-[10px] pb-[14px]">
+            <p class="text-white lg:text-[16px] text-[18px] leading-6">Copyrights 2024 VetSched.PET. All rights reserved
+            </p>
+        </div>
+    </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const slider = document.querySelector('.slider');
+            const prevButton = document.querySelector('.prev');
+            const nextButton = document.querySelector('.next');
+            const gap = 12; // Gap between cards
+            let cardsPerPage = getCardsPerPage();
+            let slideIndex = 0;
+
+            nextButton.addEventListener('click', function () {
+                const cardWidth = slider.children[0].offsetWidth + gap;
+                if (slideIndex < slider.children.length - cardsPerPage) {
+                    slideIndex++;
+                    const slidePosition = -slideIndex * cardWidth;
+                    slider.style.transform = `translateX(${slidePosition}px)`;
+                }
+            });
+
+            prevButton.addEventListener('click', function () {
+                const cardWidth = slider.children[0].offsetWidth + gap;
+                if (slideIndex > 0) {
+                    slideIndex--;
+                    const slidePosition = -slideIndex * cardWidth;
+                    slider.style.transform = `translateX(${slidePosition}px)`;
+                }
+            });
+
+            function getCardsPerPage() {
+                if (window.innerWidth >= 1024) { // Laptop
+                    return 4;
+                } else if (window.innerWidth >= 768) { // Tablet
+                    return 2;
+                } else { // Mobile
+                    return 1;
+                }
+            }
+
+            window.addEventListener('resize', function () {
+                cardsPerPage = getCardsPerPage();
+                slideIndex = 0;
+                slider.style.transform = `translateX(0)`;
+            });
+
+        });
+
+    </script>
+</body>
+
+</html>
