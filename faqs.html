@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/css/contactUs.css">
+  <link rel="stylesheet" href="/css/global.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+    <style>
+        /* Custom styles for slider */
+        .slider-container {
+            overflow: hidden;
+        }
+
+        .slider {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .answer {
+            display: none;
+        }
+
+        .card {
+            flex: 0 0 calc(100% / 1);
+            /* Display 4 cards at a time */
+            padding: 10px;
+            /* border: 1px solid #ccc; */
+            box-sizing: border-box;
+        }
+
+        .header-card {
+            flex: 0 0 calc(100% / 2);
+            ;
+        }
+
+        @media (min-width: 768px) {
+
+            /* Tablet */
+            .card {
+                flex: 0 0 calc((100% - 12px) / 2);
+                /* Display 2 cards at a time */
+            }
+
+        }
+
+        @media (min-width: 1024px) {
+
+            /* Desktop */
+            .card {
+                flex: 0 0 calc((100% - 3 * 12px) / 4);
+                /* Display 4 cards at a time */
+            }
+
+            .header-card {
+                flex: 0 0 calc(100% / 5);
+            }
+        }
+
+        .header-slider {
+            display: flex;
+            transition: transform 0.3s ease-in-out;
+        }
+    </style>
+</head>
+
+<body style="font-family: Poppins;">
+
+  <header class="w-full lg:h-[848px] h-[400px] request-demo-header relative"
+    style="background: url(./images/Rectangle\ 213.png) #3D4461 50% / cover no-repeat; background-position: center; background-size: cover;">
+    <div class=" h-full w-full mt-[-26px] absolute z-50">
+      <div class="logo-bg lg:mt-[-290px] lg:ml-[-135px] mt-[-295px] ml-[-165px]"></div>
+      <nav class="bg-transparent navbar-section lg:mt-[25px] mt-[30px]">
+
+        <div class="flex items-center justify-between ">
+          <div>
+            <a href="/"><img src="../images//logo.png" class="lg:w-[129px] w-[63px] lg:h-[96px] h-[39px]"></img></a>
+
+          </div>
+          <div class="lg:flex hidden gap-[55px]">
+            <ul class="flex gap-[38px] h-[46px] items-center">
+              <li><a href="/" class="text-white hover:text-gray-300 flex gap-[7px] items-center navbar-item"><span><img
+                      src="./images//Vector.svg" alt=""></span> Solutions</a></li>
+              <li><a href="/about.html"
+                  class="text-white hover:text-gray-300 flex items-center  navbar-item">Services</a>
+              </li>
+              <li><a href="/about.html" class="text-white hover:text-gray-300 flex items-center navbar-item">About
+                  Us</a>
+              </li>
+              <li><a href="/about.html" class="text-white hover:text-gray-300 flex items-center navbar-item">FAQs</a>
+              </li>
+              <li><a href="/contact.html" class="text-white hover:text-gray-300 flex items-center navbar-item">Contact
+                  Us</a>
+              </li>
+
+            </ul>
+            <div class="flex gap-[26px]">
+              <div><a class="nav-login-btn">Login</a></div>
+              <div><a class="nav-joinus-btn">Join Us</a></div>
+            </div>
+
+          </div>
+          <div class="inline-block cursor:pointer lg:hidden ">
+            <div class="w-[30px] h-[2px] m-1 bg-white "></div>
+            <div class="w-[30px] h-[2px] m-1 bg-white "></div>
+            <div class="w-[30px] h-[2px] m-1 bg-white "></div>
+          </div>
+        </div>
+
+      </nav>
+      <div>
+        <div class="flex  flex-col justify-center items-center h-full px-4">
+
+          <h1
+            class="header-heading absolute top-[50%] lg:text-[65px] text-[32px] font-bold leading-normal">
+            <span class="text-white">We Are Here To</span>
+            <span class="text-[#5398FF]">Help</span>
+        </h1>
+        </div>
+      </div>
+    </div>
+
+    <div class=" absolute top-0 left-0 bg-[#3D4461] w-full h-full opacity-65 z-0"></div>
+  </header>
+
+
+
+  <main class="lg:px-[90px] px-4">
+  <!-- ===========FAQ SECTION ================= -->
+  <section
+  class="self-stretch flex flex-row items-start justify-center  pt-[67px] pb-[67px]  box-border max-w-full text-left text-26xl text-darkslategray-100 font-poppins mq825:pb-[29px] mq825:box-border mq1425:pb-11 mq1425:box-border">
+  <div class="w-[1170px] flex flex-col items-center justify-start gap-[55px] max-w-full mq825:gap-[27px_55px]">
+    <div class=" flex flex-row items-start justify-start py-0 px-3 box-border max-w-full">
+      <div class="flex-1 flex flex-col items-start justify-start gap-[17px] max-w-full">
+        <h1
+          class="m-0 self-stretch h-[75px] relative text-[#5398FF] lg:text-[64px] leading-normal text-[32px] font-semibold font-inherit inline-block shrink-0 ">
+        <span class="text-[#FF5851]">Frequently</span>
+        <span class="text-[#5398FF]"> Asked Questions?</span>   
+        </h1>
+      
+      </div>
+    </div>
+    <div class="relative w-full">
+  
+      <div>
+        <div class="lg:text-[22px] text-[#5398FF] lg:py-8 py-5 text-[16px] italic font-light leading-normal">
+          <p class="m-0 text-[#5398FF] font question" onclick="toggleAnswer(1)">
+            Q: How do I find a reliable pet service provider on your
+            platform?
+          </p>
+          <p class="m-0 lg:flex hidden">&nbsp;</p>
+          <p class="m-0 text-[#FF5851] answer" id="answer1">
+            <i class="font-light">A: Simply browse through our list of vetted service
+              providers, read reviews, and choose the one that best
+              fits your needs.</i>
+
+          </p>
+          <div
+            class="w-full h-px absolute !m-[0]  box-border left-0 z-[2] border-t-[1px] border-solid border-[#FF5851]">
+            </d>
+          </div>
+        </div>
+        <div class="lg:text-[22px] text-[#5398FF]  lg:py-8 py-5 text-[16px] italic font-light leading-normal">
+          <p class="m-0 text-[#5398FF] font question" onclick="toggleAnswer(2)">
+            Q: Can I book appointments directly through the platform?
+          </p>
+          <p class="m-0 lg:flex hidden">&nbsp;</p>
+          <p class="m-0 text-[#FF5851] answer" id="answer2">
+            <i class="font-light">A: Yes, our platform allows you to book appointments with service providers
+              directly and conveniently.</i>
+
+          </p>
+          <div
+            class="w-full h-px absolute !m-[0]  box-border left-0 z-[2] border-t-[1px] border-solid border-[#FF5851]">
+            </d>
+          </div>
+        </div>
+        <div class="lg:text-[22px] text-[#5398FF]  lg:py-8 py-5 text-[16px] italic font-light leading-normal">
+          <p class="m-0 text-[#5398FF] font question" onclick="toggleAnswer(3)">
+            Q: What types of services are offered on your platform?
+          </p>
+          <p class="m-0 lg:flex hidden">&nbsp;</p>
+          <p class="m-0 text-[#FF5851] answer" id="answer3">
+            <i class="font-light">A: Our platform offers a wide range of pet services including grooming, walking,
+              sitting, boarding, training, and veterinary care.</i>
+
+          </p>
+          <div
+            class="w-full h-px absolute !m-[0]  box-border left-0 z-[2] border-t-[1px] border-solid border-[#FF5851]">
+            </d>
+          </div>
+        </div>
+        <div class="lg:text-[22px] text-[#5398FF]  lg:py-8 py-5 text-[16px] italic font-light leading-normal">
+          <p class="m-0 text-[#5398FF] font question" onclick="toggleAnswer(4)">
+            Q: How do I communicate with service providers?
+          </p>
+          <p class="m-0 lg:flex hidden">&nbsp;</p>
+          <p class="m-0 text-[#FF5851] answer" id="answer4">
+            <i class="font-light">A: You can easily communicate with service providers through our built-in
+              messaging system.</i>
+
+          </p>
+          <div
+            class="w-full h-px absolute !m-[0]  box-border left-0 z-[2] border-t-[1px] border-solid border-[#FF5851]">
+            </d>
+          </div>
+        </div>
+        <div class="lg:text-[22px] text-[#5398FF]  lg:py-8 py-5 text-[16px] italic font-light leading-normal">
+          <p class="m-0 text-[#5398FF] font question" onclick="toggleAnswer(5)">
+            Is it safe to leave my pet with a service provider I found on your platform?
+          </p>
+          <p class="m-0 lg:flex hidden">&nbsp;</p>
+          <p class="m-0 text-[#FF5851] answer" id="answer5">
+            <i class="font-light">A: Yes, all service providers on our platform undergo a vetting process to ensure
+              they meet our standards of quality and professionalism.</i>
+
+          </p>
+          <div
+            class="w-full h-px absolute !m-[0]  box-border left-0 z-[2] border-t-[1px] border-solid border-[#FF5851]">
+            </d>
+          </div>
+        </div>
+        <div class="lg:text-[22px] text-[#5398FF]  lg:py-8 py-5 text-[16px] italic font-light leading-normal">
+          <p class="m-0 text-[#5398FF] font question" onclick="toggleAnswer(6)">
+            Q: Can I leave reviews and feedback for service providers?
+          </p>
+          <p class="m-0 lg:flex hidden">&nbsp;</p>
+          <p class="m-0 text-[#FF5851] answer" id="answer6">
+            <i class="font-light">A: Absolutely! Your feedback helps us maintain high-quality standards and helps
+              other pet owners make informed decisions.</i>
+
+          </p>
+          <div
+            class="w-full h-px absolute !m-[0]  box-border left-0 z-[2] border-t-[1px] border-solid border-[#FF5851]">
+            </d>
+          </div>
+        </div>
+        <div class="lg:text-[22px] text-[#5398FF] lg:py-8 py-5 text-[16px] italic font-light leading-normal">
+          <p class="m-0 text-[#5398FF] font question" onclick="toggleAnswer(7)">
+            Q: What if I need to cancel or reschedule an appointment?
+          </p>
+          <p class="m-0 lg:flex hidden">&nbsp;</p>
+          <p class="m-0 text-[#FF5851] answer" id="answer7">
+            <i class="font-light">A: You can easily manage your appointments through our platform, including
+              canceling or rescheduling when needed.</i>
+
+          </p>
+          <div
+            class="w-full h-px absolute !m-[0]  box-border left-0 z-[2] border-t-[1px] border-solid border-[#FF5851]">
+            </d>
+          </div>
+        </div>
+        <div class="lg:text-[22px] text-[#5398FF]  lg:py-8 py-5 text-[16px] italic font-light leading-normal">
+          <p class="m-0 text-[#5398FF] font question" onclick="toggleAnswer(8)">
+            Q: Are there any additional fees for using your platform?
+          </p>
+          <p class="m-0 lg:flex hidden">&nbsp;</p>
+          <p class="m-0 text-[#FF5851] answer" id="answer8">
+            <i class="font-light">A: Our platform is free for pet owners to use. You only pay for the services
+              provided by the service providers.</i>
+
+          </p>
+          <div
+            class="w-full h-px absolute !m-[0]  box-border left-0 z-[2] border-t-[1px] border-solid border-[#FF5851]">
+            </d>
+          </div>
+        </div>
+        <div class="lg:text-[22px] text-[#5398FF]  lg:py-8 py-5  text-[16px] italic font-light leading-normal">
+          <p class="m-0 text-[#5398FF] font question" onclick="toggleAnswer(9)">
+            Q: How do I sign up as a service provider on your platform?
+          </p>
+          <p class="m-0 lg:flex hidden">&nbsp;</p>
+          <p class="m-0 text-[#FF5851] answer" id="answer9">
+            <i class="font-light">A: Simply fill out our registration form and submit the required documents for
+              verification.</i>
+
+          </p>
+          <div
+            class="w-full h-px absolute !m-[0]  box-border left-0 z-[2] border-t-[1px] border-solid border-[#FF5851]">
+            </d>
+          </div>
+        </div>
+        <div class="lg:text-[22px] text-[#5398FF]  lg:py-8 py-5 text-[16px] italic font-light leading-normal">
+          <p class="m-0 text-[#5398FF] font question" onclick="toggleAnswer(10)">
+            Q: What types of services can I offer on your platform?
+          </p>
+          <p class="m-0 lg:flex hidden">&nbsp;</p>
+          <p class="m-0 text-[#FF5851] answer" id="answer10">
+            <i class="font-light">A: You can offer a variety of pet services including grooming, walking, sitting,
+              boarding, training, and veterinary care.</i>
+
+          </p>
+          <div
+            class="w-full h-px absolute !m-[0]  box-border left-0 z-[2] border-t-[1px] border-solid border-[#FF5851]">
+            </d>
+          </div>
+        </div>
+        <div class="lg:text-[22px] text-[#5398FF]  lg:py-8 py-5 text-[16px] italic font-light leading-normal">
+          <p class="m-0 text-[#5398FF] font question" onclick="toggleAnswer(11)">
+            Q: How do I set my availability and working hours?
+          </p>
+          <p class="m-0 lg:flex hidden">&nbsp;</p>
+          <p class="m-0 text-[#FF5851] answer" id="answer11">
+            <i class="font-light">A: You can easily manage your availability and working hours through your profile
+              settings.</i>
+
+          </p>
+          <div
+            class="w-full h-px absolute !m-[0]  box-border left-0 z-[2] border-t-[1px] border-solid border-[#FF5851]">
+            </d>
+          </div>
+        </div>
+        <div class="lg:text-[22px] text-[#5398FF]  lg:py-8 py-5 text-[16px] italic font-light leading-normal">
+          <p class="m-0 text-[#5398FF] font question" onclick="toggleAnswer(12)">
+            Q: Can I communicate directly with pet owners through the platform?
+          </p>
+          <p class="m-0 lg:flex hidden">&nbsp;</p>
+          <p class="m-0 text-[#FF5851] answer" id="answer12">
+            <i class="font-light">A: Yes, our platform provides a messaging feature for easy communication with pet
+              owners.</i>
+
+          </p>
+          <div
+            class="w-full h-px absolute !m-[0]  box-border left-0 z-[2] border-t-[1px] border-solid border-[#FF5851]">
+            </d>
+          </div>
+        </div>
+        <div class="lg:text-[22px] text-[#5398FF]  lg:py-8 py-5 text-[16px] italic font-light leading-normal">
+          <p class="m-0 text-[#5398FF] font question" onclick="toggleAnswer(13)">
+            Q: How do I handle appointment bookings and cancellations?
+          </p>
+          <p class="m-0 lg:flex hidden">&nbsp;</p>
+          <p class="m-0 text-[#FF5851] answer" id="answer13">
+            <i class="font-light">A: You can manage appointment bookings and cancellations through our platform's
+              scheduling system.</i>
+
+          </p>
+          <div
+            class="w-full h-px absolute !m-[0]  box-border left-0 z-[2] border-t-[1px] border-solid border-[#FF5851]">
+            </d>
+          </div>
+        </div>
+        <div class="lg:text-[22px] text-[#5398FF]  lg:py-8 py-5 text-[16px] italic font-light leading-normal">
+          <p class="m-0 text-[#5398FF] font question" onclick="toggleAnswer(14)">
+            Q: Do I need to provide proof of insurance or certification?
+          </p>
+          <p class="m-0 lg:flex hidden">&nbsp;</p>
+          <p class="m-0 text-[#FF5851] answer" id="answer14">
+            <i class="font-light">A: Yes, we require all service providers to provide proof of insurance and any
+              relevant certifications.</i>
+
+          </p>
+          <div
+            class="w-full h-px absolute !m-[0]  box-border left-0 z-[2] border-t-[1px] border-solid border-[#FF5851]">
+            </d>
+          </div>
+        </div>
+        <div class="lg:text-[22px] text-[#5398FF]  lg:py-8 py-5 text-[16px] italic font-light leading-normal">
+          <p class="m-0 text-[#5398FF] font question" onclick="toggleAnswer(15)">
+            Q: How do I receive payments for services rendered?
+          </p>
+          <p class="m-0 lg:flex hidden">&nbsp;</p>
+          <p class="m-0 text-[#FF5851] answer" id="answer15">
+            <i class="font-light">A: Payments are processed through our platform, and you'll receive your earnings
+              via your preferred payment method.</i>
+
+          </p>
+          <div
+            class="w-full h-px absolute !m-[0]  box-border left-0 z-[2] border-t-[1px] border-solid border-[#FF5851]">
+            </d>
+          </div>
+        </div>
+        <div class="lg:text-[22px] text-[#5398FF]  lg:py-8 py-5 text-[16px] italic font-light leading-normal">
+          <p class="m-0 text-[#5398FF] font question" onclick="toggleAnswer(16)">
+            Q: How do I respond to client reviews and feedback?
+          </p>
+          <p class="m-0 lg:flex hidden">&nbsp;</p>
+          <p class="m-0 text-[#FF5851] answer" id="answer16">
+            <i class="font-light">A: You can view and respond to client reviews and feedback directly through your
+              profile dashboard.</i>
+
+          </p>
+          <div
+            class="w-full h-px absolute !m-[0]  box-border left-0 z-[2] border-t-[1px] border-solid border-[#FF5851]">
+            </d>
+          </div>
+        </div>
+        <div class="lg:text-[22px] text-[#5398FF]  lg:py-8 py-5 text-[16px] italic font-light leading-normal">
+          <p class="m-0 text-[#5398FF] font question" onclick="toggleAnswer(17)">
+            Q: Is there a limit to the number of clients I can serve through your platform?
+          </p>
+          <p class="m-0 lg:flex hidden">&nbsp;</p>
+          <p class="m-0 text-[#FF5851] answer" id="answer17">
+            <i class="font-light">A: No, there's no limit. You can serve as many clients as your schedule
+              allows.</i>
+
+          </p>
+          <div
+            class="w-full h-px absolute !m-[0]  box-border left-0 z-[2] border-t-[1px] border-solid border-[#FF5851]">
+            </d>
+          </div>
+        </div>
+        <div class="lg:text-[22px] text-[#5398FF]  lg:py-8 py-5 text-[16px] italic font-light leading-normal">
+          <p class="m-0 text-[#5398FF] font question" onclick="toggleAnswer(18)">
+            Q: Is my personal information secure on your platform?
+          </p>
+          <p class="m-0 lg:flex hidden">&nbsp;</p>
+          <p class="m-0 text-[#FF5851] answer" id="answer18">
+            <i class="font-light">A: Yes, we take privacy and security seriously and use industry-standard measures
+              to protect your information.</i>
+
+          </p>
+          <div
+            class="w-full h-px absolute !m-[0]  box-border left-0 z-[2] border-t-[1px] border-solid border-[#FF5851]">
+            </d>
+          </div>
+        </div>
+        <div class="lg:text-[22px] text-[#5398FF]  lg:py-8 py-5 text-[16px] italic font-light leading-normal">
+          <p class="m-0 text-[#5398FF] font question" onclick="toggleAnswer(19)">
+            Q: How do I reset my password if I forget it?
+          </p>
+          <p class="m-0 lg:flex hidden">&nbsp;</p>
+          <p class="m-0 text-[#FF5851] answer" id="answer19">
+            <i class="font-light">A: You can easily reset your password through the "Forgot Password" link on the
+              login page.</i>
+
+          </p>
+          <div
+            class="w-full h-px absolute !m-[0]  box-border left-0 z-[2] border-t-[1px] border-solid border-[#FF5851]">
+            </d>
+          </div>
+        </div>
+        <div class="lg:text-[22px] text-[#5398FF]  lg:py-8 py-5 text-[16px] italic font-light leading-normal">
+          <p class="m-0 text-[#5398FF] font question" onclick="toggleAnswer(20)">
+            Q: What if I encounter technical issues while using the platform?
+          </p>
+          <p class="m-0 lg:flex hidden">&nbsp;</p>
+          <p class="m-0 text-[#FF5851] answer" id="answer20">
+            <i class="font-light">A: You can reach out to our support team for assistance, and we'll be happy to
+              help resolve any issues.</i>
+
+          </p>
+          <div
+            class="w-full h-px absolute !m-[0]  box-border left-0 z-[2] border-t-[1px] border-solid border-[#FF5851]">
+            </d>
+          </div>
+        </div>
+        <div class="lg:text-[22px] text-[#5398FF]  lg:py-8 py-5 text-[16px] italic font-light leading-normal">
+            <p class="m-0 text-[#5398FF] font question" onclick="toggleAnswer(21)">
+                Q: Can I book recurring appointments for my pet?
+            </p>
+            <p class="m-0 lg:flex hidden">&nbsp;</p>
+            <p class="m-0 text-[#FF5851] answer" id="answer21">
+              <i class="font-light">A: Yes, our platform allows you to schedule recurring appointments for your convenience.</i>
+  
+            </p>
+            <div
+              class="w-full h-px absolute !m-[0]  box-border left-0 z-[2] border-t-[1px] border-solid border-[#FF5851]">
+              </d>
+            </div>
+          </div>
+          <div class="lg:text-[22px] text-[#5398FF]  lg:py-8 py-5 text-[16px] italic font-light leading-normal">
+            <p class="m-0 text-[#5398FF] font question" onclick="toggleAnswer(22)">
+                Q: Are there any restrictions on the types of pets I can book services for?
+            </p>
+            <p class="m-0 lg:flex hidden">&nbsp;</p>
+            <p class="m-0 text-[#FF5851] answer" id="answer22">
+              <i class="font-light">A: Our platform accommodates services for various types of pets, including dogs, cats, birds, and more.</i>
+  
+            </p>
+            <div
+              class="w-full h-px absolute !m-[0]  box-border left-0 z-[2] border-t-[1px] border-solid border-[#FF5851]">
+              </d>
+            </div>
+          </div>
+          <div class="lg:text-[22px] text-[#5398FF]  lg:py-8 py-5 text-[16px] italic font-light leading-normal">
+            <p class="m-0 text-[#5398FF] font question" onclick="toggleAnswer(23)">
+                Q: Can I request specific service providers for my appointments?
+            </p>
+            <p class="m-0 lg:flex hidden">&nbsp;</p>
+            <p class="m-0 text-[#FF5851] answer" id="answer23">
+              <i class="font-light">A: Yes, you can request specific service providers based on availability and preferences.</i>
+  
+            </p>
+            <div
+              class="w-full h-px absolute !m-[0]  box-border left-0 z-[2] border-t-[1px] border-solid border-[#FF5851]">
+              </d>
+            </div>
+          </div>
+          <div class="lg:text-[22px] text-[#5398FF]  lg:py-8 py-5 text-[16px] italic font-light leading-normal">
+            <p class="m-0 text-[#5398FF] font question" onclick="toggleAnswer(24)">
+                Q: Do you offer discounts or promotions for frequent users?
+            </p>
+            <p class="m-0 lg:flex hidden">&nbsp;</p>
+            <p class="m-0 text-[#FF5851] answer" id="answer24">
+              <i class="font-light">A: Yes, we occasionally offer discounts and promotions for both pet lovers and service providers. Be sure to check our platform regularly for updates.</i>
+  
+            </p>
+            <div
+              class="w-full h-px absolute !m-[0]  box-border left-0 z-[2] border-t-[1px] border-solid border-[#FF5851]">
+              </d>
+            </div>
+          </div>
+          <div class="lg:text-[22px] text-[#5398FF]  lg:py-8 py-5 text-[16px] italic font-light leading-normal">
+            <p class="m-0 text-[#5398FF] font question" onclick="toggleAnswer(25)">
+                Q: How do I report a service provider for misconduct or unsatisfactory service?
+            </p>
+            <p class="m-0 lg:flex hidden">&nbsp;</p>
+            <p class="m-0 text-[#FF5851] answer" id="answer25">
+              <i class="font-light">A: You can report any issues or concerns to our support team, and we'll investigate promptly.</i>
+  
+            </p>
+            <div
+              class="w-full h-px absolute !m-[0]  box-border left-0 z-[2] border-t-[1px] border-solid border-[#FF5851]">
+              </d>
+            </div>
+          </div>
+          <div class="lg:text-[22px] text-[#5398FF]  lg:py-8 py-5 text-[16px] italic font-light leading-normal">
+            <p class="m-0 text-[#5398FF] font question" onclick="toggleAnswer(26)">
+                Q: Can I view service provider profiles and reviews before booking?
+            </p>
+            <p class="m-0 lg:flex hidden">&nbsp;</p>
+            <p class="m-0 text-[#FF5851] answer" id="answer26">
+              <i class="font-light">A: Yes, you can browse through service provider profiles and read reviews from other users to make informed decisions.</i>
+  
+            </p>
+            <div
+              class="w-full h-px absolute !m-[0]  box-border left-0 z-[2] border-t-[1px] border-solid border-[#FF5851]">
+              </d>
+            </div>
+          </div>
+          <div class="lg:text-[22px] text-[#5398FF]  lg:py-8 py-5 text-[16px] italic font-light leading-normal">
+            <p class="m-0 text-[#5398FF] font question" onclick="toggleAnswer(27)">
+                Q: Are there any requirements for service providers regarding cleanliness and hygiene standards?
+            </p>
+            <p class="m-0 lg:flex hidden">&nbsp;</p>
+            <p class="m-0 text-[#FF5851] answer" id="answer27">
+              <i class="font-light">A: Yes, we require service providers to adhere to strict cleanliness and hygiene standards to ensure the health and safety of pets.</i>
+  
+            </p>
+            <div
+              class="w-full h-px absolute !m-[0]  box-border left-0 z-[2] border-t-[1px] border-solid border-[#FF5851]">
+              </d>
+            </div>
+          </div>
+          <div class="lg:text-[22px] text-[#5398FF]  lg:py-8 py-5 text-[16px] italic font-light leading-normal">
+            <p class="m-0 text-[#5398FF] font question" onclick="toggleAnswer(28)">
+                Q: Can I request additional services not listed on your platform?
+            </p>
+            <p class="m-0 lg:flex hidden">&nbsp;</p>
+            <p class="m-0 text-[#FF5851] answer" id="answer28">
+              <i class="font-light">A: Yes, you can discuss specific requirements with service providers directly to see if they can accommodate your needs.</i>
+  
+            </p>
+            <div
+              class="w-full h-px absolute !m-[0]  box-border left-0 z-[2] border-t-[1px] border-solid border-[#FF5851]">
+              </d>
+            </div>
+          </div>
+          <div class="lg:text-[22px] text-[#5398FF]  lg:py-8 py-5 text-[16px] italic font-light leading-normal">
+            <p class="m-0 text-[#5398FF] font question" onclick="toggleAnswer(29)">
+                Q: How do I unsubscribe from email notifications or newsletters?
+            </p>
+            <p class="m-0 lg:flex hidden">&nbsp;</p>
+            <p class="m-0 text-[#FF5851] answer" id="answer29">
+              <i class="font-light">A: You can manage your email preferences through your account settings to unsubscribe from notifications or newsletters.</i>
+  
+            </p>
+            <div
+              class="w-full h-px absolute !m-[0]  box-border left-0 z-[2] border-t-[1px] border-solid border-[#FF5851]">
+              </d>
+            </div>
+          </div>
+        
+
+      </div>
+    </div>
+
+    <div
+      class="self-stretch flex flex-row items-start justify-center py-0 pr-5 lg:pl-[31px] box-border max-w-full text-17xl">
+      <div
+        class="w-[397px] flex flex-col lg:items-start items-center justify-start gap-[32px] max-w-full mq450:gap-[16px_32px]">
+        <h1
+          class="m-0 h-10 relative text-[#3D4461] lg:text-[36px] text-[22px] font-semibold font-inherit inline-block shrink-0 mq450:text-3xl mq825:text-10xl">
+          Still Have a Question?
+        </h1>
+        <div class="self-stretch flex flex-row items-start justify-center py-0 pr-5 pl-[21px]">
+          <button
+            class="cursor-pointer [border:none] py-[13px] px-5 bg-[#5398FF] w-56 rounded-lg shadow-[1px_1px_4px_#5398FF] flex flex-row items-start justify-center box-border whitespace-nowrap hover:bg-[#5398FF]">
+            <div class="relative text-base leading-[20px] font-medium font-poppins text-white text-left">
+              Ask Us
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+  </main>
+
+  <footer class="w-full  h-full bg-[#5398FF] mt-[179px] lg:block hidden">
+    <div
+      class="self-stretch flex flex-row items-start justify-center py-0 pr-5 pl-[23px] box-border max-w-full shrink-0 ">
+      <div
+        class="w-[517px] rounded-[62px] mt-[-43px] bg-white shadow-[5px_1px_17.1px_rgba(0,_0,_0,_0.25)] flex flex-row flex-wrap items-start justify-start pt-[33px] pb-[34px] pr-[39px] pl-12 box-border gap-[11px] shrink-0 [debug_commit:f6aba90] max-w-full z-[5] mq800:pl-6 mq800:box-border">
+        <div
+          class="h-[127px] w-[517px] relative rounded-43xl bg-white shadow-[5px_1px_17.1px_rgba(0,_0,_0,_0.25)] hidden max-w-full">
+        </div>
+        <div class="h-[46px] flex flex-col items-start justify-start pt-1.5 pb-0 pr-[9px] pl-0 box-border">
+          <img class="w-[45px] h-10 relative object-cover z-[1]" loading="lazy" alt="" src="./images/img-01 1.png" />
+        </div>
+        <div class="flex flex-col items-start justify-start pt-[17px] pb-0 pr-6 pl-0">
+          <div class="relative inline-block min-w-[40px] z-[1] text-[16px]">-OR-</div>
+        </div>
+        <div class="flex-1 flex flex-col items-start justify-start min-w-[140px] min-h-[60px] text-black">
+          <div class="relative z-[1]">
+            <p class="m-0">&nbsp;</p>
+            <p class="m-0 text-[22px] font-semibold text-[#FF5851]">
+              info@vetsched.pet
+            </p>
+          </div>
+          <div class="self-stretch flex flex-row items-start justify-end mt-[-52px] text-[#000000A1]">
+            <div class="relative z-[1]">24/7 Email Support</div>
+          </div>
+        </div>
+        <div class="h-[60px] flex flex-col items-start justify-start py-0 pr-[5px] pl-0 box-border">
+          <div class="w-px flex-1 relative box-border z-[1] border-r-[1px] border-solid border-gray-200">
+          </div>
+        </div>
+        <div class="h-[50px] flex flex-col items-start justify-start pt-2 px-0 pb-0 box-border">
+          <img class="w-[47px] h-[42px] relative object-cover z-[1]" loading="lazy" alt=""
+            src="./images/img-02-1 2.png" />
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-[89px] pb-[20px]  lg:ml-[130px] lg:mr-[83px] grid grid-cols-8 gap-6">
+      <div class="col-span-3">
+        <span><img class="w-[300px] h-[223px]" src="./images/logo-2 1.png" alt=""></span>
+        <div class="text-white px-[25px] mt-[19px] mb-[35px]">
+          <div class="flex  gap-[3px] items-baseline text-[16px] mb-[40px]">
+            <span><img src="./images/location_Icon.svg" alt=""></span>
+            <p>825 Watter’s Creek Blvd Building M,Suite 250 Allen, Texas 75013</p>
+          </div>
+          <div class="flex  gap-[3px] items-center text-[16px]">
+            <span><img src="./images/email_icon.svg" alt=""></span>
+            <p>info@vetsched.pet</p>
+          </div>
+        </div>
+        <div class="flex gap-[23px] ml-[45px]">
+          <span><img src="./images/facebook_icon.svg" alt=""></span>
+          <span><img src="./images/twitter_icon.svg" alt=""></span>
+          <span><img src="./images/instal_icon.svg" alt=""></span>
+          <span><img src="./images/linkedin_icon.svg" alt=""></span>
+        </div>
+      </div>
+      <div class="col-span-2 gap-[30px] flex flex-col justify-center">
+        <h1 class="text-[18px] font-bold text-white " style="font-family: Roboto;">Company</h1>
+        <div class="flex flex-col gap-[12px]">
+          <span style="font-size: 14px; font-family: Roboto; color: white;">Pet Lover</span>
+          <span style="font-size: 14px; font-family: Roboto; color: white;">Service Provider</span>
+          <span style="font-size: 14px; font-family: Roboto; color: white;">Services </span>
+          <span style="font-size: 14px; font-family: Roboto; color: white;">About Us</span>
+          <span style="font-size: 14px; font-family: Roboto; color: white;">FAQs</span>
+          <span style="font-size: 14px; font-family: Roboto; color: white;">Request a Demo</span>
+          <span style="font-size: 14px; font-family: Roboto; color: white;">Contact Us</span>
+          <span style="font-size: 14px; font-family: Roboto; color: white;">Privacy Policy</span>
+          <span style="font-size: 14px; font-family: Roboto; color: white;">Terms and Condition</span>
+        </div>
+      </div>
+      <div class="col-span-3 flex flex-col pt-[60px]">
+        <h1 class="text-[29px] font-bold leading-[32px] text-white w-[260px] mb-[27px]">Subscribe to our
+          Newsletter</h1>
+        <input type="text" class=" bg-white p-[20px] rounded-[9px] xl:w-[405px] w-full mb-[17px]"
+          placeholder="Your Email Here">
+        <button class="rounded-[9px] w-full xl:w-[405px] bg-[#2B80FF] text-white py-[21px]">Send</button>
+      </div>
+    </div>
+
+  </footer>
+
+  <footer class="lg:hidden block mt-20 bg-[#5398FF] w-full pt-[53px] pb-6 border-b border-white px-[11px]">
+    <div>
+      <img class="w-[102px] h-[66px]" src="./images/logo-2 1.png" alt="">
+    </div>
+    <div class="mt-3 text-white space-y-1">
+      <h1 class="text-[18px] leading-[16px] font-semibold mb-[6px]">Explore</h1>
+      <div class="gap-[8px] flex flex-col">
+        <p class="text-[14px] leading-[16px]"><a href="">Explore</a></p>
+        <p class="text-[14px] leading-[16px]"> <a href="">Services</a></p>
+      </div>
+
+    </div>
+    <div class="mt-3 text-white space-y-1">
+      <h1 class="text-[18px] leading-[16px] font-semibold mb-[12px]">Contact info</h1>
+      <div class="gap-[8px] flex flex-col">
+        <p class="text-[14px] leading-[16px]">info@vetsched.pet</p>
+        <p class="text-[14px] leading-[16px]">825 Watter's Creek Blvd </p>
+        <p class="text-[14px] leading-[16px]"> Building M,Suit 25 Allen,</p>
+        <p class="text-[14px] leading-[16px]">Texas 75013</p>
+      </div>
+
+    </div>
+    <div class="mt-5 text-white space-y-1">
+      <h1 class="text-[18px] leading-[16px] font-semibold mb-[14px]">Follow Us</h1>
+      <div class="flex gap-[23px] mt-4">
+        <span><img src="./images/facebook_icon.svg" alt=""></span>
+        <span><img src="./images/twitter_icon.svg" alt=""></span>
+        <span><img src="./images/instal_icon.svg" alt=""></span>
+        <span><img src="./images/linkedin_icon.svg" alt=""></span>
+      </div>
+    </div>
+  </footer>
+
+
+  <div class="bg-black w-full flex justify-center lg:py-[11px] lg:pr-0 pr-28 lg:px-2 pt-[10px] pl-[10px] pb-[14px]">
+    <p class="text-white lg:text-[16px] text-[18px] leading-6">Copyrights 2024 VetSched.PET. All rights reserved
+    </p>
+  </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const slider = document.querySelector('.slider');
+      const prevButton = document.querySelector('.prev');
+      const nextButton = document.querySelector('.next');
+      const gap = 12; // Gap between cards
+      let cardsPerPage = getCardsPerPage();
+      let slideIndex = 0;
+
+      nextButton.addEventListener('click', function () {
+        const cardWidth = slider.children[0].offsetWidth + gap;
+        if (slideIndex < slider.children.length - cardsPerPage) {
+          slideIndex++;
+          const slidePosition = -slideIndex * cardWidth;
+          slider.style.transform = `translateX(${slidePosition}px)`;
+        }
+      });
+
+      prevButton.addEventListener('click', function () {
+        const cardWidth = slider.children[0].offsetWidth + gap;
+        if (slideIndex > 0) {
+          slideIndex--;
+          const slidePosition = -slideIndex * cardWidth;
+          slider.style.transform = `translateX(${slidePosition}px)`;
+        }
+      });
+
+      function getCardsPerPage() {
+        if (window.innerWidth >= 1024) { // Laptop
+          return 4;
+        } else if (window.innerWidth >= 768) { // Tablet
+          return 2;
+        } else { // Mobile
+          return 1;
+        }
+      }
+
+      window.addEventListener('resize', function () {
+        cardsPerPage = getCardsPerPage();
+        slideIndex = 0;
+        slider.style.transform = `translateX(0)`;
+      });
+
+    });
+    document.addEventListener('DOMContentLoaded', function () {
+      const slider = document.querySelector('.header-slider');
+      const prevButton = document.querySelector('.header-prev');
+      const nextButton = document.querySelector('.header-next');
+      const gap = 6; // Gap between cards
+      let cardsPerPage = getCardsPerPageHeader();
+      let slideIndex = 0;
+
+      nextButton.addEventListener('click', function () {
+        const cardWidth = slider.children[0].offsetWidth + gap;
+        if (slideIndex < slider.children.length - cardsPerPage) {
+          slideIndex++;
+          const slidePosition = -slideIndex * (cardWidth + gap);
+          slider.style.transform = `translateX(${slidePosition}px)`;
+        }
+      });
+
+      prevButton.addEventListener('click', function () {
+        const cardWidth = slider.children[0].offsetWidth + gap;
+        if (slideIndex > 0) {
+          slideIndex--;
+          const slidePosition = -slideIndex * (cardWidth + gap);
+          slider.style.transform = `translateX(${slidePosition}px)`;
+        }
+      });
+
+      function getCardsPerPageHeader() {
+        if (window.innerWidth >= 1024) { // Laptop and larger screens
+          return 5;
+        } else { // Tablet and smaller screens
+          return 2;
+        }
+      }
+
+      window.addEventListener('resize', function () {
+        cardsPerPage = getCardsPerPageHeader();
+        slideIndex = 0;
+        slider.style.transform = `translateX(0)`;
+      });
+    });
+    function toggleAnswer(id) {
+      var answer = document.getElementById("answer" + id);
+      if (answer.style.display === "none") {
+        answer.style.display = "block";
+      } else {
+        answer.style.display = "none";
+      }
+    }
+
+  </script>
+</body>
+
+</html>
