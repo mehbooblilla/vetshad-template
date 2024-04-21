@@ -52,6 +52,9 @@
       flex: 0 0 calc((100% - 12px) / 2);
       ;
     }
+    .index-header{
+      background-image: url(./images/landingPage/young-happy-man-movile-index.png)  ;  background-size: cover;
+    }
 
     @media (min-width: 768px) {
 
@@ -74,6 +77,9 @@
       .header-card {
         flex: 0 0 calc((100% - 4 * 12px) / 5);
       }
+      .index-header{
+      background: url(./images/landingPage/young-happy-man-using-mobile-phone-having-fun-with-his-dog-living-room.png)  33% / cover no-repeat;  background-size: cover; backdrop-filter: blur(1px);
+    }
     }
 
     .header-slider {
@@ -94,17 +100,21 @@
   </style>
 </head>
 
-<body style="font-family: Poppins;">
+<body style="font-family: Poppins; background-color: #FFF;">
   <div class="relative overflow-hidden">
-    <header class="w-full lg:h-[848px] h-[500px] request-demo-header relative"
-      style="background: url(./images/landingPage/young-happy-man-using-mobile-phone-having-fun-with-his-dog-living-room.png)  33% / cover no-repeat;  background-size: cover; backdrop-filter: blur(1px);">
+    <header class="w-full lg:h-[848px] h-[359px] md:h-[500px]  relative index-header"
+      >
       <div class=" h-full w-full mt-[-26px] absolute z-50">
         <div class="logo-bg lg:mt-[-290px] lg:ml-[-135px] mt-[-295px] ml-[-165px]"></div>
         <nav class="bg-transparent navbar-section lg:mt-[25px] mt-[30px]">
 
           <div class="flex items-center justify-between ">
-            <div>
-              <a href="/"><img src="../images//logo.png" class="lg:w-[129px] w-[63px] lg:h-[96px] h-[39px]"></img></a>
+            <div class="lg:flex hidden">
+              <a href="/"><img src="../images/logo.png" class="lg:w-[129px] w-[63px] lg:h-[96px] h-[39px]"></img></a>
+
+            </div>
+            <div  class="lg:hidden flex">
+              <a href="/"><img src="./images/logo-mobile.png" class="lg:w-[129px] w-[63px] lg:h-[96px] h-[41px]"></img></a>
 
             </div>
             <div class="lg:flex hidden gap-[55px]">
@@ -132,46 +142,44 @@
 
             </div>
             <div class="inline-block cursor:pointer lg:hidden ">
-              <div class="w-[30px] h-[2px] m-1 bg-white "></div>
-              <div class="w-[30px] h-[2px] m-1 bg-white "></div>
-              <div class="w-[30px] h-[2px] m-1 bg-white "></div>
+              <img src="./images/Frame 1532.png" alt="">
             </div>
           </div>
 
         </nav>
         <div>
-          <div class="flex  flex-col justify-center items-center h-full px-4 gap-[26px]">
-            <div class="flex flex-col items-center">
+          <div class="flex  flex-col justify-center items-center h-full px-4 lg:gap-[26px] gap-[42px]">
+            <div class="flex flex-col items-center lg:leading-[93px] leading-[26px] font-bold text-[18px]">
               <h1
-                class="lg:text-[55px] text-18px] text-white font-bold leading-[22px] lg:mb-[30px] mb-3 lg:mt-[240px] mt-[50px]">
+                class="lg:text-[55px] text-18px] text-white font-bold leading-[22px] lg:leading-[55px] flex text-center lg:mb-[30px]  lg:mt-[240px] mt-[50px]">
                 Streamline Your Pet's Care Journey-
               </h1>
               <h1
-                class="header-heading bg-[#5398FF] w-fit bg-opacity-50 lg:text-[55px] text-[18px] font-bold lg:leading-[60px] p-2 rounded-lg leading-[40px]">
+                class="header-heading bg-[#5398FF] w-fit bg-opacity-50 lg:text-[55px] text-[18px] font-bold lg:leading-[60px] px-2 rounded-[6px] leading-[28px]">
                 All Services, One Platform.</h1>
             </div>
 
             <p
-              class="lg:text-[26px] text-[12px] w-full lg:leading-[45px] leading-[16px] font-medium lg:w-[903px] text-center text-white">
+              class="lg:text-[26px] text-[12px] lg:w-full w-[381px] lg:leading-[45px] leading-[16px] font-medium lg:w-[903px] text-center text-white">
               A platform to make pet care Journey easy through online Appointments, Text Conversations, Reminders,
               detailed Pet profiles</p>
             <div class="gap-[30px] flex">
               <button
-                class="py-[13px] px-[26px] rounded-lg bg-[#FF5851] shadow-[1px_1px_4px_0px_#5398FF] text-white font-medium lg:text-[16px] text-[10px]">Explore
+                class="py-[7px] px-[10px] lg:py-[13px] lg:px-[24px] rounded-[6px] w-[126px] lg:w-auto bg-[#FF5851] shadow-[1px_1px_4px_0px_#5398FF] text-white font-medium lg:text-[16px] text-[10px]">Explore
                 Pet Lover</button>
               <button
-                class="py-[13px] px-[26px] rounded-lg bg-[#5398FF] shadow-[1px_1px_5.5px_0px_rgba(255,_255,_255,_0.46)] text-white font-medium lg:text-[16px] text-[10px]">Explore
+                class="py-[7px] px-[10px] lg:py-[13px] lg:px-[24px] rounded-[6px] bg-[#5398FF] shadow-[1px_1px_5.5px_0px_rgba(255,_255,_255,_0.46)] text-white font-medium lg:text-[16px] text-[10px]">Explore
                 Service Provider</button>
             </div>
           </div>
         </div>
       </div>
 
-      <div class=" absolute top-0 left-0 bg-[#3D4461] w-full h-full opacity-65 z-0"></div>
+      <div class=" absolute top-0 left-0  w-full h-full  z-0" style="background: rgba(1, 14, 68, 0.33)"></div>
     </header>
 
-    <section class="w-full h-full  top-[-80px] relative px-[11px]">
-      <div class="slider-container  lg:h-[400px] h-[300px]">
+    <section class="w-full h-full  top-[-22px] lg:top-[-80px] relative px-[11px]">
+      <div class="slider-container  lg:h-[400px] h-[250px]">
         <div class="header-slider gap-3   flex ">
           <div
             class="header-card flex flex-col bg-[#5398FF] justify-between lg:py-11 lg:px-7 px-[15px] pt-[5px] pb-[15px] lg:h-auto h-[168px]  min-w-[180px]  min-h-[170px] rounded-[10px] border-l-[5px] border-[#2B80FF]"
@@ -260,11 +268,11 @@
 
         </div>
         <button
-          class="header-prev lg:hidden w-[43px] h-[43px] bg-[#3FABF3] rounded-full flex justify-center items-center absolute left-auto right-[80px] bottom-[80px]" style="box-shadow: 0px 6px 12px 0px rgba(63, 140, 255, 0.26);">
+          class="header-prev lg:hidden w-[43px] h-[43px] bg-[#3FABF3] rounded-full flex justify-center items-center absolute left-auto right-[80px] bottom-[30px]" style="box-shadow: 0px 6px 12px 0px rgba(63, 140, 255, 0.26);">
           <img src="./images/landingPage/review-section/prev-arrow.svg" alt="">
         </button>
         <button
-          class="header-next lg:hidden w-[43px] h-[43px] bg-[#3FABF3] rounded-full flex justify-center items-center absolute  right-[20px] bottom-[80px]" style="box-shadow: 0px 6px 12px 0px rgba(63, 140, 255, 0.26);">
+          class="header-next lg:hidden w-[43px] h-[43px] bg-[#3FABF3] rounded-full flex justify-center items-center absolute  right-[20px] bottom-[30px]" style="box-shadow: 0px 6px 12px 0px rgba(63, 140, 255, 0.26);">
           <img src="./images/landingPage/review-section/next-arrow.svg" alt="">
         </button>
       </div>
@@ -296,12 +304,12 @@
 
 
             <img
-              class="absolute lg:top-[-10px]  top-[-20px] left-[-35px] lg:left-auto lg:right-[-140px] w-[75px] h-[55px] lg:w-auto lg:h-auto"
+              class="absolute lg:top-[-10px]  top-[-20px] left-[-45px] lg:left-auto lg:right-[-140px] w-[75px] h-[55px] lg:w-auto lg:h-auto"
               src="./images/landingPage/service-section/6553726-removebg-preview 1.png" alt="">
           </div>
         </div>
         <div>
-          <img class=" lg:w-auto lg:h-auto w-[136px] h-[146px] lg:right-0 right-[-20px] lg:top-0 top-[50px] absolute left-auto"
+          <img class=" lg:w-auto lg:h-auto w-[155px] h-[146px] lg:right-0 right-[-30px] lg:top-0 top-[52px] absolute left-auto"
           src="./images/landingPage/service-section/pet-accessories-still-life-concept-with-chew-ball-removebg-preview 1.png"
           alt="">
         </div>
@@ -313,7 +321,7 @@
             class="lg:w-[350px] h-[17px] lg:flex hidden rounded-[350px] bg-[#2B80FFBA] [filter:blur(6.199999809265137px)]">
           </div>
             <div class=" lg:w-auto  absolute lg:top-[-160px] top-[-90px] lg:left-[70px] left-[15px]">
-              <div class="relative lg:w-[136px] lg:left-0 left-[15px] lg:h-[122px] w-[55px] h-[55px]">
+              <div class="relative lg:w-[136px] lg:left-0 left-[15px] lg:h-[122px] w-[60px] h-[60px]">
                 <img class="absolute" src="./images//landingPage/service-section/Ellipse 12.svg" alt="">
                 <img class="absolute lg:top-[2px] top-[0px] lg:left-[10px] left-[5px]"
                   src="./images//landingPage/service-section/pet-transportation.svg" alt="">
@@ -326,7 +334,7 @@
             </div>
             <div
             class="absolute lg:top-[-145px] top-[-65px] lg:right-[-75px] right-[0px] ">
-            <div class="relative  lg:w-[136px] lg:h-[122px]  w-[55px] h-[55px] left-2">
+            <div class="relative  lg:w-[136px] lg:h-[122px]  w-[60px] h-[60px] left-2">
               <img class="absolute" src="./images/landingPage/service-section/pet-hospital.svg" alt="">
   
             </div>
@@ -338,7 +346,7 @@
   
           </div>
           <div class="absolute top-2.5 right-[-85px] lg:right-[-200px] lg:w-auto w-[87px]">
-            <div class="relative lg:w-[136px] lg:h-[122px]  w-[55px] h-[55px] left-2">
+            <div class="relative lg:w-[136px] lg:h-[122px]  w-[60px] h-[60px] left-2">
               <img class="absolute" src="./images//landingPage/service-section/Ellipse 11.svg" alt="">
               <img class="absolute top-[5px] lg:top-[12px] left-10px"
                 src="./images//landingPage/service-section/vateraniar.svg" alt="">
@@ -351,7 +359,7 @@
   
           </div>
           <div class="absolute right-[-85px] lg:right-[-200px] lg:top-[180px] top-[110px] lg:w-auto w-[87px]">
-            <div class="relative lg:w-[136px] lg:h-[122px]  w-[55px] h-[55px] left-2">
+            <div class="relative lg:w-[136px] lg:h-[122px]  w-[60px] h-[60px] left-2">
               <img class="absolute" src="./images//landingPage/service-section/Ellipse 25.svg" alt="">
               <img class="absolute top-[5px] left-[5px] lg:top-[12px] lg:left-[10px]"
                 src="./images//landingPage/service-section/pet-training.svg" alt="">
@@ -364,7 +372,7 @@
   
           </div>
           <div class="absolute lg:right-[-35px] right-[-10px] lg:top-[285px] top-[150px]  lg:w-auto w-[87px]">
-            <div class="relative  lg:w-[136px] lg:h-[122px]  w-[55px] h-[55px] left-2">
+            <div class="relative  lg:w-[136px] lg:h-[122px]  w-[60px] h-[60px] left-2">
               <img class="absolute" src="./images//landingPage/service-section/Ellipse 24.svg" alt="">
               <img class="absolute top-[2px] lg:top-[-17px] left-[-6px]"
                 src="./images//landingPage/service-section/pet-adoption.svg" alt="">
@@ -376,7 +384,7 @@
             </div>
           </div>
           <div class="absolute lg:top-[270px] top-[150px] lg:left-auto left-[20px]  lg:w-auto w-[87px]">
-            <div class="relative lg:w-[136px] lg:h-[122px]  w-[55px] h-[55px] left-2">
+            <div class="relative lg:w-[136px] lg:h-[122px]  w-[60px] h-[60px] left-2">
               <img class="absolute" src="./images//landingPage/service-section/Ellipse 27.svg" alt="">
               <img class="absolute top-[4px] left-[-4px] lg:left-[-10px]"
                 src="./images//landingPage/service-section/pet-resort.svg" alt="">
@@ -388,7 +396,7 @@
             </div>
           </div>
           <div class="absolute  lg:top-[210px]  lg:left-[-230px]  left-[-90px] top-[35px] lg:w-auto ">
-            <div class="relative  lg:w-[136px] lg:h-[122px]  w-[55px] h-[55px] left-2">
+            <div class="relative  lg:w-[136px] lg:h-[122px]  w-[60px] h-[60px] left-2">
               <img class="absolute" src="./images//landingPage/service-section/Ellipse 23.svg" alt="">
               <img class="absolute top-[5px] left-[5px] lg:left-[12px]"
                 src="./images//landingPage/service-section/pet-cremation.svg" alt="">
@@ -401,7 +409,7 @@
   
           </div>
           <div class="absolute  lg:top-[20px]  lg:left-[-230px] left-[-90px] top-[125px]  lg:w-auto ">
-            <div class="relative lg:w-[136px] lg:h-[122px]  w-[55px] h-[55px] left-4">
+            <div class="relative lg:w-[136px] lg:h-[122px]  w-[60px] h-[60px] left-4">
               <img class="absolute" src="./images//landingPage/service-section/Ellipse 13.svg" alt="">
               <img class="absolute top-[5px] left-[-4px]" src="./images//landingPage/service-section/pet-walking.svg"
                 alt="">
@@ -413,7 +421,7 @@
             </div>
           </div>
           <div class="absolute lg:top-[-150px] top-[-60px] lg:left-[-110px] left-[-70px] lg:w-auto w-[87px]">
-            <div class="relative lg:w-[136px] lg:h-[122px]  w-[55px] h-[55px]">
+            <div class="relative lg:w-[136px] lg:h-[122px]  w-[60px] h-[60px]">
               <img class="absolute" src="./images/landingPage/service-section/Ellipse-grooming.svg" alt="">
               <img class="absolute top-[2px] left-[-2px]" src="./images//landingPage/service-section/pet-grooming.svg"
                 alt="">
@@ -429,7 +437,7 @@
           </div>
         </div>
         <div class="flex flex-col justify-end items-center absolute w-full h-full">
-          <button class="bg-[#5398FF] py-[13px] l px-[24px] rounded-lg text-white my-3" style="box-shadow: 1px 1px 4px 0px #5398FF;">Explore All
+          <button class="bg-[#5398FF] lg:py-[13px]  lg:px-[24px] lg:w-auto lg:h-auto w-[146px] h-[41px] lg:text-[16px] text-[12px] rounded-lg text-white my-3" style="box-shadow: 1px 1px 4px 0px #5398FF;">Explore All
             Service</button>
         </div>
 
@@ -474,7 +482,7 @@
           <div class="flex flex-row items-start justify-start py-2 px-px">
             <div class="w-[311px] flex flex-row items-center justify-start py-0 px-0 box-border lg:gap-[26px] gap-[13px]">
               <button
-                class="cursor-pointer py-[13px] px-[24px] bg-[transparent] rounded-lg border-[#FF5851] flex flex-row items-center justify-center whitespace-nowrap border-[1px] border-solid hover:box-border hover:border-[1px] hover:border-solid hover:border-tomato-200">
+                class="cursor-pointer lg:py-[13px]  lg:px-[24px] lg:w-auto lg:h-auto w-[97px] h-[39px] bg-[transparent] rounded-lg border-[#FF5851] flex flex-row items-center justify-center whitespace-nowrap border-[1px] border-solid hover:box-border hover:border-[1px] hover:border-solid hover:border-tomato-200">
                 <div
                   class="relative text-[12px] leading-[20px] lg:text-[16px] font-medium font-poppins  rounded-lg text-[#3D4461] text-left">
                   Learn More
@@ -482,7 +490,7 @@
               </button>
               <div class="flex flex-row items-center justify-start py-0 px-4">
                 <button
-                  class="cursor-pointer [border:none] py-[13px] px-[35px] bg-[#5398FF] rounded-lg flex flex-row items-center justify-center whitespace-nowrap hover:bg-dodgerblue-200">
+                  class="cursor-pointer [border:none] lg:py-[13px]  lg:px-[24px] lg:w-auto lg:h-auto w-[101px] h-[39px] bg-[#5398FF] rounded-lg flex flex-row items-center justify-center whitespace-nowrap hover:bg-dodgerblue-200">
                   <div class="relative  leading-[20px] lg:text-[16px] text-[12px]  font-medium font-poppins text-white text-left">
                     Sign Up
                   </div>
@@ -530,7 +538,7 @@
 
         </div>
         <div
-          class=" w-full flex flex-col items-start justify-start py-[20px]  pr-[6px] pl-[25px] box-border gap-[33px] max-w-full">
+          class=" w-full flex flex-col items-start justify-start py-[20px]  pr-[6px] pl-[25px] box-border lg:gap-[33px] gap-[20px] max-w-full">
 
           <div class="self-stretch flex flex-col items-start justify-start gap-[16px] max-w-full shrink-0">
             <div class="self-stretch flex flex-col items-start justify-start gap-[10px] max-w-full">
@@ -563,10 +571,10 @@
               </div>
             </div>
           </div>
-          <div class="flex flex-row items-start justify-start py-0  box-border max-w-full">
+          <div class="flex flex-row items-start justify-start py-0 lg:px-0 px-[10px]  box-border max-w-full">
             <div class="flex flex-row items-start justify-start gap-[26px] max-w-full z-[1] mq800:flex-wrap">
               <button
-                class="cursor-pointer py-[13px] px-[23px] bg-[transparent] rounded-lg border-[#3D4461] border-[1px]  flex flex-row items-center justify-center whitespace-nowrap  border-solid  hover:bg-slategray-200 hover:box-border hover:border-[1px] hover:border-solid hover:border-slategray-100">
+                class="cursor-pointer lg:py-[13px]  lg:px-[24px] lg:w-auto lg:h-auto w-[100px] h-[40px] bg-[transparent] rounded-lg border-[#3D4461] border-[1px] border-solid  flex flex-row items-center justify-center whitespace-nowrap   hover:box-border hover:border-[1px] hover:border-solid ">
                 <div
                   class="relative  leading-[20px] lg:text-[16px] text-[12px] font-medium font-poppins text-[#3D4461] text-left  inline-block ">
                   Learn More
@@ -574,7 +582,7 @@
               </button>
               <div class="flex flex-row items-center justify-start py-0 px-4">
                 <button
-                  class="cursor-pointer [border:none] py-[13px] px-[35px] bg-[#3D4461]  rounded-lg flex flex-row items-center justify-center whitespace-nowrap hover:bg-slategray-100">
+                  class="cursor-pointer [border:none] lg:py-[13px]  lg:px-[24px] lg:w-auto lg:h-auto w-[100px] h-[40px] bg-[#3D4461]  rounded-lg flex flex-row items-center justify-center whitespace-nowrap hover:bg-slategray-100">
                   <div
                     class="relative lg:text-[16px] text-[12px] leading-[20px] font-medium font-poppins text-white text-left inline-block ">
                     Join Us
@@ -672,7 +680,7 @@
         </div>
         <div
           class="flex-1 flex flex-col items-start justify-end pt-0 px-0 pb-[11px] box-border min-w-[387px] max-w-full mq800:min-w-full">
-          <div class="self-stretch flex flex-col items-start justify-start gap-[57px] max-w-full mq800:gap-[28px_57px]">
+          <div class="self-stretch flex flex-col items-start justify-start lg:gap-[57px] gap-[25px] max-w-full ">
             <div
               class="self-stretch flex flex-col relative items-start justify-start lg:gap-[25.5px] gap-[5.5px] max-w-full">
               <div
@@ -712,10 +720,10 @@
               <img class="absolute block lg:hidden top-[130.9px] right-[65.2px] object-contain"
                 src="./images/services/paws 34.png" alt="">
             </div>
-            <div class="flex flex-row items-start justify-start py-0  box-border max-w-full">
+            <div class="flex flex-row items-start justify-start py-0 lg:px-0 px-[10px]  box-border max-w-full">
               <div class="w-[311px] flex flex-row items-center justify-start py-0 px-0 box-border lg:gap-[26px] gap-[13px]"> 
                 <button
-                  class="cursor-pointer py-[13px] px-[23px] bg-[transparent] rounded-lg flex flex-row items-center justify-center whitespace-nowrap border-[1px] border-solid border-[#FF5851] hover:bg-tomato-500 hover:box-border hover:border-[1px] hover:border-solid hover:border-tomato-200">
+                  class="cursor-pointer lg:py-[13px]  lg:px-[24px] lg:w-auto lg:h-auto w-[97px] h-[39px] text-[12px] lg:text-[16px] bg-[transparent] rounded-lg flex flex-row items-center justify-center whitespace-nowrap border-[1px] border-solid border-[#FF5851] hover:bg-tomato-500 hover:box-border hover:border-[1px] hover:border-solid hover:border-tomato-200">
                   <div
                     class="relative lg:text-[16px] text-[12px] leading-[20px] font-medium font-poppins text-darkslategray-100 text-left inline-block ">
                     Learn More
@@ -723,7 +731,7 @@
                 </button>
                 <div class="flex flex-row items-center justify-start py-0 px-4">
                   <button
-                    class="cursor-pointer [border:none] py-[13px] px-[35px] bg-[#5398FF] rounded-lg flex flex-row items-center justify-center whitespace-nowrap hover:bg-dodgerblue-300">
+                    class="cursor-pointer [border:none] lg:py-[13px]  lg:px-[24px] lg:w-auto lg:h-auto w-[101px] h-[39px] text-[12px] lg:text-[16px] bg-[#5398FF] rounded-lg flex flex-row items-center justify-center whitespace-nowrap hover:bg-dodgerblue-300">
                     <div
                       class="relative tlg:text-[16px] text-[12px] leading-[20px] font-medium font-poppins text-white text-left inline-block ">
                       Sign Up
@@ -1292,7 +1300,7 @@
 
     <footer class="lg:hidden block  bg-[#383E56] w-full pt-[53px] pb-6 border-b border-white px-[11px]">
       <div>
-        <img class="w-[102px] h-[66px]" src="./images/logo-2 1.png" alt="">
+        <img class="w-[102px] h-[75px]" src="./images/logo-2 1.png" alt="">
       </div>
       <div class="mt-3 text-white space-y-1">
         <h1 class="text-[18px] leading-[16px] font-semibold mb-[6px]">Explore</h1>
@@ -1324,8 +1332,8 @@
     </footer>
 
 
-    <div class="bg-black w-full flex justify-center lg:py-[11px] lg:pr-0 pr-28 lg:px-2 pt-[10px] pl-[10px] pb-[14px]">
-      <p class="text-white lg:text-[16px] text-[18px] leading-6">Copyrights 2024 VetSched.PET. All rights reserved
+    <div class="bg-black w-full flex lg:justify-center justify-start lg:py-[11px] lg:pr-0 pr-28 lg:px-2 pt-[10px] pl-[10px] pb-[14px]">
+      <p class="text-white lg:text-[16px] text-[12px] leading-6">Copyrights 2024 VetSched.PET. All rights reserved
       </p>
     </div>
   </div>
@@ -1417,8 +1425,10 @@
       });
     });
     function toggleAnswer(id) {
+ 
       var answer = document.getElementById("answer" + id);
-      if (answer.style.display === "none") {
+      console.log(answer.style.display,'ddd');
+      if (answer.style.display == "none" ||answer.style.display == "") {
         answer.style.display = "block";
       } else {
         answer.style.display = "none";
