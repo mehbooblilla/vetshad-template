@@ -32,10 +32,13 @@
 
 .nav-login-btn {
     display: flex;
-    padding: 13px 24px;
+    /* padding: 13px 24px; */
+    width: 91px;
+    height: 46px;
     justify-content: center;
     align-items: center;
     gap: 31px;
+    font-size: 16px;
     border-radius: 8px;
     border: 1px solid #fff;
     color: #ffffff;
@@ -43,7 +46,9 @@
 
 .nav-joinus-btn {
     display: flex;
-    padding: 13px 24px;
+    /* padding: 13px 24px; */
+    width: 106px;
+    height: 46px;
     justify-content: center;
     align-items: center;
     gap: 31px;
